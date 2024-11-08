@@ -279,3 +279,12 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/service_container/lazy_services.html#configuration'
+  -
+    uuid: 1ef95dac-0509-64da-b985-cbe419d634ee
+    question: 'What are valid ways to inject a service in Symfony ?'
+    answers:
+      - { value: 'Constructor Injection', correct: true }
+      - { value: 'Setter Injection', correct: true }
+      - { value: 'Dispatcher Injection', correct: false }
+      - { value: 'Property Injection', correct: true }
+    help: 'https://symfony.com/doc/7.0/service_container/injection_types.html'

@@ -169,3 +169,10 @@ questions:
       - { value: 'Define them as PHP constants in the related classes', correct: true }
       - { value: 'Hard-code them directly in the templates', correct: false }
     help: 'https://symfony.com/doc/current/best_practices.html#use-constants-to-define-options-that-rarely-change'
+  -
+    uuid: 1ef95db4-9a55-6d88-b7e2-f3a5c9cdf2c3
+    question: 'Do all Symfony useable interfaces honor the Backward Compatibility promise?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/bc.html#using-our-interfaces'

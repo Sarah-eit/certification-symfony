@@ -22,7 +22,6 @@ questions:
       - { value: '$formFactory->addExtension(new CsrfExtension($csrfManager));', correct: true }
       - { value: '$formFactory->setExtension(new CsrfExtension($csrfManager));', correct: false }
       - { value: '$formFactory->addCsrfExtension(new CsrfExtension($csrfManager));', correct: false }
-      - { value: '$formFactory->addExtension(new Csrf($csrfManager));', correct: false }
     help: 'https://symfony.com/doc/current/components/form.html#csrf-protection'
   -
     uuid: 1eebf878-8b9f-6a0e-aed4-99d84c92580c

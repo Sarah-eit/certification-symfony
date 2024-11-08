@@ -67,3 +67,12 @@ questions:
       - { value: positive, correct: false }
       - { value: negative, correct: false }
     help: 'https://symfony.com/doc/current/components/security/authorization.html#access-decision-manager'
+  -
+    uuid: 1ef95d9c-e21e-61c8-bc50-2706fca93033
+    question: 'When creating custom voter, which dependency injection tag has to be used?'
+    answers:
+      - { value: secure.vote, correct: false }
+      - { value: secure.voter, correct: false }
+      - { value: security.vote, correct: false }
+      - { value: security.voter, correct: true }
+    help: 'https://symfony.com/doc/current/security/voters.html#configuring-the-voter'

@@ -1,0 +1,27 @@
+questions:
+  -
+    uuid: 1efd9951-6a0d-6c52-a6b4-25bd0175366e
+    question: 'What is the main goal of Symfony regarding project upgrades?'
+    answers:
+      - { value: 'To introduce as many new features as possible', correct: false }
+      - { value: 'To ensure backward compatibility for all minor releases', correct: true }
+      - { value: 'To modify the API without notifying users', correct: false }
+      - { value: 'To increase the number of major releases', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/bc.html'
+  -
+    uuid: 1efd9956-e865-637a-baae-7348c19ad012
+    question: 'What type of message does Symfony provide to help with migration between major versions ?'
+    answers:
+      - { value: 'Error message', correct: false }
+      - { value: 'Deprecation message', correct: true }
+      - { value: 'Warning message', correct: false }
+      - { value: 'Success message', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/bc.html'
+  -
+    uuid: 1efd9959-a9c3-6fc4-9b21-6506640cd585
+    question: 'What changes can potentially lead to backward compatibility breaks?'
+    answers:
+      - { value: 'Adding a new method to a class', correct: true }
+      - { value: 'Changing documentation', correct: false }
+      - { value: 'Performance optimization', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/bc.html'

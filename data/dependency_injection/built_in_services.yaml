@@ -1,0 +1,343 @@
+questions:
+  -
+    uuid: 1efda55d-ad74-615e-8805-e3bb337e6cb7
+    question: 'Which statement is correct about built-in services : assets.package ?'
+    answers:
+      - { value: 'Purpose : Add an asset package to the application', correct: true }
+      - { value: 'Purpose : Add an asset package to the entity', correct: false }
+      - { value: 'Purpose : Add an asset package to the monolog', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#assets-package'
+  -
+    uuid: 1efda55e-c3de-66d2-9d68-07bfd4bc47c7
+    question: 'Which statements are correct about built-in services : auto_alias ?'
+    answers:
+      - { value: 'Purpose : Define aliases based on the value of container parameters', correct: true }
+      - { value: "When using the auto_alias tag, it's not mandatory to define the aliased services as private", correct: true }
+      - { value: 'Purpose : Define aliases based on the value of Symfony log parameters', correct: false }
+      - { value: "When using the auto_alias tag, it's mandatory to define the aliased services as private", correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#auto-alias'
+  -
+    uuid: 1efda55f-6922-69ae-97a0-b3dee3c3a084
+    question: 'Which statement is correct about built-in services : console.command ?'
+    answers:
+      - { value: 'Purpose: Add a command to the application', correct: true }
+      - { value: 'Purpose: Add a console to the application', correct: false }
+      - { value: 'Purpose: Add a command to controllers', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#console-command'
+  -
+    uuid: 1efda560-5225-6ca0-9a10-658392271a5f
+    question: 'Which statements are correct about built-in services : container.hot_path ?'
+    answers:
+      - { value: 'Purpose: Add to list of always needed services', correct: true }
+      - { value: 'It is only applied to a very short list of bootstrapping services', correct: true }
+      - { value: 'Purpose: Add to controllers, a list of access path', correct: false }
+      - { value: 'It is applied to a large list of bootstrapping services', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#container-hot-path'
+  -
+    uuid: 1efda561-c645-642c-b254-35ed3a0be9e1
+    question: 'Which statements are correct about built-in services : container.no_preload ?'
+    answers:
+      - { value: 'Purpose: Remove a class from the list of classes preloaded by PHP', correct: true }
+      - { value: 'If you add some service tagged with "container.no_preload" as an argument of another service, the "container.no_preload" tag is applied automatically to that service too', correct: true }
+      - { value: 'If you add some service tagged with "container.no_preload" as an argument of another service, the "container.no_preload" tag is not applied automatically to that service too', correct: false }
+      - { value: 'Purpose: Remove a class from the list of repositories', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#container-no-preload'
+  -
+    uuid: 1efda564-7a22-6448-9102-7ff34e270ec4
+    question: 'Which statements are correct about built-in services : container.preload ?'
+    answers:
+      - { value: 'Purpose: Add some class to the list of classes preloaded by PHP', correct: true }
+      - { value: 'This can improve performance by making some of the classes used by your service always available for all requests (until the server is restarted)', correct: true }
+      - { value: 'Purpose: Add some class to the list of the repositories', correct: false }
+      - { value: "This can't improve performance", correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#container-preload'
+  -
+    uuid: 1efda567-848b-62f6-bdad-59d341bce3fd
+    question: 'Which statements are correct about built-in services : controller.argument_value_resolver ?'
+    answers:
+      - { value: 'Purpose: Register a value resolver for controller arguments such as "Request"', correct: true }
+      - { value: 'Value resolvers implement the ValueResolverInterface and are used to resolve argument values for controllers', correct: true }
+      - { value: 'Value resolvers implement the ValueArgumentResolverInterface and are used to resolve argument values for controllers', correct: false }
+      - { value: 'Purpose: Register a value resolver for controller arguments only if the application is an API', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#controller-argument-value-resolver'
+  -
+    uuid: 1efda56b-b56e-673e-92cb-01ee98d4d409
+    question: 'Which statement is correct about built-in services : data_collector ?'
+    answers:
+      - { value: 'Purpose: Create a class that collects custom data for the profiler', correct: true }
+      - { value: 'Purpose: Create a class that collects custom data for the database', correct: false }
+      - { value: '"data_collector" doesn''t exist', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#data-collector'
+  -
+    uuid: 1efda56d-8aac-6ac6-9b49-fb197c5f7531
+    question: 'Which statement is correct about built-in services : doctrine.event_listener ?'
+    answers:
+      - { value: 'Purpose: Add a Doctrine event listener', correct: true }
+      - { value: 'Purpose: Add to Doctrine event listener only if database is MySQL', correct: false }
+      - { value: 'None of them', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#doctrine-event-listener'
+  -
+    uuid: 1efda570-ea7d-6772-819c-69079b7e39b8
+    question: 'Which statement is correct about built-in services : doctrine.event_subscriber ?'
+    answers:
+      - { value: 'Purpose: Add a Doctrine event subscriber', correct: true }
+      - { value: 'Purpose: Add to Doctrine event subscriber only if database is MySQL', correct: false }
+      - { value: 'None of them', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#doctrine-event-subscriber'
+  -
+    uuid: 1efda571-c2a0-66a4-b651-253633409d63
+    question: 'Which statement is correct about built-in services : form.type ?'
+    answers:
+      - { value: 'Purpose: Create a custom form field type', correct: true }
+      - { value: 'Purpose: Create a custom form field type only if the project is an API', correct: false }
+      - { value: 'None of them', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#form-type'
+  -
+    uuid: 1efda572-907d-6bbc-9278-e1f43cf1afd1
+    question: 'Which statement is correct about built-in services : form.type_extension ?'
+    answers:
+      - { value: 'Purpose: Create a custom "form extension"', correct: true }
+      - { value: 'Purpose: Create a custom "form extension" only if the project is an API', correct: false }
+      - { value: 'None of them', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#form-type-extension'
+  -
+    uuid: 1efda573-9e87-6c5c-9131-d1d58464ef92
+    question: 'Which statements are correct about built-in services : form.type_guesser ?'
+    answers:
+      - { value: 'Purpose: Add your own logic for "form type guessing"', correct: true }
+      - { value: 'By default, form guessing is done by "guessers" based on the validation metadata and Doctrine metadata (if you''re using Doctrine) or Propel metadata (if you''re using Propel)', correct: true }
+      - { value: 'Purpose: Add a form template for Twig', correct: false }
+      - { value: 'By default, form guessing is done by "guessers" based on database configuration or AbstractType configuration', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#form-type-guesser'
+  -
+    uuid: 1efda579-ab1b-6a8a-b103-d7b1a37dcf08
+    question: 'Which statements are correct about built-in services : kernel.cache_clearer ?'
+    answers:
+      - { value: 'Purpose: Register your service to be called during the cache clearing process', correct: true }
+      - { value: 'Cache clearing occurs whenever you call "cache:clear" command', correct: true }
+      - { value: "It's possible to register your custom cache clearer", correct: true }
+      - { value: 'Purpose: Register your service to be called during the browser reload without cache', correct: false }
+      - { value: 'Cache clearing occurs whenever the browser reload without cache', correct: false }
+      - { value: "It isn't possible to register your custom cache clearer", correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-cache-clearer'
+  -
+    uuid: 1efda57a-9c5a-6784-b5a9-d1e70fb15898
+    question: 'Which statements are correct about built-in services : kernel.cache_warmer ?'
+    answers:
+      - { value: 'Purpose: Register your service to be called during the cache warming process.', correct: true }
+      - { value: 'Cache warming occurs whenever you run the "cache:warmup" or "cache:clear" command (unless you pass --no-warmup to "cache:clear"). It is also run when handling the request, if it wasn''t done by one of the commands yet.', correct: true }
+      - { value: 'To register your own cache warmer, create a service that implements the "CacheWarmerInterface".', correct: true }
+      - { value: 'If your cache warmer fails its execution because of any exception, Symfony try to execute it again for the next requests.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-cache-warmer'
+  -
+    uuid: 1efda57b-c301-6206-9b12-d160ab8989c9
+    question: 'Which statements are correct about built-in services : kernel.event_listener ?'
+    answers:
+      - { value: 'Purpose: To listen to different events/hooks in Symfony', correct: true }
+      - { value: 'During the execution of a Symfony application, different events are triggered and you can also dispatch custom events', correct: true }
+      - { value: 'This tag allows you to hook your own classes into any of those events', correct: true }
+      - { value: "During the execution of a Symfony application, different events are triggered but you can't dispatch custom events", correct: false }
+      - { value: 'This tag allows you to hook classes predefined in the vendor directory into any of those events', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-event-listener'
+  -
+    uuid: 1efda57d-b14a-6f88-ae12-e3677fdfb298
+    question: 'Which statements are correct about built-in services : kernel.event_subscriber ?'
+    answers:
+      - { value: 'Purpose: To subscribe to a set of different events/hooks in Symfony', correct: true }
+      - { value: 'This is an alternative way to create an event listener, and is the recommended way (instead of using kernel.event_listener)', correct: true }
+      - { value: 'Purpose: To subscribe to set one event in Symfony', correct: false }
+      - { value: 'This is an alternative way to create an event listener, and is not the recommended way', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-event-subscriber'
+  -
+    uuid: 1efda57e-69c6-636e-ac2c-4364b4a147f0
+    question: 'Which statements are correct about built-in services : kernel.fragment_renderer ?'
+    answers:
+      - { value: 'Purpose: Add a new HTTP content rendering strategy.', correct: true }
+      - { value: 'It is possible to add a new rendering strategy in addition to the core strategies like EsiFragmentRenderer. Create a class that implements FragmentRendererInterface, register it as a service, then tag it with "kernel.fragment_renderer".', correct: true }
+      - { value: 'It is not possible to add a new rendering strategy in addition to the core strategies like EsiFragmentRenderer.', correct: false }
+      - { value: 'Purpose: Add a new XML content rendering strategy.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-fragment-renderer'
+  -
+    uuid: 1efda580-abbd-6856-ab51-d5e03c36831b
+    question: 'Which statements are correct about built-in services : kernel.locale_aware ?'
+    answers:
+      - { value: 'Purpose: To access and use the current locale', correct: true }
+      - { value: 'To register your own locale aware service, first create a service that implements the LocaleAwareInterface', correct: true }
+      - { value: 'Purpose: To access and use the current locale only on test environment', correct: false }
+      - { value: 'To register your own locale aware service, first create a service that implements the LocaleLanguageAwareInterface', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-locale-aware'
+  -
+    uuid: 1efda581-9363-6642-80a6-837f110cd1aa
+    question: 'Which statements are correct about built-in services : kernel.reset ?'
+    answers:
+      - { value: 'Purpose: Clean up services between requests.', correct: true }
+      - { value: 'Clean up services in all main requests (not sub-requests) except the first one.', correct: true }
+      - { value: 'This is mostly useful when running your projects in application servers that reuse the Symfony application between requests to improve performance. This tag is applied for example to the built-in data collectors of the profiler to delete all their information.', correct: true }
+      - { value: 'Clean up services only on sub-requests.', correct: false }
+      - { value: "Doesn't improve performance when running your projects in application servers that reuse the Symfony application between requests. This tag is applied for example to the built-in data collectors of the profiler to delete all their information.", correct: false }
+      - { value: 'Purpose: Clean up services between restart of the server.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-reset'
+  -
+    uuid: 1efda582-543c-63be-bc09-2f65ed594ab4
+    question: 'Which statement is correct about built-in services : mime.mime_type_guesser ?'
+    answers:
+      - { value: 'Purpose: Add your own logic for guessing MIME types', correct: true }
+      - { value: "Doesn't exist", correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#mime-mime-type-guesser'
+  -
+    uuid: 1efda583-1fe1-6140-bbaf-2be8b0f2ee00
+    question: 'Which statements are correct about built-in services : monolog.logger ?'
+    answers:
+      - { value: 'Purpose: To use a custom logging channel with Monolog.', correct: true }
+      - { value: 'Monolog allows you to share its handlers between several logging channels. The logger service uses the channel app but you can change the channel when injecting the logger in a service.', correct: true }
+      - { value: 'Purpose: To use one logging channel with Monolog.', correct: false }
+      - { value: 'There is no several logging channels.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#monolog-logger'
+  -
+    uuid: 1efda584-37cb-6b38-940e-25d9ea277c99
+    question: 'Which statements are correct about built-in services : monolog.processor ?'
+    answers:
+      - { value: 'Monolog allows you to add processors in the logger or in the handlers to add extra data in the records. A processor receives the record as an argument and must return it after adding some extra data in the "extra" attribute of the record.', correct: true }
+      - { value: 'The built-in IntrospectionProcessor can be used to add the file, the line, the class and the method where the logger was triggered.', correct: true }
+      - { value: 'In the configuration, you can add differents attributes like "handler" or "channel".', correct: true }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#monolog-processor'
+  -
+    uuid: 1efdc885-3dd7-6d0a-b6af-ff4ab3319ae2
+    question: 'Which statements are correct about built-in services : routing.loader ?'
+    answers:
+      - { value: 'Purpose: Register a custom service that loads routes', correct: true }
+      - { value: 'To enable a custom routing loader, add it as a regular service in one of your configuration and tag it with "routing.loader"', correct: true }
+      - { value: 'Purpose: Register a custom service that loads templates', correct: false }
+      - { value: 'To enable a custom routing loader, add it as a regular service in one of your configuration and tag it with "routing.templates"', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#routing-loader'
+  -
+    uuid: 1efdc8ab-5404-603a-a3e1-61312deb8ab1
+    question: 'Which statements are correct about built-in services : routing.expression_language_provider ?'
+    answers:
+      - { value: 'Purpose: Register a provider for expression language functions in routing.', correct: true }
+      - { value: 'This tag is used to automatically register expression function providers for the routing expression component. Using these providers, you can add custom functions to the routing expression language.', correct: true }
+      - { value: 'Purpose: Register a provider for expression language functions in controller.', correct: false }
+      - { value: 'This tag is used to automatically register expression function providers for the controller expression component. Using these providers, you can add custom functions to the controller expression language.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#routing-expression-language-provider'
+  -
+    uuid: 1efdc8ae-6620-63ce-a44e-9da714e01b68
+    question: 'Which statements are correct about built-in services : security.expression_language_provider ?'
+    answers:
+      - { value: 'Purpose: Register a provider for expression language functions in security.', correct: true }
+      - { value: 'This tag is used to automatically register expression function providers for the security expression component. Using these providers, you can add custom functions to the security expression language.', correct: true }
+      - { value: 'Purpose: Register a provider for expression language functions in routing.', correct: false }
+      - { value: 'This tag is used to automatically register expression function providers for the routing expression component. Using these providers, you can add custom functions to the routing expression language.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#security-expression-language-provider'
+  -
+    uuid: 1efdc8b5-0944-686a-b80e-e3689db9770d
+    question: 'Which statements are correct about built-in services : security.voter ?'
+    answers:
+      - { value: "Purpose: To add a custom voter to Symfony's authorization logic.", correct: true }
+      - { value: 'When you call isGranted() on Symfony''s authorization checker, a system of "voters" is used behind the scenes to determine if the user should have access. The "security.voter" tag allows you to add your own custom voter to that system.', correct: true }
+      - { value: "Purpose: To add a custom voter to Symfony's authentication logic.", correct: false }
+      - { value: 'When you call isGranted() on Symfony''s authentication checker, a system of "voters" is used behind the scenes to determine if the user should have access. The "security.voting" tag allows you to add your own custom voter to that system.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#security-voter'
+  -
+    uuid: 1efdc8b9-f190-6584-8b59-477d72e5fae4
+    question: 'Which statements are correct about built-in services : serializer.encoder ?'
+    answers:
+      - { value: 'Purpose: Register a new encoder in the "serializer" service.', correct: true }
+      - { value: "The class that's tagged should implement the EncoderInterface and DecoderInterface.", correct: true }
+      - { value: 'Purpose: Register a new encoder in the "EncoderDecoder" service.', correct: false }
+      - { value: "The class that's tagged should implement the EncoderSerializingInterface and DecoderSerializingInterface.", correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#serializer-encoder'
+  -
+    uuid: 1efdc8c1-9919-6484-9460-0589d118f1cc
+    question: 'Which statements are correct about built-in services : serializer.normalizer ?'
+    answers:
+      - { value: 'Purpose: Register a new normalizer in the Serializer service.', correct: true }
+      - { value: "The class that's tagged should implement the NormalizerInterface and DenormalizerInterface.", correct: true }
+      - { value: 'Run the following command to check the priorities of the default normalizers: "php bin/console debug:container --tag serializer.normalizer".', correct: true }
+      - { value: 'Purpose: Register a new normalizer in the EncoderDecoder service.', correct: false }
+      - { value: "The class that's tagged should implement the NormalizerSerializingInterface and DenormalizerSerializingInterface.", correct: false }
+      - { value: 'Run the following command to check the priorities of the default normalizers: "php bin/console container --tag EncoderDecoder.normalizer".', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#serializer-normalizer'
+  -
+    uuid: 1efdc8d5-1d81-6e34-8c13-2740cf3e99b1
+    question: 'Which statements are correct about built-in services : translation.loader ?'
+    answers:
+      - { value: 'In the services configuration, register your loader as a service and tag it with "translation.loader".', correct: true }
+      - { value: 'In the services configuration, the alias option is required and very important: it defines the file "suffix" that will be used for the resource files that use this loader (e.g : "translations/messages.fr.bin").', correct: true }
+      - { value: 'In the services configuration, register your loader as a service and tag it with "translating.loading".', correct: false }
+      - { value: 'In the services configuration, the alias option defines the file "suffix" that will be used for the resource files that use this loader (e.g : "translations/messages.fr.bin"). It is not required and not very important.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#translation-loader'
+  -
+    uuid: 1efdc8e0-2fe8-6086-893d-b5b89d134c90
+    question: 'Which statements are correct about built-in services : translation.extractor ?'
+    answers:
+      - { value: 'Purpose: To register a custom service that extracts messages from a file.', correct: true }
+      - { value: 'When executing the translation:extract command, it uses extractors to extract translation messages from a file. By default, the Symfony Framework has a TwigExtractor to find and extract translation keys from Twig templates.', correct: true }
+      - { value: 'Purpose: To register a custom service that extracts messages from database.', correct: false }
+      - { value: 'When executing the translation:extract command, it uses extractors to extract translation messages from database. By default, the Symfony Framework has a TwigExtractorMessage to find and extract translation keys from Twig templates.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#translation-extractor'
+  -
+    uuid: 1efdc905-6559-668c-9b78-f397aca14f64
+    question: 'Which statements are correct about built-in services : translation.dumper ?'
+    answers:
+      - { value: 'Purpose: To register a custom service that dumps messages to a file.', correct: true }
+      - { value: 'You can create your own dumper by extending FileDumper or implementing DumperInterface and tagging the service with "translation.dumper". The tag has one option: "alias". This is the name that''s used to determine which dumper should be used (e.g "json").', correct: true }
+      - { value: 'Purpose: To register a custom service that dumps messages to database.', correct: false }
+      - { value: 'You can create your own dumper by extending FileDumperExtractor or implementing DumperInterfaceExtractor and tagging the service with "translator.dump". The tag has one option: "alias". This is the name that''s used to determine which dumper should be used (e.g "json").', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#translation-dumper'
+  -
+    uuid: 1efdc91b-192a-6b06-b337-e11c4f786956
+    question: 'Which statements are correct about built-in services : translation.provider_factory ?'
+    answers:
+      - { value: 'Purpose: to register a factory related to custom translation providers.', correct: true }
+      - { value: 'When creating custom translation providers, you must register your factory as a service and tag it with "translation.provider_factory".', correct: true }
+      - { value: 'Purpose: to register a factory related to custom template providers.', correct: false }
+      - { value: 'When creating custom template providers, you must register your factory as a service and tag it with "translator.template_provider_factory".', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#translation-provider-factory'
+  -
+    uuid: 1efdc921-945a-65be-b6b6-0f6a7a0cb6ca
+    question: 'Which statements are correct about built-in services : twig.extension ?'
+    answers:
+      - { value: 'To enable a Twig extension, add it as a regular service in one of your configuration and tag it with "twig.extension".', correct: true }
+      - { value: "If you're using the default services.yaml configuration, the Twig extension service is auto-registered and auto-tagged. But, you can also register it manually.", correct: true }
+      - { value: 'To enable a Twig extension, add it as a regular service in one of your configuration and tag it with "template.extension".', correct: false }
+      - { value: "If you're using the default services.yaml configuration, the Twig extension service is auto-registered and auto-tagged. It can't be registed manually.", correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#twig-extension'
+  -
+    uuid: 1efdc93c-9a1e-6cfa-ac9d-59ff1ec99cf7
+    question: 'Which statements are correct about built-in services : twig.loader ?'
+    answers:
+      - { value: 'By default, Symfony uses only one Twig Loader - FilesystemLoader. If you need to load Twig templates from another resource, you can create a service for the new loader and tag it with "twig.loader".', correct: true }
+      - { value: 'In the services configuration, the "priority" is optional and its value is a positive or negative integer that defaults to 0. Loaders with higher numbers are tried first.', correct: true }
+      - { value: 'By default, Symfony uses many Twig Loader - FilesystemTwigLoader. If you need to load Twig templates from another resource, you can create a service for the new loader and tag it with "twig.template.loding".', correct: false }
+      - { value: 'In the services configuration, the "priority" is required and its value is a positive or negative integer that defaults to 1. Loaders with lower numbers are tried first.', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#twig-loader'
+  -
+    uuid: 1efdc948-8ea2-6500-90bc-59f07b3a89a8
+    question: 'Which statements are correct about built-in services : twig.runtime ?'
+    answers:
+      - { value: 'Purpose: To register a custom Lazy-Loaded Twig Extension', correct: true }
+      - { value: 'Lazy-Loaded Twig Extensions are defined as regular services but they need to be tagged with "twig.runtime".', correct: true }
+      - { value: "If you're using the default services.yaml configuration, the service is auto-registered and auto-tagged. But, you can also register it manually.", correct: true }
+      - { value: 'Purpose: To register a custom Lazy-Loaded Template Extension', correct: false }
+      - { value: 'Lazy-Loaded Template Extensions are defined as regular services but they need to be tagged with "twig.loading".', correct: false }
+      - { value: "If you're using the default services.yaml configuration, the service is auto-registered and auto-tagged. It can't be registed manually.", correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#twig-runtime'
+  -
+    uuid: 1efdc955-f448-6fd2-9904-f91545187910
+    question: 'Which statement is correct about built-in services : validator.constraint_validator ?'
+    answers:
+      - { value: 'The syntax is correct.', correct: true }
+      - { value: 'The syntax is incorrect. The correct syntax is "validation.constraint".', correct: false }
+      - { value: 'The syntax is incorrect. The correct syntax is "validating.constraint.validator".', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#validator-constraint-validator'
+  -
+    uuid: 1efdc95c-a2b3-64f4-a30b-c38aeaa9ede1
+    question: 'Which statements are correct about built-in services : validator.initializer ?'
+    answers:
+      - { value: 'Purpose: Register a service that initializes objects before validation.', correct: true }
+      - { value: "This tag provides a very uncommon piece of functionality that allows you to perform some sort of action on an object right before it's validated.", correct: true }
+      - { value: 'If you do need to use this tag, just make a new class that implements the ObjectInitializerInterface interface. Then, tag it with the "validator.initializer" tag (it has no options).', correct: true }
+      - { value: 'Purpose: Register a service that initializes objects after validation.', correct: false }
+      - { value: "This tag provides a very uncommon piece of functionality that allows you to perform some sort of action on an object right after it's validated.", correct: false }
+      - { value: 'If you do need to use this tag, just make a new class that implements the InitializationObjectInterface interface. Then, tag it with the "validation.object" tag (it has no options).', correct: false }
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#validator-initializer'

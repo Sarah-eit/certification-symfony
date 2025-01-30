@@ -30,7 +30,6 @@ questions:
     question: 'Which method is to be implemented from a ServiceSubscriberInterface?'
     answers:
       - { value: 'public static function addSubscribedService()', correct: false }
-      - { value: 'public static function setSubscribedServices()', correct: false }
       - { value: 'public static function getSubscribedServices()', correct: true }
       - { value: 'public function setSubscribedServices()', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Contracts/Service/ServiceSubscriberInterface.php'

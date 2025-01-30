@@ -98,7 +98,7 @@ questions:
     help: 'https://symfony.com/doc/current/console.html#logging-command-errors'
   -
     uuid: 1eebf878-8ba7-668c-b033-99d84c92580c
-    question: 'What are the requirements your system needs to run Symfony?'
+    question: 'What are the requirements your system needs to run Symfony 7.0 ?'
     answers:
       - { value: 'You need to have at least version 2.6.21 of libxml', correct: false }
       - { value: 'PHP tokenizer needs to be enabled', correct: true }

@@ -1,0 +1,182 @@
+questions:
+  -
+    uuid: 1efda2fe-f690-68bc-b351-4315e6de49e3
+    question: "The Finder object doesn't reset its internal state automatically. This means that you need to create a new instance if you do not want to get mixed results. Is it correct ?"
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#usage'
+  -
+    uuid: 1efda31c-63b8-6a9e-880b-b77462a86928
+    question: 'Which sentence is true ?'
+    answers:
+      - { value: 'The Finder component finds files and directories based on different criteria (name, file size, modification time, etc.) via an intuitive fluent interface.', correct: true }
+      - { value: 'The Finder component finds only directories based on different criteria (name, modification time, etc.) via an intuitive fluent interface.', correct: false }
+      - { value: 'The Finder component find all interfaces in a project.', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html'
+  -
+    uuid: 1efda32b-ad80-6b68-baff-f51b464dc070
+    question: 'About the Finder component, which of the following allows searching for files only within a specific size range?'
+    answers:
+      - { value: filter(), correct: false }
+      - { value: size(), correct: true }
+      - { value: contains(), correct: false }
+      - { value: name(), correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#searching-for-files-and-directories'
+  -
+    uuid: 1efda344-3956-64c2-a9aa-01120e367112
+    question: 'What does the exclude() method do in the Symfony Finder component?'
+    answers:
+      - { value: 'Includes specific directories in the search results.', correct: false }
+      - { value: 'Excludes specific directories from the search results.', correct: true }
+      - { value: 'Excludes files larger than a given size.', correct: false }
+      - { value: 'Ignores version control files.', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#location'
+  -
+    uuid: 1efda346-8b26-6700-a2bc-9543e2da5a34
+    question: 'What is the purpose of the followLinks() method in the Finder component?'
+    answers:
+      - { value: 'Ignores symbolic links during the search.', correct: false }
+      - { value: 'Follows symbolic links but does not resolve them.', correct: true }
+      - { value: 'Resolves symbolic links to their target files.', correct: false }
+      - { value: 'Converts symbolic links into regular files.', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#files-or-directories'
+  -
+    uuid: 1efda348-268e-61f6-b6fa-2f63e5cfac23
+    question: 'About the Finder component, which of the following methods is used to exclude files from the search results based on their content?'
+    answers:
+      - { value: filter(), correct: false }
+      - { value: name(), correct: false }
+      - { value: contains(), correct: false }
+      - { value: notContains(), correct: true }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#file-contents'
+  -
+    uuid: 1efda34a-d8ea-6726-8f13-7d89762fdae1
+    question: 'Which of these file properties can be used for sorting results with the Finder component?'
+    answers:
+      - { value: Name, correct: true }
+      - { value: Size, correct: true }
+      - { value: 'Modified Time', correct: true }
+      - { value: Permissions, correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
+  -
+    uuid: 1efda34d-d74d-6b54-b40e-fb6d5a63a4ce
+    question: 'What happens when ignoreUnreadableDirs() is used in the Finder configuration?'
+    answers:
+      - { value: 'Directories that cannot be read are ignored.', correct: true }
+      - { value: 'Directories are excluded based on permissions.', correct: false }
+      - { value: 'Files in unreadable directories are still included.', correct: false }
+      - { value: 'All directories are included regardless of permissions.', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#location'
+  -
+    uuid: 1efda350-209c-6c72-91b3-c778d5cabd46
+    question: 'About the Finder component, which of the following statements about depth() is correct?'
+    answers:
+      - { value: 'It excludes unreadable directories.', correct: false }
+      - { value: 'It limits the directory traversal depth during the search.', correct: true }
+      - { value: 'It determines the size of directories to search.', correct: false }
+      - { value: 'It filters results by date modified.', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#directory-depth'
+  -
+    uuid: 1efda353-8050-6670-9e3c-b3c723de184f
+    question: 'Which method is used to match files and directories by their path in the Finder component?'
+    answers:
+      - { value: path(), correct: true }
+      - { value: contains(), correct: false }
+      - { value: name(), correct: false }
+      - { value: size(), correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#path'
+  -
+    uuid: 1efda355-ef3b-67e0-b071-3b64999f8d6b
+    question: 'About the Finder component, what does the sortByName() method do when passed true as an argument?'
+    answers:
+      - { value: 'Sorts files by their extensions.', correct: false }
+      - { value: 'Uses natural sorting for file names.', correct: true }
+      - { value: 'Reverses the sorting order.', correct: false }
+      - { value: 'Filters results based on name.', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
+  -
+    uuid: 1efda35b-2181-692a-a88f-8bdacc3c7d25
+    question: 'About the Finder component, which of the following can be passed as arguments to the size() method?'
+    answers:
+      - { value: '>= 1K', correct: true }
+      - { value: '<= 2M', correct: true }
+      - { value: '> 500', correct: true }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#file-size'
+  -
+    uuid: 1efda35c-51ee-6d50-849b-e35eab7be00f
+    question: "About the Finder component, is it correct : \"$finder->files()->size('>= 1K')->size('<= 2K');\""
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#file-size'
+  -
+    uuid: 1efda37f-63c1-6ae6-bb5c-4f2ef02bd13e
+    question: 'About the Finder component, what is the correct method to exclude files by their name?'
+    answers:
+      - { value: notPath(), correct: false }
+      - { value: notName(), correct: true }
+      - { value: exclude(), correct: false }
+      - { value: contains(), correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#file-name'
+  -
+    uuid: 1efda381-f080-6976-8527-2120e23bd7c0
+    question: 'About the Finder component, which of the following methods can be used to restrict results by last modified dates?'
+    answers:
+      - { value: path(), correct: false }
+      - { value: depth(), correct: false }
+      - { value: date(), correct: true }
+      - { value: filter(), correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#file-date'
+  -
+    uuid: 1efda386-b8ab-6546-b8d3-51f1545a13df
+    question: 'What is the purpose of the filter() method in the Finder component?'
+    answers:
+      - { value: 'Sorts results based on a custom strategy.', correct: false }
+      - { value: 'Filters results using a custom closure.', correct: true }
+      - { value: 'Filters files based on their names.', correct: false }
+      - { value: 'Filters files based on size.', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#custom-filtering'
+  -
+    uuid: 1efda397-0a45-639c-9d64-59e0a8d7e683
+    question: 'About the Finder component, which exists :'
+    answers:
+      - { value: reverseSorting(), correct: true }
+      - { value: sortingReverse(), correct: false }
+      - { value: sort()->reverse(), correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
+  -
+    uuid: 1efda39c-2560-61d6-ae1e-d5e8732303f7
+    question: 'About the Finder component, the contents of returned files can be read with :'
+    answers:
+      - { value: getContents(), correct: true }
+      - { value: content(), correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#reading-contents-of-returned-files'
+  -
+    uuid: 1efda39f-7037-6d00-a4a3-171fe181b62d
+    question: 'About Finder component, you can also define your own sorting algorithm with the sort() method.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
+  -
+    uuid: 1efda3b3-9204-6000-aeac-9fb18febd745
+    question: 'Which ones exist :'
+    answers:
+      - { value: 'SplFileInfo::getBasename — Gets the base name of the file', correct: true }
+      - { value: 'SplFileInfo::getExtension — Gets the file extension', correct: true }
+      - { value: 'SplFileInfo::getFileInfo — Gets an SplFileInfo object for the file', correct: true }
+      - { value: 'SplFileInfo::getFilename — Gets the filename', correct: true }
+      - { value: 'SplFileInfo::execute — Execute the file', correct: false }
+    help: 'https://www.php.net/manual/en/class.splfileinfo.php'
+  -
+    uuid: 1efda3b6-acf6-6f04-9353-afb947075c43
+    question: 'Which ones exist :'
+    answers:
+      - { value: 'SplFileInfo::getPath — Gets the path without filename', correct: true }
+      - { value: 'SplFileInfo::isDir — Tells if the file is a directory', correct: true }
+      - { value: 'SplFileInfo::isFile — Tells if the object references a regular file', correct: true }
+      - { value: 'SplFileInfo::isLink — Tells if the file is a link', correct: true }
+      - { value: 'SplFileInfo::getMTime — Gets the last modified time', correct: true }
+      - { value: 'SplFileInfo::isInDir — Tells if a file is in a directory', correct: false }
+    help: 'https://www.php.net/manual/en/class.splfileinfo.php'

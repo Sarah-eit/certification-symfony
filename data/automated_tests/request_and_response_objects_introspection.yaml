@@ -1,0 +1,162 @@
+questions:
+  -
+    uuid: 1efd999c-fc7b-622e-aa4d-6f8f9ebb2ad8
+    question: 'What does the "request()" method in the Symfony test client return?'
+    answers:
+      - { value: 'The HTTP response object', correct: false }
+      - { value: 'The Symfony router instance', correct: false }
+      - { value: 'A Crawler instance', correct: true }
+      - { value: 'The BrowserKit client', correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#making-requests'
+  -
+    uuid: 1efd99a0-280d-657e-8d70-1beb915fc7ac
+    question: 'What is a recommended practice when creating application tests in Symfony?'
+    answers:
+      - { value: 'Generating URLs dynamically using the Symfony router', correct: false }
+      - { value: 'Hardcoding request URLs', correct: true }
+      - { value: 'Avoiding the use of Doctrine fixtures', correct: false }
+      - { value: 'Skipping the use of functional tests', correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#making-requests'
+  -
+    uuid: 1efd99a2-ea0f-6a4e-a90d-eb5ae58d67f0
+    question: 'What happens when you call the "disableReboot()" method on the test client?'
+    answers:
+      - { value: 'It prevents all services from being reset', correct: false }
+      - { value: 'It resets the kernel without rebooting it', correct: true }
+      - { value: 'It disables the profiler for the request', correct: false }
+      - { value: 'It skips clearing security tokens', correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#multiple-requests-in-one-test'
+  -
+    uuid: 1efd99b8-bb34-692a-86ba-4dd6dd70d770
+    question: 'In test environment, which of the following is true about the "followRedirects()" method?'
+    answers:
+      - { value: 'It can force the client to automatically follow redirects', correct: true }
+      - { value: 'It clears all cookies and history', correct: false }
+      - { value: 'Passing false to it stops redirects from being followed', correct: true }
+      - { value: 'It simulates a logged-in user automatically', correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#redirecting'
+  -
+    uuid: 1efd99ba-d634-65ca-bd75-7f0049ffa8f4
+    question: 'How can you simulate logging in a user in a functional test?'
+    answers:
+      - { value: 'Submitting the login form directly in the test', correct: false }
+      - { value: 'Using the loginUser() method', correct: true }
+      - { value: 'Overriding the security token storage service', correct: false }
+      - { value: 'By creating a stateless firewall', correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#logging-in-users-authentication'
+  -
+    uuid: 1efd99c1-4fa3-64dc-964b-cd438cfd5a2d
+    question: 'In test environment, what HTTP headers are automatically added when using the xmlHttpRequest() method?'
+    answers:
+      - { value: HTTP_X_REQUESTED_WITH, correct: true }
+      - { value: HTTP_USER_AGENT, correct: false }
+      - { value: HTTP_HOST, correct: false }
+      - { value: X-Session-Token, correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#making-ajax-requests'
+  -
+    uuid: 1efd99c5-7328-6e62-90b1-b9c71c2b9d64
+    question: 'In test environment, which method allows you to enable the Symfony profiler for the next request?'
+    answers:
+      - { value: getProfile(), correct: false }
+      - { value: enableDebug(), correct: false }
+      - { value: enableProfiler(), correct: true }
+      - { value: catchExceptions(), correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#accessing-the-profiler-data'
+  -
+    uuid: 1efd99ce-0dc8-6460-8900-0d656f1947a6
+    question: 'What is the purpose of creating a compiler pass in the test environment?'
+    answers:
+      - { value: 'To improve performance by caching the kernel', correct: false }
+      - { value: 'To remove the kernel.reset tag from specific services', correct: true }
+      - { value: 'To enable the profiler by default', correct: false }
+      - { value: 'To avoid using Doctrine in functional tests', correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#multiple-requests-in-one-test'
+  -
+    uuid: 1efd9a0a-bbc7-66ec-ac08-19d1b8f16a09
+    question: 'Which method is used to click on the first link containing specific text in a Symfony test client?'
+    answers:
+      - { value: clickLink(), correct: true }
+      - { value: selectLink(), correct: false }
+      - { value: submitForm(), correct: false }
+      - { value: click(), correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#interacting-with-the-response'
+  -
+    uuid: 1efd9a0c-f2b7-6c5e-a220-27fc59397bb1
+    question: 'What is the purpose of the submitForm() method in Symfony tests?'
+    answers:
+      - { value: 'To click on a link containing a specific text.', correct: false }
+      - { value: 'To retrieve a form object for further interaction.', correct: false }
+      - { value: 'To submit a form containing a specific button.', correct: true }
+      - { value: 'To assert that the form submission was successful.', correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#submitting-forms'
+  -
+    uuid: 1efd9a12-60b8-687a-a9f9-69584000a0db
+    question: 'In test environment, which of the following assertions check for the presence of a specific header in the response?'
+    answers:
+      - { value: assertResponseHasHeader(), correct: true }
+      - { value: assertResponseHeaderSame(), correct: true }
+      - { value: assertResponseRedirects(), correct: false }
+      - { value: assertResponseNotHasHeader(), correct: true }
+    help: 'https://symfony.com/doc/7.0/testing.html#response-assertions'
+  -
+    uuid: 1efd9a14-e0cf-6336-bdc6-af951eae7bd6
+    question: 'In test environment, how can you check if the HTTP status code of a response is 422 in Symfony?'
+    answers:
+      - { value: assertResponseStatusCodeSame(422), correct: true }
+      - { value: assertResponseIsUnprocessable(), correct: true }
+      - { value: 'assertResponseRedirects(null, 422)', correct: false }
+      - { value: "assertResponseFormatSame('unprocessable')", correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#response-assertions'
+  -
+    uuid: 1efd9a1a-9581-6554-8502-85c3878c23e4
+    question: 'In test environment, when working with forms in Symfony, which methods can be used to fill in input values?'
+    answers:
+      - { value: tick(), correct: true }
+      - { value: select(), correct: true }
+      - { value: upload(), correct: true }
+      - { value: getValues(), correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#submitting-forms'
+  -
+    uuid: 1efd9a24-7aab-6004-b9ee-0b09d1a3ef78
+    question: 'What does the assertPageTitleSame() assertion do in Symfony tests?'
+    answers:
+      - { value: 'Verifies that the <title> element matches a given string.', correct: true }
+      - { value: 'Asserts that a specific selector exists in the response.', correct: false }
+      - { value: 'Compares the text of all elements with a given selector.', correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#crawler-assertions'
+  -
+    uuid: 1efd9a27-2d21-6df8-83ec-4b8ba867e77b
+    question: 'In test environment, which assertion verifies that the response is a redirect to a specific location?'
+    answers:
+      - { value: assertResponseRedirects(), correct: true }
+      - { value: assertSelectorExists(), correct: false }
+      - { value: assertRequestAttributeValueSame(), correct: false }
+      - { value: assertResponseHasHeader(), correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#response-assertions'
+  -
+    uuid: 1efd9a2a-130c-6622-9e09-5bc8b1c97ea9
+    question: 'What method allows you to retrieve a form object for a specific button in a Symfony test?'
+    answers:
+      - { value: selectButton(), correct: true }
+      - { value: selectLink(), correct: false }
+      - { value: clickLink(), correct: false }
+      - { value: getForm(), correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#submitting-forms'
+  -
+    uuid: 1efd9a2b-f437-654c-ba21-8f9aaa696600
+    question: 'How do you assert that a checkbox is checked in a Symfony test?'
+    answers:
+      - { value: assertCheckboxChecked(), correct: true }
+      - { value: assertInputValueSame(), correct: false }
+      - { value: assertFormValue(), correct: false }
+      - { value: assertCheckboxNotChecked(), correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#crawler-assertions'
+  -
+    uuid: 1efd9a2e-68bd-6720-aadf-9d8583c4f319
+    question: 'In test environment, which methods can be used to validate the values of fields within a form?'
+    answers:
+      - { value: assertFormValue(), correct: true }
+      - { value: assertNoFormValue(), correct: true }
+      - { value: assertInputValueSame(), correct: true }
+      - { value: assertSelectorExists(), correct: false }
+    help: 'https://symfony.com/doc/7.0/testing.html#crawler-assertions'

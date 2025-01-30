@@ -17,7 +17,7 @@ questions:
       - { value: $session->add(), correct: false }
       - { value: $session->init(), correct: false }
       - { value: $session->set(), correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Session/Session.php#L75'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Session/Session.php#L72'
   -
     uuid: 1eebf878-8b98-6146-952c-99d84c92580c
     question: 'Could the session be migrated?'

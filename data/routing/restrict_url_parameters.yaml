@@ -1,0 +1,63 @@
+questions:
+  -
+    uuid: 1efd9896-42e6-6d4c-88f2-53e0617c18a9
+    question: 'What method can be used in Symfony to restrict URL parameters?'
+    answers:
+      - { value: 'Define constraints in routes', correct: true }
+      - { value: 'Edit the .htaccess file', correct: false }
+      - { value: 'Add conditions in composer.json', correct: false }
+      - { value: 'Use an external tool', correct: false }
+      - { value: 'Define restrictions in the .env file', correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html'
+  -
+    uuid: 1efd989a-f5f7-6360-b3c1-f975d968e6c8
+    question: 'Which key is used in route configuration to specify restrictions on URL parameters ?'
+    answers:
+      - { value: defaults, correct: false }
+      - { value: requirements, correct: true }
+      - { value: constraints, correct: false }
+      - { value: conditions, correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html#parameters-validation'
+  -
+    uuid: 1efd989e-69a6-6b96-b151-f16a0daa12bd
+    question: 'What happens if a URL parameter does not meet the constraints defined in a Symfony route?'
+    answers:
+      - { value: 'A 404 response is returned', correct: true }
+      - { value: 'The request is ignored', correct: false }
+      - { value: 'The application stops running', correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html#parameter-conversion'
+  -
+    uuid: 1efd98b9-dcd2-67d0-9722-0713a94ac36d
+    question: 'What is the purpose of the requirements key in Symfony routing?'
+    answers:
+      - { value: 'To specify optional parameters for a route', correct: false }
+      - { value: 'To define validation rules for route parameters', correct: true }
+      - { value: 'To limit the number of parameters in a route', correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html#parameters-validation'
+  -
+    uuid: 1efd98c7-63de-6028-98a1-fb21b710ccaa
+    question: 'What is the purpose of the _controller parameter in Symfony routes?'
+    answers:
+      - { value: 'To define the default locale for the route', correct: false }
+      - { value: 'To determine which controller and action will be executed when the route is matched', correct: true }
+      - { value: 'To set the fragment identifier for the URL', correct: false }
+      - { value: 'To configure the content type of the response', correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html#special-parameters'
+  -
+    uuid: 1efd98c9-676c-6896-a720-8920304a9d2b
+    question: 'Which special parameter is responsible for setting the "request format" and can influence the Content-Type of the response?'
+    answers:
+      - { value: _controller, correct: false }
+      - { value: _locale, correct: false }
+      - { value: _fragment, correct: false }
+      - { value: _format, correct: true }
+    help: 'https://symfony.com/doc/7.0/routing.html#special-parameters'
+  -
+    uuid: 1efd98dc-7c49-679c-9f4d-a9996ec10fd0
+    question: 'What is the _fragment parameter used for in Symfony routes?'
+    answers:
+      - { value: 'It defines a named fragment within a URL, typically after a #.', correct: true }
+      - { value: 'It specifies a caching strategy for the route.', correct: false }
+      - { value: 'It sets a fragment of reusable logic for the controller.', correct: false }
+      - { value: 'It indicates the type of HTTP request accepted by the route.', correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html#special-parameters'

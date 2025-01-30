@@ -1,0 +1,91 @@
+questions:
+  -
+    uuid: 1efd9a8f-9227-6a64-bfb0-f34ecce08be4
+    question: 'What does autowiring do in Symfony?'
+    answers:
+      - { value: 'It automatically resolves service dependencies based on type-hints.', correct: true }
+      - { value: 'It disables service configuration in services.yaml.', correct: false }
+      - { value: 'It removes the need for service registration.', correct: false }
+      - { value: 'It enables runtime service container modification.', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html'
+  -
+    uuid: 1efd9a91-a0bc-6bb8-a39f-732904d3f687
+    question: 'Which attribute is used to specify a dependency for setter injection in Symfony?'
+    answers:
+      - { value: '#[Autowire]', correct: false }
+      - { value: '#[Required]', correct: true }
+      - { value: '#[Inject]', correct: false }
+      - { value: '#[ServiceDependency]', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html#autowiring-other-methods-e-g-setters-and-public-typed-properties'
+  -
+    uuid: 1efd9a9b-e304-6f02-9351-d550dc352653
+    question: 'What is required for autowiring to work with interfaces instead of concrete classes?'
+    answers:
+      - { value: 'Use the #[AutowireInterface] attribute.', correct: false }
+      - { value: 'Remove the interface type-hint.', correct: false }
+      - { value: 'Create an alias that maps the interface to a specific service.', correct: true }
+      - { value: 'Register the interface in the container explicitly.', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html#working-with-interfaces'
+  -
+    uuid: 1efd9aa5-70cc-6e8a-b099-1b55958a12a7
+    question: 'What happens when multiple services implement the same interface, and autowiring is used without additional configuration?'
+    answers:
+      - { value: 'Symfony throws an exception due to ambiguity.', correct: true }
+      - { value: 'The first registered service is used.', correct: false }
+      - { value: 'Symfony selects the most recently updated service.', correct: false }
+      - { value: 'The container automatically chooses one based on class name.', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html#dealing-with-multiple-implementations-of-the-same-type'
+  -
+    uuid: 1efd9aa9-8701-6314-984d-9f735f2a5e36
+    question: 'What is the purpose of the #[Target] attribute?'
+    answers:
+      - { value: 'It overrides the default service id for autowiring.', correct: false }
+      - { value: 'It allows specifying a named autowiring alias for a dependency.', correct: true }
+      - { value: 'It creates a new service alias automatically.', correct: false }
+      - { value: 'It ensures a service is always lazily loaded.', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html#dealing-with-multiple-implementations-of-the-same-type'
+  -
+    uuid: 1efd9aae-7674-6dac-b035-f7c0a80adc33
+    question: 'Which statement about autowiring performance is correct?'
+    answers:
+      - { value: 'There is no runtime overhead for autowiring in production.', correct: true }
+      - { value: 'Autowiring significantly slows down production environments.', correct: false }
+      - { value: 'Autowiring increases container rebuild times in all environments.', correct: false }
+      - { value: 'Autowiring prevents the use of compiled containers.', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html#performance-consequences'
+  -
+    uuid: 1efd9ab3-1ceb-61e6-a2fc-3318942f4792
+    question: 'What happens if an argument is scalar (e.g., a string) and cannot be autowired?'
+    answers:
+      - { value: 'Symfony uses a default value.', correct: false }
+      - { value: 'You must manually wire the argument in the service configuration.', correct: true }
+      - { value: 'Symfony throws an exception and halts execution.', correct: false }
+      - { value: 'The service is skipped during container compilation.', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html#fixing-non-autowireable-arguments'
+  -
+    uuid: 1efda2bf-88af-6a80-bf6c-6f2017069f81
+    question: 'Which of the following is true about autowiring closures using #[AutowireServiceClosure]?'
+    answers:
+      - { value: 'It can only be used with services implementing a specific interface.', correct: false }
+      - { value: 'It generates an anonymous function to instantiate the service.', correct: true }
+      - { value: 'It replaces constructor injection for the service.', correct: false }
+      - { value: 'It cannot handle lazy-loading of services.', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html#generate-closures-with-autowiring'
+  -
+    uuid: 1efda2c3-8006-65ec-9086-77c4afa54773
+    question: 'How can you use different implementations of the same interface in specific cases with autowiring?'
+    answers:
+      - { value: 'Register each implementation with a different service id only.', correct: false }
+      - { value: 'Use named autowiring aliases for specific argument names.', correct: true }
+      - { value: 'Disable autowiring and configure services manually.', correct: false }
+      - { value: 'Override the default service configuration in services.yaml.', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html#working-with-interfaces'
+  -
+    uuid: 1efda2ca-0a08-6226-909e-1faf5259afe6
+    question: 'Which type-hint can be used with autowiring in Symfony controllers?'
+    answers:
+      - { value: 'Only concrete classes.', correct: false }
+      - { value: 'Only services explicitly configured in services.yaml.', correct: false }
+      - { value: 'Both interfaces and concrete classes, provided they are autowired.', correct: true }
+      - { value: 'Only aliases defined in the core bundles.', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/autowiring.html#working-with-interfaces'

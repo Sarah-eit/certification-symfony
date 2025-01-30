@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1efd9a5b-877e-631c-91c7-4542a003b783
+    question: 'Which HttpClient component exists ?'
+    answers:
+      - { value: Symfony\Component\HttpClient\CachingHttpClient, correct: true }
+      - { value: Symfony\Component\HttpClient\HttpClient, correct: true }
+      - { value: Symfony\Component\HttpClient\Cache, correct: false }
+      - { value: Symfony\Component\HttpClient\ClientCaching, correct: false }
+    help: 'https://symfony.com/doc/7.0/http_client.html#caching-requests-and-responses'

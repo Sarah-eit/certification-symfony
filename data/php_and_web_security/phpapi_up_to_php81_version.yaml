@@ -256,15 +256,14 @@ questions:
     uuid: 1eebf878-8ba3-653c-8129-99d84c92580c
     question: "Consider the following code snippet: trigger_error('This method is deprecated.'); Which of the following is valid way to catch and process errors that were triggered with the trigger_error() function?"
     answers:
-      - { value: "try { trigger_error('This method is deprecated.'); } catch (\\Error $e) {// do something }", correct: true }
+      - { value: "try { trigger_error('This method is deprecated.'); } catch (\\Error $e) { // do something }", correct: true }
       - { value: 'set_error_handler(function ($level, $message, $file, $line, array $vars = []) { error_log($message); }))', correct: false }
       - { value: '$errors = get_triggered_errors();', correct: false }
-      - { value: "try { trigger_error('This method is deprecated.'); } catch (\\Error $e) { // do something }", correct: false }
       - { value: "try { trigger_error('This method is deprecated.'); } catch (\\Exception $e) { // do something ... }", correct: false }
     help: 'https://php.net/manual/en/function.error-log.php'
   -
     uuid: 1eebf878-8ba3-673a-a520-99d84c92580c
-    question: "Given the following code, what will be displayed?$a = (object) ['a' => 'a']; $b = (object) ['a' => 'a']; echo $b <=> $a;"
+    question: "Given the following code, what will be displayed? $a = (object) ['a' => 'a']; $b = (object) ['a' => 'a']; echo $b <=> $a;"
     answers:
       - { value: '0', correct: true }
       - { value: '1', correct: false }

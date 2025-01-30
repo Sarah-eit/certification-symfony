@@ -62,7 +62,7 @@ questions:
     uuid: 1eeda2ca-d3e4-6b68-a248-eb5bab40e010
     question: 'We use upper camel case for ?'
     answers:
-      - { value: class, correct: false }
+      - { value: class, correct: true }
       - { value: constants, correct: false }
       - { value: 'enumeration cases', correct: true }
       - { value: functions, correct: false }
@@ -100,3 +100,20 @@ questions:
       - { value: 'With Map (MapEntity, MapCurrentUser...)', correct: true }
       - { value: 'With Set (SetEntity, SetCurrentUser ...)', correct: false }
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 1efd98fa-332c-65a0-8db8-55f5c43946d3
+    question: 'According to the naming conventions, you have to :'
+    answers:
+      - { value: 'Prefix PHP attributes that relate to controller arguments with "Map"', correct: true }
+      - { value: 'Prefix PHP attributes that relate to controller arguments with "Controller"', correct: false }
+      - { value: 'Prefix PHP attributes that relate to controller arguments with "Type"', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 1efd9912-a6aa-6cf8-bdee-2ff038e2b116
+    question: 'Which answer is true about "controller" :'
+    answers:
+      - { value: 'The class can technically be called anything, but it''s suffixed with "Controller" by convention.', correct: true }
+      - { value: 'The class can technically be called anything, but it''s prefixed with "Controller" by convention.', correct: false }
+      - { value: 'The class can''t be called anything, it must be suffixed with "Controller".', correct: false }
+      - { value: 'The class can''t be called anything, it must be prefixed with "Controller".', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller.html#a-basic-controller'

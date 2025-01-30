@@ -1,0 +1,135 @@
+questions:
+  -
+    uuid: 1efd73ff-9abe-68aa-8324-4f241903d6a4
+    question: 'How does Symfony treat all errors in applications ?'
+    answers:
+      - { value: 'As regular HTTP responses', correct: false }
+      - { value: 'As exceptions', correct: true }
+      - { value: 'As warnings', correct: false }
+      - { value: 'As server logs', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html'
+  -
+    uuid: 1efd7415-b19b-6832-9711-e7f6e973de67
+    question: 'What type of error page is displayed in the development environment ?'
+    answers:
+      - { value: 'A minimal error page', correct: false }
+      - { value: 'A detailed exception page with debug information', correct: true }
+      - { value: 'A custom user-friendly page', correct: false }
+      - { value: 'A plain text error message', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html'
+  -
+    uuid: 1efd7417-d57d-6b86-9b5a-bded14071e82
+    question: 'What happens to the error pages in the production environment ?'
+    answers:
+      - { value: 'They are replaced with HTML pages only.', correct: false }
+      - { value: 'They display a minimal and generic error page.', correct: true }
+      - { value: 'They show a detailed stack trace.', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html'
+  -
+    uuid: 1efd741b-938c-678c-ab42-73a33b24c96a
+    question: 'Which of the following methods can be used to customize error pages in Symfony ?'
+    answers:
+      - { value: 'Overriding default error templates', correct: true }
+      - { value: 'Modifying the .env file', correct: false }
+      - { value: 'Creating a new normalizer', correct: true }
+      - { value: 'Using the kernel.exception event', correct: true }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-error-templates'
+  -
+    uuid: 1efd741d-646d-60ee-9841-a572cf6ff59f
+    question: 'What is required to override the default error templates using Twig?'
+    answers:
+      - { value: 'Install TwigBundle and TwigBridge', correct: true }
+      - { value: 'Use the Symfony CLI', correct: false }
+      - { value: 'Modify the database schema', correct: false }
+      - { value: 'Use a different templating engine', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-error-templates'
+  -
+    uuid: 1efd7420-05a6-66de-9c5c-f9cdfeb73fb7
+    question: 'Which variables can be accessed within the error template provided by TwigErrorRenderer ?'
+    answers:
+      - { value: status_code, correct: true }
+      - { value: status_text, correct: true }
+      - { value: exception, correct: true }
+      - { value: user, correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-error-templates'
+  -
+    uuid: 1efd7423-122e-67be-93f1-e916b7a7211f
+    question: 'What should you avoid displaying to end users from the exception object ?'
+    answers:
+      - { value: 'The status code', correct: false }
+      - { value: 'The stack trace', correct: true }
+      - { value: 'The error message', correct: false }
+      - { value: 'The HTTP status text', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#example-404-error-template'
+  -
+    uuid: 1efd7425-2e4e-623a-9d04-453aad64a673
+    question: 'How can you customize the status code of an exception in Symfony ?'
+    answers:
+      - { value: 'By modifying the error templates directly', correct: false }
+      - { value: 'By implementing HttpExceptionInterface', correct: true }
+      - { value: 'By using environment variables', correct: false }
+      - { value: 'By changing the server configuration', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#example-404-error-template'
+  -
+    uuid: 1efd7427-0aad-6072-859c-3beb182cda67
+    question: 'Why will security information not be available on 404 pages in Symfony ?'
+    answers:
+      - { value: 'Because of the order in which routing and security are loaded.', correct: true }
+      - { value: 'Because 404 pages do not require authentication.', correct: false }
+      - { value: 'Because of server configuration issues.', correct: false }
+      - { value: 'Because 404 pages are static HTML.', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#security-404-pages'
+  -
+    uuid: 1efd7429-9381-6108-8ad3-87a9755c4d4e
+    question: 'How can you preview your error pages during development ?'
+    answers:
+      - { value: 'By visiting the error page in a separate browser', correct: false }
+      - { value: 'By loading special routes provided by FrameworkBundle', correct: true }
+      - { value: 'By modifying the .env file', correct: false }
+      - { value: 'By restarting the server', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#testing-error-pages-during-development'
+  -
+    uuid: 1efd742b-41be-6850-be9b-25492d1ef258
+    question: 'What configuration is needed to load special routes for error previewing ? If the application uses Symfony Flex they are loaded automatically when installing symfony/framework-bundle.'
+    answers:
+      - { value: 'Add routes in the config/routes.yaml file', correct: false }
+      - { value: 'Add routes in config/routes/framework.yaml', correct: true }
+      - { value: 'Modify the templates directory', correct: false }
+      - { value: 'Change the security settings', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#testing-error-pages-during-development'
+  -
+    uuid: 1efd742c-e949-6e7a-8748-e5ef69e0471f
+    question: 'How can you override the default ErrorController in Symfony ?'
+    answers:
+      - { value: 'By modifying the .env file', correct: false }
+      - { value: 'By creating a new controller and setting the "framework.error_controller" option', correct: true }
+      - { value: 'By changing the routing configuration', correct: false }
+      - { value: 'By adding middleware', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-errorcontroller'
+  -
+    uuid: 1efd742e-ce15-6756-be75-d3011d15be92
+    question: 'What parameters are passed to your custom error controller ?'
+    answers:
+      - { value: request, correct: false }
+      - { value: exception, correct: true }
+      - { value: logger, correct: true }
+      - { value: user, correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-errorcontroller'
+  -
+    uuid: 1efd7430-d180-6380-9761-e998200fedc6
+    question: 'What event does the HttpKernel class dispatch when an exception is thrown ?'
+    answers:
+      - { value: kernel.terminate, correct: false }
+      - { value: kernel.exception, correct: true }
+      - { value: kernel.error, correct: false }
+      - { value: kernel.response, correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#working-with-the-kernel-exception-event'
+  -
+    uuid: 1efd7432-7a7f-6db8-af52-8b838538bf3d
+    question: 'What does working with the kernel.exception event allow you to do ?'
+    answers:
+      - { value: 'Convert the exception into a Response in various ways', correct: true }
+      - { value: 'Ignore exceptions entirely', correct: false }
+      - { value: 'Automatically log all exceptions', correct: false }
+      - { value: 'Change the HTTP status code of the response', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#working-with-the-kernel-exception-event'

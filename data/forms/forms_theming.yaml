@@ -1,0 +1,80 @@
+questions:
+  -
+    uuid: 1efdd86e-75ac-6c82-acb6-f1e937c3c9e1
+    question: 'About form theming, if you want to use another theme for all the forms of your app, you must :'
+    answers:
+      - { value: 'Configure it in the "twig.form_themes" in config/packages/twig.yaml', correct: true }
+      - { value: 'Configure it in the "templates.twig_themes" in config/packages/twig.yaml', correct: false }
+      - { value: 'There is no configuration to do', correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#applying-themes-to-all-forms'
+  -
+    uuid: 1efdd884-5eee-6c00-b2f3-4f4364faa8a5
+    question: 'About form theming, a form can be customized by applying several themes.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#applying-multiple-themes-to-single-forms'
+  -
+    uuid: 1efdd88c-fc02-6b1a-a645-71700ac35142
+    question: 'About form theming, you can apply a form theme to a specific child of your form. Which syntax is correct ?'
+    answers:
+      - { value: "{% form_theme form.a_child_form 'form/my_custom_theme.html.twig' %}", correct: true }
+      - { value: "{% twig_form_theme form.a_child_form 'form/my_custom_theme.html.twig' %}", correct: false }
+      - { value: "{% template_form_theme a_child_form 'form/my_custom_theme.html.twig' %}", correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#applying-different-themes-to-child-forms'
+  -
+    uuid: 1efdd8ac-c899-6380-80fc-1b61ad146ff3
+    question: 'What do you need to do if you want your forms to render correctly when using the "only" keyword ? {% ... only %}'
+    answers:
+      - { value: 'You need to provide a fully-featured form theme yourself.', correct: true }
+      - { value: 'You can use the "use" keyword to reuse the content of an existing form theme.', correct: true }
+      - { value: 'You must use only the global themes available in Symfony.', correct: false }
+      - { value: 'You must always extend all form themes using the extends method.', correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#disabling-global-themes-for-single-forms'
+  -
+    uuid: 1efdd8ce-5489-6040-aa61-a99f81fc781e
+    question: 'About form theming, Symfony uses Twig blocks to render each part of a form.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#creating-your-own-form-theme'
+  -
+    uuid: 1efdd8de-156c-6b2c-8b67-edc4148ce751
+    question: 'About form theming, which sentences are correct ?'
+    answers:
+      - { value: 'If you want to customize all fields of the same type (e.g. all <textarea>) use the field-type_field-part pattern (e.g. textarea_widget).', correct: true }
+      - { value: 'If you want to customize only one specific field (e.g. the <textarea> used for the description field of the form that edits products) use the _field-id_field-part pattern (e.g. _product_description_widget).', correct: true }
+      - { value: 'It is not possible to  customize all fields of the same type.', correct: false }
+      - { value: 'It is not possible to customize only one specific field.', correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#form-fragment-naming'
+  -
+    uuid: 1efdd90f-1f23-6ad6-9361-8f681d955888
+    question: "About form theming, \"$builder->add(..., ..., [ 'block_prefix' => 'wrapped_text' ]);\". Which sentence is correct ?"
+    answers:
+      - { value: 'The "block_prefix" option allows form fields to define their own custom fragment name. This is mostly useful to customize some instances of the same field without having to create a custom form type.', correct: true }
+      - { value: 'The "block_prefix" option allows form fields to define their own custom fragment name. It is mandatory to create a custom form type.', correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#custom-fragment-naming-for-individual-fields'
+  -
+    uuid: 1efdd931-f3f4-69c8-b116-e1f39b9b0127
+    question: "Which option name should be used to replace ‘XXXX’ in order to customize form collections : $builder->add('tasks', CollectionType::class, ['XXXX' => TaskType::class,]); ?"
+    answers:
+      - { value: entry_type, correct: true }
+      - { value: object_type, correct: false }
+      - { value: class_type, correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#fragment-naming-for-collections'
+  -
+    uuid: 1efdd93b-6649-6704-bc3a-f7054b5c11bf
+    question: 'About form theming, which sentence is correct ?'
+    answers:
+      - { value: "Each field type has a parent type (e.g. the parent type of textarea is text, and the parent type of text is form) and Symfony uses the fragment for the parent type if the base fragment doesn't exist.", correct: true }
+      - { value: "Fields types don't have parent type.", correct: false }
+      - { value: 'Each field type has a parent type (e.g. the parent type of textarea is text, and the parent type of text is form) and the base fragment always exists.', correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#template-fragment-inheritance'
+  -
+    uuid: 1efdd954-f135-63ea-b2af-57f87c19ebb9
+    question: 'How can you create a form theme in the same template as the Form ?'
+    answers:
+      - { value: 'You only need to add the special {% form_theme form _self %} tag to the same template where the form is rendered.', correct: true }
+      - { value: 'You need to add the special {% form_theme form _self %} tag to the same template where the form is rendered and configure it in "config/packages/framework.yaml".', correct: false }
+      - { value: 'You only need to add the special {% form_theme form _custom %} tag to the same template where the form is rendered .', correct: false }
+    help: 'https://symfony.com/doc/7.0/form/form_themes.html#creating-a-form-theme-in-the-same-template-as-the-form'

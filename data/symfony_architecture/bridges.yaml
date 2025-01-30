@@ -1,0 +1,20 @@
+questions:
+  -
+    uuid: 1efde448-219b-6ed2-95ff-7f315c8e8db7
+    question: 'About Doctrine Bridge, let''s assume that the option "doctrine.orm.controller_resolver.auto_mapping" is set to false. You can configure the mapping explicitly for any controller argument with :'
+    answers:
+      - { value: "The MapEntity attribute #[MapEntity(mapping: ['slug' => 'slug'])]", correct: true }
+      - { value: "The TargetEntity attribute #[TargetEntity(mapping: ['slug' => 'slug'])]", correct: false }
+      - { value: "The EntityValue attribute #[EntityValue(mapping: ['slug' => 'slug'])]", correct: false }
+      - { value: "The EntityType attribute #[EntityType(mapping: ['slug' => 'slug'])]", correct: false }
+    help: 'https://symfony.com/doc/7.0/doctrine.html#fetch-automatically'
+  -
+    uuid: 1efde48b-5ce1-6166-a535-c1eaf566e49b
+    question: 'About Twig Bridge, which extensions exist ?'
+    answers:
+      - { value: AssetExtension.php, correct: true }
+      - { value: CsrfExtension.php, correct: true }
+      - { value: DumpExtension.php, correct: true }
+      - { value: EmojiExtension.php, correct: true }
+      - { value: TemplateExtension.php, correct: false }
+    help: 'https://github.com/symfony/twig-bridge/tree/7.2/Extension'

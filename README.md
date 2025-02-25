@@ -20,10 +20,10 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [Interfaces](data/php_and_web_security/interfaces.yaml)
 - [Anonymous functions and closures](data/php_and_web_security/anonymous_functions_and_closures.yaml)
 - [Abstract classes](data/php_and_web_security/abstract_classes.yaml)
-- Exception and error handling 
+- [Exception and error handling](data/php_and_web_security/exception_and_error_handling.yaml)
 - [Traits](data/php_and_web_security/traits.yaml)
 - [PHP extensions](data/php_and_web_security/php_extensions.yaml)
-- SPL
+- [SPL](data/php_and_web_security/spl.yaml)
 
 ### 🌐 HTTP
 - [Client / Server interaction](data/http/client_server_interaction.yaml)
@@ -41,14 +41,14 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [Symfony Flex](data/symfony_architecture/symfony_flex.yaml)
 - [License](data/symfony_architecture/license.yaml)
 - [Components](data/symfony_architecture/components.yaml)
-- Bridges
+- [Bridges](data/symfony_architecture/bridges.yaml)
 - [Code organization](data/symfony_architecture/code_organization.yaml)
 - [Request handling](data/symfony_architecture/request_handling.yaml)
-- Exception handling
+- [Exception handling](data/symfony_architecture/exception_handling.yaml)
 - [Event dispatcher and kernel events](data/symfony_architecture/event_dispatcher_and_kernel_events.yaml)
 - [Official best practices](data/symfony_architecture/official_best_practices.yaml)
 - [Release management](data/symfony_architecture/release_management.yaml)
-- Backward compatibility promise
+- [Backward compatibility promise](data/symfony_architecture/backward_compatibility_promise.yaml)
 - [Deprecations best practices](data/symfony_architecture/deprecations_best_practices.yaml)
 - [Framework overloading](data/symfony_architecture/framework_overloading.yaml)
 - [Release management and roadmap schedule](data/symfony_architecture/release_management_and_roadmap_schedule.yaml)
@@ -56,7 +56,7 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [Naming conventions](data/symfony_architecture/naming_conventions.yaml)
 
 ### 🎮 Controllers
-- Naming conventions
+- [Naming conventions](data/controllers/naming_conventions.yaml)
 - [The base AbstractController class](data/controllers/the_base_abstract_controller_class.yaml)
 - [The request](data/controllers/the_request.yaml)
 - [The response](data/controllers/the_response.yaml)
@@ -71,11 +71,11 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 
 ### 🗺️ Routing
 - [Configuration (YAML, XML, PHP & attributes/annotations)](data/routing/configuration_yamlxmlphp_and_attributes_annotations.yaml)
-- Restrict URL parameters
+- [Restrict URL parameters](data/routing/restrict_url_parameters.yaml)
 - [Set default values to URL parameters](data/routing/set_default_values_to_url_parameters.yaml)
 - [Generate URL parameters](data/routing/generate_url_parameters.yaml)
 - [Trigger redirects](data/routing/trigger_redirects.yaml)
-- Special internal routing attributes
+- [Special internal routing attributes](data/routing/special_internal_routing_attributes.yaml)
 - [Domain name matching](data/routing/domain_name_matching.yaml)
 - [Conditional request matching](data/routing/conditional_request_matching.yaml)
 - [HTTP methods matching](data/routing/http_methods_matching.yaml)
@@ -121,7 +121,7 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 
 ### 🧩 Dependency Injection
 - [Service container](data/dependency_injection/service_container.yaml)
-- Built-in services
+- [Built-in services](data/dependency_injection/built_in_services.yaml)
 - [Configuration parameters](data/dependency_injection/configuration_parameters.yaml)
 - [Services registration](data/dependency_injection/services_registration.yaml)
 - [Service decoration](data/dependency_injection/service_decoration.yaml)
@@ -129,7 +129,7 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [Semantic configuration](data/dependency_injection/semantic_configuration.yaml)
 - [Factories](data/dependency_injection/factories.yaml)
 - [Compiler passes](data/dependency_injection/compiler_passes.yaml)
-- Services autowiring
+- [Services autowiring](data/dependency_injection/services_autowiring.yaml)
 
 ### 🔐 Security
 - [Authentication](data/security/authentication.yaml)
@@ -170,13 +170,13 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [Profiler object](data/automated_tests/profiler_object.yaml)
 - [Framework objects access](data/automated_tests/framework_objects_access.yaml)
 - [Client configuration](data/automated_tests/client_configuration.yaml)
-- Request and response objects introspection
+- [Request and response objects introspection](data/automated_tests/request_and_response_objects_introspection.yaml)
 - [PHPUnit bridge](data/automated_tests/php_unit_bridge.yaml)
 - [Handling legacy deprecated code](data/automated_tests/handling_legacy_deprecated_code.yaml)
 
 ### 🎨 Miscellaneous
 - [Configuration (including DotEnv and ExpressionLanguage components)](data/miscellaneous/configuration_including_dot_env_and_expression_language_components.yaml)
-- Error handling
+- [Error handling](data/miscellaneous/error_handling.yaml)
 - [Code debugging](data/miscellaneous/code_debugging.yaml)
 - [Deployment best practices](data/miscellaneous/deployment_best_practices.yaml)
 - [Cache, Process and Serializer components](data/miscellaneous/cache_process_and_serializer_components.yaml)

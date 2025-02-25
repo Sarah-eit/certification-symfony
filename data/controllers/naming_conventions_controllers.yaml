@@ -1,0 +1,9 @@
+questions:
+  -
+    uuid: 1efe5559-4be4-6fd6-b067-51dd6d1ff6fe
+    question: 'Use XXXX for naming PHP files (e.g. EnvVarProcessor.php). Which word to replace the XXXX ?'
+    answers:
+      - { value: UpperCamelCase, correct: true }
+      - { value: snake_case, correct: false }
+      - { value: camelCase, correct: false }
+    help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'

@@ -179,3 +179,13 @@ questions:
       - { value: '200', correct: false }
       - { value: '302', correct: false }
     help: 'https://developer.mozilla.org/fr/docs/Web/HTTP/Status/201'
+  -
+    uuid: 1efb2300-dd6f-6eee-81dc-45e0f4c02d73
+    question: 'What are the HTTP status codes for Success?'
+    answers:
+      - { value: 5xx, correct: false }
+      - { value: 4xx, correct: false }
+      - { value: 3xx, correct: false }
+      - { value: 2xx, correct: true }
+      - { value: 1xx, correct: false }
+    help: 'https://tools.ietf.org/html/rfc2616#section-6.1.1'

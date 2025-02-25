@@ -1,0 +1,35 @@
+questions:
+  -
+    uuid: 1efe7adb-3c2d-606e-8640-a15354f42f91
+    question: 'When an exception occurs, what is used to determine the template filename for displaying the error page ?'
+    answers:
+      - { value: 'The HTTP status code', correct: true }
+      - { value: 'The type exception', correct: false }
+      - { value: 'The error name', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-error-templates'
+  -
+    uuid: 1efe7ade-3a94-6542-8e79-cd72d137e0a9
+    question: 'What is used to print that message "throw $this->createNotFoundException(''The product does not exist'')" in Twig template ?'
+    answers:
+      - { value: 'use {{ exception.message }}', correct: true }
+      - { value: 'use {{ message.exception }}', correct: false }
+      - { value: 'use {{ vars.exception.message }}', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#example-404-error-template'
+  -
+    uuid: 1efe7ae2-36ca-6048-bce2-4b5917902492
+    question: 'Which syntax are corrects in testing error pages during development ?'
+    answers:
+      - { value: 'http://localhost/_error/{statusCode} for HTML', correct: true }
+      - { value: 'http://localhost/_error/{statusCode}.{format} for any other format', correct: true }
+      - { value: 'http://localhost/_error/{errorName} for HTML', correct: false }
+      - { value: 'http://localhost/_error/{errorName}.{type} for any other format', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#testing-error-pages-during-development'
+  -
+    uuid: 1efe7ae8-252a-61ca-ad41-4d638d0d9ee4
+    question: 'Which statements are corrects about the parameters of overriding default ErrorController ?'
+    answers:
+      - { value: '"exception" : The original Throwable instance being handled.', correct: true }
+      - { value: '"logger" : A DebugLoggerInterface instance which may be null in some circumstances.', correct: true }
+      - { value: '"throw" : The original Throwable instance being handled.', correct: false }
+      - { value: '"debugLogger" : A DebugLoggerInterface instance which may be null in some circumstances.', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-errorcontroller'

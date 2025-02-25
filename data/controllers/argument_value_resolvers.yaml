@@ -1,0 +1,89 @@
+questions:
+  -
+    uuid: 1efe55ec-51fc-6ee4-adf5-7ba960b5e451
+    question: 'About value resolver, which ones exist ?'
+    answers:
+      - { value: BackedEnumValueResolver, correct: true }
+      - { value: RequestPayloadValueResolver, correct: true }
+      - { value: RequestAttributeValueResolver, correct: true }
+      - { value: DateImmutableTimeValueResolver, correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#built-in-value-resolvers'
+  -
+    uuid: 1efe55f0-014f-6560-93c4-f1a9922870c1
+    question: 'About value resolver, which ones exist ?'
+    answers:
+      - { value: DateTimeValueResolver, correct: true }
+      - { value: RequestValueResolver, correct: true }
+      - { value: ServiceValueResolver, correct: true }
+      - { value: SessionInterfaceValueResolver, correct: false }
+      - { value: DefaultTagValueResolver, correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#built-in-value-resolvers'
+  -
+    uuid: 1efe55f3-1378-6180-88c1-fd4b0d3f157b
+    question: 'About value resolver, which ones exist ?'
+    answers:
+      - { value: SessionValueResolver, correct: true }
+      - { value: DefaultValueResolver, correct: true }
+      - { value: UidValueResolver, correct: true }
+      - { value: VariadicValueResolver, correct: true }
+      - { value: IdValueResolver, correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#built-in-value-resolvers'
+  -
+    uuid: 1efe55f8-1b09-6804-b181-c521cba55e5c
+    question: 'About value resolver, which ones exist ?'
+    answers:
+      - { value: UserValueResolver, correct: true }
+      - { value: SecurityTokenValueResolver, correct: true }
+      - { value: EntityValueResolver, correct: true }
+      - { value: ResponseValueResolver, correct: false }
+      - { value: FrontEnumValueResolver, correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#built-in-value-resolvers'
+  -
+    uuid: 1efe5633-1879-69a0-a53f-b31a8a3bb1d7
+    question: 'About the managing value resolvers, for each argument, every resolver tagged with "controller.argument_value_resolver" will be called until one provides a value. The order in which they are called depends on their priority.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#managing-value-resolvers'
+  -
+    uuid: 1efe5640-71c9-69c6-908f-99c7376594b4
+    question: 'In a custom value resolver, which interface must be implemented ?'
+    answers:
+      - { value: ValueResolverInterface, correct: true }
+      - { value: CustomValueResolverInterface, correct: false }
+      - { value: ResolverInterface, correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#adding-a-custom-value-resolver'
+  -
+    uuid: 1efe5655-60f6-622e-a168-c7c196f939cc
+    question: 'Which statements about the interface for creating a custom value resolver are correct ?'
+    answers:
+      - { value: 'This interface contains a resolve() method, which is called for each argument of the controller', correct: true }
+      - { value: 'This interface receives the current Request object and an ArgumentMetadata instance, which contains all information from the method signature', correct: true }
+      - { value: 'This interface contains a valueResolver() method, which is called for each argument of the controller', correct: false }
+      - { value: 'This interface receives the current Response object and an ArgumentResolverMetadata instance, which contains all information from the method signature', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#adding-a-custom-value-resolver'
+  -
+    uuid: 1efe5675-ec57-6b68-9d2b-f5862779f9c0
+    question: 'To ensure your resolvers are added in the right position you can run the following command to see which argument resolvers are present and in which order they run:'
+    answers:
+      - { value: 'php bin/console debug:container debug.argument_resolver.inner --show-arguments', correct: true }
+      - { value: 'php bin/console container debug.argument_resolver.inner --arguments', correct: false }
+      - { value: 'php bin/console debug:container argument_resolver --show-arguments', correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#controller-argument-value-resolver'
+  -
+    uuid: 1efe56a6-cef4-620c-8422-f746d6f92b38
+    question: 'About a custom value resolver, what is recommended to add in the configuration of the "controller.argument_value_resolver" (config/services.yaml) to make sure the expected value is injected ?'
+    answers:
+      - { value: "It's recommended to add a priority", correct: true }
+      - { value: "It's recommended to add a section", correct: false }
+      - { value: "It's recommended to add a list of arguments", correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#controller-argument-value-resolver'
+  -
+    uuid: 1efe56b5-57fa-6f3e-b6d6-b3a917854c95
+    question: "About custom value resolver, what attribute is used to create resolvers that can only be called explicitly like : public function show(#[ValueResolver('booking_id')]) {...} ?"
+    answers:
+      - { value: "#[AsTargetedValueResolver('booking_id')] class BookingIdValueResolver implements ValueResolverInterface {...}", correct: true }
+      - { value: "#[AsMappedValueResolver('booking_id')] class BookingIdValueResolver implements ValueResolverInterface {...}", correct: false }
+      - { value: "#[AsTargetResolver('booking_id')] class BookingIdValueResolver implements ValueResolverInterface {...}", correct: false }
+      - { value: "#[AsResolverMap('booking_id')] class BookingIdValueResolver implements ValueResolverInterface {...}", correct: false }
+    help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#controller-targeted-value-resolver'

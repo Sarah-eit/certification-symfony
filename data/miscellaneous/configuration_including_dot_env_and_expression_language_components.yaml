@@ -34,3 +34,13 @@ questions:
       - { value: 'true', correct: false }
       - { value: 'false', correct: false }
     help: 'https://symfony.com/doc/current/components/expression_language.html#usage'
+  -
+    uuid: 1efcc1c5-41de-6db2-ba17-7922a0973bca
+    question: 'Which of the following are valid database URLs that can be used in "the dbal.url" (doctrine.yaml) option in Symfony applications?'
+    answers:
+      - { value: 'sqlite:///:memory:', correct: true }
+      - { value: 'sqlite:///data.db', correct: false }
+      - { value: 'mysql://localhost/mydb@user:secret', correct: false }
+      - { value: 'pgsql://localhost:5432', correct: false }
+      - { value: 'mysql://localhost:4486/foo?charset=UTF-8', correct: true }
+    help: 'https://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/configuration.html'

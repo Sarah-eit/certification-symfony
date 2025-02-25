@@ -275,3 +275,11 @@ questions:
       - { value: Symfony\Component\Locale\getDisplayLanguages(), correct: false }
       - { value: 'Symfony\Component\Intl\Intl::getLanguageBundle()->getLanguageNames()', correct: true }
     help: 'https://symfony.com/doc/7.2/reference/forms/types/language.html'
+  -
+    uuid: 1efcc155-3312-66e6-a5e3-7db7de70b042
+    question: 'What is the use of the "default_protocol" option of the "Symfony\Component\Form\Extension\Core\Type\UrlType" form type ?'
+    answers:
+      - { value: 'To prepend the submitted value with an URI scheme (eg. http://) if it does not begin with one.', correct: true }
+      - { value: 'To force the submitted value to begin with a given URI scheme (eg. http://).', correct: false }
+      - { value: 'To render the input with the "placeholder" property containing the value of the option.', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/url.html'

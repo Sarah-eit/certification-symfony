@@ -288,3 +288,37 @@ questions:
       - { value: 'Dispatcher Injection', correct: false }
       - { value: 'Property Injection', correct: true }
     help: 'https://symfony.com/doc/7.0/service_container/injection_types.html'
+  -
+    uuid: 1efb233d-b5a9-6a08-a967-07d5ec115cc9
+    question: 'In which of these cases will $result contain the number of affected rows?'
+    answers:
+      - { value: "$result = $conn->prepare('DELETE FROM user WHERE id = 1')->execute();", correct: false }
+      - { value: "$result = $conn->delete('user', ['id' => 1]);", correct: true }
+      - { value: "$result = $conn->executeQuery('DELETE FROM user WHERE id = 1');", correct: false }
+      - { value: "$result = $conn->executeUpdate('DELETE FROM user WHERE id = 1');", correct: true }
+    help: 'https://github.com/doctrine/dbal/blob/71140662c0a954602e81271667b6e03d9f53ea34/lib/Doctrine/DBAL/Connection.php'
+  -
+    uuid: 1efb23d0-d073-6ad0-86d2-87c61149ec46
+    question: 'What is the way to add a resource to the translator?'
+    answers:
+      - { value: "$translator->addResource('path/to/messages.fr.yml', 'yaml',  'fr_FR');", correct: false }
+      - { value: "$translator->loadResource('yaml', 'path/to/messages.fr.yml', 'fr_FR');", correct: false }
+      - { value: "$translator->addResource('yaml', 'path/to/messages.fr.yml', 'fr_FR');", correct: true }
+      - { value: "$translator->loadResource('path/to/messages.fr.yml', 'yaml',  'fr_FR');", correct: false }
+    help: 'https://symfony.com/doc/2.x/components/translation.html#loading-messages-with-the-file-loaders'
+  -
+    uuid: 1efe5520-d859-6216-a124-5da537cc9cc7
+    question: 'What side of the relation is the owning side ?'
+    answers:
+      - { value: OneToMany, correct: false }
+      - { value: ManyToOne, correct: true }
+    help: 'https://www.doctrine-project.org/projects/doctrine-orm/en/3.1/reference/unitofwork-associations.html'
+  -
+    uuid: 1efe5525-1d09-610a-a355-73a92b88d69e
+    question: 'What does the Luhn constraint do?'
+    answers:
+      - { value: 'Validates an ISBN number', correct: false }
+      - { value: 'Validates a card number', correct: true }
+      - { value: "It doesn't exist", correct: false }
+      - { value: 'Validates an IBAN number', correct: false }
+    help: 'https://symfony.com/doc/2.3/reference/constraints/Luhn.html'

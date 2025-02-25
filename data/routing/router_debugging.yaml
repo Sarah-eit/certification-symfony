@@ -34,3 +34,13 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/6.4/routing.html#debugging-routes'
+  -
+    uuid: 1efcc179-b267-69a4-b94f-c71c749f48f6
+    question: 'How to get information on the route foobar of an application?'
+    answers:
+      - { value: 'bin/debug.php foobar', correct: false }
+      - { value: 'bin/console debug:router foobar', correct: true }
+      - { value: 'bin/console router:debug foobar', correct: false }
+      - { value: 'It is not possible to do this.', correct: false }
+      - { value: 'bin/check.php foobar', correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#debugging-routes'

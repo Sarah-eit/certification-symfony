@@ -1,0 +1,123 @@
+questions:
+  -
+    uuid: 1efe4a7b-d445-6c88-852f-ad675d6b1d50
+    question: 'The Clock component decouples applications from the system clock. This allows you to fix time to improve testability of time-sensitive logic.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html'
+  -
+    uuid: 1efe4a99-fb14-6da0-a461-a7a24dfab836
+    question: 'Which statements are corrects about the classes who implement "ClockInterface" ?'
+    answers:
+      - { value: 'NativeClock : Provides a way to interact with the system clock, this is the same as doing new \DateTimeImmutable()', correct: true }
+      - { value: 'MockClock : Commonly used in tests as a replacement for the NativeClock to be able to freeze and change the current time using either sleep() or modify()', correct: true }
+      - { value: 'MonotonicClock : Relies on hrtime() and provides a high resolution, monotonic clock, when you need a precise stopwatch', correct: true }
+      - { value: 'VirtualClock : Simulates a clock that runs at double speed, making time-dependent operations complete twice as fast as in real time', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html'
+  -
+    uuid: 1efe4ac2-cad9-6838-85e6-dbee72a34c7a
+    question: 'About the Clock component, which implementation is used by default ?'
+    answers:
+      - { value: NativeClock, correct: true }
+      - { value: MonotonicClock, correct: false }
+      - { value: VirtualClock, correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#usage'
+  -
+    uuid: 1efe539b-9a5a-6d60-bb37-bfade68fd050
+    question: 'About the Clock component, which functions exist in Clock class ?'
+    answers:
+      - { value: withTimeZone, correct: true }
+      - { value: now, correct: true }
+      - { value: sleep, correct: true }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#usage'
+  -
+    uuid: 1efe53a8-f590-6092-8759-17afa33e7f19
+    question: 'About the Clock component, how can you determine the current time in a service ?'
+    answers:
+      - { value: $this->clock->now(), correct: true }
+      - { value: $this->clock->today(), correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#nativeclock'
+  -
+    uuid: 1efe53ae-403a-68b8-ab66-7f05e715ab5e
+    question: 'About the Clock component, which statement is correct ?'
+    answers:
+      - { value: 'The MockClock is instantiated with a time and does not move forward on its own. The time is fixed until sleep() or modify() are called.', correct: true }
+      - { value: "The MockClock is instantiated with a time and does move forward on its own. The time isn't fixed.", correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#mockclock'
+  -
+    uuid: 1efe53c2-c071-64b4-a889-61eeca92d225
+    question: 'What are the correct syntax for the MockClock in the test ?'
+    answers:
+      - { value: "$clock = new MockClock('2022-11-16 15:20:00');", correct: true }
+      - { value: $clock->sleep(600);, correct: true }
+      - { value: "$clock->modify('2022-11-16 15:00:00');", correct: true }
+      - { value: $clock->pause(600);, correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#mockclock'
+  -
+    uuid: 1efe53ce-982d-60f0-8f9e-adb409837d4b
+    question: 'Which statements are correct about MonotonicClock ?'
+    answers:
+      - { value: 'The MonotonicClock allows you to implement a precise stopwatch', correct: true }
+      - { value: 'It useful for measuring performance', correct: true }
+      - { value: 'The is the NativeClock who allow to implement a precise stopwatch, not the MonotonicClock', correct: false }
+      - { value: 'The only aim of MonotonicClock is to create a DatePoint', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#monotonic-clock'
+  -
+    uuid: 1efe53d8-616e-6794-9abe-91b52f01ba25
+    question: 'How can you use the Clock component inside a service ?'
+    answers:
+      - { value: 'Make their classes use the ClockAwareTrait. Thanks to service autoconfiguration, the setClock() method of the trait will automatically be called by the service container.', correct: true }
+      - { value: 'Make their classes use the ClockComponentAwareTrait. Thanks to service autoconfiguration, the getClock() method of the trait will automatically be called by the service container.', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#using-a-clock-inside-a-service'
+  -
+    uuid: 1efe53e6-9446-63e8-9a3d-6d8e43bac889
+    question: 'What is the "DatePoint class" ?'
+    answers:
+      - { value: 'An immmutable DateTime with stricter error handling and return types than the native one', correct: true }
+      - { value: 'An simple DateTime', correct: false }
+      - { value: "It doesn't exist", correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Clock/DatePoint.php#L15C4-L15C93'
+  -
+    uuid: 1efe5409-2394-6dfc-8677-3d84435fe77b
+    question: 'What are the correct syntax for the DatePoint (Clock component) ?'
+    answers:
+      - { value: "You can specify a timezone : new DatePoint(timezone: new \\DateTimezone('UTC'));", correct: true }
+      - { value: "Create a DatePoint from a reference date : $referenceDate = new \\DateTimeImmutable(); new DatePoint('+1month', reference: $referenceDate);", correct: true }
+      - { value: "You can specify a timezone : new DatePointObject(timezone: 'UTC');", correct: false }
+      - { value: "Create a DatePoint from a reference date : $referenceDate = new \\DateTimeImmutable(); new DatePointObject('+1month', reference: $referenceDate);", correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#the-datepoint-class'
+  -
+    uuid: 1efe5413-d0bf-6310-845d-b7a08a77293e
+    question: 'Which statements are correct about Clock component ?'
+    answers:
+      - { value: 'This trait provides methods to freeze time and restore the global clock after each test', correct: true }
+      - { value: 'The Clock component provides a trait, called ClockSensitiveTrait, to help you write time-sensitive tests', correct: true }
+      - { value: 'This trait provides methods to create multiple Timezone', correct: false }
+      - { value: 'The Clock component provides a trait, called ClockSensitiveInformationTrait, to help you write time-sensitive tests', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#writing-time-sensitive-tests'
+  -
+    uuid: 1efe5422-a567-6c94-b3dc-990717159927
+    question: 'What methods are accepted as only argument in ClockSensitiveTrait::mockTime() method ?'
+    answers:
+      - { value: 'A string, which can be a date to set the clock at (e.g. 1996-07-01) or an interval to modify the clock (e.g. +2 days)', correct: true }
+      - { value: 'A DateTimeImmutable, to set the clock at', correct: true }
+      - { value: 'A boolean, to freeze or restore the global clock', correct: true }
+      - { value: 'An integer, to set the clock with timestamp', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#writing-time-sensitive-tests'
+  -
+    uuid: 1efe5436-bdd6-6244-b409-89682123490f
+    question: 'If you pass an invalid string to the clock (e.g. when creating a clock or modifying a MockClock), what exception is used ?'
+    answers:
+      - { value: DateMalformedStringException, correct: true }
+      - { value: BadStringException, correct: false }
+      - { value: DateSyntaxStringException, correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#exceptions-management'
+  -
+    uuid: 1efe543c-f49f-6d92-951b-333369eb81b6
+    question: 'If you pass an invalid timezone to the Clock, what exception is used ?'
+    answers:
+      - { value: DateInvalidTimeZoneException, correct: true }
+      - { value: BadTimeZoneException, correct: false }
+      - { value: DateSyntaxInvalidTimeZoneException, correct: false }
+    help: 'https://symfony.com/doc/7.0/components/clock.html#exceptions-management'

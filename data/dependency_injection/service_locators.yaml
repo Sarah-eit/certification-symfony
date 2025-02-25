@@ -1,0 +1,41 @@
+questions:
+  -
+    uuid: 1efe5596-00e4-6ed6-938a-99bbbab1a1fe
+    question: 'Which syntax is correct to inject the service locator when using directly via PHP attributes ?'
+    answers:
+      - { value: "#[TaggedLocator('app.handler')] private ContainerInterface $locator", correct: true }
+      - { value: "#[TaggedLocator('app.handler')] private ServiceContainerInterface $locator", correct: false }
+      - { value: "#[TagLocator('app.handler')] private ContainerInterface $locator", correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/service_subscribers_locators.html#defining-a-service-locator'
+  -
+    uuid: 1efe55b8-585e-69c4-aa24-bdf49f6954b8
+    question: 'The services defined in the service locator argument must include keys, which later become their unique identifiers inside the locator.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/service_subscribers_locators.html#reusing-a-service-locator-in-multiple-services'
+  -
+    uuid: 1efe55c2-1941-6d4a-b3ef-ab0b9acb77f8
+    question: 'How can you inject the service locator in any other services ?'
+    answers:
+      - { value: 'Add in target service constructor :  #[Autowire(service: ....)] private ContainerInterface $locator', correct: true }
+      - { value: 'Add in target service constructor :  #[Map(service: ....)] private ContainerInterface $locator', correct: false }
+      - { value: 'Add in target service constructor :  #[Attribute(service: ....)] private ContainerInterface $locator', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/service_subscribers_locators.html#reusing-a-service-locator-in-multiple-services'
+  -
+    uuid: 1efe55c8-966e-6e66-aeff-834dd1402a03
+    question: 'In compiler passes, which method is recommended to create the service locators ?'
+    answers:
+      - { value: 'the register() method', correct: true }
+      - { value: 'the add() method', correct: false }
+      - { value: 'the set() method', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/service_subscribers_locators.html#using-service-locators-in-compiler-passes'
+  -
+    uuid: 1efe55d8-cc0a-6e7a-966b-8b6b38d1bbd1
+    question: 'About Service locators, which options exist in the #[TaggedLocator()] attribute ?'
+    answers:
+      - { value: 'The index_by / indexAttribute Option', correct: true }
+      - { value: 'The default_index_method Option', correct: true }
+      - { value: 'The index_by / tagAttribute Option', correct: false }
+      - { value: 'The default_tag_method Option', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/service_subscribers_locators.html#indexing-the-collection-of-services'

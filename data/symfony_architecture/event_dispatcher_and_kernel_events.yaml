@@ -303,3 +303,11 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
+  -
+    uuid: 1efcc180-50fb-6cea-b3f5-b32651f50dc1
+    question: 'What is the aim of the Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest() listener on kernel.request event?'
+    answers:
+      - { value: 'Validates that the request path matches the available route paths.', correct: false }
+      - { value: 'Validates that the headers and other information indicating the client IP address of a request are consistent.', correct: true }
+      - { value: 'Validates that the request matches the RFC requirements.', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/2.7/src/Symfony/Component/HttpKernel/EventListener/ValidateRequestListener.php'

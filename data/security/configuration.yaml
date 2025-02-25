@@ -3,10 +3,10 @@ questions:
     uuid: 1eebf878-8ba1-6138-94b7-99d84c92580c
     question: 'After a login success, what is the parameter name to redirect on referer URL?'
     answers:
-      - { value: security.firewalls.<name>.form_login.use_referer, correct: true }
-      - { value: security.firewalls.<name>.form_login.after_login_referer, correct: false }
-      - { value: security.firewalls.<name>.form_login.referer, correct: false }
-      - { value: security.firewalls.<name>.form_login.success_referer, correct: false }
+      - { value: 'security.firewalls.&lt;name&gt;.form_login.use_referer', correct: true }
+      - { value: 'security.firewalls.&lt;name&gt;.form_login.after_login_referer', correct: false }
+      - { value: 'security.firewalls.&lt;name&gt;.form_login.referer', correct: false }
+      - { value: 'security.firewalls.&lt;name&gt;.form_login.success_referer', correct: false }
     help: 'https://symfony.com/doc/current/security/form_login.html#using-the-referring-url'
   -
     uuid: 1eebf878-8baa-6562-8278-99d84c92580c
@@ -18,3 +18,13 @@ questions:
       - { value: app/logs, correct: false }
       - { value: app/log, correct: false }
     help: 'https://symfony.com/doc/current/logging.html#where-logs-are-stored'
+  -
+    uuid: 1efb230f-076b-6c58-88c2-71b8758e062b
+    question: "If you're using an API and after being authenticated you don't want the session to be kept for the next requests; you have to:"
+    answers:
+      - { value: 'Use "stateless: true" at authentication provider level', correct: false }
+      - { value: 'Use "session: false" at firewall level', correct: false }
+      - { value: 'Simply use "json_login" authentication provider', correct: false }
+      - { value: 'Use "session: false" at authentication provider level', correct: false }
+      - { value: 'Use "stateless: true" at firewall level', correct: true }
+    help: 'https://symfony.com/doc/2.8/security/guard_authentication.html'

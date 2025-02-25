@@ -223,3 +223,13 @@ questions:
       - { value: 'The output will display the string "Foo is FOO and Bar is .".', correct: false }
       - { value: 'The output will display the string Foo is "FOO and Bar is FOO.".', correct: false }
     help: 'https://twig.symfony.com/doc/tags/set.html'
+  -
+    uuid: 1efcc18e-f4b9-6d10-9548-2546da967ef0
+    question: 'In Twig, which of the following operators has the highest precedence?'
+    answers:
+      - { value: '==', correct: false }
+      - { value: and, correct: false }
+      - { value: '| (filters)', correct: true }
+      - { value: '<=>', correct: false }
+      - { value: or, correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'

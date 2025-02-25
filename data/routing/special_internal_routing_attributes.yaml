@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1efcc149-0dd6-688e-b6c9-253e1e7c6708
+    question: 'How to simulate a specific "host" when testing a route ?'
+    answers:
+      - { value: 'By setting the HTTP_HOST server parameter when creating the test client', correct: true }
+      - { value: "It's not possible", correct: false }
+      - { value: 'by adding a special parameter when asking the route as : /my-route?_host=specific_host.com', correct: false }
+      - { value: 'By simple asking the absolute url specific_host.com/my-route', correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#sub-domain-routing'

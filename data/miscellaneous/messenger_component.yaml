@@ -62,7 +62,7 @@ questions:
       - { value: RetryStrategyTrait, correct: false }
       - { value: RetryStrategyController, correct: false }
       - { value: RetryMiddleware, correct: false }
-    help: 'https://github.com/symfony/messenger/blob/7.1/Retry/RetryStrategyInterface.php'
+    help: 'https://github.com/symfony/messenger/blob/7.0/Retry/RetryStrategyInterface.php'
   -
     uuid: 1ef49b77-ad91-6d24-a5f3-c9434be6fb85
     question: 'Which attribute must be defined to mark a class which would be the handle of a message in Symfony Messenger?'

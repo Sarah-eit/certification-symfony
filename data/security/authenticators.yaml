@@ -15,7 +15,7 @@ questions:
       - { value: affirmative, correct: true }
       - { value: unanimous, correct: false }
       - { value: consensus, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/Security/Core/Authorization/AccessDecisionManager.php#L43'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Core/Authorization/AccessDecisionManager.php#L43'
   -
     uuid: 1eeda458-0d6c-635c-b4b2-75c742f4f6a8
     question: 'Which method do you have to implement in your custom Authenticator which extends the AbstractAuthenticator ?'

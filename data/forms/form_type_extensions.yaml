@@ -8,4 +8,4 @@ questions:
       - { value: ValueGuess, correct: true }
       - { value: ValueGuessed, correct: false }
       - { value: ResolvedValue, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Form/FormTypeGuesserInterface.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Form/FormTypeGuesserInterface.php'

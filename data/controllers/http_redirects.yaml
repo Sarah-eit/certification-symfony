@@ -39,4 +39,4 @@ questions:
       - { value: RedirectedResponse, correct: false }
       - { value: RedirectResponse, correct: true }
       - { value: ForwardResponse, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/RedirectResponse.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RedirectResponse.php'

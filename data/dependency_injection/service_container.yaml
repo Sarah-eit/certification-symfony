@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/DependencyInjection/ParameterBag/ContainerBag.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/DependencyInjection/ParameterBag/ContainerBag.php'
   -
     uuid: 1eebf878-8b98-60e2-8300-99d84c92580c
     question: 'What is the default priority used when adding a new compiler pass?'
@@ -142,7 +142,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/DependencyInjection/ParameterBag/FrozenParameterBag.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/DependencyInjection/ParameterBag/FrozenParameterBag.php'
   -
     uuid: 1eebf878-8b9b-6030-b99f-99d84c92580c
     question: 'What is the way to add a loader to the translator?'

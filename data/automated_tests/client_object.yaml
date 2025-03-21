@@ -19,4 +19,4 @@ questions:
       - { value: followRedirect(), correct: true }
       - { value: reload(), correct: true }
       - { value: next(), correct: false }
-    help: 'https://github.com/symfony/browser-kit/blob/master/AbstractBrowser.php'
+    help: 'https://github.com/symfony/browser-kit/blob/7.0/AbstractBrowser.php'

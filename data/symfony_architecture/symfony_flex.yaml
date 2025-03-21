@@ -39,7 +39,7 @@ questions:
       - { value: 'In Twig Bundle', correct: false }
       - { value: 'In Twig Bridge', correct: true }
       - { value: 'In FrameworkExtraBundle', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bridge/Twig/Resources/views/Form/form_table_layout.html.twig'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bridge/Twig/Resources/views/Form/form_table_layout.html.twig'
   -
     uuid: 1eebf878-8b9d-6fba-847c-99d84c92580c
     question: 'Arguments are resolved before calling the Controller ?'
@@ -142,7 +142,7 @@ questions:
       - { value: 'composer require alias-name', correct: true }
       - { value: 'composer install alias-name', correct: false }
       - { value: 'composer add symfony/alias-name', correct: false }
-    help: 'https://symfony.com/doc/7.2/setup/flex.html'
+    help: 'https://symfony.com/doc/7.0/setup/flex.html'
   -
     uuid: 1ef55634-2b2a-67fa-9285-fbd574826ff3
     question: 'Is it possible to modify the architecture of public, src, ... folders in symfony flex?'

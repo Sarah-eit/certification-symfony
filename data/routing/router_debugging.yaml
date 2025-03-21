@@ -33,7 +33,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/6.4/routing.html#debugging-routes'
+    help: 'https://symfony.com/doc/7.0/routing.html#debugging-routes'
   -
     uuid: 1efcc179-b267-69a4-b94f-c71c749f48f6
     question: 'How to get information on the route foobar of an application?'

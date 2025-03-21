@@ -21,20 +21,20 @@ questions:
     uuid: 1eebf878-8b97-67d2-89bf-99d84c92580c
     question: 'What tracking policy has the best performance with large units of work?'
     answers:
-      - { value: DEFERRED_EXPLICIT, correct: false }
-      - { value: LAZY, correct: false }
-      - { value: DEFERRED_IMPLICIT, correct: false }
-      - { value: NOTIFY, correct: true }
+      - { value: 'DEFERRED_EXPLICIT', correct: false }
+      - { value: 'LAZY', correct: false }
+      - { value: 'DEFERRED_IMPLICIT', correct: false }
+      - { value: 'NOTIFY', correct: true }
     help: 'https://www.doctrine-project.org/projects/doctrine-orm/en/2.5/reference/change-tracking-policies.html'
   -
     uuid: 1eebf878-8b98-6268-b843-99d84c92580c
     question: 'What is the default value of the cookie_samesite configuration key'
     answers:
       - { value: 'null', correct: true }
-      - { value: strict, correct: false }
-      - { value: none, correct: false }
-      - { value: same_origin, correct: false }
-      - { value: lax, correct: false }
+      - { value: 'strict', correct: false }
+      - { value: 'none', correct: false }
+      - { value: 'same_origin', correct: false }
+      - { value: 'lax', correct: false }
     help: 'https://symfony.com/doc/current/reference/configuration/framework.html#cookie-samesite'
   -
     uuid: 1eebf878-8b98-6984-a4c4-99d84c92580c
@@ -42,7 +42,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L251'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L251'
   -
     uuid: 1eebf878-8b98-6e02-89a2-99d84c92580c
     question: 'When was the Symfony BC promise introduced ?'
@@ -91,10 +91,10 @@ questions:
     uuid: 1eebf878-8b99-6c80-a373-99d84c92580c
     question: 'Which PSR described a common interface for reading the system clock, implemented by the Clock component since Symfony 6.2?'
     answers:
-      - { value: PSR-8, correct: false }
-      - { value: PSR-4, correct: false }
-      - { value: PSR-17, correct: false }
-      - { value: PSR-20, correct: true }
+      - { value: 'PSR-8', correct: false }
+      - { value: 'PSR-4', correct: false }
+      - { value: 'PSR-17', correct: false }
+      - { value: 'PSR-20', correct: true }
     help: 'https://www.php-fig.org/psr/psr-20'
   -
     uuid: 1eebf878-8b99-6e38-b500-99d84c92580c
@@ -132,10 +132,10 @@ questions:
     uuid: 1eebf878-8b9b-6440-82a7-99d84c92580c
     question: 'When creating custom loader, which dependency injection tag has to be used?'
     answers:
-      - { value: router.loader, correct: false }
-      - { value: router.load, correct: false }
-      - { value: routing.load, correct: false }
-      - { value: routing.loader, correct: true }
+      - { value: 'router.loader', correct: false }
+      - { value: 'router.load', correct: false }
+      - { value: 'routing.load', correct: false }
+      - { value: 'routing.loader', correct: true }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#routing-loader'
   -
     uuid: 1eebf878-8b9b-6b48-8681-99d84c92580c
@@ -150,19 +150,19 @@ questions:
     uuid: 1eebf878-8b9b-6cba-b8dd-99d84c92580c
     question: 'What is the tag to register a custom service that extracts messages from a file?'
     answers:
-      - { value: translator_extractor, correct: false }
-      - { value: translator.extractor, correct: false }
-      - { value: translation_extractor, correct: false }
-      - { value: translation.extractor, correct: true }
+      - { value: 'translator_extractor', correct: false }
+      - { value: 'translator.extractor', correct: false }
+      - { value: 'translation_extractor', correct: false }
+      - { value: 'translation.extractor', correct: true }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#translation-extractor'
   -
     uuid: 1eebf878-8b9b-6d0a-abf0-99d84c92580c
     question: 'Which PSR draft is meant to be a joke?'
     answers:
-      - { value: PSR-8, correct: true }
-      - { value: PSR-0, correct: false }
-      - { value: PSR-12, correct: false }
-      - { value: PSR-9, correct: false }
+      - { value: 'PSR-8', correct: true }
+      - { value: 'PSR-0', correct: false }
+      - { value: 'PSR-12', correct: false }
+      - { value: 'PSR-9', correct: false }
     help: 'https://github.com/php-fig/fig-standards/blob/master/proposed/psr-8-hug/psr-8-hug.md'
   -
     uuid: 1eebf878-8b9b-6ee0-b5de-99d84c92580c
@@ -203,7 +203,7 @@ questions:
       - { value: 'An instance of Symfony\Component\View\View.', correct: false }
       - { value: 'An instance of Symfony\Component\BrowserKit\Response.', correct: false }
       - { value: 'A string.', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php'
   -
     uuid: 1eebf878-8b9c-6eda-8854-99d84c92580c
     question: 'Could the session.attribute_bag service be used?'
@@ -215,29 +215,29 @@ questions:
     uuid: 1eebf878-8b9c-6f2a-b51a-99d84c92580c
     question: 'What is the tag to use to register your service to be called during the cache clearing process?'
     answers:
-      - { value: kernel.cache, correct: false }
-      - { value: command.cache_clearer, correct: false }
-      - { value: kernel.cache_clearer, correct: true }
-      - { value: cache.clearer, correct: false }
-      - { value: cache_clearer, correct: false }
+      - { value: 'kernel.cache', correct: false }
+      - { value: 'command.cache_clearer', correct: false }
+      - { value: 'kernel.cache_clearer', correct: true }
+      - { value: 'cache.clearer', correct: false }
+      - { value: 'cache_clearer', correct: false }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-cache-clearer'
   -
     uuid: 1eebf878-8b9f-61b2-955c-99d84c92580c
     question: 'Which class will you use to convert an action parameter?'
     answers:
-      - { value: Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter, correct: true }
-      - { value: Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverter, correct: false }
-      - { value: Symfony\Bundle\FrameworkBundle\Configuration\ParamConverter, correct: false }
-      - { value: Symfony\Bundle\FrameworkBundle\Controller\ParamConverter, correct: false }
+      - { value: 'Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter', correct: true }
+      - { value: 'Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverter', correct: false }
+      - { value: 'Symfony\Bundle\FrameworkBundle\Configuration\ParamConverter', correct: false }
+      - { value: 'Symfony\Bundle\FrameworkBundle\Controller\ParamConverter', correct: false }
     help: 'https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html'
   -
     uuid: 1eebf878-8ba0-65a8-85df-99d84c92580c
     question: 'What is the LoggerInterface correct namespace?'
     answers:
-      - { value: Psr\LoggerInterface, correct: false }
-      - { value: Psr\Log\LoggerInterface, correct: true }
-      - { value: Symfony\Bridge\Monolog\LoggerInterface, correct: false }
-      - { value: Symfony\Bridge\Monolog\Log\LoggerInterface, correct: false }
+      - { value: 'Psr\LoggerInterface', correct: false }
+      - { value: 'Psr\Log\LoggerInterface', correct: true }
+      - { value: 'Symfony\Bridge\Monolog\LoggerInterface', correct: false }
+      - { value: 'Symfony\Bridge\Monolog\Log\LoggerInterface', correct: false }
     help: 'https://symfony.com/doc/current/logging.html#logging-a-message'
   -
     uuid: 1eebf878-8ba0-65ee-8114-99d84c92580c
@@ -248,7 +248,7 @@ questions:
       - { value: 'public static function load()', correct: false }
       - { value: 'public static function start()', correct: false }
       - { value: 'public static function register()', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Component/ErrorHandler/Debug.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/ErrorHandler/Debug.php'
   -
     uuid: 1eebf878-8ba0-6634-a1f8-99d84c92580c
     question: 'Using Symfony\Component\ErrorHandler\ErrorHandler static class, what is the only method available?'
@@ -278,29 +278,29 @@ questions:
     uuid: 1eebf878-8ba0-6a26-88e1-99d84c92580c
     question: 'According to the PHP Framework Interoperability Group, which PSRs concern best coding practices ?'
     answers:
-      - { value: PSR-0, correct: false }
-      - { value: PSR-1, correct: true }
-      - { value: PSR-2, correct: true }
-      - { value: PSR-3, correct: false }
-      - { value: PSR-4, correct: false }
+      - { value: 'PSR-0', correct: false }
+      - { value: 'PSR-1', correct: true }
+      - { value: 'PSR-2', correct: true }
+      - { value: 'PSR-3', correct: false }
+      - { value: 'PSR-4', correct: false }
     help: 'https://www.php-fig.org/psr/'
   -
     uuid: 1eebf878-8ba0-6d3c-8f31-99d84c92580c
     question: 'Psr-3 LoggerInterface exposes eight methods to write logs to the eight RFC 5424 levels, which level does not exist ?'
     answers:
-      - { value: debug, correct: false }
-      - { value: alert, correct: false }
-      - { value: urgent, correct: true }
-      - { value: warning, correct: false }
+      - { value: 'debug', correct: false }
+      - { value: 'alert', correct: false }
+      - { value: 'urgent', correct: true }
+      - { value: 'warning', correct: false }
     help: 'https://www.php-fig.org/psr/psr-3/#5-psrlogloglevel'
   -
     uuid: 1eebf878-8ba0-6d82-a2a8-99d84c92580c
     question: 'Which methods is not in Psr-3'
     answers:
-      - { value: log, correct: false }
-      - { value: set, correct: true }
-      - { value: dump, correct: true }
-      - { value: print, correct: true }
+      - { value: 'log', correct: false }
+      - { value: 'set', correct: true }
+      - { value: 'dump', correct: true }
+      - { value: 'print', correct: true }
     help: 'https://www.php-fig.org/psr/psr-3/#3-psrlogloggerinterface'
   -
     uuid: 1eebf878-8ba0-6dd2-be0d-99d84c92580c
@@ -315,17 +315,17 @@ questions:
     uuid: 1eebf878-8ba0-6e18-b0ae-99d84c92580c
     question: 'Which Psr is about autoloading ?'
     answers:
-      - { value: Psr-0, correct: true }
-      - { value: Psr-11, correct: false }
-      - { value: Psr-4, correct: true }
-      - { value: Psr-6, correct: false }
+      - { value: 'Psr-0', correct: true }
+      - { value: 'Psr-11', correct: false }
+      - { value: 'Psr-4', correct: true }
+      - { value: 'Psr-6', correct: false }
     help: 'https://www.php-fig.org/psr/'
   -
     uuid: 1eebf878-8ba0-6e5e-b65e-99d84c92580c
     question: 'According to Psr-2, Which code is correct ?'
     answers:
-      - { value: $foo->bar($arg1);, correct: true }
-      - { value: $Foo->bar($arg1);, correct: false }
+      - { value: '$foo->bar($arg1);', correct: true }
+      - { value: '$Foo->bar($arg1);', correct: false }
       - { value: 'class Foo extends Bar implements FooInterface', correct: true }
       - { value: 'class foo extends Bar implements FooInterface', correct: false }
     help: 'https://www.php-fig.org/psr/psr-1/#1-overview'
@@ -333,20 +333,20 @@ questions:
     uuid: 1eebf878-8ba0-6ea4-ae9e-99d84c92580c
     question: 'According to PSR-1, how should methods be declared?'
     answers:
-      - { value: myMethod();, correct: true }
-      - { value: MyMethod();, correct: false }
-      - { value: my_method();, correct: false }
-      - { value: My_Method();, correct: false }
+      - { value: 'myMethod()', correct: true }
+      - { value: 'MyMethod()', correct: false }
+      - { value: 'my_method()', correct: false }
+      - { value: 'My_Method()', correct: false }
     help: 'https://www.php-fig.org/psr/psr-1/'
   -
     uuid: 1eebf878-8ba0-6ef4-858f-99d84c92580c
     question: 'Which Psr is about caching ?'
     answers:
-      - { value: Psr-0, correct: false }
-      - { value: Psr-6, correct: true }
-      - { value: Psr-16, correct: true }
-      - { value: Psr-1, correct: false }
-      - { value: Psr-2, correct: false }
+      - { value: 'Psr-0', correct: false }
+      - { value: 'Psr-6', correct: true }
+      - { value: 'Psr-16', correct: true }
+      - { value: 'Psr-1', correct: false }
+      - { value: 'Psr-2', correct: false }
     help: 'https://www.php-fig.org/psr/'
   -
     uuid: 1eebf878-8ba0-6f3a-861c-99d84c92580c
@@ -370,12 +370,12 @@ questions:
     uuid: 1eebf878-8ba3-6a5a-a783-99d84c92580c
     question: 'Which of the following is not a built-in Symfony standalone component?'
     answers:
-      - { value: PropertyAccess, correct: false }
-      - { value: EventDispatcher, correct: false }
-      - { value: Mail, correct: true }
-      - { value: ExpressionLanguage, correct: false }
-      - { value: DependencyInjection, correct: false }
-    help: 'https://github.com/symfony/symfony/tree/master/src/Symfony/Component'
+      - { value: 'PropertyAccess', correct: false }
+      - { value: 'EventDispatcher', correct: false }
+      - { value: 'Mail', correct: true }
+      - { value: 'ExpressionLanguage', correct: false }
+      - { value: 'DependencyInjection', correct: false }
+    help: 'https://github.com/symfony/symfony/tree/7.0/src/Symfony/Component'
   -
     uuid: 1eebf878-8ba3-6aa0-8e46-99d84c92580c
     question: 'What are prerequisites to create FormExtension in a Symfony Fullstack project using FrameworkBundle?'
@@ -387,7 +387,7 @@ questions:
     help: 'https://symfony.com/doc/current/form/create_form_type_extension.html#defining-the-form-type-extension'
   -
     uuid: 1eebf878-8ba4-6c98-9944-99d84c92580c
-    question: 'Can I use Twig without using Symfony?'
+    question: 'Is it possible to use Twig without Symfony?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
@@ -396,17 +396,17 @@ questions:
     uuid: 1eee7824-fbcf-6738-9026-25c2cfac1525
     question: 'Which current accepted PHP-FIG PSRs are about coding standard/style?'
     answers:
-      - { value: PSR-12, correct: true }
-      - { value: PSR-8, correct: false }
-      - { value: PSR-2, correct: false }
-      - { value: PSR-1, correct: true }
+      - { value: 'PSR-12', correct: true }
+      - { value: 'PSR-8', correct: false }
+      - { value: 'PSR-2', correct: false }
+      - { value: 'PSR-1', correct: true }
     help: 'https://www.php-fig.org/psr/'
   -
     uuid: 1ef91eee-8fd2-6e2e-8a85-47821d44640e
     question: " What is PSR-3?"
     answers:
-      - { value: ' A common logger interface', correct: true }
-      - { value: ' A coding style guide', correct: false }
+      - { value: 'A common logger interface', correct: true }
+      - { value: 'A coding style guide', correct: false }
       - { value: 'A utility to convert non-namespaced PHP classes into namespaced ones', correct: false }
       - { value: 'A standard way to convert fully qualified names into file paths.', correct: false }
     help: 'https://www.php-fig.org/psr/psr-3/'

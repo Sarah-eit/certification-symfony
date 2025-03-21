@@ -30,14 +30,14 @@ questions:
       - { value: "Yes by setting a permissive way #[Route('/{token}', requirements: ['token' => '.+'])]", correct: true }
       - { value: 'No', correct: false }
       - { value: 'Yes in all way', correct: false }
-    help: 'https://symfony.com/doc/6.4/routing.html#slash-characters-in-route-parameters'
+    help: 'https://symfony.com/doc/7.0/routing.html#slash-characters-in-route-parameters'
   -
     uuid: 1eebf878-8ba8-64ce-bd3b-99d84c92580c
     question: "Is it possible to have multiple parameter in the same path like ?#[Route('/share/{token}/{token}')]"
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/6.4/routing.html'
+    help: 'https://symfony.com/doc/7.0/routing.html'
   -
     uuid: 1ef91f04-dcbb-64dc-9928-7b259c35a967
     question: "Which variables can be utilized in the ExpressionLanguage expression when using the condition option on a Route?"

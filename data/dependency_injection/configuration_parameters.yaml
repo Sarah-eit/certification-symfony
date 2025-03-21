@@ -105,7 +105,7 @@ questions:
       - { value: 'An array of options', correct: false }
       - { value: 'A callback executed if the cache has to be refreshed', correct: true }
       - { value: 'The resource filename', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Config/ConfigCacheFactory.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Config/ConfigCacheFactory.php'
   -
     uuid: 1ef80078-f45b-64da-8d99-253d4466d548
     question: 'In which file is the APP_ENV variable defined to choose the active environment for the application in Symfony?'

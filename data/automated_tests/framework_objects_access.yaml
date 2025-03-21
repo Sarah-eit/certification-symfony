@@ -18,7 +18,7 @@ questions:
       - { value: '$session = $request->getSession();', correct: true }
       - { value: "$session = $this->get('session');", correct: true }
       - { value: '$session = $this->container->getSession();', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L84'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L84'
   -
     uuid: 1eebf878-8ba6-67e6-ac01-99d84c92580c
     question: 'Which of the following statements is true about the AbstractController class located in the FrameworkBundle bundle?'

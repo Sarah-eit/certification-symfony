@@ -165,7 +165,7 @@ questions:
       - { value: 'Yes, using resize_when_empty option', correct: false }
       - { value: 'Yes, using delete_empty option', correct: true }
       - { value: 'Yes, using remove_empty option', correct: false }
-    help: 'https://symfony.com/doc/6.4/reference/forms/types/collection.html#delete-empty'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/collection.html#delete-empty'
   -
     uuid: 1eebf878-8b9c-6912-8c4e-99d84c92580c
     question: 'Which of the following sentences are true ?'
@@ -205,7 +205,7 @@ questions:
       - { value: SelectType, correct: false }
       - { value: FloatType, correct: false }
       - { value: BooleanType, correct: false }
-    help: 'https://github.com/symfony/symfony/tree/master/src/Symfony/Component/Form/Extension/Core/Type'
+    help: 'https://github.com/symfony/symfony/tree/7.0/src/Symfony/Component/Form/Extension/Core/Type'
   -
     uuid: 1eebf878-8ba3-6a0a-9738-99d84c92580c
     question: 'What will be rendered when using a DateTimeType form type with all default options ?'
@@ -274,7 +274,7 @@ questions:
       - { value: 'Intl::getLanguages()', correct: false }
       - { value: Symfony\Component\Locale\getDisplayLanguages(), correct: false }
       - { value: 'Symfony\Component\Intl\Intl::getLanguageBundle()->getLanguageNames()', correct: true }
-    help: 'https://symfony.com/doc/7.2/reference/forms/types/language.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/language.html'
   -
     uuid: 1efcc155-3312-66e6-a5e3-7db7de70b042
     question: 'What is the use of the "default_protocol" option of the "Symfony\Component\Form\Extension\Core\Type\UrlType" form type ?'

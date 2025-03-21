@@ -36,7 +36,7 @@ questions:
       - { value: Doctrine\Common\Collections\Collection, correct: false }
       - { value: Symfony\Component\Validator\ConstraintViolationListInterface, correct: true }
       - { value: array, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Validator/Validator/ValidatorInterface.php#L40'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Validator/Validator/ValidatorInterface.php#L40'
   -
     uuid: 1eebf878-8b9f-6d24-94f5-99d84c92580c
     question: 'How do you bind a constraint to a form field?'

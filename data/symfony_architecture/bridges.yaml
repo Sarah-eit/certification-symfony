@@ -17,4 +17,4 @@ questions:
       - { value: DumpExtension.php, correct: true }
       - { value: EmojiExtension.php, correct: true }
       - { value: TemplateExtension.php, correct: false }
-    help: 'https://github.com/symfony/twig-bridge/tree/7.2/Extension'
+    help: 'https://github.com/symfony/twig-bridge/tree/7.0/Extension'

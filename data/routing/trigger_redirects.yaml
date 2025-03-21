@@ -16,4 +16,4 @@ questions:
       - { value: route, correct: true }
       - { value: page, correct: false }
       - { value: url, correct: false }
-    help: 'https://symfony.com/doc/6.4/routing.html#redirecting-to-urls-and-routes-directly-from-a-route'
+    help: 'https://symfony.com/doc/7.0/routing.html#redirecting-to-urls-and-routes-directly-from-a-route'

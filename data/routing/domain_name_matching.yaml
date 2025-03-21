@@ -21,4 +21,4 @@ questions:
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
-    help: 'https://symfony.com/doc/6.4/routing.html#sub-domain-routing'
+    help: 'https://symfony.com/doc/7.0/routing.html#sub-domain-routing'

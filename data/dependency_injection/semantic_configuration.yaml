@@ -84,7 +84,7 @@ questions:
     uuid: 1ef5b486-27c2-6008-a852-2532f9c7e4c2
     question: 'Which method would you use to append a separate configuration section into the main configuration tree?'
     answers:
-      - { value: ' append()', correct: true }
+      - { value: 'append()', correct: true }
       - { value: addSection(), correct: false }
       - { value: merge(), correct: false }
       - { value: includeNode(), correct: false }

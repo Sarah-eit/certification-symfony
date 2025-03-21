@@ -17,7 +17,7 @@ questions:
       - { value: 'false', correct: false }
       - { value: 'Nothing, a ProcessFailedException will be thrown', correct: true }
       - { value: 'true', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Process/Process.php#L264'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L264'
   -
     uuid: 1eebf878-8b9a-696e-886e-99d84c92580c
     question: "What is the method to access the pid of the running process of the following code :$process = new Process('/usr/bin/php worker.php'); $process->start();"
@@ -35,7 +35,7 @@ questions:
       - { value: 'A Process object', correct: false }
       - { value: Nothing, correct: false }
       - { value: 'The exitcode of the proces', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Process/Process.php#L408'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L408'
   -
     uuid: 1eebf878-8b9c-64c6-b575-99d84c92580c
     question: 'What are the built-in mapping loaders for the definitions of serialization?'
@@ -54,7 +54,7 @@ questions:
       - { value: '1', correct: false }
       - { value: 'The exit status code', correct: true }
       - { value: Nothing, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Process/Process.php#L222'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L222'
   -
     uuid: 1eebf878-8b9c-6d9a-80c6-99d84c92580c
     question: 'Which of the following is the correct usage for serializing the $person object into json?'
@@ -140,7 +140,7 @@ questions:
       - { value: STATUS_READY, correct: true }
       - { value: STATUS_SENT, correct: false }
       - { value: STATUS_TERMINATED, correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Process/Process.php#L37C22-L37C22'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L37C22-L37C22'
   -
     uuid: 1eebf878-8ba4-6252-98ba-99d84c92580c
     question: 'While running a process asynchronously with the Process component, which method would you use to check if the process is done?'
@@ -149,7 +149,7 @@ questions:
       - { value: isProcessing(), correct: false }
       - { value: isAsync(), correct: false }
       - { value: isRunning(), correct: true }
-    help: 'https://symfony.com/doc/7.2/components/process.html#running-processes-asynchronously'
+    help: 'https://symfony.com/doc/7.0/components/process.html#running-processes-asynchronously'
   -
     uuid: 1eebf878-8ba4-6298-950b-99d84c92580c
     question: 'Could the parsed and/or serialized expressions be evaluated?'
@@ -194,7 +194,7 @@ questions:
     answers:
       - { value: 'False', correct: true }
       - { value: 'True', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/Process/Process.php#L888'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L888'
   -
     uuid: 1eee7687-c39b-6edc-9026-1f1e6188710b
     question: 'It is possible to run a PHP script in an independent process ?'
@@ -203,7 +203,7 @@ questions:
       - { value: 'Yes, with the Symfony\Component\Process\PhpExec class', correct: false }
       - { value: 'Yes, with the Symfony\Component\Process\PhpRunner class', correct: false }
       - { value: 'Yes, with the Symfony\Component\Process\PhpProcess class', correct: true }
-    help: 'https://symfony.com/doc/7.2/components/process.html'
+    help: 'https://symfony.com/doc/7.0/components/process.html'
   -
     uuid: 1eee7819-2b08-6a38-9026-5d4cc874b16f
     question: 'What are the methods of Symfony\Component\Serializer\NameConverter\NameConverterInterface?'

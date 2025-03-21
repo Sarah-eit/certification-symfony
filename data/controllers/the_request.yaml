@@ -25,7 +25,7 @@ questions:
       - { value: InvalidArgumentException, correct: false }
       - { value: ConflictingHeadersException, correct: true }
       - { value: InconsistentIpsException, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Request.php#L2061C19-L2061C46'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Request.php#L2061C19-L2061C46'
   -
     uuid: 1eebf878-8b9a-655e-818b-99d84c92580c
     question: 'Which of the following are valid ways to send some JSON content as the response of some action in a Symfony application?'
@@ -52,7 +52,7 @@ questions:
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L98'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L98'
   -
     uuid: 1eebf878-8ba0-6238-b1a8-99d84c92580c
     question: 'How to access the `foo` GET parameter from Request object $request ?'
@@ -79,7 +79,7 @@ questions:
       - { value: 'return an array of languages available in translations', correct: false }
       - { value: 'return an array of languages the client accepts', correct: true }
       - { value: 'does not exists', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Component/HttpFoundation/Request.php#L1653'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba0-6314-a2da-99d84c92580c
     question: 'How to get the Content Type from Request at Symfony 6.2 ?'
@@ -88,7 +88,7 @@ questions:
       - { value: "$request->headers->get('content-type');", correct: false }
       - { value: "$request->headers->get('Content-Type');", correct: false }
       - { value: $request->getContentTypeFormat();, correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Request.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba0-6364-83f9-99d84c92580c
     question: 'How to check if a request has been sent using AJAX ?'
@@ -96,7 +96,7 @@ questions:
       - { value: $request->isXmlHttpRequest();, correct: true }
       - { value: $request->isAJAX();, correct: false }
       - { value: "$this->headers->get('X-Requested-With') === 'XMLHttpRequest';", correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Request.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba0-6440-bdcd-99d84c92580c
     question: 'Which method exist in Symfony\Component\HttpFoundation\Request ?'
@@ -108,7 +108,7 @@ questions:
       - { value: getHttpHost, correct: true }
       - { value: getUrl, correct: false }
       - { value: getUri, correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Request.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba1-6bba-8c7a-99d84c92580c
     question: 'How to access $_FILES data when using a Symfony\Component\HttpFoundation\Request $request object?'
@@ -162,7 +162,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.2/src/Symfony/Component/HttpKernel/Controller/ArgumentResolver/NotTaggedControllerValueResolver.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpKernel/Controller/ArgumentResolver/NotTaggedControllerValueResolver.php'
   -
     uuid: 1eebf878-8ba2-6fe2-9a7d-99d84c92580c
     question: 'Could the constraints of a class be listed?'

@@ -27,7 +27,7 @@ questions:
       - { value: Symfony\Component\Security\Http\Firewall\AuthenticationListener, correct: false }
       - { value: Symfony\Component\Security\Http\Firewall\AuthListener, correct: false }
       - { value: Symfony\Component\Security\Http\Firewall\SecurityListener, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Http/Firewall/ExceptionListener.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Http/Firewall/ExceptionListener.php'
   -
     uuid: 1eedad50-f369-6fa2-80d1-435a058dcb9c
     question: 'Csrf protection is enable by default in a new login form ?'
@@ -86,7 +86,7 @@ questions:
     answers:
       - { value: 'in the header, usually Authorization: Bearer XXXX', correct: true }
       - { value: 'in the request query string, usually access_token', correct: false }
-      - { value: ' in the request body during a POST request, usually access_token', correct: false }
+      - { value: 'in the request body during a POST request, usually access_token', correct: false }
     help: 'https://symfony.com/doc/current/security/access_token.html#2-configure-the-token-extractor-optional'
   -
     uuid: 1eedb044-61db-662a-94e0-d7b850fa955d

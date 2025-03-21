@@ -14,4 +14,4 @@ questions:
       - { value: 'Symfony will throw TooManyArgumentException', correct: false }
       - { value: 'No effect, the route will be /1', correct: false }
       - { value: 'the variable will be accessible in the controller:public function index(int $page, string $title)', correct: true }
-    help: 'https://symfony.com/doc/6.4/routing.html#extra-parameters'
+    help: 'https://symfony.com/doc/7.0/routing.html#extra-parameters'

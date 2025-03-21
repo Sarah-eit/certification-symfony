@@ -22,7 +22,7 @@ questions:
       - { value: security.authorization_manager, correct: false }
       - { value: security.checker, correct: false }
       - { value: security.decision_checker, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authorization/AuthorizationChecker.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Core/Authorization/AuthorizationChecker.php'
   -
     uuid: 1eebf878-8ba2-64de-a54b-99d84c92580c
     question: 'What is the type of the top-level service that checks authorization?'

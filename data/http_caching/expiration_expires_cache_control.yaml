@@ -30,7 +30,7 @@ questions:
       - { value: $response->setShareMaxAge(900);, correct: false }
       - { value: $response->setSMaxAge(900);, correct: false }
       - { value: '$response->setMaxAge(900, true);', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Response.php#L873'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Response.php#L873'
   -
     uuid: 1eebf878-8b9e-65c8-9f64-99d84c92580c
     question: 'Which HTTP headers belongs to expiration cache model?'
@@ -97,6 +97,6 @@ questions:
     answers:
       - { value: 'Caching systems will use the Expires header field if the response is generated if the current day number is odd, otherwise they will use the Cache-Control header field.', correct: false }
       - { value: 'Caching systems will favor the Expires header field over the Cache-Control field to cache the response.', correct: false }
-      - { value: ' Caching systems will favor the Cache-Control header field over the Expires field to cache the response.', correct: true }
+      - { value: 'Caching systems will favor the Cache-Control header field over the Expires field to cache the response.', correct: true }
       - { value: "The response won't be cachable and caching systems will simply ignore it.", correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc2616#page-79'

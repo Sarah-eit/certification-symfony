@@ -18,7 +18,7 @@ questions:
       - { value: 'public function getType();', correct: false }
       - { value: 'public function getParentType();', correct: false }
       - { value: 'public function configureOptions(OptionsResolver $resolver);', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Form/FormTypeInterface.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Form/FormTypeInterface.php'
   -
     uuid: 1eebf878-8b9f-6db0-82a3-99d84c92580c
     question: 'How do you set default value?'

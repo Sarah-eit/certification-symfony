@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba5-653a-8ac7-99d84c92580c
-    question: 'Every how long does a major version of symfony come out? (e.g. 5.0, 6.0, 7.0)'
+    question: 'How frequently does a major version of Symfony come out? (e.g., 5.4, 6.0, 6.1)'
     answers:
       - { value: 'every years', correct: false }
       - { value: 'every 2 years', correct: true }
@@ -10,7 +10,7 @@ questions:
     help: 'https://symfony.com/doc/current/contributing/community/releases.html'
   -
     uuid: 1eebf878-8ba5-658a-9bbb-99d84c92580c
-    question: 'How often is a new minor version of Symfony released? (e.g., 5.4, 6.0, 6.1)'
+    question: 'How frequently does a minor version of Symfony come out? (e.g., 5.4, 6.0, 6.1)'
     answers:
       - { value: '4 months', correct: false }
       - { value: '6 months', correct: true }
@@ -19,7 +19,7 @@ questions:
     help: 'https://symfony.com/doc/current/contributing/community/releases.html'
   -
     uuid: 1eebf878-8ba5-65d0-913a-99d84c92580c
-    question: 'Every how long does a patch version of symfony come out? ((e.g. 5.4.12, 6.1.9)'
+    question: 'How frequently does a patch version of Symfony come out? ((e.g. 5.4.12, 6.1.9)'
     answers:
       - { value: 'every weeks', correct: false }
       - { value: 'every 2 weeks', correct: false }

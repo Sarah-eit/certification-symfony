@@ -122,7 +122,7 @@ questions:
       - { value: 'public function vote(TokenInterface $token, array $attributes, $object)', correct: false }
       - { value: 'public function vote(TokenInterface $token, $object, array $attributes)', correct: false }
       - { value: 'public function vote(TokenInterface $token, array $attributes, $subject)', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authorization/Voter/VoterInterface.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Core/Authorization/Voter/VoterInterface.php'
   -
     uuid: 1eebf878-8b9d-6506-af8c-99d84c92580c
     question: 'Which class can be used to extracts security errors from a Request?'
@@ -132,7 +132,7 @@ questions:
       - { value: HttpUtils, correct: false }
       - { value: SecurityUtils, correct: false }
       - { value: RequestUtils, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Http/Authentication/AuthenticationUtils.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Http/Authentication/AuthenticationUtils.php'
   -
     uuid: 1eebf878-8ba0-6756-8594-99d84c92580c
     question: 'What is the short open tag for PHP?'

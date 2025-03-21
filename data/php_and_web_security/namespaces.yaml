@@ -24,7 +24,7 @@ questions:
       - { value: Symfony\Module, correct: false }
       - { value: Symfony\Component, correct: true }
       - { value: Symfony\Plugin, correct: false }
-    help: 'https://github.com/symfony/symfony/tree/master/src/Symfony'
+    help: 'https://github.com/symfony/symfony/tree/7.0/src/Symfony'
   -
     uuid: 1eebf878-8ba9-63d8-874d-99d84c92580c
     question: 'Where is the Test Class ? namespace Foo\Bar; use Foo\Test;'

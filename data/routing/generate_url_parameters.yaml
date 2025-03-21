@@ -63,4 +63,4 @@ questions:
       - { value: UrlGenerator, correct: false }
       - { value: UrlGeneratorInterface, correct: true }
       - { value: PathGenerator, correct: false }
-    help: 'https://symfony.com/doc/6.4/routing.html#generating-urls-in-services'
+    help: 'https://symfony.com/doc/7.0/routing.html#generating-urls-in-services'

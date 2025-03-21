@@ -21,7 +21,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L97'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L97'
   -
     uuid: 1eebf878-8b99-61ae-89e6-99d84c92580c
     question: 'Could the theme used by HtmlDumper be changed?'
@@ -66,4 +66,4 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/6.4/components/var_dumper.html#the-dump-server'
+    help: 'https://symfony.com/doc/7.0/components/var_dumper.html#the-dump-server'

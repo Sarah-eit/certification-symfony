@@ -15,7 +15,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/RedirectResponse.php#L42'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RedirectResponse.php#L42'
   -
     uuid: 1eebf878-8b98-618c-b12d-99d84c92580c
     question: 'Which of the following are valid Symfony response classes extending the base Symfony\Component\HttpFoundation\Response class?'
@@ -58,7 +58,7 @@ questions:
       - { value: $response->setStatus(304), correct: false }
       - { value: "$response->set(['status_code' => 304])", correct: false }
       - { value: $response->setNotModified(), correct: true }
-    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Response.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Response.php'
   -
     uuid: 1eebf878-8b9f-616c-87fe-99d84c92580c
     question: 'Which of these response objects does not exists?'
@@ -80,7 +80,7 @@ questions:
       - { value: $response->isRedirection(), correct: true }
       - { value: $response->isInvalid(), correct: true }
       - { value: $response->isError(), correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Response.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Response.php'
   -
     uuid: 1eebf878-8ba0-6486-992a-99d84c92580c
     question: 'How can you set status code of Symfony\Component\HttpFoundation\Response'

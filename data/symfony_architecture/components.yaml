@@ -3,11 +3,11 @@ questions:
     uuid: 1eebf878-8ba3-6c58-917f-99d84c92580c
     question: 'Which of the following are Symfony Core bundles?'
     answers:
-      - { value: CoreBundle, correct: false }
-      - { value: DebugBundle, correct: true }
-      - { value: TwigBundle, correct: true }
-      - { value: WebProfilerBundle, correct: true }
-      - { value: AuthenticationBundle, correct: false }
+      - { value: 'CoreBundle', correct: false }
+      - { value: 'DebugBundle', correct: true }
+      - { value: 'TwigBundle', correct: true }
+      - { value: 'WebProfilerBundle', correct: true }
+      - { value: 'AuthenticationBundle', correct: false }
     help: 'https://github.com/symfony/symfony/tree/master/src/Symfony/Bundle'
   -
     uuid: 1eebf878-8ba4-68c4-890d-99d84c92580c
@@ -30,14 +30,14 @@ questions:
     uuid: 1eebf878-8ba4-6d74-85f7-99d84c92580c
     question: 'Which variables types this $validator object can validate ?$validator = Validation::createValidator();'
     answers:
-      - { value: objects, correct: false }
-      - { value: arrays, correct: true }
-      - { value: numbers, correct: true }
-      - { value: strings, correct: true }
+      - { value: 'objects', correct: false }
+      - { value: 'arrays', correct: true }
+      - { value: 'numbers', correct: true }
+      - { value: 'strings', correct: true }
     help: 'https://symfony.com/doc/current/components/validator.html#retrieving-a-validator-instance'
   -
     uuid: 1eebf878-8ba5-61b6-8363-99d84c92580c
-    question: 'What is the type of the $result ? $result = $kernel->handle($request);'
+    question: 'What is the return type of `$kernel->handle($request)`?'
     answers:
       - { value: 'A Symfony\Component\HttpFoundation\Response instance.', correct: true }
       - { value: 'A string.', correct: false }
@@ -64,13 +64,13 @@ questions:
     uuid: 1eebf878-8ba6-6d90-8dec-99d84c92580c
     question: 'What class of exception can be thrown by Symfony\Component\Security\Core\Authentication\Provider\UserAuthenticationProvider''s authenticate() method?'
     answers:
-      - { value: WrongPasswordException, correct: false }
-      - { value: AuthenticationServiceException, correct: false }
-      - { value: AuthenticationFailureException, correct: false }
-      - { value: UserNotFoundException, correct: false }
-      - { value: BadCredentialsException, correct: true }
-      - { value: UsernameNotFoundException, correct: true }
-    help: 'https//github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authentication/Provider/UserAuthenticationProvider.php#L55'
+      - { value: 'WrongPasswordException', correct: false }
+      - { value: 'AuthenticationServiceException', correct: false }
+      - { value: 'AuthenticationFailureException', correct: false }
+      - { value: 'UserNotFoundException', correct: false }
+      - { value: 'BadCredentialsException', correct: true }
+      - { value: 'UsernameNotFoundException', correct: true }
+    help: 'https//github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Core/Authentication/Provider/UserAuthenticationProvider.php#L55'
   -
     uuid: 1eebf878-8ba7-68bc-874c-99d84c92580c
     question: 'When you want to use a translation in another domain than the default domain, you must specify the domain as:'
@@ -84,32 +84,32 @@ questions:
     uuid: 1eebf878-8ba7-6952-8382-99d84c92580c
     question: 'What component must be installed in order to use the ObjectNormalizer?'
     answers:
-      - { value: Config, correct: false }
-      - { value: DependencyInjection, correct: false }
-      - { value: PropertyAccess, correct: true }
-      - { value: EventDispatcher, correct: false }
+      - { value: 'Config', correct: false }
+      - { value: 'DependencyInjection', correct: false }
+      - { value: 'PropertyAccess', correct: true }
+      - { value: 'EventDispatcher', correct: false }
     help: 'https://symfony.com/doc/current/components/serializer.html#installation'
   -
     uuid: 1eebf878-8ba7-6b64-abc4-99d84c92580c
     question: 'Sometimes you may prefer to not save the objects immediately in order to increase the application performance. Which method would you call to mark cache items as ready to be persisted and then call to commit() method when you are ready to persist them all?'
     answers:
-      - { value: save(), correct: false }
-      - { value: defer(), correct: false }
-      - { value: saveDeferred(), correct: true }
-      - { value: persistDeferred(), correct: false }
+      - { value: 'save()', correct: false }
+      - { value: 'defer()', correct: false }
+      - { value: 'saveDeferred()', correct: true }
+      - { value: 'persistDeferred()', correct: false }
     help: 'https://symfony.com/doc/current/components/cache/cache_pools.html#saving-cache-items'
   -
     uuid: 1eebf878-8ba9-6662-bd4b-99d84c92580c
     question: 'Which types are not valid Node Types ?'
     answers:
-      - { value: variable, correct: false }
-      - { value: date, correct: true }
-      - { value: scalar, correct: false }
-      - { value: integer, correct: false }
-      - { value: float, correct: false }
-      - { value: decimal, correct: true }
-      - { value: int, correct: true }
-      - { value: enum, correct: false }
+      - { value: 'variable', correct: false }
+      - { value: 'date', correct: true }
+      - { value: 'scalar', correct: false }
+      - { value: 'integer', correct: false }
+      - { value: 'float', correct: false }
+      - { value: 'decimal', correct: true }
+      - { value: 'int', correct: true }
+      - { value: 'enum', correct: false }
     help: 'https://symfony.com/doc/current/components/config/definition.html#node-type'
   -
     uuid: 1eebf878-8ba9-66b2-95e5-99d84c92580c
@@ -124,12 +124,12 @@ questions:
     uuid: 1eebf878-8ba9-6748-82fb-99d84c92580c
     question: 'Which exception is thrown when a service is not defined while using ContainerInterface::get()?'
     answers:
-      - { value: ServiceNotFoundException, correct: true }
-      - { value: ServiceUndefinedException, correct: false }
-      - { value: UndefinedServiceException, correct: false }
-      - { value: ServiceGetException, correct: false }
-      - { value: ServiceUnavailableException, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/DependencyInjection/Container.php#L221'
+      - { value: 'ServiceNotFoundException', correct: true }
+      - { value: 'ServiceUndefinedException', correct: false }
+      - { value: 'UndefinedServiceException', correct: false }
+      - { value: 'ServiceGetException', correct: false }
+      - { value: 'ServiceUnavailableException', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/DependencyInjection/Container.php#L221'
   -
     uuid: 1eebf878-8ba9-682e-9a05-99d84c92580c
     question: 'What''s true about the addListener()''s $priority value from Symfony\Component\EventDispatcher\EventDIspatcherInterface?'
@@ -149,10 +149,10 @@ questions:
       - { value: 'Whether to enable caching or not.', correct: false }
       - { value: 'Whether to enable logging or not.', correct: false }
       - { value: 'Whether to enable debugging or not.', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/Kernel.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpKernel/Kernel.php'
   -
     uuid: 1eebf878-8ba9-69fa-9583-99d84c92580c
-    question: 'Could a controller be defined using \Closure?'
+    question: 'In Symfony, is it possible to define a controller using a \Closure function?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
@@ -161,13 +161,13 @@ questions:
     uuid: 1eebf878-8ba9-6aea-8517-99d84c92580c
     question: 'Which of the following value resolvers are shipped with the HttpKernel component?'
     answers:
-      - { value: RequestAttributeValueResolver, correct: true }
-      - { value: VariadicValueResolver, correct: true }
-      - { value: RequestValueResolver, correct: true }
-      - { value: UserValueResolver, correct: false }
-      - { value: ServiceValueResolver, correct: true }
-      - { value: DefaultValueResolver, correct: true }
-      - { value: SessionValueResolver, correct: true }
+      - { value: 'RequestAttributeValueResolver', correct: true }
+      - { value: 'VariadicValueResolver', correct: true }
+      - { value: 'RequestValueResolver', correct: true }
+      - { value: 'UserValueResolver', correct: false }
+      - { value: 'ServiceValueResolver', correct: true }
+      - { value: 'DefaultValueResolver', correct: true }
+      - { value: 'SessionValueResolver', correct: true }
     help: 'https://symfony.com/doc/current/controller/argument_value_resolver.html#built-in-value-resolvers'
   -
     uuid: 1eebf878-8ba9-6b30-8746-99d84c92580c
@@ -222,28 +222,28 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/RequestStack.php'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php'
   -
     uuid: 1eebf878-8baa-6602-b7f4-99d84c92580c
     question: 'What class should be used to make a caching backend taggable?'
     answers:
-      - { value: Symfony\Component\Cache\Adapter\TagAwareAdapter, correct: true }
-      - { value: Symfony\Component\Cache\Adapter\TaggerAdapter, correct: false }
-      - { value: Symfony\Component\Cache\Adapter\TagAdapter, correct: false }
-      - { value: Symfony\Component\Cache\Adapter\TaggingAdapter, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Cache/Adapter/TagAwareAdapter.php'
+      - { value: 'Symfony\Component\Cache\Adapter\TagAwareAdapter', correct: true }
+      - { value: 'Symfony\Component\Cache\Adapter\TaggerAdapter', correct: false }
+      - { value: 'Symfony\Component\Cache\Adapter\TagAdapter', correct: false }
+      - { value: 'Symfony\Component\Cache\Adapter\TaggingAdapter', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Cache/Adapter/TagAwareAdapter.php'
   -
     uuid: 1eebf878-8baa-6698-bb00-99d84c92580c
-    question: 'Which variables can be used in the ExpressionLanguage expression when using the condition option on a Route?'
+    question: 'Which variables are available in an ExpressionLanguage expression when using the condition option on a route?'
     answers:
-      - { value: this, correct: false }
-      - { value: params, correct: true }
-      - { value: container, correct: false }
-      - { value: context, correct: true }
-      - { value: service, correct: false }
-      - { value: user, correct: false }
-      - { value: request, correct: true }
-    help: 'https://symfony.com/doc/7.2/routing.html'
+      - { value: 'this', correct: false }
+      - { value: 'params', correct: true }
+      - { value: 'container', correct: false }
+      - { value: 'context', correct: true }
+      - { value: 'service', correct: false }
+      - { value: 'user', correct: false }
+      - { value: 'request', correct: true }
+    help: 'https://symfony.com/doc/7.0/routing.html'
   -
     uuid: 1eed5768-e3b6-667a-8f78-21c4c4321b85
     question: 'What is the main purpose of the eraseCredentials() method from the UserInterface?'
@@ -252,7 +252,7 @@ questions:
       - { value: "Disable user's account", correct: false }
       - { value: 'Remove sensitive data from the user', correct: true }
       - { value: 'Reload user from database', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/User/UserInterface.php#L49-L55'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Core/User/UserInterface.php#L49-L55'
   -
     uuid: 1eed5770-8031-6462-93b0-97021e8fc25e
     question: 'If I want to allow the client to specify CLI option --force, what am I going to add to the definition?'
@@ -310,8 +310,8 @@ questions:
     uuid: 1efe5520-d859-6216-a124-5da537cc9cc7
     question: 'In a bidirectional OneToMany/ManyToOne relation in Doctrine, which side owns the relation (i.e., holds the foreign key)?'
     answers:
-      - { value: OneToMany, correct: false }
-      - { value: ManyToOne, correct: true }
+      - { value: 'OneToMany', correct: false }
+      - { value: 'ManyToOne', correct: true }
     help: 'https://www.doctrine-project.org/projects/doctrine-orm/en/3.1/reference/unitofwork-associations.html'
   -
     uuid: 1efe5525-1d09-610a-a355-73a92b88d69e

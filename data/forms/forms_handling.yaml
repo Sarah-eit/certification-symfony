@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/forms#the-required-option'
+    help: 'https://symfony.com/doc/7.0/forms#the-required-option'
   -
     uuid: 1eebf878-8b98-62fe-ad30-99d84c92580c
     question: 'How can you disable the validation in a form?'

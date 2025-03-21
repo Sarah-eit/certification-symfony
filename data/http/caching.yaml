@@ -5,4 +5,4 @@ questions:
     answers:
       - { value: 'True', correct: false }
       - { value: 'False', correct: true }
-    help: 'https://symfony.com/doc/current/http_cache/expiration.html#expiration-with-the-expires-header'
+    help: 'https://symfony.com/doc/7.0/http_cache/expiration.html#expiration-with-the-expires-header'

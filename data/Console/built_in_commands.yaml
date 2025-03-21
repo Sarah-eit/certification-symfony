@@ -17,7 +17,7 @@ questions:
       - { value: 'A route limit', correct: false }
       - { value: 'The route URL', correct: false }
       - { value: 'A route name', correct: true }
-    help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
+    help: 'https://symfony.com/doc/7.0/routing.html#debugging-routes'
   -
     uuid: 1eebf878-8b9e-68e8-b123-99d84c92580c
     question: 'Which argument can be passed to the router:match command?'
@@ -27,7 +27,7 @@ questions:
       - { value: 'A route limit', correct: false }
       - { value: 'The route URL', correct: true }
       - { value: 'A route name', correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
+    help: 'https://symfony.com/doc/7.0/routing.html#debugging-routes'
   -
     uuid: 1eebf878-8b9e-6938-be57-99d84c92580c
     question: 'What is the command to check the syntax of a Twig template?'
@@ -36,7 +36,7 @@ questions:
       - { value: 'php bin/console twig:lint', correct: false }
       - { value: 'php bin/console twig:validate', correct: false }
       - { value: 'php bin/console twig:syntax', correct: false }
-    help: 'https://symfony.com/doc/current/templates.html#linting-twig-templates'
+    help: 'https://symfony.com/doc/7.0/templates.html#linting-twig-templates'
   -
     uuid: 1eebf878-8b9e-697e-9dd8-99d84c92580c
     question: 'What is the console command to clear cache?'
@@ -45,7 +45,7 @@ questions:
       - { value: 'php bin/console clear:cache', correct: false }
       - { value: 'php bin/console cache:clean', correct: false }
       - { value: 'php bin/console cache:invalidate', correct: false }
-    help: 'https://symfony.com/doc/current/cache.html#clearing-the-cache'
+    help: 'https://symfony.com/doc/7.0/cache.html#clearing-the-cache'
   -
     uuid: 1eebf878-8b9e-6a6e-9628-99d84c92580c
     question: 'What is the command line to validate the doctrine mapping files ?'
@@ -54,7 +54,7 @@ questions:
       - { value: 'php bin/console doctrine:schema:update --dump-sql --complete', correct: false }
       - { value: 'php bin/console doctrine:schema:update --force --complete', correct: false }
       - { value: 'php bin/console doctrine:mapping:import', correct: false }
-    help: 'https://symfony.com/doc/current/doctrine.html#add-mapping-information'
+    help: 'https://symfony.com/doc/7.0/doctrine.html#add-mapping-information'
   -
     uuid: 1eebf878-8b9e-6bb8-99e5-99d84c92580c
     question: 'What is the console command to create a new entity?'
@@ -65,7 +65,7 @@ questions:
       - { value: 'php bin/console doctrine:create:entity', correct: false }
       - { value: 'php bin/console make:entity', correct: true }
       - { value: 'php bin/console entity:make', correct: false }
-    help: 'https://symfony.com/doc/current/doctrine.html#creating-an-entity-class'
+    help: 'https://symfony.com/doc/7.0/doctrine.html#creating-an-entity-class'
   -
     uuid: 1eebf878-8b9e-6c30-8003-99d84c92580c
     question: 'What is the command to update the database from entities?'
@@ -74,7 +74,7 @@ questions:
       - { value: 'php bin/console doctrine:entity:update --my-db', correct: false }
       - { value: 'php bin/console doctrine:entity --create', correct: false }
       - { value: 'php bin/console make:migration & php bin/console doctrine:migrations:migrate', correct: true }
-    help: 'https://symfony.com/doc/current/doctrine.html#migrations-creating-the-database-tables-schema'
+    help: 'https://symfony.com/doc/7.0/doctrine.html#migrations-creating-the-database-tables-schema'
   -
     uuid: 1eebf878-8b9e-6c80-b421-99d84c92580c
     question: 'What is the right command name to load Doctrine fixtures?'
@@ -83,7 +83,7 @@ questions:
       - { value: 'php bin/console doctrine:load:fixtures', correct: false }
       - { value: 'php bin/console doctrine:fixtures', correct: false }
       - { value: 'php bin/console doctrine:fixtures:import', correct: false }
-    help: 'https://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html#loading-fixtures'
+    help: 'https://symfony.com/doc/7.0/bundles/DoctrineFixturesBundle/index.html#loading-fixtures'
   -
     uuid: 1eebf878-8b9e-6e10-8352-99d84c92580c
     question: 'How to Call Other Commands in a command ?'
@@ -92,14 +92,14 @@ questions:
       - { value: '$command->run($input, $output);', correct: true }
       - { value: '$command->call($input, $output);', correct: false }
       - { value: '$command->forward($input, $output);', correct: false }
-    help: 'https://symfony.com/doc/current/console/calling_commands.html'
+    help: 'https://symfony.com/doc/7.0/console/calling_commands.html'
   -
     uuid: 1eebf878-8b9f-67e8-a161-99d84c92580c
     question: 'The lint:container command checks that the arguments injected into services match their type declarations'
     answers:
       - { value: 'true', correct: true }
       - { value: 'false', correct: false }
-    help: 'https://symfony.com/doc/current/service_container.html#linting-service-definitions'
+    help: 'https://symfony.com/doc/7.0/service_container.html#linting-service-definitions'
   -
     uuid: 1eebf878-8ba7-6466-8627-99d84c92580c
     question: 'Which "Tester" class should you use to test a console event?'

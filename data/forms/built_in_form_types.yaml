@@ -9,7 +9,7 @@ questions:
       - { value: UrlType, correct: true }
       - { value: PasswordType, correct: true }
       - { value: EmailType, correct: true }
-    help: 'https://symfony.com/doc/current/reference/forms/types.html#text-fields'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types.html#text-fields'
   -
     uuid: 1eebf878-8b9f-6cde-93c9-99d84c92580c
     question: 'Which of the following are valid date types in Symfony?'
@@ -18,7 +18,7 @@ questions:
       - { value: datetime, correct: true }
       - { value: time, correct: true }
       - { value: timestamp, correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types.html#date-and-time-fields'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types.html#date-and-time-fields'
   -
     uuid: 1eebf878-8ba0-6044-b236-99d84c92580c
     question: 'What are the ways to disable validation of submitted data in Symfony forms?'
@@ -28,7 +28,7 @@ questions:
       - { value: 'set the enable_validation option to false', correct: false }
       - { value: $this->createFormBuilder()->isValidated(false), correct: false }
       - { value: 'By using false as third parameter for createFormBuilder', correct: false }
-    help: 'https://symfony.com/doc/current/form/disabling_validation.html'
+    help: 'https://symfony.com/doc/7.0/form/disabling_validation.html'
   -
     uuid: 1eebf878-8ba2-639e-8140-99d84c92580c
     question: 'What can be achieved using the prototype_name of the Symfony\Component\Form\Extension\Core\Type\CollectionType form type ?'
@@ -36,7 +36,7 @@ questions:
       - { value: 'When one uses some third-party javascript library to handle the collection, it allows to wire the prototype to it.', correct: false }
       - { value: 'When one wants to customize the rendering of the field, it allows to override the form prototype block prefix.', correct: false }
       - { value: 'When one has a prototype embedding other prototypes, it allows to replace each one with a specific value.', correct: true }
-    help: 'https://symfony.com/doc/current/reference/forms/types/collection.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/collection.html'
   -
     uuid: 1eebf878-8ba2-69d4-b503-99d84c92580c
     question: 'Among the following, which one is not a built-in form type?'
@@ -45,7 +45,7 @@ questions:
       - { value: NumberType, correct: false }
       - { value: MoneyType, correct: false }
       - { value: IbanType, correct: true }
-    help: 'https://symfony.com/doc/current/reference/forms/types.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types.html'
   -
     uuid: 1eebf878-8ba2-6f74-bd21-99d84c92580c
     question: 'Which option should you use to have a DateType form rendered in HTML5 input type="date"?'
@@ -54,7 +54,7 @@ questions:
       - { value: html5, correct: true }
       - { value: no_javascript, correct: false }
       - { value: type_date, correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types/date.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/date.html'
   -
     uuid: 1eec03d0-54b8-69ce-b60e-59a90bbfc757
     question: 'Which Buil-in Validators is used to check a type ?'
@@ -63,7 +63,7 @@ questions:
       - { value: HasType, correct: false }
       - { value: 'IsString, IsInteger, IsArray ...', correct: false }
       - { value: Type, correct: true }
-    help: 'https://symfony.com/doc/current/reference/constraints.html'
+    help: 'https://symfony.com/doc/7.0/reference/constraints.html'
   -
     uuid: 1eec045b-a03a-6704-a20d-5305a622e54a
     question: 'What are the valid way to Assert Choices in a Validator ?'
@@ -71,4 +71,4 @@ questions:
       - { value: "#[Assert\\Choice( choices: ['fiction', 'non-fiction'])] private string $genre;", correct: true }
       - { value: "#[Assert\\Choices(['fiction', 'non-fiction'])] private string $genre;", correct: false }
       - { value: "#[Assert\\Choice(['fiction', 'non-fiction'])] private string $genre;", correct: true }
-    help: 'https://symfony.com/doc/current/validation.html#constraint-configuration'
+    help: 'https://symfony.com/doc/7.0/validation.html#constraint-configuration'

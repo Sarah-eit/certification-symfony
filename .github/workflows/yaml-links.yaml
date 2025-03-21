@@ -1,0 +1,30 @@
+name: Check YAML Links
+
+on:
+  pull_request:
+    branches: [ "7.0" ]
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget yq
+
+      - name: Check links in YAML files
+        run: |
+          find data -type f -name "*.yaml" | while read file; do
+            urls=$(yq e '.questions[].help' "$file" 2>/dev/null | grep -E '^https?://' || true)
+            for url in $urls; do
+              if ! wget --spider --timeout=10 --tries=1 "$url" 2>/dev/null; then
+                echo "Broken link in $file: $url"
+                exit 1
+              fi
+            done
+          done

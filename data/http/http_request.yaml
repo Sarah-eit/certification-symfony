@@ -7,7 +7,7 @@ questions:
       - { value: 'A sub request serves to create HTTP cache headers.', correct: false }
       - { value: 'A sub request is a request from a HTTP reverse proxy.', correct: false }
       - { value: 'A sub request is a request used in tests.', correct: false }
-    help: 'https://symfony.com/doc/current/components/http_kernel.html#sub-requests'
+    help: 'https://symfony.com/doc/7.0/components/http_kernel.html#sub-requests'
   -
     uuid: 1eebf878-8ba0-6166-9951-99d84c92580c
     question: 'Which of these HTTP headers does not exist?'

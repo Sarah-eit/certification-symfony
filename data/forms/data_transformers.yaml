@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/form/data_transformers.html'
+    help: 'https://symfony.com/doc/7.0/form/data_transformers.html'
   -
     uuid: 1eebf878-8b9c-6aa2-a4b0-99d84c92580c
     question: 'How to add a DataTransformer to the tags field?'
@@ -19,7 +19,7 @@ questions:
     question: 'How to Use Data Transformers ?'
     answers:
       - { value: "$builder->get('tags')->addModelTransformer(...);", correct: true }
-      - { value: "$builder->add($builder->create('tags', TextType::class)->addModelTransformer(...));", correct: true }
+      - { value: "$builder->add('tags', TextType::class); $builder->get('tags')->addModelTransformer(...));", correct: true }
       - { value: "$builder->add('tags', TextType::class)->addModelTransformer(...);", correct: false }
     help: 'https://symfony.com/doc/current/form/data_transformers.html'
   -
@@ -29,13 +29,6 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/form/data_transformers.html'
-  -
-    uuid: 1eebf878-8ba5-6382-a6c5-99d84c92580c
-    question: "Is this a valid way to add a DataTransformer ? $builder->add('issue', TextType::class)->addModelTransformer($transformer);"
-    answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'
   -
     uuid: 1eebf878-8ba5-63c8-9923-99d84c92580c
     question: 'In the CallbackTransformer, the first function is used to transform the data and the second function is used to reverse-transform it. Is that right ?'

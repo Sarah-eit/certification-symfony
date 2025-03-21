@@ -17,7 +17,7 @@ questions:
       - { value: framework.session.cookie.lifetime, correct: false }
       - { value: framework.parameters.cookie_lifetime, correct: false }
       - { value: framework.cookie_lifetime, correct: false }
-    help: 'https://symfony.com/doc/current/reference/configuration/framework.html'
+    help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html'
   -
     uuid: 1eebf878-8ba0-6512-85ad-99d84c92580c
     question: 'Which of the following HTTP headers can be used by the server to the client to exchange informations about cookies ?'

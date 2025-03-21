@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/cursor.html'
   -
     uuid: 1eebf878-8b99-6bea-907b-99d84c92580c
     question: 'Which of the following constants from Symfony\Component\Console\Input\InputArgument do not exist?'

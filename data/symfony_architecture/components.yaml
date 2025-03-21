@@ -11,7 +11,7 @@ questions:
     help: 'https://github.com/symfony/symfony/tree/master/src/Symfony/Bundle'
   -
     uuid: 1eebf878-8ba4-68c4-890d-99d84c92580c
-    question: 'Could the master request be retrieved from the request stack?'
+    question: 'In Symfony, can the main request be retrieved from the RequestStack?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
@@ -308,7 +308,7 @@ questions:
     help: 'https://symfony.com/doc/2.x/components/translation.html#loading-messages-with-the-file-loaders'
   -
     uuid: 1efe5520-d859-6216-a124-5da537cc9cc7
-    question: 'What side of the relation is the owning side ?'
+    question: 'In a bidirectional OneToMany/ManyToOne relation in Doctrine, which side owns the relation (i.e., holds the foreign key)?'
     answers:
       - { value: OneToMany, correct: false }
       - { value: ManyToOne, correct: true }
@@ -321,4 +321,4 @@ questions:
       - { value: 'Validates a card number', correct: true }
       - { value: "It doesn't exist", correct: false }
       - { value: 'Validates an IBAN number', correct: false }
-    help: 'https://symfony.com/doc/2.3/reference/constraints/Luhn.html'
+    help: 'https://symfony.com/doc/7.0/reference/constraints/Luhn.html'

@@ -11,7 +11,7 @@ questions:
       - { value: 'OutputInterface::VERBOSITY_VERY_VERY_VERBOSE', correct: false }
       - { value: 'OutputInterface::VERBOSITY_ALERT', correct: false }
       - { value: 'OutputInterface::VERBOSITY_WARNING', correct: false }
-    help: 'https://symfony.com/doc/current/console/verbosity.html'
+    help: 'https://symfony.com/doc/7.0/console/verbosity.html'
   -
     uuid: 1eebf878-8ba5-68c8-80d0-99d84c92580c
     question: 'In a console, what are the available methods to show messages only in a case of verbosity ?'
@@ -23,28 +23,28 @@ questions:
       - { value: isVeryVeryVerbose(), correct: false }
       - { value: isDebug(), correct: true }
       - { value: isVeryDebug(), correct: false }
-    help: 'https://symfony.com/doc/current/console/verbosity.html'
+    help: 'https://symfony.com/doc/7.0/console/verbosity.html'
   -
     uuid: 1eebf878-8ba5-690e-84ef-99d84c92580c
     question: "Is this a correct way to print information in a console for a verbose level or higher ? $output->writeln(OutputInterface::VERBOSITY_VERBOSE, 'Printed in verbose mode or higher');"
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/console/verbosity.html'
+    help: 'https://symfony.com/doc/7.0/console/verbosity.html'
   -
     uuid: 1eebf878-8ba5-695e-b607-99d84c92580c
     question: "Is this way is a correct way to show information in a console only for a kind of verbosity ? $output->verbose('Will only be printed in verbose mode or higher'); "
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/console/verbosity.html'
+    help: 'https://symfony.com/doc/7.0/console/verbosity.html'
   -
     uuid: 1eebf878-8ba5-69a4-83e8-99d84c92580c
     question: 'In a console, when a quiet level is used, does the method write() return the printed text ?'
     answers:
       - { value: 'No', correct: true }
       - { value: 'Yes', correct: false }
-    help: 'https://symfony.com/doc/current/console/verbosity.html'
+    help: 'https://symfony.com/doc/7.0/console/verbosity.html'
   -
     uuid: 1eebf878-8ba5-69ea-bb98-99d84c92580c
     question: 'What is the value of the OutputInterface::VERBOSITY_VERY_VERBOSE ?'
@@ -53,4 +53,4 @@ questions:
       - { value: '1', correct: false }
       - { value: '2', correct: true }
       - { value: '3', correct: false }
-    help: 'https://symfony.com/doc/current/console/verbosity.html'
+    help: 'https://symfony.com/doc/7.0/console/verbosity.html'

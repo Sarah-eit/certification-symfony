@@ -8,7 +8,7 @@ questions:
       - { value: 'InputArgument::IS_MULTIPLE', correct: false }
       - { value: 'InputArgument::OPTIONAL', correct: true }
       - { value: 'InputArgument::REQUIRED', correct: true }
-    help: 'https://symfony.com/doc/current/console/input.html#using-command-arguments'
+    help: 'https://symfony.com/doc/7.0/console/input.html#using-command-arguments'
   -
     uuid: 1eebf878-8b9d-66e6-8c20-99d84c92580c
     question: 'Which of the following are not built-in option variants ?'
@@ -19,14 +19,14 @@ questions:
       - { value: 'InputOption::VALUE_NONE', correct: false }
       - { value: 'InputOption::VALUE_NOT_REQUIRED', correct: true }
       - { value: 'InputOption::VALUE_IS_ARRAY', correct: false }
-    help: 'https://symfony.com/doc/current/console/input.html#using-command-options'
+    help: 'https://symfony.com/doc/7.0/console/input.html#using-command-options'
   -
     uuid: 1eebf878-8b9e-6b68-a9e2-99d84c92580c
     question: 'Does the Symfony Console component needs PHP globals internals variables to work?'
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/components/console.html#installation'
+    help: 'https://symfony.com/doc/7.0/components/console.html#installation'
   -
     uuid: 1eebf878-8ba2-6d62-841b-99d84c92580c
     question: 'What is the default value when calling Command::setHidden()?'

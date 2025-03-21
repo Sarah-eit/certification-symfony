@@ -8,7 +8,7 @@ questions:
       - { value: 'FormEvents::POST_SUBMIT', correct: false }
       - { value: 'FormEvents::SUBMIT', correct: false }
       - { value: 'FormEvents::POST_SET_DATA', correct: false }
-    help: 'https://symfony.com/doc/current/form/events.html'
+    help: 'https://symfony.com/doc/7.0/form/events.html'
   -
     uuid: 1eebf878-8b9d-610a-8c96-99d84c92580c
     question: 'What is returned by the getData() method of PreSubmitEvent ?'

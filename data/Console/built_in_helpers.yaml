@@ -12,7 +12,7 @@ questions:
       - { value: FileHelper, correct: true }
       - { value: DialogHelper, correct: true }
       - { value: InformationHelper, correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/index.html'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/index.html'
   -
     uuid: 1eebf878-8ba5-6b52-8c17-99d84c92580c
     question: "What's the correct way to get to position of the cursor in a command ?"
@@ -21,7 +21,7 @@ questions:
       - { value: $cursor->getPosition();, correct: false }
       - { value: $cursor->whereAmI();, correct: false }
       - { value: $cursor->getMyPosition();, correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html#moving-the-cursor'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/cursor.html#moving-the-cursor'
   -
     uuid: 1eebf878-8ba5-6b98-85e7-99d84c92580c
     question: 'What are correct ways to move the cursor 3 colums to the right from where i am in a console ?'
@@ -29,7 +29,7 @@ questions:
       - { value: $cursor->moveRight(3);, correct: true }
       - { value: $cursor->moveRight()->moveRight()->moveRight();, correct: true }
       - { value: "$cursor->moveToPosition($cursor->getCurrentPosition()[0], $cursor->getCurrentPosition()[1] + 3);", correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html#moving-the-cursor'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/cursor.html#moving-the-cursor'
   -
     uuid: 1eebf878-8ba5-6be8-a74b-99d84c92580c
     question: 'What functions could you use to clear some part of the screen in a console ?'
@@ -40,7 +40,7 @@ questions:
       - { value: $cursor->clearLineAfter();, correct: true }
       - { value: $cursor->clearScreen();, correct: true }
       - { value: $cursor->clearOutput();, correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html#clearing-output'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/cursor.html#clearing-output'
   -
     uuid: 1eebf878-8ba5-6c2e-bfca-99d84c92580c
     question: "What's the correct way to call formater helper in the console ?"
@@ -48,7 +48,7 @@ questions:
       - { value: "Calling with $this->getHelper('formater');", correct: true }
       - { value: 'Instantiate for example FormatterHelperInterface in the construct', correct: false }
       - { value: 'Instantiate for exampe FormaterHelper in the construct', correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/formatterhelper.html'
   -
     uuid: 1eebf878-8ba5-6c74-a208-99d84c92580c
     question: 'What is the correct way to truncate a message in a console with the formater helper ? $message = "This is a very long message, which should be truncated";to $message = "This is a very long message, which should be!!";'
@@ -57,32 +57,32 @@ questions:
       - { value: "$formatter->truncateMessage($message, -10, '!!');", correct: false }
       - { value: "$formatter->truncate($message, -10, '!!');", correct: true }
       - { value: "$formatter->truncateMessage($message, 44, '!!');", correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/formatterhelper.html'
   -
     uuid: 1eebf878-8ba5-6cba-8c29-99d84c92580c
-    question: "In a console, how to disable the custom suffix '...' in the function truncate of the formater helper ?"
+    question: 'Which parameter should be used to remove the default "..." suffix in the `truncate` method of the formatter helper?'
     answers:
       - { value: '$formatter->truncate($message, 7)->disableSuffix();', correct: false }
       - { value: '$formatter->truncate($message, 7, "");', correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html#custom-suffix'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/formatterhelper.html#custom-suffix'
   -
     uuid: 1eebf878-8ba5-6d00-8fa6-99d84c92580c
-    question: 'In the formatter helper in a console, what are the available format you could use ?'
+    question: 'In a console, what are the available format you could use from the formatter helper ?'
     answers:
-      - { value: $formatter->formatSection(...);, correct: true }
-      - { value: $formatter->formatBlock(...);, correct: true }
-      - { value: $formatter->formatTable(...);, correct: false }
-      - { value: $formatter->formatFlashes(...);, correct: false }
+      - { value: '$formatter->formatSection(...);', correct: true }
+      - { value: '$formatter->formatBlock(...);', correct: true }
+      - { value: '$formatter->formatTable(...);', correct: false }
       - { value: 'Helper::formatTime(42);', correct: true }
       - { value: 'Helper::formatMemory(1024)', correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html#custom-suffix'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/formatterhelper.html#custom-suffix'
   -
     uuid: 1eebf878-8ba5-6d46-ad98-99d84c92580c
     question: "What's the correct way to modify a rendered tables in a console ?"
     answers:
       - { value: 'use $table->addRow(["Symfony"]);', correct: false }
       - { value: 'use $table->appendRow(["Symfony"]);', correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/table.html#modifying-rendered-tables'
+      - { value: 'use $table->renderRow(["Symfony"]);', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/table.html#modifying-rendered-tables'
   -
     uuid: 1eebf878-8ba5-6e2c-93d3-99d84c92580c
     question: 'What is the parameter option to give to $table = new Table(XXX); in a console ?'
@@ -91,7 +91,7 @@ questions:
       - { value: OutputInterface, correct: true }
       - { value: InputInterface, correct: false }
       - { value: 'no argument', correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/table.html'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/table.html'
   -
     uuid: 1eebf878-8ba5-6e7c-b3dd-99d84c92580c
     question: 'In a console, what kind of Question could you have as a third argument in this question ? $helper->ask($input, $output, $question);'
@@ -101,7 +101,7 @@ questions:
       - { value: Symfony\Component\Console\Question\NumberQuestion, correct: false }
       - { value: Symfony\Component\Console\Question\PasswordQuestion, correct: false }
       - { value: Symfony\Component\Console\Question\Question, correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/questionhelper.html'
   -
     uuid: 1eebf878-8ba5-6ecc-b989-99d84c92580c
     question: 'What is the default value for ConfirmationQuestion in the QuestionHelper ?'
@@ -116,15 +116,15 @@ questions:
       - { value: RuntimeException, correct: true }
       - { value: InvalidValueException, correct: false }
       - { value: BadValueException, correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#validating-the-answer'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/questionhelper.html#validating-the-answer'
   -
     uuid: 1eebf878-8ba5-6f62-b189-99d84c92580c
-    question: 'What is the method to set the given value in the QuestionHelper for a test in the given tester: $commandTester = new CommandTester($command);'
+    question: 'In a test with `CommandTester`, which method should be used to simulate user inputs for the `QuestionHelper`?'
     answers:
       - { value: '$commandTester->setAnswer(["Test"]);', correct: false }
       - { value: '$commandTester->setGivenValue(["Test"]);', correct: false }
       - { value: '$commandTester->setInputs(["Test"]);', correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#testing-a-command-that-expects-input'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/questionhelper.html#testing-a-command-that-expects-input'
   -
     uuid: 1eebf878-8ba5-6ff8-80bd-99d84c92580c
     question: "In a question in your command, what is the way to set a list of valid values autocompletable that the user can answer to this question ? $question = new Question('Please enter the name of a bundle', 'FooBundle'); $bundles = ['AcmeDemoBundle', 'AcmeBlogBundle', 'AcmeStoreBundle'];"
@@ -133,7 +133,7 @@ questions:
       - { value: $question->setAutocomplete($bundles);, correct: false }
       - { value: $question->setAutocompleterValues($bundles);, correct: true }
       - { value: $question->setPossibleValues($bundles);, correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#autocompletion'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/questionhelper.html#autocompletion'
   -
     uuid: 1eebf878-8ba6-6048-bcaf-99d84c92580c
     question: 'What is the first argument required in the new ProgressBar(XXXX) ?'
@@ -151,7 +151,7 @@ questions:
       - { value: '$progressBar->setFormat(OutputInterface::VERBOSITY_VERY_VERBOSE);', correct: false }
       - { value: 'add a "-vv" the end of the command launched', correct: true }
       - { value: $progressBar->setVeryVerbose();, correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/progressbar.html#customizing-the-progress-bar'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/progressbar.html#customizing-the-progress-bar'
   -
     uuid: 1eebf878-8ba6-60de-91d5-99d84c92580c
     question: 'For performance reasons, symfony redraws the screen once every XXXXms. If this is too fast or too slow for your application, use the methods minSecondsBetweenRedraws() and maxSecondsBetweenRedraws(): How much is XXX ?'
@@ -162,7 +162,7 @@ questions:
       - { value: '150 ms', correct: false }
       - { value: '300 ms', correct: false }
       - { value: '800 ms', correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/progressbar.html#bar-settings'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/progressbar.html#bar-settings'
   -
     uuid: 1eebf878-8ba6-6124-b461-99d84c92580c
     question: 'What are the valid way to use the process helper ?'
@@ -170,7 +170,7 @@ questions:
       - { value: "$helper->run($output, 'figlet Symfony');", correct: true }
       - { value: "$helper->run($output, ['figlet', 'Symfony']);", correct: true }
       - { value: "$process = new Process(['figlet', 'Symfony']); $helper->run($output, $process);", correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/processhelper.html'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/processhelper.html'
   -
     uuid: 1eebf878-8ba6-6174-a67f-99d84c92580c
     question: "How can you customize the error message when using the Process Helper's run() method, such as in $helper->run($output, 'ls')?"
@@ -178,4 +178,4 @@ questions:
       - { value: 'by adding ->setInvalidMesage($errorMessage) on run method like $helper->run($output, $process)->setInvalidMessage("Failed");', correct: false }
       - { value: 'by adding a third argument $helper->run($output, $process, "Failed");', correct: true }
       - { value: 'By overring the message of the ProcessHelperException', correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/processhelper.html#customized-display'
+    help: 'https://symfony.com/doc/7.0/components/console/helpers/processhelper.html#customized-display'

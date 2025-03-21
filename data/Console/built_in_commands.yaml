@@ -70,11 +70,10 @@ questions:
     uuid: 1eebf878-8b9e-6c30-8003-99d84c92580c
     question: 'What is the command to update the database from entities?'
     answers:
-      - { value: 'php bin/console doctrine:schema:update --force', correct: true }
-      - { value: 'php bin/console doctrine:entity:update', correct: false }
+      - { value: 'php bin/console doctrine:schema:update --force --complete', correct: true }
+      - { value: 'php bin/console doctrine:entity:update --my-db', correct: false }
       - { value: 'php bin/console doctrine:entity --create', correct: false }
-      - { value: 'php bin/console doctrine:schema:create', correct: false }
-      - { value: 'php bin/console make:migration;php bin/console doctrine:migrations:migrate', correct: true }
+      - { value: 'php bin/console make:migration & php bin/console doctrine:migrations:migrate', correct: true }
     help: 'https://symfony.com/doc/current/doctrine.html#migrations-creating-the-database-tables-schema'
   -
     uuid: 1eebf878-8b9e-6c80-b421-99d84c92580c

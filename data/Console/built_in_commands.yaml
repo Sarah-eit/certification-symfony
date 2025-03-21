@@ -114,4 +114,4 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/6.4/controller.html#fetching-services'
+    help: 'https://symfony.com/doc/7.0/controller.html#fetching-services'

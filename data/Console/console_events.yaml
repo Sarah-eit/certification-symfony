@@ -12,7 +12,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-signal-event'
+    help: 'https://symfony.com/doc/7.0/components/console/events.html#the-consoleevents-signal-event'
   -
     uuid: 1eebf878-8b9a-61d0-ba34-99d84c92580c
     question: 'The Application class of the Console component allows you to optionally hook into the lifecycle of a console application via events. How many events are dispatched?'

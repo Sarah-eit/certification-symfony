@@ -55,7 +55,11 @@ questions:
     question: 'How to prevent to not run the same console command multiple times ?'
     answers:
       - { value: 'By setting the ->unique(true) in the ->configure method of the Command', correct: false }
+<<<<<<< HEAD
+      - { value: 'by using LockableTrait whi define a method ->lock(): bool to check if the command is already used elsewhere', correct: true }
+=======
       - { value: 'by using LockableTrait which define a method ->lock(): bool to check if the command is already used elsewhere', correct: true }
+>>>>>>> origin/7.0-help-links
     help: 'https://symfony.com/doc/7.0/console/lockable_trait.html'
   -
     uuid: 1eebf878-8ba9-6dec-8d76-99d84c92580c

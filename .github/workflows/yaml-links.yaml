@@ -25,6 +25,9 @@ jobs:
               if ! wget --spider --timeout=10 --tries=1 "$url" 2>/dev/null; then
                 echo "Broken link in $file: $url"
                 exit 1
+              else 
+                echo "Working link in $file: $url"
+                exit 1
               fi
             done
           done

@@ -51,7 +51,7 @@ questions:
       - { value: $request->getFilesData(), correct: false }
       - { value: $request->getFiles(), correct: false }
       - { value: $request->files, correct: true }
-    help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
+    help: 'https://symfony.com/doc/7.0/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1efcc15d-7ef8-6738-af50-41f4a1227a1b
     question: 'What will be returned by the following code when the query string is "?foo=bar" ? "$request->query->get(''bar'', ''baz'');"'
@@ -60,4 +60,4 @@ questions:
       - { value: baz, correct: true }
       - { value: 'false', correct: false }
       - { value: 'null', correct: false }
-    help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
+    help: 'https://symfony.com/doc/7.0/components/http_foundation.html#accessing-request-data'

@@ -155,7 +155,7 @@ questions:
       - { value: scale, correct: true }
       - { value: decimals, correct: false }
       - { value: precision, correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types/number.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/number.html'
   -
     uuid: 1eebf878-8b9c-678c-9d91-99d84c92580c
     question: 'Could empty CollectionType entries be removed?'
@@ -174,7 +174,7 @@ questions:
       - { value: 'PhoneType form field allows to use HTML5 input type tel and trigger some basic validation on the entered phone number', correct: false }
       - { value: 'TelType form field allows to use HTML5 input type tel and trigger some basic validation on the entered phone number', correct: false }
       - { value: 'PhoneType form field only allows to use HTML5 input type tel', correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types/tel.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/tel.html'
   -
     uuid: 1eebf878-8b9d-64b6-84b4-99d84c92580c
     question: 'Which of these form types does not inherit from the Symfony\Component\Form\Extension\Core\Type\TextType type ?'
@@ -184,7 +184,7 @@ questions:
       - { value: Symfony\Component\Form\Extension\Core\Type\HiddenType, correct: true }
       - { value: Symfony\Component\Form\Extension\Core\Type\LocaleType, correct: true }
       - { value: Symfony\Component\Form\Extension\Core\Type\PasswordType, correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types.html'
   -
     uuid: 1eebf878-8b9f-6874-968c-99d84c92580c
     question: 'Inside a form type, how to render a DateType field in an text input field?'
@@ -193,7 +193,7 @@ questions:
       - { value: 'Add an option "widget" => "text"', correct: false }
       - { value: 'Add an option "widget" => "single_text"', correct: true }
       - { value: 'Add an option "widget" => "input"', correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types/date.html#widget'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/date.html#widget'
   -
     uuid: 1eebf878-8b9f-6ff4-9937-99d84c92580c
     question: 'Which Field type exist?'
@@ -213,14 +213,14 @@ questions:
       - { value: 'Three select inputs and one text input.', correct: false }
       - { value: 'Five select inputs', correct: false }
       - { value: 'One HTML5 datetime input.', correct: true }
-    help: 'https://symfony.com/doc/current/reference/forms/types/datetime.html#widget'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/datetime.html#widget'
   -
     uuid: 1eebf878-8ba3-6b7c-a185-99d84c92580c
     question: 'Is setting the choice_loader to null required when overriding the choices of LanguageType?'
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
-    help: 'https://symfony.com/doc/current/reference/forms/types/language.html#choices'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/language.html#choices'
   -
     uuid: 1eebf878-8ba3-6cee-ac9a-99d84c92580c
     question: 'By default, what parameter can you use inside the login form to specify the target of the redirection?'
@@ -230,7 +230,7 @@ questions:
       - { value: _path_target, correct: false }
       - { value: _target_path, correct: true }
       - { value: _path, correct: false }
-    help: 'https://symfony.com/doc/current/security/form_login.html#control-the-redirect-url-from-inside-the-form'
+    help: 'https://symfony.com/doc/7.0/security/form_login.html#control-the-redirect-url-from-inside-the-form'
   -
     uuid: 1eebf878-8ba4-6e64-a14b-99d84c92580c
     question: 'What type of value can be set to the query_builder option of the EntityType form type ?'
@@ -240,7 +240,7 @@ questions:
       - { value: 'An instance of Doctrine\ORM\QueryBuilder.', correct: true }
       - { value: 'A string containing a valid query.', correct: false }
       - { value: 'An array of sql statement.', correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types/entity.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/entity.html'
   -
     uuid: 1eebf878-8ba6-6520-bd74-99d84c92580c
     question: 'Which of the following form types is the parent of the Symfony\Component\Form\Extension\Core\Type\BirthdayType form type ?'
@@ -248,7 +248,7 @@ questions:
       - { value: Symfony\Component\Form\Extension\Core\Type\DateTimeType, correct: false }
       - { value: Symfony\Component\Form\Extension\Core\Type\DateType, correct: true }
       - { value: Symfony\Component\Form\Extension\Core\Type\TimeType, correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types/birthday.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/birthday.html'
   -
     uuid: 1eed57b7-0955-6612-b73b-9d916356f596
     question: 'What option should you use with the Symfony\Component\Form\Extension\Core\Type\DateTimeType form type in order to have the form rendered without an input capturing minutes ?'
@@ -257,7 +257,7 @@ questions:
       - { value: 'The minutes option set to false.', correct: false }
       - { value: 'The without_minutes option set to true.', correct: false }
       - { value: 'The with_minutes option set to false.', correct: true }
-    help: 'https://symfony.com/doc/current/reference/forms/types/datetime.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/datetime.html'
   -
     uuid: 1eed57c2-219d-684a-b181-8b98c4e373e6
     question: 'What value is the default_protocol option of the UrlType form type ?'

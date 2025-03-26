@@ -7,7 +7,7 @@ questions:
       - { value: 'Using the inverse option.', correct: false }
       - { value: 'Using the match option.', correct: true }
       - { value: 'Using the prune option.', correct: false }
-    help: 'https://symfony.com/doc/current/reference/constraints/Regex.html'
+    help: 'https://symfony.com/doc/7.0/reference/constraints/Regex.html'
   -
     uuid: 1eebf878-8b98-6592-b2c2-99d84c92580c
     question: 'What is the translation domain for validation error messages?'
@@ -19,16 +19,16 @@ questions:
       - { value: contraints, correct: false }
       - { value: validator, correct: false }
       - { value: validations, correct: false }
-    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#translation-domain'
+    help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html#translation-domain'
   -
     uuid: 1eebf878-8b9b-6b98-970c-99d84c92580c
     question: 'Which constraint should be used to assert that a collection contains exactly 2 items? We assume that Assert is an Alias to Symfony\Component\Validator\Constraints namespace.'
     answers:
-      - { value: '@Assert\Length(min=2, max=2)', correct: false }
-      - { value: '@Assert\Count(min=2)', correct: false }
-      - { value: '@Assert\Length(2)', correct: false }
-      - { value: '@Assert\Count(min=2, max=2)', correct: true }
-    help: 'https://symfony.com/doc/current/reference/constraints/Count.html'
+      - { value: '#[Assert\Length(min: 2, max: 2)]', correct: false }
+      - { value: '#[Assert\Count(min: 2)]', correct: false }
+      - { value: '#[Assert\Count(2)]', correct: false }
+      - { value: '#[Assert\Count(min: 2, max: 2)]', correct: true }
+    help: 'https://symfony.com/doc/7.0/reference/constraints/Count.html'
   -
     uuid: 1eebf878-8b9d-65a6-a7ee-99d84c92580c
     question: 'What is the return type of the ValidatorInterface::validate method?'
@@ -45,7 +45,7 @@ questions:
       - { value: 'Passing constraint instance in $this->createFormBuilder()', correct: false }
       - { value: 'Invoke $formBuilder->setConstraints() method', correct: false }
       - { value: 'Add an annotation in model', correct: true }
-    help: 'https://symfony.com/doc/current/forms.html#validating-forms'
+    help: 'https://symfony.com/doc/7.0/forms.html#validating-forms'
   -
     uuid: 1eebf878-8ba1-675a-a899-99d84c92580c
     question: 'Using Validator component, which method is used to validate a value against a constraint?'
@@ -54,7 +54,7 @@ questions:
       - { value: '$validator->validateValue($object, $constraint)', correct: false }
       - { value: '$validator->isValid($object, $constraint)', correct: false }
       - { value: '$validator->validation($object, $constraint)', correct: false }
-    help: 'https://symfony.com/doc/current/components/validator.html#installation'
+    help: 'https://symfony.com/doc/7.0/components/validator.html#installation'
   -
     uuid: 1eebf878-8ba1-68d6-b09a-99d84c92580c
     question: 'Which constraints exist?'
@@ -63,7 +63,7 @@ questions:
       - { value: IdenticalTo, correct: true }
       - { value: EqualTo, correct: true }
       - { value: SameAs, correct: false }
-    help: 'https://symfony.com/doc/current/reference/constraints.html'
+    help: 'https://symfony.com/doc/7.0/reference/constraints.html'
   -
     uuid: 1eebf878-8ba1-6db8-8235-99d84c92580c
     question: "Which of the following values doesn't trigger a violation when the Date constraint is applied to it?"
@@ -74,7 +74,7 @@ questions:
       - { value: 'new \DateTime("2020-01-15")', correct: false }
       - { value: '2020-13-15', correct: false }
       - { value: 15/13/2020, correct: false }
-    help: 'https://symfony.com/doc/current/reference/constraints/Date.html'
+    help: 'https://symfony.com/doc/7.0/reference/constraints/Date.html'
   -
     uuid: 1eebf878-8ba2-68e4-9e14-99d84c92580c
     question: "Which of the following values don't trigger a violation when the Blank constraint is applied to them ?"
@@ -83,7 +83,7 @@ questions:
       - { value: 'empty string', correct: false }
       - { value: 'false', correct: true }
       - { value: 'empty array', correct: false }
-    help: 'https://symfony.com/doc/current/reference/constraints/Blank.html'
+    help: 'https://symfony.com/doc/7.0/reference/constraints/Blank.html'
   -
     uuid: 1eebf878-8ba3-6618-974f-99d84c92580c
     question: 'Which of the followings are not validation constraints?'
@@ -92,7 +92,7 @@ questions:
       - { value: File, correct: false }
       - { value: Search, correct: true }
       - { value: All, correct: false }
-    help: 'https://symfony.com/doc/current/reference/constraints.html'
+    help: 'https://symfony.com/doc/7.0/reference/constraints.html'
   -
     uuid: 1eebf878-8ba3-665e-8fe7-99d84c92580c
     question: 'Which of the following are valid targets when adding new validation constraints to a PHP object?'
@@ -102,13 +102,13 @@ questions:
       - { value: 'On any public, private or protected properties.', correct: true }
       - { value: 'On any public static methods of the class only.', correct: false }
       - { value: 'On any public properties only.', correct: false }
-    help: 'https://symfony.com/doc/current/validation.html#validator-constraint-targets'
+    help: 'https://symfony.com/doc/7.0/validation.html#validator-constraint-targets'
   -
     uuid: 1eed57f8-fb54-62a6-91f8-d952ea3a2c23
     question: 'When using the Symfony\Component\Validator\Constraints\Url validation constraint, what protocols are allowed by default ?'
     answers:
       - { value: 'Only HTTP.', correct: false }
-      - { value: 'Any protocol.', correct: true }
-      - { value: 'HTTP and HTTPS.', correct: false }
+      - { value: 'Any protocol.', correct: false }
+      - { value: 'HTTP and HTTPS.', correct: true }
       - { value: 'HTTP, HTTPS, FTP and SMTP.', correct: false }
-    help: 'https://symfony.com/doc/current/reference/constraints/Url.html'
+    help: 'https://symfony.com/doc/7.0/reference/constraints/Url.html#protocols'

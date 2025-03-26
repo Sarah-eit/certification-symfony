@@ -6,4 +6,4 @@ questions:
       - { value: UpperCamelCase, correct: true }
       - { value: snake_case, correct: false }
       - { value: camelCase, correct: false }
-    help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'

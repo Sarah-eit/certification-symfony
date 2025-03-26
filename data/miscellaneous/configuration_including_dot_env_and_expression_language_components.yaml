@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/expression_language.html#expression-language-ast'
+    help: 'https://symfony.com/doc/7.0/components/expression_language.html#expression-language-ast'
   -
     uuid: 1eebf878-8b9d-61aa-9351-99d84c92580c
     question: 'Which of these ExpressionLanguage methods allow to cache the parsed expression ?'
@@ -23,7 +23,7 @@ questions:
       - { value: 'By calling the registerProvider() method.', correct: true }
       - { value: 'By calling the register() method.', correct: true }
       - { value: 'By calling the addFunction() method.', correct: false }
-    help: 'https://symfony.com/doc/current/components/expression_language.html#expression-language-extending'
+    help: 'https://symfony.com/doc/7.0/components/expression_language.html#expression-language-extending'
   -
     uuid: 1eebf878-8ba7-6556-b59b-99d84c92580c
     question: "$language = new ExpressionLanguage(); var_dump($language->evaluate('1 + 2'));"
@@ -33,7 +33,7 @@ questions:
       - { value: '1 + 2', correct: false }
       - { value: 'true', correct: false }
       - { value: 'false', correct: false }
-    help: 'https://symfony.com/doc/current/components/expression_language.html#usage'
+    help: 'https://symfony.com/doc/7.0/components/expression_language.html#usage'
   -
     uuid: 1efcc1c5-41de-6db2-ba17-7922a0973bca
     question: 'Which of the following are valid database URLs that can be used in "the dbal.url" (doctrine.yaml) option in Symfony applications?'

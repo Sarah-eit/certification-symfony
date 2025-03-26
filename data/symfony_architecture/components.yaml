@@ -25,7 +25,7 @@ questions:
       - { value: 'By adding domain key in the route definition', correct: false }
       - { value: 'By adding a host key in the requirements section of a route definition', correct: false }
       - { value: 'By adding a host key in the route definition', correct: true }
-    help: 'https://symfony.com/doc/current/routing/hostname_pattern.html'
+    help: 'https://symfony.com/doc/7.0/routing/hostname_pattern.html'
   -
     uuid: 1eebf878-8ba4-6d74-85f7-99d84c92580c
     question: 'Which variables types this $validator object can validate ?$validator = Validation::createValidator();'
@@ -34,7 +34,7 @@ questions:
       - { value: 'arrays', correct: true }
       - { value: 'numbers', correct: true }
       - { value: 'strings', correct: true }
-    help: 'https://symfony.com/doc/current/components/validator.html#retrieving-a-validator-instance'
+    help: 'https://symfony.com/doc/7.0/components/validator.html#retrieving-a-validator-instance'
   -
     uuid: 1eebf878-8ba5-61b6-8363-99d84c92580c
     question: 'What is the return type of `$kernel->handle($request)`?'
@@ -45,7 +45,7 @@ questions:
       - { value: 'A Symfony\Component\BrowserKit\Response instance.', correct: false }
       - { value: 'An array.', correct: false }
       - { value: 'A Symfony\Component\HttpFoundation\Request instance.', correct: false }
-    help: 'https://symfony.com/doc/current/components/http_kernel/introduction.html'
+    help: 'https://symfony.com/doc/7.0/components/http_kernel/introduction.html'
   -
     uuid: 1eebf878-8ba6-6610-a019-99d84c92580c
     question: 'Could an Expression be configured using ContainerConfigurator?'
@@ -59,7 +59,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/yaml.html#parsing-and-dumping-custom-tags'
+    help: 'https://symfony.com/doc/7.0/components/yaml.html#parsing-and-dumping-custom-tags'
   -
     uuid: 1eebf878-8ba6-6d90-8dec-99d84c92580c
     question: 'What class of exception can be thrown by Symfony\Component\Security\Core\Authentication\Provider\UserAuthenticationProvider''s authenticate() method?'
@@ -88,7 +88,7 @@ questions:
       - { value: 'DependencyInjection', correct: false }
       - { value: 'PropertyAccess', correct: true }
       - { value: 'EventDispatcher', correct: false }
-    help: 'https://symfony.com/doc/current/components/serializer.html#installation'
+    help: 'https://symfony.com/doc/7.0/components/serializer.html#installation'
   -
     uuid: 1eebf878-8ba7-6b64-abc4-99d84c92580c
     question: 'Sometimes you may prefer to not save the objects immediately in order to increase the application performance. Which method would you call to mark cache items as ready to be persisted and then call to commit() method when you are ready to persist them all?'
@@ -97,7 +97,7 @@ questions:
       - { value: 'defer()', correct: false }
       - { value: 'saveDeferred()', correct: true }
       - { value: 'persistDeferred()', correct: false }
-    help: 'https://symfony.com/doc/current/components/cache/cache_pools.html#saving-cache-items'
+    help: 'https://symfony.com/doc/7.0/components/cache/cache_pools.html#saving-cache-items'
   -
     uuid: 1eebf878-8ba9-6662-bd4b-99d84c92580c
     question: 'Which types are not valid Node Types ?'
@@ -110,7 +110,7 @@ questions:
       - { value: 'decimal', correct: true }
       - { value: 'int', correct: true }
       - { value: 'enum', correct: false }
-    help: 'https://symfony.com/doc/current/components/config/definition.html#node-type'
+    help: 'https://symfony.com/doc/7.0/components/config/definition.html#node-type'
   -
     uuid: 1eebf878-8ba9-66b2-95e5-99d84c92580c
     question: 'What is the purpose of Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition::fixXmlConfig ?'
@@ -119,7 +119,7 @@ questions:
       - { value: 'It ensures that single XML elements are turned into an array', correct: true }
       - { value: 'It normalizes XML element name (e.g. pluralizing the key used in XML)', correct: false }
       - { value: 'It applies a custom function to an XML element if an error occurs', correct: false }
-    help: 'https://symfony.com/doc/current/components/config/definition.html#normalization'
+    help: 'https://symfony.com/doc/7.0/components/config/definition.html#normalization'
   -
     uuid: 1eebf878-8ba9-6748-82fb-99d84c92580c
     question: 'Which exception is thrown when a service is not defined while using ContainerInterface::get()?'
@@ -139,7 +139,7 @@ questions:
       - { value: 'Defaults to 100', correct: false }
       - { value: 'The higher this value, the earlier an event listener will be triggered in the chain', correct: true }
       - { value: 'Defaults to 1', correct: false }
-    help: 'https://symfony.com/doc/current/components/event_dispatcher.html#connecting-listeners'
+    help: 'https://symfony.com/doc/7.0/components/event_dispatcher.html#connecting-listeners'
   -
     uuid: 1eebf878-8ba9-69b4-97bd-99d84c92580c
     question: 'What are the arguments of the Symfony\Component\HttpKernel\Kernel constructor?'
@@ -156,7 +156,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/controller.html'
+    help: 'https://symfony.com/doc/7.0/controller.html'
   -
     uuid: 1eebf878-8ba9-6aea-8517-99d84c92580c
     question: 'Which of the following value resolvers are shipped with the HttpKernel component?'
@@ -168,7 +168,7 @@ questions:
       - { value: 'ServiceValueResolver', correct: true }
       - { value: 'DefaultValueResolver', correct: true }
       - { value: 'SessionValueResolver', correct: true }
-    help: 'https://symfony.com/doc/current/controller/argument_value_resolver.html#built-in-value-resolvers'
+    help: 'https://symfony.com/doc/7.0/controller/argument_value_resolver.html#built-in-value-resolvers'
   -
     uuid: 1eebf878-8ba9-6b30-8746-99d84c92580c
     question: 'Could a service definition be hidden using setPrivate()?'
@@ -189,7 +189,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/dependency_injection/definitions.html'
+    help: 'https://symfony.com/doc/7.0/components/dependency_injection/definitions.html'
   -
     uuid: 1eebf878-8ba9-6c16-ab08-99d84c92580c
     question: 'What is a Dumper?'
@@ -198,7 +198,7 @@ questions:
       - { value: 'A dumper is responsible for getting each property values of PHP object.', correct: false }
       - { value: 'A dumper is responsible for creating a var_export of any PHP variable.', correct: false }
       - { value: 'A dumper is responsible for creating a var_dump of any PHP variable.', correct: false }
-    help: 'https://symfony.com/doc/current/components/var_dumper.html#advanced-usage'
+    help: 'https://symfony.com/doc/7.0/components/var_dumper.html#advanced-usage'
   -
     uuid: 1eebf878-8baa-609e-9284-99d84c92580c
     question: 'If no methods are specified for a route, what methods will be matched?'
@@ -207,7 +207,7 @@ questions:
       - { value: GET, correct: false }
       - { value: 'Safe methods: GET or HEAD', correct: false }
       - { value: 'GET or POST', correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#matching-http-methods'
+    help: 'https://symfony.com/doc/7.0/routing.html#matching-http-methods'
   -
     uuid: 1eebf878-8baa-60e4-b36f-99d84c92580c
     question: 'How does a cache differ from a key / value store?'
@@ -261,7 +261,7 @@ questions:
       - { value: 'A parameter InputParameter.', correct: false }
       - { value: 'A choice InputChoice.', correct: false }
       - { value: 'An argument InputArgument.', correct: false }
-    help: 'https://symfony.com/doc/current/components/console/introduction.html#creating-a-basic-command'
+    help: 'https://symfony.com/doc/7.0/components/console/introduction.html#creating-a-basic-command'
   -
     uuid: 1eed57c6-96bb-6e02-9dd6-0f984cdae948
     question: 'What is the way to always get a new instance of a service?'
@@ -271,14 +271,14 @@ questions:
       - { value: 'Setting the option scope to request.', correct: false }
       - { value: 'Setting the option singleton to false.', correct: false }
       - { value: 'Setting the option scope to prototype.', correct: false }
-    help: 'https://symfony.com/doc/current/cookbook/service_container/shared.html'
+    help: 'https://symfony.com/doc/7.0/cookbook/service_container/shared.html'
   -
     uuid: 1eee76d6-b14d-69de-9026-09e122b17670
     question: 'Given the context where the ProxyManager bridge is not installed, could lazy services be used?'
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/service_container/lazy_services.html#configuration'
+    help: 'https://symfony.com/doc/7.0/service_container/lazy_services.html#configuration'
   -
     uuid: 1ef95dac-0509-64da-b985-cbe419d634ee
     question: 'What are valid ways to inject a service in Symfony ?'

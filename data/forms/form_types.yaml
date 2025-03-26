@@ -265,7 +265,7 @@ questions:
       - { value: https, correct: false }
       - { value: http, correct: true }
       - { value: 'To prepend the submitted value with an URI scheme (eg. http://) if it does not begin with one.', correct: true }
-    help: 'https://symfony.com/doc/current/reference/forms/types/url.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/url.html'
   -
     uuid: 1eee7665-19e6-68be-9026-175f14ab53cd
     question: 'By default, which function provides the choices of the Symfony\Component\Form\Extension\Core\Type\LanguageType form type ?'
@@ -282,4 +282,4 @@ questions:
       - { value: 'To prepend the submitted value with an URI scheme (eg. http://) if it does not begin with one.', correct: true }
       - { value: 'To force the submitted value to begin with a given URI scheme (eg. http://).', correct: false }
       - { value: 'To render the input with the "placeholder" property containing the value of the option.', correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types/url.html'
+    help: 'https://symfony.com/doc/7.0/reference/forms/types/url.html'

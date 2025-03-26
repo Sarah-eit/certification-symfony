@@ -16,7 +16,7 @@ questions:
       - { value: $response->isOk();, correct: false }
       - { value: $response->isNotModified($request);, correct: true }
       - { value: $response->isCacheable();, correct: false }
-    help: 'https://symfony.com/doc/current/components/http_foundation.html#managing-the-http-cache'
+    help: 'https://symfony.com/doc/7.0/components/http_foundation.html#managing-the-http-cache'
   -
     uuid: 1eebf878-8b9b-67ba-ac35-99d84c92580c
     question: 'Which of the following are valid HTTP request headers used in the validation caching model?'
@@ -36,14 +36,14 @@ questions:
       - { value: ETag, correct: true }
       - { value: Cache-Control, correct: false }
       - { value: Cookie, correct: false }
-    help: 'https://symfony.com/doc/current/http_cache/validation.html'
+    help: 'https://symfony.com/doc/7.0/http_cache/validation.html'
   -
     uuid: 1eebf878-8b9e-6758-adce-99d84c92580c
     question: 'Using ETag saves CPU cycles.'
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
-    help: 'https://symfony.com/doc/current/http_cache/validation.html#validation-with-the-etag-header'
+    help: 'https://symfony.com/doc/7.0/http_cache/validation.html#validation-with-the-etag-header'
   -
     uuid: 1eebf878-8ba0-61ac-b32e-99d84c92580c
     question: 'Which one of these Response methods check if cache must be revalidated?'

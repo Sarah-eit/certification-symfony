@@ -7,4 +7,4 @@ questions:
       - { value: 'ISC License', correct: false }
       - { value: 'BSD license', correct: false }
       - { value: 'MIT license', correct: true }
-    help: 'https://symfony.com/doc/current/contributing/code/license.html'
+    help: 'https://symfony.com/doc/7.0/contributing/code/license.html'

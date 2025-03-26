@@ -9,20 +9,20 @@ questions:
       - { value: params, correct: true }
       - { value: 'all of them', correct: false }
       - { value: 'none of them', correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
+    help: 'https://symfony.com/doc/7.0/routing.html#matching-expressions'
   -
     uuid: 1eebf878-8ba8-6438-9c57-99d84c92580c
     question: 'What are the accessible variables you can call to restrict a route ?'
     answers:
-      - { value: context, correct: true }
-      - { value: request, correct: true }
-      - { value: content-type, correct: false }
-      - { value: params, correct: true }
+      - { value: 'context', correct: true }
+      - { value: 'request', correct: true }
+      - { value: 'content-type', correct: false }
+      - { value: 'params', correct: true }
       - { value: 'env(string $name)', correct: true }
       - { value: 'service(string $alias)', correct: true }
-      - { value: user-agent, correct: false }
-      - { value: device, correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
+      - { value: 'user-agent', correct: false }
+      - { value: 'device', correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html#matching-expressions'
   -
     uuid: 1eebf878-8ba8-6488-b768-99d84c92580c
     question: 'Is it possible for a route parameter in Symfony to include a / character?'
@@ -49,4 +49,4 @@ questions:
       - { value: 'this', correct: false }
       - { value: 'user', correct: false }
       - { value: 'object', correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
+    help: 'https://symfony.com/doc/7.0/routing.html#matching-expressions'

@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
-    help: 'https://symfony.com/doc/current/create_framework/routing.html'
+    help: 'https://symfony.com/doc/7.0/create_framework/routing.html'
   -
     uuid: 1eebf878-8ba8-63f2-9b56-99d84c92580c
     question: "What will be the path if there is an extra option in the route#[Route('/{page}', name: 'index', defaults: ['page' => 1, 'title' => 'Toto'])]"

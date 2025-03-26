@@ -7,7 +7,7 @@ questions:
       - { value: Symfony\Component\Console\Tester\CommandTester, correct: true }
       - { value: Symfony\Component\Console\Tester\CommandUnitTester, correct: false }
       - { value: Symfony\Component\Console\Tester\CommandUnit, correct: false }
-    help: 'https://symfony.com/doc/current/console.html#testing-commands'
+    help: 'https://symfony.com/doc/7.0/console.html#testing-commands'
   -
     uuid: 1eebf878-8ba4-6c48-a631-99d84c92580c
     question: 'Does the PHPUnit Bridge parallelize test suites execution ?'
@@ -15,7 +15,7 @@ questions:
       - { value: 'Yes, only when giving a directory', correct: true }
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: false }
-    help: 'https://symfony.com/doc/current/components/phpunit_bridge.html#modified-phpunit-script'
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#modified-phpunit-script'
   -
     uuid: 1eebf878-8ba7-663c-8205-99d84c92580c
     question: 'What does The ClockMock class allow to mock ?'
@@ -26,4 +26,4 @@ questions:
       - { value: "it doesn't exists", correct: false }
       - { value: date(), correct: true }
       - { value: microtime(), correct: true }
-    help: 'https://symfony.com/doc/current/components/phpunit_bridge.html#clock-mocking'
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#clock-mocking'

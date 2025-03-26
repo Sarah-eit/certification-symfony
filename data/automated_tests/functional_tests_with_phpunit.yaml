@@ -7,4 +7,4 @@ questions:
       - { value: Tests/Controller/, correct: true }
       - { value: Tests/Controllers/, correct: false }
       - { value: Controller/, correct: false }
-    help: 'https://symfony.com/doc/current/testing.html#write-your-first-application-test'
+    help: 'https://symfony.com/doc/7.0/testing.html#write-your-first-application-test'

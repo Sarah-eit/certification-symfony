@@ -31,7 +31,7 @@ questions:
       - { value: StreamedResponse, correct: true }
       - { value: ImageResponse, correct: false }
       - { value: BinaryFileResponse, correct: true }
-    help: 'https://symfony.com/doc/current/components/http_foundation/introduction.html#redirecting-the-user'
+    help: 'https://symfony.com/doc/7.0/components/http_foundation/introduction.html#redirecting-the-user'
   -
     uuid: 1eebf878-8b98-64fc-92a5-99d84c92580c
     question: 'What is returned by the isEmpty method of Symfony\Component\HttpFoundation\Response?'
@@ -70,7 +70,7 @@ questions:
       - { value: BinaryFileResponse, correct: false }
       - { value: RedirectResponse, correct: false }
       - { value: StreamedResponse, correct: false }
-    help: 'https://symfony.com/doc/current/components/http_foundation.html#response'
+    help: 'https://symfony.com/doc/7.0/components/http_foundation.html#response'
   -
     uuid: 1eebf878-8ba0-61f2-a932-99d84c92580c
     question: 'Using a Response instance, which of these methods are available to check status code?'
@@ -89,4 +89,4 @@ questions:
       - { value: 'By using setStatusCode()', correct: true }
       - { value: 'By using setCodeStatus()', correct: false }
       - { value: 'By using setHttpCode()', correct: false }
-    help: 'https://symfony.com/doc/current/components/http_foundation.html#response'
+    help: 'https://symfony.com/doc/7.0/components/http_foundation.html#response'

@@ -16,7 +16,7 @@ questions:
       - { value: 'https="true"', correct: false }
       - { value: 'protocol="https"', correct: false }
       - { value: 'ensure="https"', correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#forcing-https-on-generated-urls'
+    help: 'https://symfony.com/doc/7.0/routing.html#forcing-https-on-generated-urls'
   -
     uuid: 1eebf878-8ba1-6214-83d0-99d84c92580c
     question: 'How to force a secure area to use the HTTPS protocol in the security config?'
@@ -25,7 +25,7 @@ questions:
       - { value: 'access_control: { path: ^/secure, use_https: true }', correct: false }
       - { value: 'access_control: { path: ^/secure, always_use_https: true }', correct: false }
       - { value: 'access_control: { path: ^/secure, schemes: [https] }', correct: false }
-    help: 'https://symfony.com/doc/current/security/force_https.html'
+    help: 'https://symfony.com/doc/7.0/security/force_https.html'
   -
     uuid: 1eebf878-8ba8-630c-87f9-99d84c92580c
     question: 'How to force to send a method PUT in a form ?'

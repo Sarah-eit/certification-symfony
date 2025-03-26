@@ -7,7 +7,7 @@ questions:
       - { value: 'security.firewalls.&lt;name&gt;.form_login.after_login_referer', correct: false }
       - { value: 'security.firewalls.&lt;name&gt;.form_login.referer', correct: false }
       - { value: 'security.firewalls.&lt;name&gt;.form_login.success_referer', correct: false }
-    help: 'https://symfony.com/doc/current/security/form_login.html#using-the-referring-url'
+    help: 'https://symfony.com/doc/7.0/security/form_login.html#using-the-referring-url'
   -
     uuid: 1eebf878-8baa-6562-8278-99d84c92580c
     question: 'Where are located the logs in a default configuration of Symfony?'
@@ -17,7 +17,7 @@ questions:
       - { value: logs, correct: false }
       - { value: app/logs, correct: false }
       - { value: app/log, correct: false }
-    help: 'https://symfony.com/doc/current/logging.html#where-logs-are-stored'
+    help: 'https://symfony.com/doc/7.0/logging.html#where-logs-are-stored'
   -
     uuid: 1efb230f-076b-6c58-88c2-71b8758e062b
     question: "If you're using an API and after being authenticated you don't want the session to be kept for the next requests; you have to:"

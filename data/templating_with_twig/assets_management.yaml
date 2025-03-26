@@ -9,7 +9,7 @@ questions:
       - { value: 'framework.templating.version_number: v2', correct: false }
       - { value: 'framework.twig.version: v2', correct: false }
       - { value: 'framework.twig.version_number: v2', correct: false }
-    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#version'
+    help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html#version'
   -
     uuid: 1eebf878-8b9d-6d12-82e6-99d84c92580c
     question: 'Using FrameworkBundle configuration, what is the default framework.assets.version_format value?'
@@ -18,7 +18,7 @@ questions:
       - { value: '%s?%s', correct: false }
       - { value: '?%%s', correct: false }
       - { value: '?%s', correct: false }
-    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#version-format'
+    help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html#version-format'
   -
     uuid: 1eebf878-8ba7-6f74-a846-99d84c92580c
     question: 'What does the asset Twig function do?'
@@ -26,4 +26,4 @@ questions:
       - { value: 'Renders a CSRF token.', correct: false }
       - { value: 'Renders a CSRF token.', correct: false }
       - { value: 'Returns the public path of the given asset path.', correct: true }
-    help: 'https://symfony.com/doc/current/reference/twig_reference.html'
+    help: 'https://symfony.com/doc/7.0/reference/twig_reference.html'

@@ -23,7 +23,7 @@ questions:
       - { value: 'return $this->redirectUrl("https://www.example.org")', correct: false }
       - { value: 'return $this->redirect("https://www.example.org")', correct: true }
       - { value: 'return $this->generateUrl("https://www.example.org")', correct: false }
-    help: 'https://symfony.com/doc/current/controller.html#redirecting'
+    help: 'https://symfony.com/doc/7.0/controller.html#redirecting'
   -
     uuid: 1eebf878-8ba8-692e-8bef-99d84c92580c
     question: "What kind of argument is sent to $this->redirect('XXX') ?"
@@ -31,7 +31,7 @@ questions:
       - { value: 'a route name', correct: false }
       - { value: 'a path', correct: false }
       - { value: 'an url', correct: true }
-    help: 'https://symfony.com/doc/current/routing.html'
+    help: 'https://symfony.com/doc/7.0/routing.html'
   -
     uuid: 1eebf878-8ba8-6974-ac4a-99d84c92580c
     question: 'Whats the Reponse in a redirectToRoute or a redirect method in a controller ?'

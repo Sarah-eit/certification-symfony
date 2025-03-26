@@ -10,4 +10,4 @@ questions:
       - { value: validator_constraint, correct: false }
       - { value: validation.constraint_validator, correct: false }
       - { value: validator.constraint, correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#validator-constraint-validator'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#validator-constraint-validator'

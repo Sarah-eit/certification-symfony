@@ -7,7 +7,7 @@ questions:
       - { value: groups_validation, correct: false }
       - { value: validator_groups, correct: false }
       - { value: groups_validator, correct: false }
-    help: 'https://symfony.com/doc/current/form/validation_groups.html#validation-groups'
+    help: 'https://symfony.com/doc/7.0/form/validation_groups.html#validation-groups'
   -
     uuid: 1eebf878-8ba1-6610-8b84-99d84c92580c
     question: 'In order to use validation group, which interface will you implement on your object?'
@@ -16,14 +16,14 @@ questions:
       - { value: Symfony\Component\Validator\GroupValidationProviderInterface, correct: false }
       - { value: Symfony\Component\Validator\GroupProviderInterface, correct: false }
       - { value: Symfony\Component\Validator\GroupSequenceProviderInterface, correct: true }
-    help: 'https://symfony.com/doc/current/validation/sequence_provider.html#group-sequence-providers'
+    help: 'https://symfony.com/doc/7.0/validation/sequence_provider.html#group-sequence-providers'
   -
     uuid: 1eebf878-8ba1-67b4-bb9e-99d84c92580c
     question: 'All entities have at least 2 validation groups.'
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
-    help: 'https://symfony.com/doc/current/validation/groups.html'
+    help: 'https://symfony.com/doc/7.0/validation/groups.html'
   -
     uuid: 1eebf878-8ba1-696c-b5ee-99d84c92580c
     question: 'How to tell the validator to use a specific group ?'
@@ -31,4 +31,4 @@ questions:
       - { value: 'pass one or more group names as the third argument of $validator->validate()', correct: true }
       - { value: 'pass one or more group names as the second argument of $validator->validate()', correct: false }
       - { value: 'use $validator->setValidationGroups(array)', correct: false }
-    help: 'https://symfony.com/doc/current/validation/groups.html'
+    help: 'https://symfony.com/doc/7.0/validation/groups.html'

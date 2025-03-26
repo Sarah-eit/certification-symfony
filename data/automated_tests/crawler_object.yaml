@@ -7,7 +7,7 @@ questions:
       - { value: $client->followRedirect(), correct: true }
       - { value: $client->followRedirects(), correct: true }
       - { value: $client->redirectAll(), correct: false }
-    help: 'https://symfony.com/doc/current/testing.html#redirecting'
+    help: 'https://symfony.com/doc/7.0/testing.html#redirecting'
   -
     uuid: 1eebf878-8ba0-66ca-8a74-99d84c92580c
     question: 'What is the correct CssSelector class namespace?'
@@ -16,7 +16,7 @@ questions:
       - { value: Symfony\Component\BrowserKit\CssSelector, correct: false }
       - { value: Symfony\Component\DomCrawler\CssSelector, correct: false }
       - { value: Symfony\Bundle\FrameworkBundle\CssSelector, correct: false }
-    help: 'https://symfony.com/doc/current/components/css_selector.html#id1'
+    help: 'https://symfony.com/doc/7.0/components/css_selector.html#id1'
   -
     uuid: 1ef80030-6e1b-6534-8970-7d5c3695d3e1
     question: 'Which of the following methods is used to select nodes that match a CSS selector in Symfony DomCrawler?'

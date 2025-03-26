@@ -49,7 +49,7 @@ questions:
     help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html'
   -
     uuid: 1eee7739-e2ae-6ad8-9026-4d9d94225af6
-    question: 'What are the methods of DataCollectorInterface ?'
+    question: "Select the methods that are part of the `DataCollectorInterface` in Symfony's profiler component."
     answers:
       - { value: getPosition, correct: false }
       - { value: getTemplate, correct: false }

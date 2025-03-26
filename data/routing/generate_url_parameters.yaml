@@ -7,7 +7,7 @@ questions:
       - { value: 'By specifying the host parameter in the Twig function url().', correct: false }
       - { value: "By running $this->getContainer()->get('router')->getContext()->setHost('example.org');", correct: true }
       - { value: 'By overloading the parameter router.request_context.host in the configuration.', correct: true }
-    help: 'https://symfony.com/doc/current/routing.html#generating-urls-in-commands'
+    help: 'https://symfony.com/doc/7.0/routing.html#generating-urls-in-commands'
   -
     uuid: 1eebf878-8b99-635c-8475-99d84c92580c
     question: 'What is returned by Route::compile()?'
@@ -36,7 +36,7 @@ questions:
       - { value: $_controller, correct: false }
       - { value: $_method, correct: false }
       - { value: $_action, correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#getting-the-route-name-and-parameters'
+    help: 'https://symfony.com/doc/7.0/routing.html#getting-the-route-name-and-parameters'
   -
     uuid: 1eebf878-8ba1-605c-9981-99d84c92580c
     question: 'Which special routing parameters are available in Symfony:'
@@ -46,7 +46,7 @@ questions:
       - { value: _fragment, correct: true }
       - { value: _locale, correct: true }
       - { value: _route, correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#special-parameters'
+    help: 'https://symfony.com/doc/7.0/routing.html#special-parameters'
   -
     uuid: 1eebf878-8ba1-60a2-996e-99d84c92580c
     question: 'How to generate absolute URL for a given route in controller ?'
@@ -54,7 +54,7 @@ questions:
       - { value: 'By using UrlGeneratorInterface::ABSOLUTE_URL as third parameter for generateUrl', correct: true }
       - { value: 'generateUrl generate absolute URL by default', correct: false }
       - { value: $this->generateAbsoluteUrl(), correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#generating-urls-in-controllers'
+    help: 'https://symfony.com/doc/7.0/routing.html#generating-urls-in-controllers'
   -
     uuid: 1eebf878-8ba8-651e-beaf-99d84c92580c
     question: 'Which class permit to generate Url in command, service and to check that a route exist ?'

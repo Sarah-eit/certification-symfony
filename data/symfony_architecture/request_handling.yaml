@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba9-6ffe-8f37-99d84c92580c
-    question: 'What is the default fetching strategy used for associations?'
+    question: 'In Doctrine ORM, what is the default fetching strategy used for associations?'
     answers:
       - { value: 'Extra LazyClassMetadataInfo::FETCH_EXTRA_LAZY', correct: false }
       - { value: 'LazyClassMetadataInfo::FETCH_LAZY', correct: true }

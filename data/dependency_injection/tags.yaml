@@ -7,7 +7,7 @@ questions:
       - { value: routing.loader, correct: true }
       - { value: router.loader, correct: false }
       - { value: router.load, correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#routing-loader'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#routing-loader'
   -
     uuid: 1eebf878-8b9b-65d0-aa17-99d84c92580c
     question: 'What is the tag to add a new HTTP content rendering strategy?'
@@ -18,7 +18,7 @@ questions:
       - { value: fragment_renderer, correct: false }
       - { value: kernel.fragment_renderer, correct: true }
       - { value: content_renderer, correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-fragment-renderer'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-fragment-renderer'
   -
     uuid: 1eebf878-8ba4-6ac2-8b87-99d84c92580c
     question: 'What is the tag to use a custom processor for logging?'
@@ -29,7 +29,7 @@ questions:
       - { value: monolog_processor, correct: false }
       - { value: kernel_processor, correct: false }
       - { value: processor, correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#monolog-processor'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#monolog-processor'
   -
     uuid: 1ef56832-36f9-6e04-98b4-c54b29cd2015
     question: 'What is the primary purpose of service tags in Symfony?'
@@ -38,7 +38,7 @@ questions:
       - { value: 'To apply automatic configuration to services.', correct: false }
       - { value: 'To inform Symfony or third-party bundles that a service should be registered in a special way.', correct: true }
       - { value: 'To define the order in which services should be loaded.', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html'
   -
     uuid: 1ef56836-7268-66da-8f1f-2d2521c74bad
     question: 'What happens if you enable autoconfigure for services in Symfony?'
@@ -47,7 +47,7 @@ questions:
       - { value: 'Services are automatically registered with default configuration.', correct: false }
       - { value: 'The service container is compiled more quickly.', correct: false }
       - { value: "The services' public visibility is automatically disabled.", correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html'
   -
     uuid: 1ef56839-bdd5-6f8e-90d3-a53c4d808bdd
     question: 'How can you apply a custom tag to all services implementing a specific interface in Symfony?'
@@ -56,7 +56,7 @@ questions:
       - { value: 'By using the _instanceof configuration in services.yaml.', correct: true }
       - { value: 'By creating a custom compiler pass.', correct: false }
       - { value: 'By configuring the service tags in the composer.json file.', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html'
   -
     uuid: 1ef5683e-36d9-69b8-b20a-dd998b39357d
     question: 'Which Symfony feature allows you to autoconfigure services using a PHP attribute?'
@@ -65,7 +65,7 @@ questions:
       - { value: '#[AutoconfigureTag]', correct: true }
       - { value: '#[ServiceTag]', correct: false }
       - { value: '#[Service]', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#autoconfiguring-tags'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#autoconfiguring-tags'
   -
     uuid: 1ef56841-7304-621e-8ca8-4d64cba6af4d
     question: "What is the purpose of the registerForAutoconfiguration method in Symfony's Kernel class?"
@@ -74,7 +74,7 @@ questions:
       - { value: 'To automatically tag services based on their class or interface', correct: true }
       - { value: 'To enable automatic injection of dependencies', correct: false }
       - { value: "To define the service container's compilation strategy", correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#autoconfiguring-tags'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#autoconfiguring-tags'
   -
     uuid: 1ef56849-6ed7-6e2c-a535-0fb9c6f8492c
     question: 'How can you specify additional attributes on a service tag in Symfony?'
@@ -83,7 +83,7 @@ questions:
       - { value: 'By using an array in the tags section of services.yaml', correct: true }
       - { value: 'By creating a custom YAML configuration file', correct: false }
       - { value: 'By modifying the Symfony kernel class', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#autoconfiguring-tags'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#autoconfiguring-tags'
   -
     uuid: 1ef5684b-e926-6eec-af67-bf70832d8843
     question: 'What should you do if you need to exclude certain services when using a tagged iterator in Symfony?'
@@ -92,7 +92,7 @@ questions:
       - { value: 'Use the exclude option in the #[AutowireIterator] attribute', correct: true }
       - { value: 'Disable autowiring for those services', correct: false }
       - { value: 'Use a custom compiler pass', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#autoconfiguring-tags'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#autoconfiguring-tags'
   -
     uuid: 1ef5684e-d3c7-6bc0-8df7-676306d6fe16
     question: 'How can you prioritize tagged services in Symfony?'
@@ -101,7 +101,7 @@ questions:
       - { value: 'By arranging the service definitions in services.yaml in a specific order.', correct: false }
       - { value: 'By modifying the service class constructor.', correct: false }
       - { value: 'By using a compiler pass to reorder the services.', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#autoconfiguring-tags'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#autoconfiguring-tags'
   -
     uuid: 1ef56855-737b-6e68-b603-ef82c284a7a8
     question: 'What does the #[AsTaggedItem] attribute allow you to define for a service?'
@@ -110,7 +110,7 @@ questions:
       - { value: 'The name and description of the service', correct: false }
       - { value: 'The visibility and scope of the service', correct: false }
       - { value: 'The dependencies required by the service', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#autoconfiguring-tags'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#autoconfiguring-tags'
   -
     uuid: 1ef5687c-4fd2-6dfa-8db5-2f6962a73830
     question: 'Which of the following are true about the alias attribute in Symfony service tags?'
@@ -119,14 +119,14 @@ questions:
       - { value: 'It can be used to define multiple aliases for a single service', correct: true }
       - { value: 'It must always be unique across all services.', correct: false }
       - { value: 'It is optional and can be omitted', correct: true }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#autoconfiguring-tags'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#autoconfiguring-tags'
   -
     uuid: 1ef56882-03c1-6eb0-b2d3-a3573336c0ad
     question: 'Service tags can be used to modify the behavior of services without requiring a compiler pass.'
     answers:
       - { value: 'True', correct: false }
       - { value: 'False', correct: true }
-    help: 'https://symfony.com/doc/current/service_container/tags.html'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html'
   -
     uuid: 1ef5688e-e5f8-6e30-b003-89b7cdb1df56
     question: 'Which method is used to retrieve all services tagged with a specific tag within a compiler pass?'
@@ -135,7 +135,7 @@ questions:
       - { value: findTaggedServiceIds(), correct: true }
       - { value: collectServicesByTag(), correct: false }
       - { value: getServicesByTag(), correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#create-a-compiler-pass'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#create-a-compiler-pass'
   -
     uuid: 1ef56899-7f4c-655a-9d8a-6b169618089b
     question: 'Which option allows you to exclude certain services from being injected via a tagged iterator?'
@@ -144,7 +144,7 @@ questions:
       - { value: exclude_service, correct: false }
       - { value: exclude_self, correct: true }
       - { value: exclude_tag, correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#reference-tagged-services'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#reference-tagged-services'
   -
     uuid: 1ef568cb-c085-6e0e-a47e-11ec7915fe68
     question: 'When creating a custom tag, which Symfony component is typically used to process services with that tag?'
@@ -153,7 +153,7 @@ questions:
       - { value: KernelEvents, correct: false }
       - { value: CompilerPassInterface, correct: true }
       - { value: LoggerInterface, correct: false }
-    help: 'https://symfony.com/doc/current/service_container/tags.html#reference-tagged-services'
+    help: 'https://symfony.com/doc/7.0/service_container/tags.html#reference-tagged-services'
   -
     uuid: 1ef65d9b-8263-67dc-8360-55648c706b2e
     question: 'What tag is used to introduce a new HTTP content rendering strategy?'
@@ -164,7 +164,7 @@ questions:
       - { value: kernel.content_renderer, correct: false }
       - { value: content_renderer, correct: false }
       - { value: renderer, correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-fragment-renderer'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-fragment-renderer'
   -
     uuid: 1ef91efc-3581-6b38-997b-b56004d90186
     question: "What mechanism allows services to be aggregated by domain in the service container?"
@@ -173,4 +173,4 @@ questions:
       - { value: 'Tag', correct: true }
       - { value: 'Abstraction', correct: false }
       - { value: 'Scope', correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html'

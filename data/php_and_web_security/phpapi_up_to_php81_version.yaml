@@ -8,7 +8,7 @@ questions:
       - { value: Annotation, correct: false }
       - { value: INI, correct: false }
       - { value: YAML, correct: true }
-    help: 'https://symfony.com/doc/current/configuration.html#constants-as-parameters'
+    help: 'https://symfony.com/doc/7.0/configuration.html#constants-as-parameters'
   -
     uuid: 1eebf878-8b98-6740-a71f-99d84c92580c
     question: 'Which of the following is not a predefined PHP variable?'
@@ -106,14 +106,14 @@ questions:
       - { value: _password, correct: true }
       - { value: _passwd, correct: false }
       - { value: _username, correct: true }
-    help: 'https://symfony.com/doc/current/reference/configuration/security.html#form-login-configuration'
+    help: 'https://symfony.com/doc/7.0/reference/configuration/security.html#form-login-configuration'
   -
     uuid: 1eebf878-8b9d-606a-916d-99d84c92580c
     question: 'Could the current token be retrieved from Symfony\Component\Security\Core\Security ?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/security.html#securing-other-services'
+    help: 'https://symfony.com/doc/7.0/security.html#securing-other-services'
   -
     uuid: 1eebf878-8b9d-61f0-8520-99d84c92580c
     question: 'What is the signature of the vote() method from VoterInterface?'
@@ -221,11 +221,11 @@ questions:
     uuid: 1eebf878-8ba1-6b74-9168-99d84c92580c
     question: 'Which of the following are supported visibilities for class attributes and methods in PHP ?'
     answers:
-      - { value: Protected, correct: true }
-      - { value: Friend, correct: false }
-      - { value: Private, correct: true }
-      - { value: Public, correct: true }
-      - { value: Global, correct: false }
+      - { value: protected, correct: true }
+      - { value: friend, correct: false }
+      - { value: private, correct: true }
+      - { value: public, correct: true }
+      - { value: global, correct: false }
     help: 'https://php.net/manual/en/language.oop5.visibility.php'
   -
     uuid: 1eebf878-8ba2-622c-b66a-99d84c92580c
@@ -251,7 +251,7 @@ questions:
     answers:
       - { value: 'No', correct: true }
       - { value: 'Yes', correct: false }
-    help: 'https://symfony.com/doc/current/components/property_access/introduction.html#magic-call-method'
+    help: 'https://symfony.com/doc/7.0/components/property_access/introduction.html#magic-call-method'
   -
     uuid: 1eebf878-8ba3-653c-8129-99d84c92580c
     question: "Consider the following code snippet: trigger_error('This method is deprecated.'); Which of the following is valid way to catch and process errors that were triggered with the trigger_error() function?"
@@ -296,7 +296,7 @@ questions:
       - { value: Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface, correct: false }
       - { value: Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListenerInterface, correct: false }
       - { value: Symfony\Component\Security\Http\Authenticator\AbstractAuthenticator, correct: true }
-    help: 'https://symfony.com/doc/current/security/custom_authenticator.html'
+    help: 'https://symfony.com/doc/7.0/security/custom_authenticator.html'
   -
     uuid: 1eebf878-8ba4-6dc4-8bee-99d84c92580c
     question: 'Which encryption means is used to secure credentials when authenticating an HTTP request with the HTTP Basic mechanism?'
@@ -340,7 +340,7 @@ questions:
       - { value: 'It combines two or more providers to create a new user provider. sorted they are looked one after the other until user is found', correct: true }
       - { value: 'This user provider stores all user information in a configuration file, including their passwords.', correct: false }
       - { value: 'User Access are stored in a Chain software like Stackifor.', correct: false }
-    help: 'https://symfony.com/doc/current/security/user_providers.html#chain-user-provider'
+    help: 'https://symfony.com/doc/7.0/security/user_providers.html#chain-user-provider'
   -
     uuid: 1eedb041-7713-6f86-9b4d-9d3b2d641bb6
     question: 'Why might you pass false to $security->logout(false) in the Security component?'
@@ -349,7 +349,7 @@ questions:
       - { value: 'To disable the default redirection', correct: false }
       - { value: 'To disable the firewall', correct: false }
       - { value: 'To limit login attempts, preventing the user from logging in for 5 minutes', correct: false }
-    help: 'https://symfony.com/doc/current/security.html#logout-programmatically'
+    help: 'https://symfony.com/doc/7.0/security.html#logout-programmatically'
   -
     uuid: 1eee6d98-7a23-6338-9026-cd57d9ba16db
     question: 'Where can be set an attribute whith readonly property ? in php8.1'

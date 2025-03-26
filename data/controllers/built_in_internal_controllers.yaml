@@ -7,7 +7,7 @@ questions:
       - { value: Sensio\Bundle\FrameworkExtraBundle\Controller\TemplateController, correct: false }
       - { value: Symfony\Bundle\FrameworkBundle\Controller\TwigController, correct: false }
       - { value: Sensio\Bundle\FrameworkExtraBundle\Controller\TwigController, correct: false }
-    help: 'https://symfony.com/doc/current/templates.html#rendering-a-template-directly-from-a-route'
+    help: 'https://symfony.com/doc/7.0/templates.html#rendering-a-template-directly-from-a-route'
   -
     uuid: 1eebf878-8ba8-6a14-a03d-99d84c92580c
     question: 'Which TemplateController can be rendered directly from routing.yaml ?'
@@ -15,11 +15,11 @@ questions:
       - { value: Symfony\Bundle\FrameworkBundle\Controller\TemplateController, correct: true }
       - { value: Sensio\Bundle\FrameworkBundle\Controller\TemplateController, correct: false }
       - { value: SensioExtraFramework\Bundle\Controller\TemplateController, correct: false }
-    help: 'https://symfony.com/doc/current/templates.html#rendering-a-template-directly-from-a-route'
+    help: 'https://symfony.com/doc/7.0/templates.html#rendering-a-template-directly-from-a-route'
   -
     uuid: 1ef65da6-c3df-611a-a297-cbefde6d45ba
-    question: 'Does the order of the controller arguments matter when mapping route parameters to controller arguments?'
+    question: 'In a Symfony controller, does the order of method arguments affect how Symfony maps route parameters?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/controller.html#route-parameters-as-controller-arguments'
+      - { value: 'Yes, the order of arguments must exactly match the order of parameters in the route.', correct: false }
+      - { value: 'No, Symfony maps route parameters to method arguments based on their names.', correct: true }
+    help: 'https://symfony.com/doc/7.0/controller.html#route-parameters-as-controller-arguments'

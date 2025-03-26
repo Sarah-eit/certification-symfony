@@ -5,14 +5,14 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html#decoration-priority'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html#decoration-priority'
   -
     uuid: 1eebf878-8b9f-682e-a048-99d84c92580c
     question: 'Decorating services can be done in YAML using the decorates key. This prevent original service override and autowire decorated class name with decorator instance'
     answers:
       - { value: 'true', correct: true }
       - { value: 'false', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'
   -
     uuid: 1ef568f6-2e61-648a-a7b3-bff7ab4fac88
     question: 'What happens to the original service when you override an existing service definition in Symfony?'
@@ -21,7 +21,7 @@ questions:
       - { value: 'The original service is replaced, and the old definition is lost', correct: true }
       - { value: 'The original service and the new one are both available', correct: false }
       - { value: 'The original service is automatically decorated', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'
   -
     uuid: 1ef568fb-d9d6-6d56-863d-af80c905008d
     question: 'How do you keep a reference to the original service when decorating it in Symfony?'
@@ -30,7 +30,7 @@ questions:
       - { value: 'By using the #[AutowireOriginal] attribute', correct: false }
       - { value: 'By using the #[AsDecorator] attribute and referencing .inner', correct: true }
       - { value: 'By registering both services under different IDs', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'
   -
     uuid: 1ef568ff-80aa-66fc-b706-d3849883f55e
     question: 'What does the decoration_inner_name option in the service configuration do?'
@@ -39,7 +39,7 @@ questions:
       - { value: 'It changes the class name of the decorated service', correct: false }
       - { value: 'It controls the visibility of the decorated service', correct: false }
       - { value: 'It sets the priority of the decorator', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'
   -
     uuid: 1ef56904-2bbf-6f3e-bc96-e1f0ed89f6a3
     question: "If a service decorator's constructor has multiple arguments of the same decorated service type, what must be done?"
@@ -48,7 +48,7 @@ questions:
       - { value: 'Use autowiring to resolve the conflict', correct: false }
       - { value: 'Manually alias the services', correct: false }
       - { value: 'You cannot have multiple arguments of the same type', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'
   -
     uuid: 1ef56907-dfc3-650a-b410-edad3cc3398c
     question: 'How does Symfony determine the priority of multiple decorators applied to the same service?'
@@ -57,7 +57,7 @@ questions:
       - { value: 'Based on the order in which they are defined', correct: false }
       - { value: 'Using the decoration_priority option', correct: true }
       - { value: 'Randomly during service compilation', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'
   -
     uuid: 1ef5690b-31ac-66ac-b4a7-cf93cad5721a
     question: 'What will happen if a decorator is configured to decorate a non-existent service and the onInvalid option is set to ignore?'
@@ -66,7 +66,7 @@ questions:
       - { value: 'The container will remove the decorator', correct: true }
       - { value: 'The container will set the decorated service to null', correct: false }
       - { value: 'The container will automatically create the missing service', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'
   -
     uuid: 1ef5b0aa-c1e6-64b6-8cbd-c1c5aeabf7a9
     question: 'How does Symfony determine the priority of multiple decorators applied to the same service?'
@@ -75,7 +75,7 @@ questions:
       - { value: 'Based on the order in which they are defined', correct: false }
       - { value: 'Using the decoration_priority option', correct: true }
       - { value: 'Randomly during service compilation', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html#decoration-priority'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html#decoration-priority'
   -
     uuid: 1ef5b0ae-d16e-6fa6-899f-bd172ab2335d
     question: 'What will happen if a decorator is configured to decorate a non-existent service and the onInvalid option is set to ignore?'
@@ -84,7 +84,7 @@ questions:
       - { value: 'The container will remove the decorator', correct: true }
       - { value: 'The container will set the decorated service to null', correct: false }
       - { value: 'The container will automatically create the missing service', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html#control-the-behavior-when-the-decorated-service-does-not-exist'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html#control-the-behavior-when-the-decorated-service-does-not-exist'
   -
     uuid: 1ef5b0b6-5c02-622e-a929-910a987c2424
     question: 'Which of the following is a valid way to create a stack of decorators in Symfony?'
@@ -93,7 +93,7 @@ questions:
       - { value: 'Declaring multiple decorators in a stack configuration', correct: true }
       - { value: 'Using the decorators_chain tag', correct: false }
       - { value: 'Registering each decorator in separate services.yaml files', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html#stacking-decorators'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html#stacking-decorators'
   -
     uuid: 1ef5b0b9-a1c3-62ba-bb58-f1271e433949
     question: 'In a decorator stack, how can you refer to a specific frame within the stack?'
@@ -102,7 +102,7 @@ questions:
       - { value: 'By creating an alias for each frame', correct: false }
       - { value: 'By using @frame_reference in the configuration', correct: false }
       - { value: "By specifying the frame's class name", correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html#stacking-decorators'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html#stacking-decorators'
   -
     uuid: 1ef5b0bd-2d68-6600-b031-0915745f7de9
     question: "When using the onInvalid option set to null, what change might be necessary in the decorator's constructor?"
@@ -111,7 +111,7 @@ questions:
       - { value: 'The decorated service must be explicitly instantiated', correct: false }
       - { value: 'The constructor must be removed', correct: false }
       - { value: 'No changes are needed', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html#control-the-behavior-when-the-decorated-service-does-not-exist'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html#control-the-behavior-when-the-decorated-service-does-not-exist'
   -
     uuid: 1ef5b0c0-600f-6a60-a4ff-09f0c30bd181
     question: 'Why should a compiler pass that creates service definitions dynamically be registered with PassConfig::TYPE_BEFORE_OPTIMIZATION ?'
@@ -120,7 +120,7 @@ questions:
       - { value: 'To prevent Symfony from optimizing away unused services', correct: false }
       - { value: 'To automatically apply the decoration_priority', correct: false }
       - { value: 'To enable autowiring for dynamically created services', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html#control-the-behavior-when-the-decorated-service-does-not-exist'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html#control-the-behavior-when-the-decorated-service-does-not-exist'
   -
     uuid: 1ef5b0c4-d00b-65a4-a273-07d6c1120e43
     question: 'When using a service decorator, what keyword is used to reference the original service within the decorator?'
@@ -129,4 +129,4 @@ questions:
       - { value: old_service, correct: false }
       - { value: base_service, correct: false }
       - { value: inner, correct: true }
-    help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
+    help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'

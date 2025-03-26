@@ -7,7 +7,7 @@ questions:
       - { value: security.voter, correct: true }
       - { value: security_voter, correct: false }
       - { value: security.authorization_voter, correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#security-voter'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#security-voter'
   -
     uuid: 1eebf878-8b9b-6710-8ebe-99d84c92580c
     question: 'How does the AccessDecisionManager behave when configured with a consensus voting strategy?'
@@ -16,7 +16,7 @@ questions:
       - { value: 'It grants access as soon as there is one voter granting access.', correct: false }
       - { value: 'It grants access if over two-thirds of voters answer the access is granted.', correct: false }
       - { value: 'It only grants access if none of the voters deny access.', correct: false }
-    help: 'https://symfony.com/doc/current/security/voters.html#changing-the-access-decision-strategy'
+    help: 'https://symfony.com/doc/7.0/security/voters.html#changing-the-access-decision-strategy'
   -
     uuid: 1eebf878-8b9c-673c-aa4e-99d84c92580c
     question: 'Which of the following are built-in voting strategies that can be configured in the AccessDecisionManager object?'
@@ -29,7 +29,7 @@ questions:
       - { value: priority, correct: true }
       - { value: affirmative, correct: true }
       - { value: neutral, correct: false }
-    help: 'https://symfony.com/doc/current/security/voters.html#changing-the-access-decision-strategy'
+    help: 'https://symfony.com/doc/7.0/security/voters.html#changing-the-access-decision-strategy'
   -
     uuid: 1eebf878-8ba1-62f0-89d9-99d84c92580c
     question: 'What does the default strategy `affirmative` of the access decision manager mean?'
@@ -38,7 +38,7 @@ questions:
       - { value: 'Access is granted if there are more voters granting access than denying', correct: false }
       - { value: 'Access is granted if all voters grant acces', correct: false }
       - { value: 'Access is granted if no voters throw an exception', correct: false }
-    help: 'https://symfony.com/doc/current/security/voters.html#changing-the-access-decision-strategy'
+    help: 'https://symfony.com/doc/7.0/security/voters.html#changing-the-access-decision-strategy'
   -
     uuid: 1eebf878-8ba1-6336-a134-99d84c92580c
     question: 'What does the strategy `consensus` of the access decision manager mean?'
@@ -47,7 +47,7 @@ questions:
       - { value: 'Access is granted if there are more voters granting access than denying', correct: true }
       - { value: 'Access is granted if all voters grant acces', correct: false }
       - { value: 'Access is granted if no voters throw an exception', correct: false }
-    help: 'https://symfony.com/doc/current/security/voters.html#changing-the-access-decision-strategy'
+    help: 'https://symfony.com/doc/7.0/security/voters.html#changing-the-access-decision-strategy'
   -
     uuid: 1eebf878-8ba1-6386-9a6c-99d84c92580c
     question: 'What does the strategy `unanimous` of the access decision manager mean?'
@@ -56,7 +56,7 @@ questions:
       - { value: 'Access is granted if there are more voters granting access than denying', correct: false }
       - { value: 'Access is granted if there is no voter denying access', correct: true }
       - { value: 'Access is granted if no voters throw an exception', correct: false }
-    help: 'https://symfony.com/doc/current/components/security/authorization.html#access-decision-manager'
+    help: 'https://symfony.com/doc/7.0/components/security/authorization.html#access-decision-manager'
   -
     uuid: 1eebf878-8ba1-63cc-97aa-99d84c92580c
     question: 'What decision strategy exist ?'
@@ -66,7 +66,7 @@ questions:
       - { value: unanimous, correct: true }
       - { value: positive, correct: false }
       - { value: negative, correct: false }
-    help: 'https://symfony.com/doc/current/components/security/authorization.html#access-decision-manager'
+    help: 'https://symfony.com/doc/7.0/components/security/authorization.html#access-decision-manager'
   -
     uuid: 1ef95d9c-e21e-61c8-bc50-2706fca93033
     question: 'When creating custom voter, which dependency injection tag has to be used?'
@@ -75,4 +75,4 @@ questions:
       - { value: secure.voter, correct: false }
       - { value: security.vote, correct: false }
       - { value: security.voter, correct: true }
-    help: 'https://symfony.com/doc/current/security/voters.html#configuring-the-voter'
+    help: 'https://symfony.com/doc/7.0/security/voters.html#configuring-the-voter'

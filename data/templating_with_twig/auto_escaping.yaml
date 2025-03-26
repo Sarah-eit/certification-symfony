@@ -46,4 +46,4 @@ questions:
       - { value: 'Generates an excerpt of a code file around a given line number.', correct: false }
       - { value: 'Transforms input into YAML syntax.', correct: false }
       - { value: 'Accepts data that can be serialized by the Serializer component and returns a serialized string in the specified format.', correct: true }
-    help: 'https://symfony.com/doc/current/reference/twig_reference.html'
+    help: 'https://symfony.com/doc/7.0/reference/twig_reference.html'

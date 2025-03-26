@@ -35,7 +35,7 @@ questions:
       - { value: 'none', correct: false }
       - { value: 'same_origin', correct: false }
       - { value: 'lax', correct: false }
-    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#cookie-samesite'
+    help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html#cookie-samesite'
   -
     uuid: 1eebf878-8b98-6984-a4c4-99d84c92580c
     question: 'Can you use the Symfony\Bundle\FrameworkBundle\Controller\Controller::render() method with an existing Response?'
@@ -52,14 +52,14 @@ questions:
       - { value: '3.3', correct: false }
       - { value: '2.4', correct: false }
       - { value: '2.2', correct: false }
-    help: 'https://symfony.com/doc/current/contributing/code/bc.html'
+    help: 'https://symfony.com/doc/7.0/contributing/code/bc.html'
   -
     uuid: 1eebf878-8b99-6636-88fd-99d84c92580c
     question: 'What is the default value of the router.request_context.scheme parameter?'
     answers:
       - { value: http, correct: true }
       - { value: https, correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#forcing-https-on-generated-urls'
+    help: 'https://symfony.com/doc/7.0/routing.html#forcing-https-on-generated-urls'
   -
     uuid: 1eebf878-8b99-667c-bb41-99d84c92580c
     question: 'How to find a path associated route ?'
@@ -68,7 +68,7 @@ questions:
       - { value: "it's not possible", correct: false }
       - { value: 'by using the following command : php bin/console debug:router:match /blog/my-latest-post', correct: false }
       - { value: 'by using the following command : php bin/console router:match /blog/my-latest-post', correct: true }
-    help: 'https://symfony.com/doc/current/routing/debug.html'
+    help: 'https://symfony.com/doc/7.0/routing/debug.html'
   -
     uuid: 1eebf878-8b99-683e-a1ef-99d84c92580c
     question: 'What is PSR-7?'
@@ -86,7 +86,7 @@ questions:
       - { value: 'Render templates that do not require a controller, such as static pages.', correct: true }
       - { value: 'Render custom error templates.', correct: false }
       - { value: 'Extract translation keys/strings from templates.', correct: false }
-    help: 'https://symfony.com/doc/current/cookbook/templating/render_without_controller.html'
+    help: 'https://symfony.com/doc/7.0/cookbook/templating/render_without_controller.html'
   -
     uuid: 1eebf878-8b99-6c80-a373-99d84c92580c
     question: 'Which PSR described a common interface for reading the system clock, implemented by the Clock component since Symfony 6.2?'
@@ -102,7 +102,7 @@ questions:
     answers:
       - { value: 'Displays information for the service router', correct: true }
       - { value: 'Displays the configured routes', correct: false }
-    help: 'https://symfony.com/doc/current/book/service_container.html#debugging-services'
+    help: 'https://symfony.com/doc/7.0/book/service_container.html#debugging-services'
   -
     uuid: 1eebf878-8b9a-664e-aa65-99d84c92580c
     question: 'How to register a service in a specific env in php ?'
@@ -127,7 +127,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/controller.html#redirecting'
+    help: 'https://symfony.com/doc/7.0/controller.html#redirecting'
   -
     uuid: 1eebf878-8b9b-6440-82a7-99d84c92580c
     question: 'When creating custom loader, which dependency injection tag has to be used?'
@@ -136,7 +136,7 @@ questions:
       - { value: 'router.load', correct: false }
       - { value: 'routing.load', correct: false }
       - { value: 'routing.loader', correct: true }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#routing-loader'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#routing-loader'
   -
     uuid: 1eebf878-8b9b-6b48-8681-99d84c92580c
     question: 'What is PSR-6?'
@@ -154,7 +154,7 @@ questions:
       - { value: 'translator.extractor', correct: false }
       - { value: 'translation_extractor', correct: false }
       - { value: 'translation.extractor', correct: true }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#translation-extractor'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#translation-extractor'
   -
     uuid: 1eebf878-8b9b-6d0a-abf0-99d84c92580c
     question: 'Which PSR draft is meant to be a joke?'
@@ -220,7 +220,7 @@ questions:
       - { value: 'kernel.cache_clearer', correct: true }
       - { value: 'cache.clearer', correct: false }
       - { value: 'cache_clearer', correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-cache-clearer'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-cache-clearer'
   -
     uuid: 1eebf878-8b9f-61b2-955c-99d84c92580c
     question: 'Which class will you use to convert an action parameter?'
@@ -229,7 +229,7 @@ questions:
       - { value: 'Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverter', correct: false }
       - { value: 'Symfony\Bundle\FrameworkBundle\Configuration\ParamConverter', correct: false }
       - { value: 'Symfony\Bundle\FrameworkBundle\Controller\ParamConverter', correct: false }
-    help: 'https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html'
+    help: 'https://symfony.com/doc/7.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html'
   -
     uuid: 1eebf878-8ba0-65a8-85df-99d84c92580c
     question: 'What is the LoggerInterface correct namespace?'
@@ -238,7 +238,7 @@ questions:
       - { value: 'Psr\Log\LoggerInterface', correct: true }
       - { value: 'Symfony\Bridge\Monolog\LoggerInterface', correct: false }
       - { value: 'Symfony\Bridge\Monolog\Log\LoggerInterface', correct: false }
-    help: 'https://symfony.com/doc/current/logging.html#logging-a-message'
+    help: 'https://symfony.com/doc/7.0/logging.html#logging-a-message'
   -
     uuid: 1eebf878-8ba0-65ee-8114-99d84c92580c
     question: 'Using Symfony\Component\ErrorHandler\Debug static class, what is the only method available?'
@@ -266,14 +266,14 @@ questions:
       - { value: 'hinclude: enabled', correct: false }
       - { value: 'fragments: {path:/_fragment}', correct: false }
       - { value: 'none of the above', correct: true }
-    help: 'https://symfony.com/doc/current/templating/hinclude.html'
+    help: 'https://symfony.com/doc/7.0/templating/hinclude.html'
   -
     uuid: 1eebf878-8ba0-6710-aa62-99d84c92580c
     question: 'Event Listeners is used to regroup multiple listeners inside a single class ?'
     answers:
       - { value: 'False', correct: true }
       - { value: 'True', correct: false }
-    help: 'https://symfony.com/doc/current/event_dispatcher.html#creating-an-event-listener'
+    help: 'https://symfony.com/doc/7.0/event_dispatcher.html#creating-an-event-listener'
   -
     uuid: 1eebf878-8ba0-6a26-88e1-99d84c92580c
     question: 'According to the PHP Framework Interoperability Group, which PSRs concern best coding practices ?'
@@ -365,7 +365,7 @@ questions:
       - { value: 'Create an AppKernel and use the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait trait.', correct: true }
       - { value: 'Create an AppKernel and extends the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernel class.', correct: false }
       - { value: 'Create an AppKernel and extends the Symfony\Component\HttpKernel\MicroKernel class.', correct: false }
-    help: 'https://symfony.com/doc/current/configuration/micro_kernel_trait.html'
+    help: 'https://symfony.com/doc/7.0/configuration/micro_kernel_trait.html'
   -
     uuid: 1eebf878-8ba3-6a5a-a783-99d84c92580c
     question: 'Which of the following is not a built-in Symfony standalone component?'
@@ -384,7 +384,7 @@ questions:
       - { value: 'Extending the Symfony\Component\Form\AbstractTypeExtension', correct: true }
       - { value: 'Putting the new MyFormExtension class in the Form\Extension namespace', correct: false }
       - { value: 'Creating a service with the form.type_extension tag (if auto-configuration is not enabled)', correct: true }
-    help: 'https://symfony.com/doc/current/form/create_form_type_extension.html#defining-the-form-type-extension'
+    help: 'https://symfony.com/doc/7.0/form/create_form_type_extension.html#defining-the-form-type-extension'
   -
     uuid: 1eebf878-8ba4-6c98-9944-99d84c92580c
     question: 'Is it possible to use Twig without Symfony?'

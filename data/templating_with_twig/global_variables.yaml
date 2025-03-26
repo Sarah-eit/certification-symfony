@@ -14,7 +14,7 @@ questions:
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
-    help: 'https://symfony.com/doc/current/templates.html#global-variables'
+    help: 'https://symfony.com/doc/7.0/templates.html#global-variables'
   -
     uuid: 1eebf878-8ba5-6a76-b902-99d84c92580c
     question: "What's the correct way to declare the global variable uuid to get {{ uuid.generate }} in any twig files ?"
@@ -23,7 +23,7 @@ questions:
       - { value: 'twig.globals.uuid: "App\Generator\UuidGenerator"', correct: false }
       - { value: 'twig.globals.uuid: "#App\Generator\UuidGenerator"', correct: false }
       - { value: 'twig.uuid: "App\\Generator\\UuidGenerator"', correct: false }
-    help: 'https://symfony.com/doc/current/templates.html#global-variables'
+    help: 'https://symfony.com/doc/7.0/templates.html#global-variables'
   -
     uuid: 1eebf878-8ba5-6ac6-b2a2-99d84c92580c
     question: 'What are the methods available on the global variable app in twig ?'
@@ -39,11 +39,11 @@ questions:
       - { value: app.session, correct: true }
       - { value: app.request, correct: true }
       - { value: app.user, correct: true }
-    help: 'https://symfony.com/doc/current/templates.html#the-app-global-variable'
+    help: 'https://symfony.com/doc/7.0/templates.html#the-app-global-variable'
   -
     uuid: 1eebf878-8ba5-6b0c-88ef-99d84c92580c
     question: 'What is default value of app.debug in a twig file ?'
     answers:
       - { value: 'true if in debug mode', correct: true }
       - { value: 'false', correct: false }
-    help: 'https://symfony.com/doc/current/templates.html#the-app-global-variable'
+    help: 'https://symfony.com/doc/7.0/templates.html#the-app-global-variable'

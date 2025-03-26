@@ -7,7 +7,7 @@ questions:
       - { value: proxies_trusted, correct: false }
       - { value: proxies, correct: false }
       - { value: proxies_list, correct: false }
-    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#trusted-proxies'
+    help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html#trusted-proxies'
   -
     uuid: 1eebf878-8b9d-6db2-92c7-99d84c92580c
     question: 'What is the prefix of environment variables used by Symfony?'
@@ -18,7 +18,7 @@ questions:
       - { value: SF__, correct: false }
       - { value: SYMFONY-, correct: false }
       - { value: SF-, correct: false }
-    help: 'https://symfony.com/doc/current/configuration.html#configuration-based-on-environment-variables'
+    help: 'https://symfony.com/doc/7.0/configuration.html#configuration-based-on-environment-variables'
   -
     uuid: 1eebf878-8b9d-6e02-bf48-99d84c92580c
     question: 'According to Symfony best practices, ____ is/are located in _____ file/folder.'
@@ -31,7 +31,7 @@ questions:
       - { value: 'assets, public/', correct: false }
       - { value: 'services, src/Resources/services.yaml', correct: false }
       - { value: 'translations, Resources/translations/', correct: false }
-    help: 'https://symfony.com/doc/current/best_practices.html#use-the-default-directory-structure'
+    help: 'https://symfony.com/doc/7.0/best_practices.html#use-the-default-directory-structure'
   -
     uuid: 1eebf878-8b9d-6e52-9ff9-99d84c92580c
     question: 'Where can you find the file `form_table_layout.html.twig` ?'
@@ -46,7 +46,7 @@ questions:
     answers:
       - { value: 'yes', correct: true }
       - { value: 'no', correct: false }
-    help: 'https://symfony.com/doc/current/components/http_kernel.html#the-workflow-of-a-request'
+    help: 'https://symfony.com/doc/7.0/components/http_kernel.html#the-workflow-of-a-request'
   -
     uuid: 1eebf878-8b9e-600a-90cc-99d84c92580c
     question: 'What is/are the recommended way to create a new Symfony web application'
@@ -56,14 +56,14 @@ questions:
       - { value: 'composer new-project symfony/skeleton my_project_name', correct: false }
       - { value: 'php bin/console new-project my_project_name', correct: false }
       - { value: 'symfony new my_project_name --webapp', correct: true }
-    help: 'https://symfony.com/doc/current/setup.html#creating-symfony-applications"'
+    help: 'https://symfony.com/doc/7.0/setup.html#creating-symfony-applications"'
   -
     uuid: 1eebf878-8b9e-6050-bd8d-99d84c92580c
     question: 'Using Flex is mandatory since Symfony 4.0'
     answers:
       - { value: 'False', correct: true }
       - { value: 'True', correct: false }
-    help: 'https://symfony.com/doc/current/setup/flex.html#upgrading-existing-applications-to-flex'
+    help: 'https://symfony.com/doc/7.0/setup/flex.html#upgrading-existing-applications-to-flex'
   -
     uuid: 1eebf878-8b9e-612c-9b8f-99d84c92580c
     question: 'Which file should be edited in order to customize the default server error page ?'
@@ -71,7 +71,7 @@ questions:
       - { value: templates/bundles/TwigBundle/Exception/error.html.twig, correct: true }
       - { value: templates/bundles/TwigBundle/Exception/error500.html.twig, correct: false }
       - { value: src/Controller/ExceptionController, correct: false }
-    help: 'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'
+    help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-error-templates'
   -
     uuid: 1eebf878-8ba4-64dc-9656-99d84c92580c
     question: 'Which of the following values are available to define a boolean element in YAML ?'
@@ -80,14 +80,7 @@ questions:
       - { value: '0', correct: false }
       - { value: '1', correct: false }
       - { value: 'false', correct: true }
-    help: 'https://symfony.com/doc/current/components/yaml/yaml_format.html#booleans'
-  -
-    uuid: 1eebf878-8ba6-6570-8a58-99d84c92580c
-    question: 'Does the order of the controller arguments matter when mapping route parameters to controller arguments?'
-    answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/book/controller.html#route-parameters-as-controller-arguments'
+    help: 'https://symfony.com/doc/7.0/components/yaml/yaml_format.html#booleans'
   -
     uuid: 1eebf878-8ba6-6fc0-91b4-99d84c92580c
     question: 'If an exception occurs while executing a console command, will you see the details of the exception in your log files?'
@@ -95,7 +88,7 @@ questions:
       - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.', correct: true }
       - { value: 'No', correct: false }
       - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommand class.', correct: false }
-    help: 'https://symfony.com/doc/current/console.html#logging-command-errors'
+    help: 'https://symfony.com/doc/7.0/console.html#logging-command-errors'
   -
     uuid: 1eebf878-8ba7-668c-b033-99d84c92580c
     question: 'What are the requirements your system needs to run Symfony 7.0 ?'
@@ -108,7 +101,7 @@ questions:
       - { value: 'php.ini needs to have the date.timezone setting', correct: false }
       - { value: 'You need to have the PHP-XML module installed', correct: false }
       - { value: 'PHP needs to be a minimum version of PHP 8.2', correct: true }
-    help: 'https://symfony.com/doc/current/reference/requirements.html'
+    help: 'https://symfony.com/doc/7.0/reference/requirements.html'
   -
     uuid: 1ef55613-d3b3-6cb2-ac12-39eab7e60328
     question: 'What is the purpose of the symfony.lock file ?'
@@ -149,21 +142,21 @@ questions:
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
-    help: 'https://symfony.com/doc/current/setup/flex.html#customizing-flex-paths'
+    help: 'https://symfony.com/doc/7.0/setup/flex.html#customizing-flex-paths'
   -
     uuid: 1ef562a5-90da-6c8a-8a47-9f1995dbf2d9
     question: 'Some structure folders in symfony can be moved by specifying in the composer.json an "extra" section and adding src-dir for the src for example.'
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
-    help: 'https://symfony.com/doc/current/setup/flex.html#customizing-flex-paths'
+    help: 'https://symfony.com/doc/7.0/setup/flex.html#customizing-flex-paths'
   -
     uuid: 1ef562a7-a056-6676-8e1f-11075f5e94f6
     question: 'Some structure folders in symfony can be moved by specifying in the composer.json an "extra" section and adding dir-public for the public folder for example.'
     answers:
       - { value: 'True', correct: false }
       - { value: 'False', correct: true }
-    help: 'https://symfony.com/doc/current/setup/flex.html#customizing-flex-paths'
+    help: 'https://symfony.com/doc/7.0/setup/flex.html#customizing-flex-paths'
   -
     uuid: 1ef562ae-450d-60ba-99eb-831d11237fbd
     question: 'Which extension is officialy used for yaml files ?'
@@ -171,4 +164,4 @@ questions:
       - { value: .yaml, correct: true }
       - { value: .yml, correct: false }
       - { value: .yl, correct: false }
-    help: 'https://symfony.com/doc/current/setup/flex.html'
+    help: 'https://symfony.com/doc/7.0/setup/flex.html'

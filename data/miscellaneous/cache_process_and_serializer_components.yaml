@@ -7,7 +7,7 @@ questions:
       - { value: "$serializer->ignoreAttributes(['age']);", correct: false }
       - { value: "$normalizer->setIgnoredAttributes(['age']);", correct: false }
       - { value: "$serializer->serialize($person, 'json', [ AbstractNormalizer::IGNORED_ATTRIBUTES => ['age'], ]);", correct: true }
-    help: 'https://symfony.com/doc/current/components/serializer.html#ignoring-attributes'
+    help: 'https://symfony.com/doc/7.0/components/serializer.html#ignoring-attributes'
   -
     uuid: 1eebf878-8b98-6470-b450-99d84c92580c
     question: 'Given a new process created in front of a Symfony command that return a 1 code, what will be returned by Process::mustRun()?'
@@ -26,7 +26,7 @@ questions:
       - { value: '$pid = $process->getPid();', correct: true }
       - { value: '$pid = $process->getProcessId();', correct: false }
       - { value: '$pid = $process->getData()->getPid();', correct: false }
-    help: 'https://symfony.com/doc/current/components/process.html#process-pid'
+    help: 'https://symfony.com/doc/7.0/components/process.html#process-pid'
   -
     uuid: 1eebf878-8b9c-6020-9682-99d84c92580c
     question: 'What is returned by the wait() method of Symfony\Component\Process\Process ?'
@@ -63,7 +63,7 @@ questions:
       - { value: "$serializer->serialize('json', $person);", correct: false }
       - { value: $serializer->toJson($person);, correct: false }
       - { value: "$serializer->serialize($person, 'json');", correct: true }
-    help: 'https://symfony.com/doc/current/components/serializer.html#serializing-an-object'
+    help: 'https://symfony.com/doc/7.0/components/serializer.html#serializing-an-object'
   -
     uuid: 1eebf878-8b9d-601a-8dff-99d84c92580c
     question: 'What are valid output types defined in Process ?'
@@ -74,14 +74,14 @@ questions:
       - { value: out, correct: true }
       - { value: output, correct: false }
       - { value: err, correct: true }
-    help: 'https://symfony.com/doc/current/components/process.html#getting-real-time-process-output'
+    help: 'https://symfony.com/doc/7.0/components/process.html#getting-real-time-process-output'
   -
     uuid: 1eebf878-8b9d-60ba-9a06-99d84c92580c
     question: 'Could interfaces and/or abstract classes be serialized?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/serializer.html#serializing-interfaces-and-abstract-classes'
+    help: 'https://symfony.com/doc/7.0/components/serializer.html#serializing-interfaces-and-abstract-classes'
   -
     uuid: 1eebf878-8b9d-6736-8851-99d84c92580c
     question: 'What is the tag to register a new encoder in the serializer service?'
@@ -90,7 +90,7 @@ questions:
       - { value: serializer_encoder, correct: false }
       - { value: serializer.object_encoder, correct: false }
       - { value: serializer.encoder, correct: true }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#serializer-encoder'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#serializer-encoder'
   -
     uuid: 1eebf878-8b9f-65ae-aeb1-99d84c92580c
     question: 'As dev environment, what is the name of dumped container ?'
@@ -101,7 +101,7 @@ questions:
       - { value: appDevProjectContainer.php, correct: false }
       - { value: appDevDebugProjectServiceContainer, correct: false }
       - { value: srcApp_DevDebugContainer.php, correct: false }
-    help: 'https://symfony.com/doc/current/configuration/front_controllers_and_kernel.html#environments-and-the-cache-directory'
+    help: 'https://symfony.com/doc/7.0/configuration/front_controllers_and_kernel.html#environments-and-the-cache-directory'
   -
     uuid: 1eebf878-8ba0-6cf6-8531-99d84c92580c
     question: 'What is the default signal sent by Process component to stop a process ?'
@@ -110,7 +110,7 @@ questions:
       - { value: SIGKILL, correct: true }
       - { value: 'Process::STOP', correct: false }
       - { value: '9', correct: true }
-    help: 'https://symfony.com/doc/current/components/process.html#stopping-a-process'
+    help: 'https://symfony.com/doc/7.0/components/process.html#stopping-a-process'
   -
     uuid: 1eebf878-8ba2-670e-a56a-99d84c92580c
     question: 'What is the tag to register a new normalizer in the serializer service?'
@@ -119,7 +119,7 @@ questions:
       - { value: serializer_normalizer, correct: false }
       - { value: serializer.normalizer, correct: true }
       - { value: serializer.normalize, correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#serializer-normalizer'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#serializer-normalizer'
   -
     uuid: 1eebf878-8ba3-61e0-9460-99d84c92580c
     question: 'How to specify the date format for a date attribute in a serialization context ?'
@@ -128,7 +128,7 @@ questions:
       - { value: "It's not possible", correct: false }
       - { value: "/** @Serializer\\Context({ DateTimeNormalizer::FORMAT_KEY = 'Y-m-d' }) */ public DateTime $date;", correct: true }
       - { value: "/** @Serializer\\DateFormat('Y-m-d' ) */ public DateTime $date;", correct: false }
-    help: 'https://symfony.com/doc/current/serializer.html#serializer-context'
+    help: 'https://symfony.com/doc/7.0/serializer.html#serializer-context'
   -
     uuid: 1eebf878-8ba3-68f2-a0ce-99d84c92580c
     question: 'What are the availables process status constants in the Symfony\Component\Process\Process class ?'
@@ -156,7 +156,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/expression_language.html#using-parsed-and-serialized-expressions'
+    help: 'https://symfony.com/doc/7.0/components/expression_language.html#using-parsed-and-serialized-expressions'
   -
     uuid: 1eebf878-8ba4-6996-9d15-99d84c92580c
     question: 'Which of the followings are core cache warmers?'
@@ -168,7 +168,7 @@ questions:
       - { value: LogsCacheWarmer, correct: false }
       - { value: TemplateCacheWarmer, correct: true }
       - { value: RouterCacheWarmer, correct: true }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#core-cache-warmers'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#core-cache-warmers'
   -
     uuid: 1eebf878-8ba6-64d0-a4e1-99d84c92580c
     question: 'What does ESI stand for?'
@@ -177,17 +177,17 @@ questions:
       - { value: 'Edge Side Import', correct: false }
       - { value: 'Edge Side Includes', correct: true }
       - { value: 'Export Side Includes', correct: false }
-    help: 'https://symfony.com/doc/current/http_cache/esi.html#using-esi-in-symfony'
+    help: 'https://symfony.com/doc/7.0/http_cache/esi.html#using-esi-in-symfony'
   -
     uuid: 1eebf878-8ba7-672c-88d4-99d84c92580c
-    question: 'Which types of argument accepts the Symfony\Component\Process\InputStream\write() method?'
+    question: 'Which argument types are accepted by the `write()` method of `Symfony\Component\Process\InputStream`?'
     answers:
       - { value: 'Stream resources', correct: true }
-      - { value: Boolean, correct: false }
-      - { value: Arrays, correct: false }
+      - { value: 'Boolean', correct: false }
+      - { value: 'Arrays', correct: false }
       - { value: 'Traversable objects', correct: true }
-      - { value: Scalars, correct: true }
-    help: 'https://symfony.com/doc/current/components/process.html#streaming-to-the-standard-input-of-a-process'
+      - { value: 'Scalars', correct: true }
+    help: 'https://symfony.com/doc/7.0/components/process.html#streaming-to-the-standard-input-of-a-process'
   -
     uuid: 1eebf878-8ba9-68ce-9102-99d84c92580c
     question: 'Given $process is a Process object that runs a command asynchronously; calling $process->stop(3) will immediately send a SIGKILL signal to the running command.'
@@ -212,11 +212,11 @@ questions:
       - { value: 'public function denormalize($propertyName);', correct: true }
       - { value: 'public function reverse($propertyName);', correct: false }
       - { value: 'public function getName();', correct: false }
-    help: 'https://symfony.com/doc/current/components/serializer.html#converting-property-names-when-serializing-and-deserializing'
+    help: 'https://symfony.com/doc/7.0/components/serializer.html#converting-property-names-when-serializing-and-deserializing'
   -
     uuid: 1ef65d96-524a-6546-b727-1f7b87b1af39
     question: 'Is it possible to restrict the amount of time a process takes to achieve?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/process.html#process-timeout'
+    help: 'https://symfony.com/doc/7.0/components/process.html#process-timeout'

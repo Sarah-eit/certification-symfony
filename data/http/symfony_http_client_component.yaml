@@ -10,12 +10,12 @@ questions:
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#request'
   -
     uuid: 1eebf878-8ba5-61fc-a856-99d84c92580c
-    question: 'Which statement is true about FlashBag::add() and FlashBag::set()?'
+    question: 'What is the main difference between `FlashBag::add()` and `FlashBag::set()` in Symfony?'
     answers:
-      - { value: 'The FlashBag::add() method allow to add a single message while FlashBag::set() allow to add a set of message using a callback', correct: false }
+      - { value: '`FlashBag::add()` allows adding a single message, while `FlashBag::set()` allows adding multiple messages using a callback.', correct: false }
       - { value: 'They behave the same way', correct: false }
-      - { value: 'The FlashBag::add() method allow to add a single message while FlashBag::set() allow to add a set of messages', correct: true }
-      - { value: 'The FlashBag::add() method allow to add a set of messages while FlashBag::set() allow to add a single message', correct: false }
+      - { value: '`FlashBag::add()` allows adding multiple messages under the same key, while `FlashBag::set()` replaces any existing messages under that key.', correct: true }
+      - { value: '`FlashBag::add()` replaces messages under a key, while `FlashBag::set()` appends new messages to it.', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
   -
     uuid: 1ef91ee4-daf6-6de2-815d-598df0174ec8

@@ -10,36 +10,36 @@ questions:
     help: 'https://symfony.com/doc/7.0/security/access_control.html#matching-options'
   -
     uuid: 1eeda48d-d1bc-6f24-b3b4-a5b63ba17a88
-    question: 'Which options are matching words in access_control ?'
+    question: "Which options can be used as matching criteria in Symfony's `access_control` configuration?"
     answers:
-      - { value: request_matcher, correct: true }
-      - { value: route, correct: true }
-      - { value: attributes, correct: true }
-      - { value: path, correct: true }
+      - { value: 'request_matcher', correct: true }
+      - { value: 'route', correct: true }
+      - { value: 'attributes', correct: true }
+      - { value: 'path', correct: true }
       - { value: 'ip or ips', correct: true }
-      - { value: port, correct: true }
-      - { value: host, correct: true }
-      - { value: methods, correct: true }
-      - { value: roles, correct: false }
-      - { value: allow_if, correct: false }
-      - { value: channel, correct: false }
+      - { value: 'port', correct: true }
+      - { value: 'host', correct: true }
+      - { value: 'methods', correct: true }
+      - { value: 'roles', correct: false }
+      - { value: 'allow_if', correct: false }
+      - { value: 'channel', correct: false }
     help: 'https://symfony.com/doc/7.0/security/access_control.html#1-matching-options'
   -
     uuid: 1eeda49f-6fcf-605c-b22b-4b78416c49eb
     question: 'Which words are options enforces access in access control ?'
     answers:
-      - { value: request_matcher, correct: false }
-      - { value: channel, correct: true }
+      - { value: 'request_matcher', correct: false }
+      - { value: 'channel', correct: true }
       - { value: 'allow if', correct: true }
-      - { value: roles, correct: true }
-      - { value: methods, correct: false }
-      - { value: host, correct: false }
-      - { value: port, correct: false }
+      - { value: 'roles', correct: true }
+      - { value: 'methods', correct: false }
+      - { value: 'host', correct: false }
+      - { value: 'port', correct: false }
       - { value: 'ip or ips', correct: false }
-      - { value: route, correct: false }
-      - { value: methods, correct: false }
-      - { value: path, correct: false }
-      - { value: attributes, correct: false }
+      - { value: 'route', correct: false }
+      - { value: 'methods', correct: false }
+      - { value: 'path', correct: false }
+      - { value: 'attributes', correct: false }
     help: 'https://symfony.com/doc/7.0/security/access_control.html#2-access-enforcement'
   -
     uuid: 1eeda4c7-518c-6fa4-80fb-09b72beaa117
@@ -49,7 +49,7 @@ questions:
       - { value: 'If i have a header caledd X-Secure-Access', correct: false }
       - { value: 'if my ip is 127.0.0.1', correct: false }
       - { value: 'every case', correct: true }
-      - { value: none, correct: false }
+      - { value: 'none', correct: false }
     help: 'https://symfony.com/doc/7.0/security/access_control.html#securing-by-an-expression'
   -
     uuid: 1eee7804-148f-612c-9026-b35e86785063

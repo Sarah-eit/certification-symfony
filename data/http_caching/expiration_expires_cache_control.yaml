@@ -14,7 +14,7 @@ questions:
       - { value: Last-Modified, correct: false }
       - { value: Cache-Control, correct: true }
       - { value: Expires, correct: true }
-    help: 'https://symfony.com/doc/current/http_cache/expiration.html'
+    help: 'https://symfony.com/doc/7.0/http_cache/expiration.html'
   -
     uuid: 1eebf878-8b9b-635a-8e43-99d84c92580c
     question: 'Is the following header value valid? Expires: Sun, 06 Nov 1994 08:49:37 GMT'
@@ -40,7 +40,7 @@ questions:
       - { value: ETag, correct: false }
       - { value: Cache-Control, correct: true }
       - { value: Cookie, correct: false }
-    help: 'https://symfony.com/doc/current/http_cache/expiration.html'
+    help: 'https://symfony.com/doc/7.0/http_cache/expiration.html'
   -
     uuid: 1eebf878-8b9e-66ae-9202-99d84c92580c
     question: 'According to HTTP/1.1 what is the max value for Expires ?'
@@ -49,14 +49,14 @@ questions:
       - { value: 'one month', correct: false }
       - { value: 'one week', correct: false }
       - { value: 'There is not limit', correct: false }
-    help: 'https://symfony.com/doc/current/http_cache/expiration.html#expiration-with-the-expires-header'
+    help: 'https://symfony.com/doc/7.0/http_cache/expiration.html#expiration-with-the-expires-header'
   -
     uuid: 1eebf878-8b9e-66fe-a3f4-99d84c92580c
     question: 'You can use both validation and expiration within the same Response.'
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
-    help: 'https://symfony.com/doc/current/http_cache/expiration.html'
+    help: 'https://symfony.com/doc/7.0/http_cache/expiration.html'
   -
     uuid: 1eebf878-8ba4-6cde-8a81-99d84c92580c
     question: 'Which of the following HTTP response headers belong to the expiration caching model?'

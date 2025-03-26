@@ -61,10 +61,8 @@ questions:
     answers:
       - { value: 'php bin/console doctrine:generate:entity', correct: false }
       - { value: 'php bin/console generate:entity', correct: false }
-      - { value: 'php bin/console database:create:entity', correct: false }
       - { value: 'php bin/console doctrine:create:entity', correct: false }
       - { value: 'php bin/console make:entity', correct: true }
-      - { value: 'php bin/console entity:make', correct: false }
     help: 'https://symfony.com/doc/7.0/doctrine.html#creating-an-entity-class'
   -
     uuid: 1eebf878-8b9e-6c30-8003-99d84c92580c
@@ -77,7 +75,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/doctrine.html#migrations-creating-the-database-tables-schema'
   -
     uuid: 1eebf878-8b9e-6c80-b421-99d84c92580c
-    question: 'What is the right command name to load Doctrine fixtures?'
+    question: 'What is the correct console command to load Doctrine fixtures?'
     answers:
       - { value: 'php bin/console doctrine:fixtures:load', correct: true }
       - { value: 'php bin/console doctrine:load:fixtures', correct: false }
@@ -86,7 +84,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/bundles/DoctrineFixturesBundle/index.html#loading-fixtures'
   -
     uuid: 1eebf878-8b9e-6e10-8352-99d84c92580c
-    question: 'How to Call Other Commands in a command ?'
+    question: 'How to call other commands in a command ?'
     answers:
       - { value: '$command->execute($input, $output);', correct: false }
       - { value: '$command->run($input, $output);', correct: true }

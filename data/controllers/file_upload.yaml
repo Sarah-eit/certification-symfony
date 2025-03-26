@@ -6,4 +6,4 @@ questions:
       - { value: "/** @var UploadedFile $brochureFile */ $brochureFile = $request->uploadFile('brochure')->getData();", correct: false }
       - { value: "/** @var UploadedFile $brochureFile */ $brochureFile = $request->getFile('brochure');", correct: false }
       - { value: "/** @var UploadedFile $brochureFile */ $brochureFile = $form->get('brochure')->getData();", correct: true }
-    help: 'https://symfony.com/doc/current/controller/upload_file.html'
+    help: 'https://symfony.com/doc/7.0/controller/upload_file.html'

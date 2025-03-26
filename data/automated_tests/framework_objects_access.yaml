@@ -9,7 +9,7 @@ questions:
       - { value: "framework.mailer.dsn: 'null://null'", correct: true }
       - { value: 'framework.mailer.dsn: null', correct: false }
       - { value: 'framework.mailer.dsn: false', correct: false }
-    help: 'https://symfony.com/doc/current/mailer.html#disabling-delivery'
+    help: 'https://symfony.com/doc/7.0/mailer.html#disabling-delivery'
   -
     uuid: 1eebf878-8ba5-60d0-b804-99d84c92580c
     question: "What are the valid ways to get the Session object if the controller class inherits from the base FrameworkBundle's Controller class?"
@@ -37,11 +37,11 @@ questions:
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#quoting-reserved-words'
   -
     uuid: 1eee7838-81c1-6e82-9026-bb1b70c39103
-    question: 'What is the tag to use to register your service to be called during the cache warming process?'
+    question: 'Which tag should be used to register a service for execution during the cache warming process?'
     answers:
       - { value: cache_warmer, correct: false }
       - { value: kernel.warmer, correct: false }
       - { value: command.cache_warmer, correct: false }
       - { value: kernel.cache_warmer, correct: true }
       - { value: cache.warmer, correct: false }
-    help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-cache-warmer'
+    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-cache-warmer'

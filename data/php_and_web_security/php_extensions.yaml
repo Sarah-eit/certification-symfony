@@ -87,7 +87,7 @@ questions:
       - { value: 'bin/console debug:container --show-private', correct: true }
       - { value: 'bin/console debug:container', correct: false }
       - { value: 'app/console debug:container', correct: false }
-    help: 'https://symfony.com/doc/current/service_container/debug.html'
+    help: 'https://symfony.com/doc/7.0/service_container/debug.html'
   -
     uuid: 1eee76ce-b5a5-6e44-9026-0f27ac991b1e
     question: 'Which of the following functions can you use to secure the input of a script?'

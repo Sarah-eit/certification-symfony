@@ -22,7 +22,7 @@ questions:
       - { value: '202', correct: false }
       - { value: '300', correct: false }
       - { value: '305', correct: false }
-    help: 'https://symfony.com/doc/current/http_cache/validation.html'
+    help: 'https://symfony.com/doc/7.0/http_cache/validation.html'
   -
     uuid: 1eebf878-8ba2-657e-9588-99d84c92580c
     question: 'Which of the followings are valid usage of the Vary header?'

@@ -6,7 +6,7 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'Depends on the mailer provider', correct: false }
       - { value: Non, correct: false }
-    help: 'https://symfony.com/doc/current/mailer.html'
+    help: 'https://symfony.com/doc/7.0/mailer.html'
   -
     uuid: 1eeccc26-b8fa-6b2a-aaad-5fecff7b6b7e
     question: 'What are the available options you can set in the mailer DSN ?'
@@ -19,7 +19,7 @@ questions:
       - { value: restart_threshold_sleep, correct: true }
       - { value: ping_threshold, correct: true }
       - { value: max_per_second, correct: true }
-    help: 'https://symfony.com/doc/current/mailer.html#other-options'
+    help: 'https://symfony.com/doc/7.0/mailer.html#other-options'
   -
     uuid: 1eeccc31-ee26-61e0-95d8-f3d79a72bbf6
     question: 'What are the available way to sent an email ?'
@@ -29,7 +29,7 @@ questions:
       - { value: "$email = (new Email())->to(['email' =>'you@example.com']);", correct: false }
       - { value: "$email = (new Email())->to(new Adresse('you@example.com'));", correct: true }
       - { value: "$email = (new Email())->to(new Adresse('you@example.com', 'you'));", correct: true }
-    help: 'https://symfony.com/doc/current/mailer.html#creating-sending-messages'
+    help: 'https://symfony.com/doc/7.0/mailer.html#creating-sending-messages'
   -
     uuid: 1eeccd5e-21a9-647c-9d17-558e78e1360b
     question: 'What are the available Mailer Events ?'
@@ -41,7 +41,7 @@ questions:
       - { value: FailedMessageEvent, correct: true }
       - { value: MessageFailedEvent, correct: false }
       - { value: ReceivedMessageEvent, correct: false }
-    help: 'https://symfony.com/doc/current/mailer.html#mailer-events'
+    help: 'https://symfony.com/doc/7.0/mailer.html#mailer-events'
   -
     uuid: 1eeccd7e-c7af-6482-ac98-1d62e1e2e432
     question: 'What does MIME mean ?'
@@ -49,7 +49,7 @@ questions:
       - { value: 'Minimum Information Mail Extended', correct: false }
       - { value: 'Message Imported Mail Environment', correct: false }
       - { value: 'Multipurpose Internet Mail Extensions', correct: true }
-    help: 'https://symfony.com/doc/current/components/mime.html'
+    help: 'https://symfony.com/doc/7.0/components/mime.html'
   -
     uuid: 1eeccd99-999f-6734-bd4d-d9d09f91572c
     question: 'What are the function which permit to transforms between MIME Types and file name extensions ? and reversly !'
@@ -58,4 +58,4 @@ questions:
       - { value: getFileExtensions, correct: false }
       - { value: getMimeTypes, correct: true }
       - { value: getMimeType, correct: false }
-    help: 'https://symfony.com/doc/current/components/mime.html#mime-types-utilities'
+    help: 'https://symfony.com/doc/7.0/components/mime.html#mime-types-utilities'

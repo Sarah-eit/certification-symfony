@@ -29,7 +29,7 @@ questions:
       - { value: $this->addFlash(), correct: true }
       - { value: $request->getSession()->addFlash(), correct: false }
       - { value: $request->getSession()->addFlashBag(), correct: false }
-    help: 'https://symfony.com/doc/current/controller.html#managing-the-session'
+    help: 'https://symfony.com/doc/7.0/controller.html#managing-the-session'
   -
     uuid: 1eebf878-8ba7-67cc-b50b-99d84c92580c
     question: 'Can you use the flash message if sessions are disabled ?'

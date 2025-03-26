@@ -21,7 +21,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/reference/twig_reference.html#functions'
+    help: 'https://symfony.com/doc/7.0/reference/twig_reference.html#functions'
   -
     uuid: 1eebf878-8b9c-6fca-9ad6-99d84c92580c
     question: 'Which of the following is not a function?'
@@ -40,7 +40,7 @@ questions:
       - { value: '{{ var|humanize }}', correct: true }
       - { value: '{{ var|upper }}', correct: false }
       - { value: '{{ var|capitalize }}', correct: false }
-    help: 'https://symfony.com/doc/current/reference/twig_reference.html#humanize'
+    help: 'https://symfony.com/doc/7.0/reference/twig_reference.html#humanize'
   -
     uuid: 1eebf878-8ba7-6ac4-b297-99d84c92580c
     question: 'How do you add the value 10 to an array called $myArray?'

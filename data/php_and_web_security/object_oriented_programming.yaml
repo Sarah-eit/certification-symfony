@@ -68,7 +68,7 @@ questions:
       - { value: 'The method getResults does not exists. You should use getResult().', correct: true }
       - { value: 'The second call setParameters(...) will erase data set in the first call. So year will be deleted from the parameters list. You should use setParameter($name, $value).', correct: true }
       - { value: 'The query builder does not have a getResults() method. You should use getQuery().', correct: true }
-    help: 'https://symfony.com/doc/current/doctrine.html#querying-for-objects-using-doctrine-s-query-builder'
+    help: 'https://symfony.com/doc/7.0/doctrine.html#querying-for-objects-using-doctrine-s-query-builder'
   -
     uuid: 1eebf878-8ba4-6874-81e0-99d84c92580c
     question: 'Which built-in PHP extension enables to programmatically introspect a class, a method, an interface, a trait or any other object oriented related data structures?'

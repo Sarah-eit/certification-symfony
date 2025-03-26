@@ -15,16 +15,16 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Routing/RouteCompiler.php#L137'
   -
     uuid: 1eebf878-8b9f-6126-8428-99d84c92580c
-    question: 'Which of these annotations can be used in a controller?'
+    question: 'Which of these attributes can be used with a controller?'
     answers:
-      - { value: '@Cache', correct: true }
-      - { value: '@ParamConverter', correct: true }
-      - { value: '@Security', correct: true }
-      - { value: '@Template', correct: true }
-      - { value: '@Method', correct: false }
-      - { value: '@Post', correct: false }
-      - { value: '@CatchException', correct: false }
-    help: 'https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html#annotations-for-controllers'
+      - { value: '#[Cache]', correct: true }
+      - { value: '#[ParamConverter]', correct: true }
+      - { value: '#[Security]', correct: true }
+      - { value: '#[Template]', correct: true }
+      - { value: '#[Method]', correct: false }
+      - { value: '#[Post]', correct: false }
+      - { value: '#[CatchException]', correct: false }
+    help: 'https://symfony.com/doc/7.0/bundles/SensioFrameworkExtraBundle/index.html#annotations-for-controllers'
   -
     uuid: 1eebf878-8ba7-6376-ba70-99d84c92580c
     question: 'From which global arrays is it possible to read submitted form data?'
@@ -42,7 +42,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/yaml.html#reading-yaml-files'
+    help: 'https://symfony.com/doc/7.0/components/yaml.html#reading-yaml-files'
   -
     uuid: 1ef65dbc-b1db-602a-b33b-05d4fde5fe6a
     question: 'Which format of configuration file can be used to set PHP constants as parameters?'
@@ -53,4 +53,4 @@ questions:
       - { value: PHP, correct: true }
       - { value: Annotation, correct: false }
       - { value: Attribute, correct: false }
-    help: 'https://symfony.com/doc/current/configuration.html#constants-as-parameters'
+    help: 'https://symfony.com/doc/7.0/configuration.html#constants-as-parameters'

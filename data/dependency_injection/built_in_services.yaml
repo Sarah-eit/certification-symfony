@@ -88,17 +88,17 @@ questions:
     uuid: 1efda571-c2a0-66a4-b651-253633409d63
     question: 'Which statement is correct about built-in services : form.type ?'
     answers:
-      - { value: 'Purpose: Create a custom form field type', correct: true }
-      - { value: 'Purpose: Create a custom form field type only if the project is an API', correct: false }
-      - { value: 'None of them', correct: false }
+      - { value: 'Used to create a custom form field type', correct: true }
+      - { value: 'Used to create a custom form field type only if the project is an API', correct: false }
+      - { value: 'None of the above', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#form-type'
   -
     uuid: 1efda572-907d-6bbc-9278-e1f43cf1afd1
-    question: 'Which statement is correct about built-in services : form.type_extension ?'
+    question: 'What is the purpose of the `form.type_extension` built-in service in Symfony?'
     answers:
-      - { value: 'Purpose: Create a custom "form extension"', correct: true }
-      - { value: 'Purpose: Create a custom "form extension" only if the project is an API', correct: false }
-      - { value: 'None of them', correct: false }
+      - { value: 'It allows creating a custom form extension to modify or extend existing form types.', correct: true }
+      - { value: 'It allows creating a custom form extension only if the project is an API.', correct: false }
+      - { value: 'It is not related to form extensions.', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#form-type-extension'
   -
     uuid: 1efda573-9e87-6c5c-9131-d1d58464ef92

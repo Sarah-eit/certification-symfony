@@ -24,10 +24,10 @@ questions:
     uuid: 1eebf878-8b9b-6b98-970c-99d84c92580c
     question: 'Which constraint should be used to assert that a collection contains exactly 2 items? We assume that Assert is an Alias to Symfony\Component\Validator\Constraints namespace.'
     answers:
-      - { value: '#[Assert\Length(min: 2, max: 2)]', correct: false }
-      - { value: '#[Assert\Count(min: 2)]', correct: false }
-      - { value: '#[Assert\Count(2)]', correct: false }
-      - { value: '#[Assert\Count(min: 2, max: 2)]', correct: true }
+      - { value: '#[Assert\\Length(min: 2, max: 2)]', correct: false }
+      - { value: '#[Assert\\Count(min: 2)]', correct: false }
+      - { value: '#[Assert\\Count(2)]', correct: false }
+      - { value: '#[Assert\\Count(min: 2, max: 2)]', correct: true }
     help: 'https://symfony.com/doc/7.0/reference/constraints/Count.html'
   -
     uuid: 1eebf878-8b9d-65a6-a7ee-99d84c92580c

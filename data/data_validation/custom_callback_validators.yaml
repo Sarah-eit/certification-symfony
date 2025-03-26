@@ -24,10 +24,10 @@ questions:
     uuid: 1eebf878-8ba1-6926-8c9e-99d84c92580c
     question: 'Which annotation are valid ?'
     answers:
-      - { value: "#[Assert\Choice(['male', 'female', 'other'])]", correct: true }
-      - { value: "#[Assert\Choice(choices: ['male', 'female', 'other'])]", correct: true }
-      - { value: "#[Assert\Choices(['male', 'female', 'other'])]", correct: true }
-      - { value: "#[Assert\Choices(choices: ['male', 'female', 'other'])]", correct: true }
+      - { value: "#[Assert\\Choice(['male', 'female', 'other'])]", correct: true }
+      - { value: "#[Assert\\Choice(choices: ['male', 'female', 'other'])]", correct: true }
+      - { value: "#[Assert\\Choices(['male', 'female', 'other'])]", correct: true }
+      - { value: "#[Assert\\Choices(choices: ['male', 'female', 'other'])]", correct: true }
     help: 'https://symfony.com/doc/7.0/reference/constraints/Choice.html#basic-usage'
   -
     uuid: 1eec042a-90a0-6478-8a7c-83bfaecaab6e

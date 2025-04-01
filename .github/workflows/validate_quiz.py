@@ -14,16 +14,25 @@ def validate_yaml(file_path):
     errors = []
 
     for i, question in enumerate(data.get('questions', [])):
+        question_text = question.get('question', '').strip()
+        if len(question_text) < 3:
+            errors.append(f"Question {i + 1} ('{question_text}') in {file_path} must have at least 3 characters.")
+
+        for j, answer in enumerate(question.get('answers', [])):
+            answer_text = answer.get('value', '').strip()
+            if len(answer_text) < 1:
+                errors.append(f"Answer {j + 1} ('{answer_text}') for question {i + 1} ('{question_text}') in {file_path} must have at least 1 character.")
+
         correct_answers = [answer for answer in question.get('answers', []) if answer.get('correct')]
 
         if not correct_answers:
-            errors.append(f"Question {i + 1} ('{question.get('question', '')}') in {file_path} does not have any correct answers.")
+            errors.append(f"Question {i + 1} ('{question_text}') in {file_path} does not have any correct answers.")
         elif len(correct_answers) > 0 and not all(answer.get('correct') == True for answer in correct_answers):
-            errors.append(f"Question {i + 1} ('{question.get('question', '')}') in {file_path} has some answers incorrectly marked as correct.")
+            errors.append(f"Question {i + 1} ('{question_text}') in {file_path} has some answers incorrectly marked as correct.")
         elif len(correct_answers) == 1 and any(answer.get('correct') == True for answer in correct_answers):
             # If there is only one correct answer, ensure there is no more than one correct answer
             if len(correct_answers) > 1:
-                errors.append(f"Question {i + 1} ('{question.get('question', '')}') in {file_path} has multiple answers marked as correct, but should have only one.")
+                errors.append(f"Question {i + 1} ('{question_text}') in {file_path} has multiple answers marked as correct, but should have only one.")
         elif len(correct_answers) > 1:
             # If there are multiple correct answers, no issue
             pass

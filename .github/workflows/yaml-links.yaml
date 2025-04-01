@@ -15,19 +15,33 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y wget yq
+          sudo apt-get install -y wget
+          wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq
+          chmod +x /usr/local/bin/yq
 
       - name: Check links in YAML files
         run: |
+          tmp_file=$(mktemp)
           find data -type f -name "*.yaml" | while read file; do
             urls=$(yq e '.questions[].help' "$file" 2>/dev/null | grep -E '^https?://' || true)
             for url in $urls; do
               if ! wget --spider --timeout=10 --tries=1 "$url" 2>/dev/null; then
                 echo "Broken link in $file: $url"
-                exit 1
-              else 
+                echo "$file: $url" >> "$tmp_file"
+              else
                 echo "Working link in $file: $url"
-                exit 1
               fi
             done
           done
+          if [ -s "$tmp_file" ]; then
+            echo -e "\n⚠️  Broken links found !"
+            echo -e "\n=== Broken Links Summary ==="
+            cat "$tmp_file"
+            rm "$tmp_file"
+            echo -e "\n"
+            exit 1
+          else
+            echo -e "\nNo broken links found."
+            rm "$tmp_file"
+            exit 0
+          fi

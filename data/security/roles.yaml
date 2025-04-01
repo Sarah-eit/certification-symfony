@@ -24,7 +24,7 @@ questions:
       - { value: '@IsGranted("ROLE_ADMIN")', correct: true }
       - { value: '@Security("restrict_for("ROLE_ADMIN")")', correct: false }
       - { value: '@Security("role("ROLE_ADMIN")")', correct: false }
-    help: 'https://symfony.com/bundles/SensioFrameworkExtraBundle/7.0/annotations/security.html'
+    help: 'https://symfony.com/doc/current/security.html#securing-controllers-and-other-code'
   -
     uuid: 1eebf878-8ba1-64a8-a6c8-99d84c92580c
     question: 'Which default role exist ?'

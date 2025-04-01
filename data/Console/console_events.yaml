@@ -8,7 +8,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/components/console/events.html#the-consoleevents-signal-event'
   -
     uuid: 1eebf878-8b99-67a8-ab13-99d84c92580c
-    question: 'Could a command listen to signals?'
+    question: 'Can a Symfony command listen to system signals (like SIGINT or SIGTERM)?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }

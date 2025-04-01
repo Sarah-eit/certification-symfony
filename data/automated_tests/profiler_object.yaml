@@ -28,10 +28,10 @@ questions:
     help: 'https://symfony.com/doc/7.0/profiler.html#accessing-profiling-data-programmatically'
   -
     uuid: 1eee6ab6-3371-63de-9026-7bcd97a96947
-    question: 'Which method do you call to clean the storage which contains the last tokens of the profiler ?'
+    question: 'Which method is used to clear the storage containing the last tokens in the Symfony profiler?'
     answers:
-      - { value: purge, correct: true }
-      - { value: reset, correct: false }
-      - { value: clean, correct: false }
-      - { value: deleteAll, correct: false }
+      - { value: 'purge', correct: true }
+      - { value: 'reset', correct: false }
+      - { value: 'clean', correct: false }
+      - { value: 'deleteAll', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpKernel/Profiler/Profiler.php#L110'

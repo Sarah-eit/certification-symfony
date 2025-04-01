@@ -1,11 +1,11 @@
 questions:
   -
     uuid: 1efda55d-ad74-615e-8805-e3bb337e6cb7
-    question: 'Which statement is correct about built-in services : assets.package ?'
+    question: 'Which statement correctly describes the purpose of the built-in `assets.package` service in Symfony?'
     answers:
-      - { value: 'Purpose : Add an asset package to the application', correct: true }
-      - { value: 'Purpose : Add an asset package to the entity', correct: false }
-      - { value: 'Purpose : Add an asset package to the monolog', correct: false }
+      - { value: 'It adds an asset package to the application', correct: true }
+      - { value: 'It adds an asset package to an entity', correct: false }
+      - { value: 'It adds an asset package to Monolog', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#assets-package'
   -
     uuid: 1efda55e-c3de-66d2-9d68-07bfd4bc47c7

@@ -46,12 +46,12 @@ questions:
     help: 'https://symfony.com/doc/7.0/testing.html#logging-in-users-authentication'
   -
     uuid: 1efd99c1-4fa3-64dc-964b-cd438cfd5a2d
-    question: 'In test environment, what HTTP headers are automatically added when using the xmlHttpRequest() method?'
+    question: 'In a test environment, which HTTP headers are automatically included when making a request using the `xmlHttpRequest()` method?'
     answers:
-      - { value: HTTP_X_REQUESTED_WITH, correct: true }
-      - { value: HTTP_USER_AGENT, correct: false }
-      - { value: HTTP_HOST, correct: false }
-      - { value: X-Session-Token, correct: false }
+      - { value: 'X-Requested-With', correct: true }
+      - { value: 'User-Agent', correct: false }
+      - { value: 'Host', correct: false }
+      - { value: 'X-Session-Token', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#making-ajax-requests'
   -
     uuid: 1efd99c5-7328-6e62-90b1-b9c71c2b9d64

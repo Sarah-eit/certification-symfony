@@ -8,14 +8,14 @@ questions:
       - { value: 'Yes with the disableOriginalConstructor() method.', correct: true }
       - { value: 'No', correct: false }
       - { value: 'Yes with the disableOriginalConstruct() method.', correct: false }
-    help: 'https://phpunit.de/manual/7.0/en/test-doubles.html#test-doubles.stubs'
+    help: 'https://docs.phpunit.de/en/10.5/test-doubles.html'
   -
     uuid: 1eebf878-8b98-6a60-9a71-99d84c92580c
     question: "What will be the result of that assertion? $this->assertContainsOnly('string', ['1', '2', 3]);"
     answers:
       - { value: Failure, correct: true }
       - { value: Success, correct: false }
-    help: 'https://phpunit.de/manual/7.0/en/appendixes.assertions.html#appendixes.assertions.assertContainsOnly'
+    help: 'https://docs.phpunit.de/en/10.5/assertions.html#assertcontainsonly'
   -
     uuid: 1eebf878-8b98-6c04-a1e2-99d84c92580c
     question: 'Which is the method that allows to execute some code before each test defined by a class?'
@@ -24,7 +24,7 @@ questions:
       - { value: 'protected static function setUpBeforeClass()', correct: false }
       - { value: 'protected function setUpBeforeClass()', correct: false }
       - { value: 'protected static function setUp()', correct: false }
-    help: 'https://phpunit.de/manual/7.0/en/fixtures.html#fixtures.more-setup-than-teardown'
+    help: 'https://docs.phpunit.de/en/10.5/fixtures.html#more-setup-than-teardown'
   -
     uuid: 1eebf878-8b9a-6b26-87f0-99d84c92580c
     question: 'Which of the following are valid ways in PHPUnit to test the exceptions that occur when executing some PHP code?'
@@ -32,14 +32,14 @@ questions:
       - { value: 'Add the following PHP call inside the test method: $this->expectException(''Fully\\Qualified\\ExceptionClassName'');', correct: true }
       - { value: "You can't test PHP exceptions with PHPUnit.", correct: false }
       - { value: 'Wrap the entire test method in a try...catch but without processing the exception in any special way: public function testSomething() { try { // ... } catch(\Exception $e) {} }', correct: false }
-    help: 'https://phpunit.de/manual/7.0/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions'
+    help: 'https://docs.phpunit.de/en/10.5/writing-tests-for-phpunit.html#expecting-exceptions'
   -
     uuid: 1eebf878-8b9c-6160-8a96-99d84c92580c
     question: "What will be the result of that assertion in a PHPUnit test? self::assertSame('2204', 2204);"
     answers:
       - { value: Failure, correct: true }
       - { value: Success, correct: false }
-    help: 'https://phpunit.de/manual/7.0/en/appendixes.assertions.html#appendixes.assertions.assertSame'
+    help: 'https://docs.phpunit.de/en/10.5/assertions.html#appendixes-assertions-identity'
   -
     uuid: 1eebf878-8b9e-617c-8f02-99d84c92580c
     question: 'Using PHPUnit, which method names are used to share test setup code?'

@@ -2,7 +2,7 @@
   "name": "efficience_it/certification-symfony",
   "type": "library",
   "keywords": ["symfony", "certification", "test", "exam"],
-  "description": "A series of questions to prepare for the certification Symfony5-6-7",
+  "description": "A series of questions to prepare for the certification Symfony 7.0",
   "homepage": "https://github.com/efficience-it/certification-symfony",
   "license": "MIT",
   "authors": [

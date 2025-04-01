@@ -25,7 +25,7 @@ questions:
       - { value: 'LAZY', correct: false }
       - { value: 'DEFERRED_IMPLICIT', correct: false }
       - { value: 'NOTIFY', correct: true }
-    help: 'https://www.doctrine-project.org/projects/doctrine-orm/en/2.5/reference/change-tracking-policies.html'
+    help: 'https://www.doctrine-project.org/projects/doctrine-orm/en/3.3/reference/change-tracking-policies.html'
   -
     uuid: 1eebf878-8b98-6268-b843-99d84c92580c
     question: 'What is the default value of the cookie_samesite configuration key'
@@ -170,7 +170,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/supporting-other'
+    help: 'https://www.doctrine-project.org/projects/doctrine-dbal/en/4.2/reference/supporting-other-databases.html'
   -
     uuid: 1eebf878-8b9c-6296-946c-99d84c92580c
     question: 'Is it possible to configure multiple environments in a single file?'
@@ -221,15 +221,6 @@ questions:
       - { value: 'cache.clearer', correct: false }
       - { value: 'cache_clearer', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-cache-clearer'
-  -
-    uuid: 1eebf878-8b9f-61b2-955c-99d84c92580c
-    question: 'Which class will you use to convert an action parameter?'
-    answers:
-      - { value: 'Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter', correct: true }
-      - { value: 'Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverter', correct: false }
-      - { value: 'Symfony\Bundle\FrameworkBundle\Configuration\ParamConverter', correct: false }
-      - { value: 'Symfony\Bundle\FrameworkBundle\Controller\ParamConverter', correct: false }
-    help: 'https://symfony.com/doc/7.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html'
   -
     uuid: 1eebf878-8ba0-65a8-85df-99d84c92580c
     question: 'What is the LoggerInterface correct namespace?'

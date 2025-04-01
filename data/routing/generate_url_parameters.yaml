@@ -27,7 +27,7 @@ questions:
       - { value: InvalidRouteCompilationContextException, correct: false }
       - { value: InvalidArgumentException, correct: false }
       - { value: RuntimeException, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Routing/RouteCompiler.php#L43'
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Routing/RouteCompiler.php#L113'
   -
     uuid: 1eebf878-8ba0-6fc6-8cb0-99d84c92580c
     question: 'What variable can be used as controller argument to get the name of the route name?'

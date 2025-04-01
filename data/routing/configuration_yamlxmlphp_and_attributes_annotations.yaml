@@ -24,7 +24,7 @@ questions:
       - { value: '#[Method]', correct: false }
       - { value: '#[Post]', correct: false }
       - { value: '#[CatchException]', correct: false }
-    help: 'https://symfony.com/doc/7.0/bundles/SensioFrameworkExtraBundle/index.html#annotations-for-controllers'
+    help: 'https://symfony.com/doc/7.0/controller.html'
   -
     uuid: 1eebf878-8ba7-6376-ba70-99d84c92580c
     question: 'From which global arrays is it possible to read submitted form data?'

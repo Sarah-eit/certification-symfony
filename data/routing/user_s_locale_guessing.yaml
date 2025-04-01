@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b99-6e7e-8428-99d84c92580c
-    question: 'What is the attribute in the definition of a route setting the locale of a user?'
+    question: "Which route attribute is used to define the user's locale in Symfony?"
     answers:
       - { value: _language, correct: false }
       - { value: _i18N, correct: false }

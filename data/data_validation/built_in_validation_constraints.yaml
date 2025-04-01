@@ -6,19 +6,15 @@ questions:
       - { value: 'Using the not option.', correct: false }
       - { value: 'Using the inverse option.', correct: false }
       - { value: 'Using the match option.', correct: true }
-      - { value: 'Using the prune option.', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/constraints/Regex.html'
   -
     uuid: 1eebf878-8b98-6592-b2c2-99d84c92580c
-    question: 'What is the translation domain for validation error messages?'
+    question: 'What is the default translation domain used for validation error messages in Symfony?'
     answers:
-      - { value: validation, correct: false }
-      - { value: constraint, correct: false }
-      - { value: validators, correct: true }
-      - { value: messages, correct: false }
-      - { value: contraints, correct: false }
-      - { value: validator, correct: false }
-      - { value: validations, correct: false }
+      - { value: 'validation', correct: false }
+      - { value: 'validators', correct: true }
+      - { value: 'messages', correct: false }
+      - { value: 'validator', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html#translation-domain'
   -
     uuid: 1eebf878-8b9b-6b98-970c-99d84c92580c
@@ -57,12 +53,12 @@ questions:
     help: 'https://symfony.com/doc/7.0/components/validator.html#installation'
   -
     uuid: 1eebf878-8ba1-68d6-b09a-99d84c92580c
-    question: 'Which constraints exist?'
+    question: 'Which of the following are valid built-in validation constraints in Symfony?'
     answers:
-      - { value: Blank, correct: true }
-      - { value: IdenticalTo, correct: true }
-      - { value: EqualTo, correct: true }
-      - { value: SameAs, correct: false }
+      - { value: 'Blank', correct: true }
+      - { value: 'IdenticalTo', correct: true }
+      - { value: 'EqualTo', correct: true }
+      - { value: 'SameAs', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/constraints.html'
   -
     uuid: 1eebf878-8ba1-6db8-8235-99d84c92580c

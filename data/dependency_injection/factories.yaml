@@ -5,4 +5,50 @@ questions:
     answers:
       - { value: 'The principle is to have a class which will be responsible for creating the objects we need', correct: true }
       - { value: 'The principle is to have a class which will be responsible for factoring code into an object', correct: false }
-    help: 'https://www.olympe-studio.xyz/fr/blog/php/factory-php-definition-interet/'
+    help: 'https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)'
+  -
+    uuid: 5e361f90-7cd8-4783-9aa0-b0720a32349f
+    question: 'What keyword is used in `services.yaml` to define a factory for a service?'
+    answers:
+      - { value: 'factory', correct: true }
+      - { value: 'creator', correct: false }
+      - { value: 'builder', correct: false }
+      - { value: 'constructor', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/factories.html'
+  -
+    uuid: 4d5ae417-12d5-439a-87f1-fdd6c541487c
+    question: 'When using a static factory method from a different class, how should the factory be defined?'
+    answers:
+      - { value: "['FactoryClass', 'methodName']", correct: true }
+      - { value: "['@FactoryClass', 'methodName']", correct: false }
+      - { value: "['methodName']", correct: false }
+      - { value: "['this', 'methodName']", correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/factories.html#static-factories'
+  -
+    uuid: ca44bf29-3e7a-47dd-9464-7ab8c028526b
+    question: 'Which value should be used in the factory declaration when the factory method is in the same class?'
+    answers:
+      - { value: '[null, methodName]', correct: true }
+      - { value: '[self, methodName]', correct: false }
+      - { value: '[@this, methodName]', correct: false }
+      - { value: '[., methodName]', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/factories.html#using-the-class-as-factory-itself'
+  -
+    uuid: 8ebd9928-eaed-473f-8722-d9410c658569
+    question: 'How can you define an invokable factory service in services.yaml?'
+    answers:
+      - { value: 'factory: @FactoryService', correct: true }
+      - { value: 'factory: __invoke', correct: false }
+      - { value: 'factory: @FactoryService::__invoke', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/factories.html#invokable-factories'
+  -
+    uuid: f406d2c3-7b7e-4db6-a8d0-bc25355035aa
+    question: 'What symbol indicates a service expression in the factory option?'
+    answers:
+      - { value: '@=', correct: true }
+      - { value: '#=', correct: false }
+      - { value: '$=', correct: false }
+      - { value: 'expr:', correct: false }
+    help: 'https://symfony.com/doc/7.0/service_container/factories.html#using-expressions-in-service-factories'
+
+

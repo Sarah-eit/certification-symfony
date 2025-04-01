@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b99-608c-8846-99d84c92580c
-    question: 'Could enumerations be used with !php/const?'
+    question: 'Can PHP enumerations be used with the !php/const YAML tag in Symfony configuration?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }

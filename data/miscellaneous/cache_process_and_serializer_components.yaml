@@ -59,9 +59,9 @@ questions:
     uuid: 1eebf878-8b9c-6d9a-80c6-99d84c92580c
     question: 'Which of the following is the correct usage for serializing the $person object into json?'
     answers:
-      - { value: $serializer->serialize($person)->toJson();, correct: false }
+      - { value: '$serializer->serialize($person)->toJson();', correct: false }
       - { value: "$serializer->serialize('json', $person);", correct: false }
-      - { value: $serializer->toJson($person);, correct: false }
+      - { value: '$serializer->toJson($person);', correct: false }
       - { value: "$serializer->serialize($person, 'json');", correct: true }
     help: 'https://symfony.com/doc/7.0/components/serializer.html#serializing-an-object'
   -

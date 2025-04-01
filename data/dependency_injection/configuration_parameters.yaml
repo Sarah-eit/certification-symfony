@@ -251,15 +251,6 @@ questions:
       - { value: 'php bin/console set-env prod', correct: false }
     help: 'https://symfony.com/doc/7.0/configuration.html'
   -
-    uuid: 1ef8007f-1f7a-6606-9139-fd4c956a4883
-    question: 'What syntax is used to reference an environment variable in a YAML configuration file?'
-    answers:
-      - { value: '%env(VAR_NAME)%', correct: true }
-      - { value: '${VAR_NAME}', correct: false }
-      - { value: '{{ env(VAR_NAME) }}', correct: false }
-      - { value: '#env(VAR_NAME)#', correct: false }
-    help: 'https://symfony.com/doc/7.0/configuration.html'
-  -
     uuid: 1ef80081-4f13-63a2-98e6-8390f97f5219
     question: 'If an environment variable is not defined, how can you specify a default value in a YAML file?'
     answers:

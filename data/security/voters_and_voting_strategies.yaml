@@ -59,20 +59,20 @@ questions:
     help: 'https://symfony.com/doc/7.0/components/security/authorization.html#access-decision-manager'
   -
     uuid: 1eebf878-8ba1-63cc-97aa-99d84c92580c
-    question: 'What decision strategy exist ?'
+    question: 'Which of the following are valid access decision strategies in Symfony?'
     answers:
-      - { value: affirmative, correct: true }
-      - { value: consensus, correct: true }
-      - { value: unanimous, correct: true }
-      - { value: positive, correct: false }
-      - { value: negative, correct: false }
+      - { value: 'affirmative', correct: true }
+      - { value: 'consensus', correct: true }
+      - { value: 'unanimous', correct: true }
+      - { value: 'positive', correct: false }
+      - { value: 'negative', correct: false }
     help: 'https://symfony.com/doc/7.0/components/security/authorization.html#access-decision-manager'
   -
     uuid: 1ef95d9c-e21e-61c8-bc50-2706fca93033
     question: 'When creating custom voter, which dependency injection tag has to be used?'
     answers:
-      - { value: secure.vote, correct: false }
-      - { value: secure.voter, correct: false }
-      - { value: security.vote, correct: false }
-      - { value: security.voter, correct: true }
+      - { value: 'secure.vote', correct: false }
+      - { value: 'secure.voter', correct: false }
+      - { value: 'security.vote', correct: false }
+      - { value: 'security.voter', correct: true }
     help: 'https://symfony.com/doc/7.0/security/voters.html#configuring-the-voter'

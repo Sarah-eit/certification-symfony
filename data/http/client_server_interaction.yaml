@@ -40,7 +40,7 @@ questions:
     help: 'https://datatracker.ietf.org/doc/html/rfc8674#section-3s'
   -
     uuid: 1eebf878-8b9c-682c-b6aa-99d84c92580c
-    question: 'Is there any required header in a request to an origin server or gateway for almost every request ?'
+    question: 'Is there any required HTTP header for almost every request made to an origin server or gateway?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
@@ -61,3 +61,13 @@ questions:
       - { value: 'a 406', correct: false }
       - { value: 'a 422', correct: false }
     help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.24'
+  -
+    uuid: 8b3d97c7-02bc-4ed8-a3cc-906ab660697a
+    question: 'When do you need to run php bin/console assets:install in a Symfony project?'
+    answers:
+      - { value: "When you've added or modified assets from a bundle (e.g. EasyAdmin, CKEditor) that should be copied to public/bundles/", correct: true }
+      - { value: 'When you update PHP code such as controllers or entitie', correct: false }
+      - { value: 'When you edit Twig templates', correct: false }
+      - { value: 'When you modify compiled JS/CSS handled by Webpack Encore', correct: false }
+      - { value: 'When you work with static files already located in public/', correct: false }
+    help: 'https://symfony.com/blog/new-in-symfony-2-6-smarter-assets-install-command'

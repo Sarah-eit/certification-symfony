@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba3-6c58-917f-99d84c92580c
-    question: 'Which of the following are Symfony Core bundles?'
+    question: 'Which of the following are official Symfony bundles included in the framework?'
     answers:
       - { value: 'CoreBundle', correct: false }
       - { value: 'DebugBundle', correct: true }
@@ -232,18 +232,6 @@ questions:
       - { value: 'Symfony\Component\Cache\Adapter\TagAdapter', correct: false }
       - { value: 'Symfony\Component\Cache\Adapter\TaggingAdapter', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Cache/Adapter/TagAwareAdapter.php'
-  -
-    uuid: 1eebf878-8baa-6698-bb00-99d84c92580c
-    question: 'Which variables are available in an ExpressionLanguage expression when using the condition option on a route?'
-    answers:
-      - { value: 'this', correct: false }
-      - { value: 'params', correct: true }
-      - { value: 'container', correct: false }
-      - { value: 'context', correct: true }
-      - { value: 'service', correct: false }
-      - { value: 'user', correct: false }
-      - { value: 'request', correct: true }
-    help: 'https://symfony.com/doc/7.0/routing.html'
   -
     uuid: 1eed5768-e3b6-667a-8f78-21c4c4321b85
     question: 'What is the main purpose of the eraseCredentials() method from the UserInterface?'

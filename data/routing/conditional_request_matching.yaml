@@ -12,7 +12,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/routing.html#matching-expressions'
   -
     uuid: 1eebf878-8ba8-6438-9c57-99d84c92580c
-    question: 'What are the accessible variables you can call to restrict a route ?'
+    question: 'What are the accessible variables you can call to restrict a route in an ExpressionLanguage ?'
     answers:
       - { value: 'context', correct: true }
       - { value: 'request', correct: true }
@@ -38,15 +38,3 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/routing.html'
-  -
-    uuid: 1ef91f04-dcbb-64dc-9928-7b259c35a967
-    question: "Which variables can be utilized in the ExpressionLanguage expression when using the condition option on a Route?"
-    answers:
-      - { value: 'context', correct: true }
-      - { value: 'request', correct: true }
-      - { value: 'container', correct: false }
-      - { value: 'service', correct: false }
-      - { value: 'this', correct: false }
-      - { value: 'user', correct: false }
-      - { value: 'object', correct: false }
-    help: 'https://symfony.com/doc/7.0/routing.html#matching-expressions'

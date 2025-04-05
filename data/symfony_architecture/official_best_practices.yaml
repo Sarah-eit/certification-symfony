@@ -1,11 +1,13 @@
 questions:
   -
     uuid: 1eebf878-8b99-6244-b5bc-99d84c92580c
-    question: 'Is it a best practice to use the @Template annotation?'
+    question: 'Is it considered a best practice to use the #[Template] attribute in modern Symfony applications?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
-    help: 'https://symfony.com/doc/7.0/best_practices.html#don-t-use-annotations-to-configure-the-controller-template'
+      - { value: 'No, it’s better to return Response objects explicitly', correct: true }
+      - { value: 'Yes, it is the recommended way to render templates', correct: false }
+      - { value: 'Yes, it’s required by Symfony to render templates', correct: false }
+      - { value: 'No, you must use @Template instead of #[Template]', correct: false }
+    help: 'https://symfony.com/doc/current/best_practices.html#controllers-rendering-templates'
   -
     uuid: 1eebf878-8b9a-68ce-b5e5-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, where should the application specific configuration parameters be stored?'

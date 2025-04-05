@@ -122,12 +122,12 @@ questions:
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#serializer-normalizer'
   -
     uuid: 1eebf878-8ba3-61e0-9460-99d84c92580c
-    question: 'How to specify the date format for a date attribute in a serialization context ?'
+    question: 'How do you specify the date format for a property when using the Symfony Serializer with attributes?'
     answers:
       - { value: "#[Serializer\\Context([DateTimeNormalizer::FORMAT_KEY => 'Y-m-d'])] public DateTime $date;", correct: true }
       - { value: "It's not possible", correct: false }
-      - { value: "/** @Serializer\\Context({ DateTimeNormalizer::FORMAT_KEY = 'Y-m-d' }) */ public DateTime $date;", correct: true }
-      - { value: "/** @Serializer\\DateFormat('Y-m-d' ) */ public DateTime $date;", correct: false }
+      - { value: "#[Serializer\\Context([ DateTimeNormalizer::FORMAT_KEY = 'Y-m-d' ])] public DateTime $date;", correct: false }
+      - { value: "#[Serializer\\DateFormat('Y-m-d')] public DateTime $date;", correct: false }
     help: 'https://symfony.com/doc/7.0/serializer.html#serializer-context'
   -
     uuid: 1eebf878-8ba3-68f2-a0ce-99d84c92580c

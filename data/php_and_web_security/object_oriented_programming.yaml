@@ -81,9 +81,9 @@ questions:
     help: 'https://php.net/manual/fr/book.reflection.php'
   -
     uuid: 1eebf878-8ba5-6116-88ba-99d84c92580c
-    question: 'Is it possible make $tags directly indexed with a specified field ?/** @Entity */ class Content { /** @OneToMany(targetEntity="Tag") */ private Tag $tags; }'
+    question: 'Is it possible to make $tags directly indexed by a specific field using Doctrine attributes?'
     answers:
-      - { value: 'Yes, by adding the attribute indexBy to the OneToMany annotation', correct: true }
+      - { value: 'Yes, by adding the indexBy attribute to the #[OneToMany] declaration', correct: true }
       - { value: 'False', correct: false }
       - { value: 'Yes, by implementing the IndexableInterface', correct: false }
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/working-with-indexed-associations.html#mapping-indexed-associations'
@@ -91,8 +91,8 @@ questions:
     uuid: 1eebf878-8ba6-6f7a-b2b7-99d84c92580c
     question: 'What is true about composite primary keys?'
     answers:
-      - { value: 'The @Id annotation must be used on more than one column.', correct: true }
-      - { value: 'An auto increment strategy can be used for one of the key using the @GeneratedValue annotation.', correct: true }
+      - { value: 'The #[Id] attribute must be used on more than one column.', correct: true }
+      - { value: 'An auto increment strategy can be used for one of the keys using the #[GeneratedValue] attribute.', correct: true }
       - { value: 'Composite keys must be avoided as much as possible.', correct: true }
       - { value: 'Composite keys must only consist of the primitives types integer and string.', correct: true }
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#composite-keys'

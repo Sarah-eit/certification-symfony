@@ -18,13 +18,14 @@ questions:
     help: 'https://symfony.com/doc/7.0/security.html#roles'
   -
     uuid: 1eebf878-8ba1-6458-b8ae-99d84c92580c
-    question: 'Which annotation is valid to check role ?'
+    question: 'Which attribute is valid to restrict access to users with a specific role in Symfony?'
     answers:
-      - { value: '@Security("is_granted("ROLE_ADMIN")")', correct: true }
-      - { value: '@IsGranted("ROLE_ADMIN")', correct: true }
-      - { value: '@Security("restrict_for("ROLE_ADMIN")")', correct: false }
-      - { value: '@Security("role("ROLE_ADMIN")")', correct: false }
+      - { value: '#[Security("is_granted(`ROLE_ADMIN`))"]', correct: true }
+      - { value: '#[IsGranted("ROLE_ADMIN")]', correct: true }
+      - { value: '#[Security("restrict_for(`ROLE_ADMIN`))"]', correct: false }
+      - { value: '#[Security("role(`ROLE_ADMIN`))"]', correct: false }
     help: 'https://symfony.com/doc/current/security.html#securing-controllers-and-other-code'
+
   -
     uuid: 1eebf878-8ba1-64a8-a6c8-99d84c92580c
     question: 'Which default role exist ?'

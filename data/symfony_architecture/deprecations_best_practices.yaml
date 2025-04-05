@@ -27,7 +27,7 @@ questions:
     uuid: 1eebf878-8ba8-6bfe-8b8f-99d84c92580c
     question: 'What must you do when you deprecate a relevant class, method, property ?'
     answers:
-      - { value: 'add a @deprecated PHPDoc', correct: true }
+      - { value: 'add a #[Deprecated] attribute', correct: true }
       - { value: 'the version in which the feature was deprecated', correct: true }
       - { value: 'the version in which the feature was corrected', correct: false }
       - { value: "whenever possible, the class, function that's replace it.", correct: true }

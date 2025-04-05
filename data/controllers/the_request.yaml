@@ -1,13 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8b97-6264-acf8-99d84c92580c
-    question: 'Which of the following is a valid way to create an instance of Symfony\Component\HttpFoundation\Request?'
-    answers:
-      - { value: '$request = Request::createFromGlobals(/* ... */);', correct: true }
-      - { value: '$request = new Request(/* ... */);', correct: true }
-      - { value: '$request = Request::create(/* ... */);', correct: false }
-    help: 'https://symfony.com/doc/7.0/components/http_foundation.html'
-  -
     uuid: 1eebf878-8b99-6ece-9c42-99d84c92580c
     question: 'What is the tag to use to register a value resolver for controller arguments such as Request?'
     answers:
@@ -141,10 +133,10 @@ questions:
     uuid: 1eebf878-8ba2-6894-8044-99d84c92580c
     question: 'How could you simulate a GET request to /hello-world ?'
     answers:
-      - { value: "$request = Request::create(null,'/hello-world');", correct: false }
-      - { value: "$request = Request::create('GET','/hello-world');", correct: false }
-      - { value: "$request = Request::create('/hello-world','GET');", correct: true }
-      - { value: "$request = Request::create('/hello-world');", correct: true }
+      - { value: "Request::create(null,'/hello-world');", correct: false }
+      - { value: "Request::create('GET','/hello-world');", correct: false }
+      - { value: "Request::create('/hello-world','GET');", correct: true }
+      - { value: "Request::create('/hello-world');", correct: true }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#simulating-a-request'
   -
     uuid: 1eebf878-8ba2-6c7c-b75b-99d84c92580c

@@ -78,8 +78,8 @@ questions:
     uuid: 1eebf878-8b99-6046-8fb8-99d84c92580c
     question: 'Could fields be sorted using a priority?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/blog/new-in-symfony-5-3-form-field-sorting'
   -
     uuid: 1eebf878-8b99-63ac-9567-99d84c92580c
@@ -111,15 +111,15 @@ questions:
     uuid: 1eebf878-8b9a-609a-94e5-99d84c92580c
     question: 'In a form, could the choices of LanguageType be overridden?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/forms/types/language.html#choices'
   -
     uuid: 1eebf878-8b9a-6220-b605-99d84c92580c
     question: 'Could a Button have a child?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Form/Button.php#L110'
   -
     uuid: 1eebf878-8b9a-6cf2-b2df-99d84c92580c
@@ -218,8 +218,8 @@ questions:
     uuid: 1eebf878-8ba3-6b7c-a185-99d84c92580c
     question: 'Is setting the choice_loader to null required when overriding the choices of LanguageType?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - { value: 'False', correct: false }
+      - { value: 'True', correct: true }
     help: 'https://symfony.com/doc/7.0/reference/forms/types/language.html#choices'
   -
     uuid: 1eebf878-8ba3-6cee-ac9a-99d84c92580c

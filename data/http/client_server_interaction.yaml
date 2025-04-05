@@ -11,8 +11,8 @@ questions:
     uuid: 1eebf878-8b98-6812-9467-99d84c92580c
     question: 'Could a response that use the must-understand directive be stored if the cache does not understand the directive?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#directives'
   -
     uuid: 1eebf878-8b98-6ede-ba3e-99d84c92580c
@@ -28,29 +28,29 @@ questions:
     uuid: 1eebf878-8b99-6a78-a694-99d84c92580c
     question: 'Is the following header value valid? Expires: - 7 hours'
     answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
+      - { value: 'False', correct: true }
+      - { value: 'True', correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc7234#section-5.3'
   -
     uuid: 1eebf878-8b9b-64e0-aa3d-99d84c92580c
     question: 'Is the Safe header considered as a secure mechanism?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://datatracker.ietf.org/doc/html/rfc8674#section-3s'
   -
     uuid: 1eebf878-8b9c-682c-b6aa-99d84c92580c
     question: 'Is there any required HTTP header for almost every request made to an origin server or gateway?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc7230#section-5.4'
   -
     uuid: 1eebf878-8b9d-6650-8082-99d84c92580c
     question: 'Could a stale response be marked as reusable when an origin server responds with and error (500, 502, 503 or 504)?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc5861#section-4'
   -
     uuid: 1eebf878-8b9d-695c-81e1-99d84c92580c

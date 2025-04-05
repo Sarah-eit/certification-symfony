@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b9d-6470-bb5f-99d84c92580c
-    question: "What is the value of $render with the following code? $data = [ 'first' => 0, 'first-page' => 1 ]; $render = $twig->render('XXXX', ['page' => 5, 'data' => $data]); {# XXXX twig file #}{{ data.first-page }}"
+    question: "What is the value of {{ data.first-page }} in this Twig code, given: $twig->render('template.html.twig', ['page' => 5, 'data' => ['first' => 0, 'first-page' => 1]])"
     answers:
       - { value: 'null', correct: false }
       - { value: '-5', correct: true }
@@ -10,7 +10,7 @@ questions:
     help: 'https://twig.symfony.com/doc/2.x/templates.html#math'
   -
     uuid: 1eebf878-8ba2-6844-8478-99d84c92580c
-    question: 'Which method is used to render the desired template?'
+    question: 'Which method returns the rendered template as a string (without displaying it directly)?'
     answers:
       - { value: 'Environment::display()', correct: false }
       - { value: 'Environment::render()', correct: true }

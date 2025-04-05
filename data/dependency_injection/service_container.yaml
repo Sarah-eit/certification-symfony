@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b96-6fe4-bbf2-99d84c92580c
     question: 'Could a parameter be removed from a Symfony\Component\DependencyInjection\ParameterBag\ContainerBag?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/DependencyInjection/ParameterBag/ContainerBag.php'
   -
     uuid: 1eebf878-8b98-60e2-8300-99d84c92580c
@@ -20,7 +20,7 @@ questions:
     uuid: 1eebf878-8b98-6344-9f43-99d84c92580c
     question: "Let's assume, we have a private service my_private_service. Will this work ? $container->get('my_private_service');"
     answers:
-      - { value: 'Yes', correct: false }
+      - { value: 'True', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/service_container/alias_private.html'
   -
@@ -249,14 +249,14 @@ questions:
     uuid: 1eebf878-8b9f-65f4-aca1-99d84c92580c
     question: 'Can configuration parameters in Symfony contain array values, such as in the parameters section of config/services.yaml?'
     answers:
-      - { value: 'true', correct: true }
+      - { value: 'True', correct: true }
       - { value: 'false', correct: false }
     help: 'https://symfony.com/doc/7.0/configuration.html#configuration-parameters'
   -
     uuid: 1eebf878-8b9f-670c-beb7-99d84c92580c
     question: "With default configuration each time you retrieve the service, you'll get the same instance ?"
     answers:
-      - { value: 'true', correct: true }
+      - { value: 'True', correct: true }
       - { value: 'false', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container.html#creating-configuring-services-in-the-container'
   -

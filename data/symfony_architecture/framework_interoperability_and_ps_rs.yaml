@@ -21,10 +21,8 @@ questions:
     uuid: 1eebf878-8b97-67d2-89bf-99d84c92580c
     question: 'What tracking policy has the best performance with large units of work?'
     answers:
-      - { value: 'DEFERRED_EXPLICIT', correct: false }
-      - { value: 'LAZY', correct: false }
+      - { value: 'DEFERRED_EXPLICIT', correct: true }
       - { value: 'DEFERRED_IMPLICIT', correct: false }
-      - { value: 'NOTIFY', correct: true }
     help: 'https://www.doctrine-project.org/projects/doctrine-orm/en/3.3/reference/change-tracking-policies.html'
   -
     uuid: 1eebf878-8b98-6268-b843-99d84c92580c

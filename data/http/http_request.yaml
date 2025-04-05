@@ -32,15 +32,15 @@ questions:
     uuid: 1eebf878-8ba5-62e2-b66a-99d84c92580c
     question: 'Should the must-understand directive be coupled with no-store for fallback behavior?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#directives'
   -
     uuid: 1eebf878-8ba6-6bec-a463-99d84c92580c
     question: 'Could a cache performance optimization (such as pre-fetching) be used with a safe method?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://tools.ietf.org/html/rfc7231#section-4.2.1'
   -
     uuid: 1eed57e5-423c-6ace-89a0-d7541cb78d02

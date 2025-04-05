@@ -3,15 +3,15 @@ questions:
     uuid: 1eebf878-8b97-6124-8ec2-99d84c92580c
     question: 'Is it possible to listen signals and stop command according to them?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - { value: 'False', correct: false }
+      - { value: 'True', correct: true }
     help: 'https://symfony.com/doc/7.0/components/console/events.html#the-consoleevents-signal-event'
   -
     uuid: 1eebf878-8b99-67a8-ab13-99d84c92580c
     question: 'Can a Symfony command listen to system signals (like SIGINT or SIGTERM)?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/console/events.html#the-consoleevents-signal-event'
   -
     uuid: 1eebf878-8b9a-61d0-ba34-99d84c92580c
@@ -28,8 +28,8 @@ questions:
     uuid: 1eebf878-8b9c-69b2-ab22-99d84c92580c
     question: 'Are console events dispatched when testing commands using CommandTester?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/7.0/console.html#testing-commands'
   -
     uuid: 1eebf878-8b9e-67f8-bfd4-99d84c92580c
@@ -50,7 +50,7 @@ questions:
     answers:
       - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.)', correct: true }
       - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommandclass.', correct: false }
-      - { value: 'No', correct: false }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/console.html#logging-command-errors'
   -
     uuid: 1eebf878-8ba6-6746-9ab0-99d84c92580c
@@ -73,8 +73,8 @@ questions:
     uuid: 1eebf878-8ba6-6958-bb5f-99d84c92580c
     question: 'Is it possible to disable a command inside a listener, and enable it later ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/console/events.html#disable-commands-inside-listeners'
   -
     uuid: 1eebf878-8ba6-69a8-8df8-99d84c92580c
@@ -143,6 +143,6 @@ questions:
     uuid: 1eebf878-8ba7-66dc-865d-99d84c92580c
     question: 'Are console events dispatched when testing commands using ApplicationTester?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/console.html#testing-commands'

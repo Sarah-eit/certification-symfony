@@ -3,7 +3,7 @@ questions:
     uuid: 1eebf878-8b99-647e-8512-99d84c92580c
     question: 'Is it possible to use placeholders in host section of a route definition?'
     answers:
-      - { value: 'Yes', correct: true }
+      - { value: 'True', correct: true }
       - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/routing.html#sub-domain-routing'
   -
@@ -20,5 +20,5 @@ questions:
     question: "In functional tests, is it necessary to set the `Host` HTTP header to test a subdomain?"
     answers:
       - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - { value: 'True', correct: true }
     help: 'https://symfony.com/doc/7.0/routing.html#sub-domain-routing'

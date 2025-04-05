@@ -24,8 +24,8 @@ questions:
     uuid: 1eebf878-8b9e-6b68-a9e2-99d84c92580c
     question: 'Does the Symfony Console component needs PHP globals internals variables to work?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/7.0/components/console.html#installation'
   -
     uuid: 1eebf878-8ba2-6d62-841b-99d84c92580c

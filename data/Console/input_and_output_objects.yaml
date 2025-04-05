@@ -12,8 +12,8 @@ questions:
     uuid: 1eebf878-8b9e-6b0e-a57c-99d84c92580c
     question: 'Descriptors are objects to render documentation on Symfony Console Apps?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/console.html#configuring-the-command'
   -
     uuid: 1eebf878-8b9e-6d20-8ba2-99d84c92580c

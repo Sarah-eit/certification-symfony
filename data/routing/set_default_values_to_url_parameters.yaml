@@ -4,7 +4,7 @@ questions:
     question: 'It is possible to specify a default value for an attribute in a route?'
     answers:
       - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - { value: 'True', correct: true }
     help: 'https://symfony.com/doc/7.0/create_framework/routing.html'
   -
     uuid: 1eebf878-8ba8-63f2-9b56-99d84c92580c

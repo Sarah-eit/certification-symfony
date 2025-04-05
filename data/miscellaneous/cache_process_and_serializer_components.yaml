@@ -79,8 +79,8 @@ questions:
     uuid: 1eebf878-8b9d-60ba-9a06-99d84c92580c
     question: 'Could interfaces and/or abstract classes be serialized?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/serializer.html#serializing-interfaces-and-abstract-classes'
   -
     uuid: 1eebf878-8b9d-6736-8851-99d84c92580c
@@ -154,8 +154,8 @@ questions:
     uuid: 1eebf878-8ba4-6298-950b-99d84c92580c
     question: 'Could the parsed and/or serialized expressions be evaluated?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/expression_language.html#using-parsed-and-serialized-expressions'
   -
     uuid: 1eebf878-8ba4-6996-9d15-99d84c92580c
@@ -217,6 +217,6 @@ questions:
     uuid: 1ef65d96-524a-6546-b727-1f7b87b1af39
     question: 'Is it possible to restrict the amount of time a process takes to achieve?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/process.html#process-timeout'

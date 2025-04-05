@@ -3,15 +3,15 @@ questions:
     uuid: 1eebf878-8b9c-68cc-9fec-99d84c92580c
     question: 'Can you add an extra RouteCollection into an existing one?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - { value: 'False', correct: false }
+      - { value: 'True', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Routing/RouteCollection.php#L161'
   -
     uuid: 1eebf878-8b9d-6786-a741-99d84c92580c
     question: 'Could a Route defined with /page/{foo}/{foo} path be compiled?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Routing/RouteCompiler.php#L137'
   -
     uuid: 1eebf878-8b9f-6126-8428-99d84c92580c
@@ -40,8 +40,8 @@ questions:
     uuid: 1ef65db9-50b2-6274-ab3b-834e2ca05a89
     question: "Is the following code valid? $value = Yaml::parse(file_get_contents('/path/to/file.yml'));"
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/yaml.html#reading-yaml-files'
   -
     uuid: 1ef65dbc-b1db-602a-b33b-05d4fde5fe6a

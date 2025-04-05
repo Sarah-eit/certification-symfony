@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b99-6244-b5bc-99d84c92580c
     question: 'Is it a best practice to use the @Template annotation?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/7.0/best_practices.html#don-t-use-annotations-to-configure-the-controller-template'
   -
     uuid: 1eebf878-8b9a-68ce-b5e5-99d84c92580c
@@ -46,8 +46,8 @@ questions:
     uuid: 1eebf878-8b9b-699a-9a63-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, is it useful to spend time and effort writing tests that check if your application pages are successfully loading?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/best_practices.html#tests'
   -
     uuid: 1eebf878-8b9d-63d0-8ac5-99d84c92580c
@@ -116,8 +116,8 @@ questions:
     uuid: 1eee768b-076d-6ab8-9026-f7fba49cfdf8
     question: 'According to the official Symfony Best Practices Guide, is it a good pratice to define parameters for the classes of your services?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/7.0/best_practices.html#service-no-class-parameter'
   -
     uuid: 1ef5bb47-4340-610a-accc-f5fc6195c240
@@ -174,5 +174,5 @@ questions:
     question: 'Do all Symfony useable interfaces honor the Backward Compatibility promise?'
     answers:
       - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/bc.html#using-our-interfaces'

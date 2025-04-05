@@ -42,8 +42,8 @@ questions:
     uuid: 1eebf878-8b9d-690c-a417-99d84c92580c
     question: 'Could the controller arguments be set from within ControllerArgumentsEvent?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - { value: 'False', correct: false }
+      - { value: 'True', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L98'
   -
     uuid: 1eebf878-8ba0-6238-b1a8-99d84c92580c
@@ -152,15 +152,15 @@ questions:
     uuid: 1eebf878-8ba2-6ccc-a0c9-99d84c92580c
     question: 'Could arguments be resolved in a controller not tagged with the controller.service_arguments tag?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpKernel/Controller/ArgumentResolver/NotTaggedControllerValueResolver.php'
   -
     uuid: 1eebf878-8ba2-6fe2-9a7d-99d84c92580c
     question: 'Could the constraints of a class be listed?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/validation.html#debugging-the-constraints'
   -
     uuid: 1eebf878-8ba8-6a5a-8490-99d84c92580c

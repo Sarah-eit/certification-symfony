@@ -3,14 +3,14 @@ questions:
     uuid: 1eebf878-8b98-654c-b75e-99d84c92580c
     question: 'Could the priority of a decorating service be defined?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html#decoration-priority'
   -
     uuid: 1eebf878-8b9f-682e-a048-99d84c92580c
     question: 'Decorating services can be done in YAML using the decorates key. This prevent original service override and autowire decorated class name with decorator instance'
     answers:
-      - { value: 'true', correct: true }
+      - { value: 'True', correct: true }
       - { value: 'false', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'
   -

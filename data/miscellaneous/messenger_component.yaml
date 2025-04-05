@@ -101,8 +101,8 @@ questions:
     uuid: 1ef49b92-3779-6a68-996c-71981116b221
     question: "In Messenger component, is it true, that you can set the class' interface in the framework.messenger.routing instead of setting the real class ?"
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#routing-messages-to-a-transport'
   -
     uuid: 1ef49b97-8daf-68ec-bcf4-6b7bdfa36311

@@ -36,7 +36,7 @@ questions:
     uuid: 1eebf878-8b9f-6a54-a024-99d84c92580c
     question: 'Using Form component, option csrf_error_message can be used in configureOptions() to define a custom CSRF error message?'
     answers:
-      - { value: 'Yes', correct: false }
+      - { value: 'True', correct: false }
       - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/7.0/security/csrf.html#csrf-protection-in-symfony-forms'
   -
@@ -60,7 +60,7 @@ questions:
     question: "Is csrf_protection set to false in configureOptions' method, a correct way to disable csrf in a form ?"
     answers:
       - { value: 'False', correct: false }
-      - { value: 'Yes', correct: true }
+      - { value: 'True', correct: true }
     help: 'https://symfony.com/doc/7.0/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eedad53-9a0c-6cc2-8bbd-43a19afa5a59

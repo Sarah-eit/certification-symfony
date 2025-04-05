@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8ba8-6fe6-bdab-99d84c92580c
     question: 'Is it possible to instantiate a Trait on its own ?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8ba9-6108-8a3b-99d84c92580c
@@ -37,15 +37,15 @@ questions:
     uuid: 1eebf878-8ba9-6220-a6f6-99d84c92580c
     question: 'Does Traits support the use of abstract methods inside their definition ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.abstract'
   -
     uuid: 1eebf878-8ba9-6270-9168-99d84c92580c
     question: 'Traits do not support the definition of static methods or static properties, correct?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.static'
   -
     uuid: 1eebf878-8ba9-634c-83eb-99d84c92580c

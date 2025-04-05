@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b9c-6caa-b8d2-99d84c92580c
     question: 'Could the expression language AST be dumped?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/expression_language.html#expression-language-ast'
   -
     uuid: 1eebf878-8b9d-61aa-9351-99d84c92580c

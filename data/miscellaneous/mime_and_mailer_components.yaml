@@ -3,7 +3,7 @@ questions:
     uuid: 1eeccc01-4f41-68ac-9258-d9e4cab25c1e
     question: "Is it required to URL-encode your DSN's credentials in the case, they contain special characteres ?"
     answers:
-      - { value: 'Yes', correct: true }
+      - { value: 'True', correct: true }
       - { value: 'Depends on the mailer provider', correct: false }
       - { value: Non, correct: false }
     help: 'https://symfony.com/doc/7.0/mailer.html'

@@ -44,8 +44,8 @@ questions:
     uuid: 1eebf878-8b9d-6fba-847c-99d84c92580c
     question: 'Arguments are resolved before calling the Controller ?'
     answers:
-      - { value: 'yes', correct: true }
-      - { value: 'no', correct: false }
+      - { value: 'true', correct: true }
+      - { value: 'false', correct: false }
     help: 'https://symfony.com/doc/7.0/components/http_kernel.html#the-workflow-of-a-request'
   -
     uuid: 1eebf878-8b9e-600a-90cc-99d84c92580c
@@ -86,7 +86,7 @@ questions:
     question: 'If an exception occurs while executing a console command, will you see the details of the exception in your log files?'
     answers:
       - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'False', correct: false }
       - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommand class.', correct: false }
     help: 'https://symfony.com/doc/7.0/console.html#logging-command-errors'
   -

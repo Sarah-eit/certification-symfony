@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8ba2-6a74-b964-99d84c92580c
     question: 'Is it considered as a good practice to store in cache a response using the 511 status code?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511'
   -
     uuid: 1eebf878-8ba5-6166-a6ab-99d84c92580c

@@ -12,8 +12,8 @@ questions:
     uuid: 1eee61bc-65cd-6916-9026-6be3353c49b3
     question: 'Is it recommended to enable the Profiler in a Production environnement ?'
     answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
+      - { value: 'False', correct: true }
+      - { value: 'True', correct: false }
     help: 'https://symfony.com/doc/7.0/profiler.html'
   -
     uuid: 1eee61c4-a214-6728-9026-59a2b58e6593

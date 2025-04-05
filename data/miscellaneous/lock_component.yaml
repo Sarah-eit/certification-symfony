@@ -56,7 +56,7 @@ questions:
     uuid: 1eeccbdd-eefd-625c-9ee6-0b7da0b2e285
     question: 'Is it possible to promote or demote a lock on its write permission, versus read only.'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
       - { value: 'Depends on the store', correct: false }
     help: 'https://symfony.com/doc/7.0/components/lock.html#shared-locks'

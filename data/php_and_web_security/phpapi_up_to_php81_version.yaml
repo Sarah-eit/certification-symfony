@@ -111,8 +111,8 @@ questions:
     uuid: 1eebf878-8b9d-606a-916d-99d84c92580c
     question: 'Could the current token be retrieved from Symfony\Component\Security\Core\Security ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/security.html#securing-other-services'
   -
     uuid: 1eebf878-8b9d-61f0-8520-99d84c92580c
@@ -249,8 +249,8 @@ questions:
     uuid: 1eebf878-8ba3-6154-81ff-99d84c92580c
     question: 'Is the __call feature enabled by default?'
     answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
+      - { value: 'False', correct: true }
+      - { value: 'True', correct: false }
     help: 'https://symfony.com/doc/7.0/components/property_access/introduction.html#magic-call-method'
   -
     uuid: 1eebf878-8ba3-653c-8129-99d84c92580c
@@ -311,8 +311,8 @@ questions:
     uuid: 1eebf878-8ba4-6e14-8119-99d84c92580c
     question: 'Can interfaces inherit from other interfaces in PHP?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://php.net/interfaces'
   -
     uuid: 1eebf878-8ba4-6f04-8c84-99d84c92580c

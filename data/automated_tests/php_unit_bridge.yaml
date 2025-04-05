@@ -13,8 +13,8 @@ questions:
     question: 'Does the PHPUnit Bridge parallelize test suites execution ?'
     answers:
       - { value: 'Yes, only when giving a directory', correct: true }
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: false }
+      - { value: 'False', correct: false }
+      - { value: 'True', correct: false }
     help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#modified-phpunit-script'
   -
     uuid: 1eebf878-8ba7-663c-8205-99d84c92580c

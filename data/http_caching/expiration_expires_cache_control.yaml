@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b99-65a0-956f-99d84c92580c
     question: 'Given the following header, will the resource be considered as fresh? "Expires: 0"'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://developer.mozilla.org/en/docs/Web/HTTP/Headers/Expires'
   -
     uuid: 1eebf878-8b99-6960-98a3-99d84c92580c
@@ -19,8 +19,8 @@ questions:
     uuid: 1eebf878-8b9b-635a-8e43-99d84c92580c
     question: 'Is the following header value valid? Expires: Sun, 06 Nov 1994 08:49:37 GMT'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://developer.mozilla.org/en/docs/Web/HTTP/Headers/Expires'
   -
     uuid: 1eebf878-8b9b-6670-95e7-99d84c92580c
@@ -88,8 +88,8 @@ questions:
     uuid: 1eebf878-8ba9-6cb6-b7db-99d84c92580c
     question: "The Expires header's value must contain the number of seconds the response should be cached."
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/6.0/http_cache/expiration.html#expiration-with-the-expires-header'
   -
     uuid: 1ef91f16-c49a-6f08-9238-357e4050a907

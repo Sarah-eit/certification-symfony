@@ -61,17 +61,6 @@ questions:
       - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/yaml.html#parsing-and-dumping-custom-tags'
   -
-    uuid: 1eebf878-8ba6-6d90-8dec-99d84c92580c
-    question: 'What class of exception can be thrown by Symfony\Component\Security\Core\Authentication\Provider\UserAuthenticationProvider''s authenticate() method?'
-    answers:
-      - { value: 'WrongPasswordException', correct: false }
-      - { value: 'AuthenticationServiceException', correct: false }
-      - { value: 'AuthenticationFailureException', correct: false }
-      - { value: 'UserNotFoundException', correct: false }
-      - { value: 'BadCredentialsException', correct: true }
-      - { value: 'UsernameNotFoundException', correct: true }
-    help: 'https//github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Core/Authentication/Provider/UserAuthenticationProvider.php#L55'
-  -
     uuid: 1eebf878-8ba7-68bc-874c-99d84c92580c
     question: 'When you want to use a translation in another domain than the default domain, you must specify the domain as:'
     answers:

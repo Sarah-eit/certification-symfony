@@ -3,8 +3,8 @@ questions:
     uuid: 1eee699e-f4fd-67dc-9026-49976aff15a1
     question: 'Profiler can be added in the code. Programmatically, could it be enabled and disabled ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/profiler.html#enabling-the-profiler-programmatically-or-conditionally'
   -
     uuid: 1eee6aa1-cc83-6938-9026-417eabba3e0e

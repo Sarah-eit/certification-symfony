@@ -12,8 +12,8 @@ questions:
     uuid: 1eebf878-8ba5-6a30-ac9b-99d84c92580c
     question: 'Will this code permit to get the {{ ga_tracking }} in every twig files ? twig.globals.ga_tracking: "UA-xxxxx-x"'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - { value: 'False', correct: false }
+      - { value: 'True', correct: true }
     help: 'https://symfony.com/doc/7.0/templates.html#global-variables'
   -
     uuid: 1eebf878-8ba5-6a76-b902-99d84c92580c

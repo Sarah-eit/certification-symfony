@@ -24,8 +24,8 @@ questions:
     uuid: 1eebf878-8ba8-6816-a78a-99d84c92580c
     question: 'In a forward request, does the browser is redirected to another route ?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/7.0/controller/forwarding.html'
   -
     uuid: 1eebf878-8ba8-688e-a1e9-99d84c92580c
@@ -39,13 +39,13 @@ questions:
     uuid: 1eebf878-8ba8-68de-a3ca-99d84c92580c
     question: 'Is it possible to forward a request to another controller while preserving the HTTP method and $request->request values?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L113C27-L113C27'
   -
     uuid: c7216be0-48df-421c-9c4c-519da38ff22a
     question: 'Is it possible to forward a request to another controller while preserving the query parameters from the URL?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L113C27-L113C27'

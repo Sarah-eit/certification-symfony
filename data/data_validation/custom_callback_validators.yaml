@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b9d-6600-b63e-99d84c92580c
     question: 'Could values be mapped to fields using callbacks?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/form/data_mappers.html#mapping-form-fields-using-callbacks'
   -
     uuid: 1eebf878-8ba1-67fa-9c70-99d84c92580c

@@ -22,5 +22,5 @@ questions:
     question: 'When using the special _locale parameter in a route, the matched locale is automatically set on the Request and can be retrieved via the getLocale() method. Is it true ?'
     answers:
       - { value: 'True', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/translation.html#the-locale-and-the-url'

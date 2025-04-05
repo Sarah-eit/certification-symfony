@@ -38,8 +38,8 @@ questions:
     uuid: 1eeda40a-e748-6f4c-8fa8-4f4fb85fbade
     question: 'Does a role have to start with ROLE_?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
       - { value: "if it's an API no", correct: false }
     help: 'https://symfony.com/doc/7.0/security.html#roles'
   -

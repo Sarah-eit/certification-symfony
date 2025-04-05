@@ -90,6 +90,6 @@ questions:
     uuid: 1eebf878-8ba8-656e-91d9-99d84c92580c
     question: 'Is this command allow to see all the service you can type-hint ? php bin/console debug:autowiring'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/controller.html#fetching-services'

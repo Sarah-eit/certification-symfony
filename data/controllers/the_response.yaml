@@ -13,8 +13,8 @@ questions:
     uuid: 1eebf878-8b97-6e62-982f-99d84c92580c
     question: 'Is it possible to create a RedirectResponse with the 201 status code?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RedirectResponse.php#L42'
   -
     uuid: 1eebf878-8b98-618c-b12d-99d84c92580c
@@ -45,8 +45,8 @@ questions:
     uuid: 1eebf878-8b9a-6fe0-8ade-99d84c92580c
     question: 'Could a response be marked as safe?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L1337'
   -
     uuid: 1eebf878-8b9b-6fd0-9826-99d84c92580c

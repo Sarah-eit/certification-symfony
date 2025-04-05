@@ -22,8 +22,8 @@ questions:
     uuid: 1eebf878-8b98-66fa-a25e-99d84c92580c
     question: 'Could an event be dispatched without creating a custom event class?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - { value: 'False', correct: false }
+      - { value: 'True', correct: true }
     help: 'https://symfony.com/doc/7.0/components/event_dispatcher/generic_event.html'
   -
     uuid: 1eebf878-8b98-67cc-b162-99d84c92580c
@@ -73,8 +73,8 @@ questions:
     uuid: 1eebf878-8b9a-6388-aaa8-99d84c92580c
     question: 'Could subscribers be removed from an ImmutableEventDispatcher?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b9a-6bc6-aaa0-99d84c92580c
@@ -91,29 +91,29 @@ questions:
     uuid: 1eebf878-8b9b-6ab2-ba48-99d84c92580c
     question: 'Could the event listeners related to an event be retrieved from the ImmutableEventDispatcher?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b9c-65b6-a29a-99d84c92580c
     question: 'Could listeners be removed from an ImmutableEventDispatcher?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b9c-67dc-894b-99d84c92580c
     question: 'Could new listeners be added to an ImmutableEventDispatcher?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b9d-6380-81e4-99d84c92580c
     question: 'Is the following code valid?php bin/console debug:event-dispatcher kernel'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/event_dispatcher.html#debugging-event-listeners'
   -
     uuid: 1eebf878-8b9d-6876-a57d-99d84c92580c
@@ -175,8 +175,8 @@ questions:
     uuid: 1eebf878-8b9d-6c72-9bfc-99d84c92580c
     question: 'Is it possible to detect if an Event was stopped during runtime?'
     answers:
-      - { value: 'no', correct: false }
-      - { value: 'yes', correct: true }
+      - { value: 'false', correct: false }
+      - { value: 'true', correct: true }
       - { value: 'yes, but not always', correct: false }
       - { value: 'yes, but only once', correct: false }
     help: 'https://symfony.com/doc/7.0/components/event_dispatcher.html#stopping-event-flow-propagation'
@@ -209,8 +209,8 @@ questions:
     uuid: 1eebf878-8ba1-6e08-b1a3-99d84c92580c
     question: 'Could a button receive an event listener?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/Form/ButtonBuilder.php#L176'
   -
     uuid: 1eebf878-8ba2-63ee-a965-99d84c92580c
@@ -237,8 +237,8 @@ questions:
     uuid: 1eebf878-8ba2-67ae-9387-99d84c92580c
     question: 'From an Event instance, is it possible to get the EventDispatcher instance that dispatched this event?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/7.0/components/event_dispatcher.html#event-name-introspection'
   -
     uuid: 1eebf878-8ba3-6032-bdaf-99d84c92580c
@@ -254,8 +254,8 @@ questions:
     uuid: 1eebf878-8ba3-69c4-a0e8-99d84c92580c
     question: 'Could new subscribers be added to an ImmutableEventDispatcher?'
     answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
+      - { value: 'False', correct: true }
+      - { value: 'True', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8ba4-604a-9e4b-99d84c92580c
@@ -272,36 +272,36 @@ questions:
     uuid: 1eebf878-8ba4-6b12-9f65-99d84c92580c
     question: 'Could the non-called listeners be retrieved per event when using the TraceableEventDispatcher?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/event_dispatcher/traceable_dispatcher.html'
   -
     uuid: 1eebf878-8ba4-6bf8-a2d4-99d84c92580c
     question: 'Could the called listeners be retrieved per event when using the TraceableEventDispatcher?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/event_dispatcher/traceable_dispatcher.html'
   -
     uuid: 1eebf878-8ba7-6330-b557-99d84c92580c
     question: 'Is it possible to set a priority when there are several EventListener on an event?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/components/event_dispatcher/introduction.html#connecting-listeners'
   -
     uuid: 1eed573c-948f-6bd6-816f-b14ed863ed41
     question: 'Could the event dispatcher be transformed into a read-only proxy?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://github.com/symfony/symfony/blob/2.1/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eee76b6-6968-64a4-9026-a9f053a22e31
     question: 'Could the existence of an event listener be checked from within the ImmutableEventDispatcher?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1efcc180-50fb-6cea-b3f5-b32651f50dc1

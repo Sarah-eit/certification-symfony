@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'True', correct: true }
       - { value: 'Depends on the mailer provider', correct: false }
-      - { value: Non, correct: false }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/mailer.html'
   -
     uuid: 1eeccc26-b8fa-6b2a-aaad-5fecff7b6b7e

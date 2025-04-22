@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b97-6cf0-9b26-99d84c92580c
-    question: "Given the following esi call: render_esi(url('myroute')), which sentences are true ?"
+    question: "Given the following esi call: `render_esi(url('myroute'))`, which sentences are true ?"
     answers:
       - { value: 'framework.esi must be enabled', correct: true }
       - { value: 'myroute must exist', correct: true }

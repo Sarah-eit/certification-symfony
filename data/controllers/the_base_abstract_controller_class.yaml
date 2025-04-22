@@ -25,7 +25,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/http_cache/cache_vary.html'
   -
     uuid: 1eebf878-8b9b-63fa-b82c-99d84c92580c
-    question: 'For a request to https://example.com/blog/index.php/post/hello-world, what will be the value of $pathInfo in the following code?$pathInfo = $request->getPathInfo();'
+    question: 'Given a request to the URL https://example.com/blog/index.php/post/hello-world, what value will be returned by the call to $request->getPathInfo()?'
     answers:
       - { value: /index.php/post/hello-world, correct: false }
       - { value: /post/hello-world, correct: true }

@@ -219,20 +219,11 @@ questions:
     uuid: 1efdc8ab-5404-603a-a3e1-61312deb8ab1
     question: 'Which statements are correct about the built-in service tag `routing.expression_language_provider` in Symfony?'
     answers:
-      - { value: 'It registers custom expression functions for use in routing expressions', correct: true }
+      - { value: 'It registers custom expression functions to use in routing expressions', correct: true }
       - { value: 'This tag automatically adds providers for routing expression functions', correct: true }
       - { value: 'It registers functions for controller expressions', correct: false }
       - { value: 'It adds providers to the controller expression language instead of routing', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#routing-expression-language-provider'
-  -
-    uuid: 1efdc8ae-6620-63ce-a44e-9da714e01b68
-    question: 'Which statements are correct about the built-in service tag `security.expression_language_provider` in Symfony?'
-    answers:
-      - { value: 'It registers custom expression functions for use in security expressions', correct: true }
-      - { value: 'This tag automatically adds providers for the security expression language', correct: true }
-      - { value: 'It registers functions for routing expressions', correct: false }
-      - { value: 'It adds providers to the routing expression language instead of security', correct: false }
-    help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#security-expression-language-provider'
   -
     uuid: 1efdc8b5-0944-686a-b80e-e3689db9770d
     question: 'Which statements are correct about the built-in service tag `security.voter` in Symfony?'

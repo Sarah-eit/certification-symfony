@@ -1,10 +1,37 @@
 questions:
   -
     uuid: 1eebf878-8b9d-6e98-9e2b-99d84c92580c
-    question: 'Symfony is released under which license ?'
+    question: 'Under which license is the Symfony framework released?'
     answers:
       - { value: 'GNU General Public License (GPL)', correct: false }
       - { value: 'ISC License', correct: false }
       - { value: 'BSD license', correct: false }
       - { value: 'MIT license', correct: true }
+    help: 'https://symfony.com/doc/7.0/contributing/code/license.html'
+  -
+    uuid: 966a49b3-9727-4bb5-bb0f-91395adcde93
+    question: 'Can you use the Symfony framework in proprietary/commercial software without publishing your own source code?'
+    answers:
+      - { value: 'Yes, Symfony is released under the permissive MIT license', correct: true }
+      - { value: 'No, you must open-source your code if you use Symfony', correct: false }
+      - { value: 'Yes, but only if your code is also licensed under MIT', correct: false }
+      - { value: 'Only for non-commercial projects', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/license.html'
+  -
+    uuid: deed5379-71c6-4012-bab5-0dd73ab47063
+    question: 'What are you allowed to do with Symfony’s source code under the MIT license?'
+    answers:
+      - { value: 'Use, copy, modify, merge, publish, distribute, sublicense, and sell it', correct: true }
+      - { value: 'Use it only for non-commercial purposes', correct: false }
+      - { value: 'Use it in GPL projects only', correct: false }
+      - { value: 'Use it freely, but you must always pay a license fee for commercial use', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/license.html'
+  -
+    uuid: 09b729f1-48b3-4c56-93b9-079c7b5cfa05
+    question: 'Which of these obligations applies when using Symfony in your project?'
+    answers:
+      - { value: 'You must include the original MIT license text in your project', correct: true }
+      - { value: 'You must publish your entire application under the MIT license', correct: false }
+      - { value: 'You must pay royalties to Symfony SAS', correct: false }
+      - { value: 'You must register your project on symfony.com/open-source', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/license.html'

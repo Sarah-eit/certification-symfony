@@ -11,7 +11,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/console/input.html#using-command-arguments'
   -
     uuid: 1eebf878-8b9d-66e6-8c20-99d84c92580c
-    question: 'Which of the following are not built-in option variants ?'
+    question: 'Which of the following are not valid built-in constants for `InputOption` in the Symfony Console component?'
     answers:
       - { value: 'InputOption::VALUE_IS_MULTIPLE', correct: true }
       - { value: 'InputOption::VALUE_REQUIRED', correct: false }

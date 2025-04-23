@@ -18,10 +18,10 @@ questions:
     uuid: 1efda32b-ad80-6b68-baff-f51b464dc070
     question: 'About the Finder component, which of the following allows searching for files only within a specific size range?'
     answers:
-      - { value: filter(), correct: false }
-      - { value: size(), correct: true }
-      - { value: contains(), correct: false }
-      - { value: name(), correct: false }
+      - { value: 'filter()', correct: false }
+      - { value: 'size()', correct: true }
+      - { value: 'contains()', correct: false }
+      - { value: 'name()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#searching-for-files-and-directories'
   -
     uuid: 1efda344-3956-64c2-a9aa-01120e367112
@@ -105,7 +105,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/components/finder.html#file-size'
   -
     uuid: 1efda35c-51ee-6d50-849b-e35eab7be00f
-    question: "About the Finder component, is it correct : \"$finder->files()->size('>= 1K')->size('<= 2K');\""
+    question: "About the Finder component, is it correct : `$finder->files()->size('>= 1K')->size('<= 2K');`"
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
@@ -114,19 +114,19 @@ questions:
     uuid: 1efda37f-63c1-6ae6-bb5c-4f2ef02bd13e
     question: 'About the Finder component, what is the correct method to exclude files by their name?'
     answers:
-      - { value: notPath(), correct: false }
-      - { value: notName(), correct: true }
-      - { value: exclude(), correct: false }
-      - { value: contains(), correct: false }
+      - { value: 'notPath()', correct: false }
+      - { value: 'notName()', correct: true }
+      - { value: 'exclude()', correct: false }
+      - { value: 'contains()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#file-name'
   -
     uuid: 1efda381-f080-6976-8527-2120e23bd7c0
     question: 'About the Finder component, which of the following methods can be used to restrict results by last modified dates?'
     answers:
-      - { value: path(), correct: false }
-      - { value: depth(), correct: false }
-      - { value: date(), correct: true }
-      - { value: filter(), correct: false }
+      - { value: 'path()', correct: false }
+      - { value: 'depth()', correct: false }
+      - { value: 'date()', correct: true }
+      - { value: 'filter()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#file-date'
   -
     uuid: 1efda386-b8ab-6546-b8d3-51f1545a13df

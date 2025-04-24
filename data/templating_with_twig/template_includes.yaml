@@ -10,17 +10,17 @@ questions:
     help: 'https://twig.symfony.com/doc/2.x/templates.html#variables'
   -
     uuid: 1eebf878-8b98-6bbe-a34e-99d84c92580c
-    question: "Is the following code valid? {% cache '_foo_template' ttl(45) %} Cached {% endcache %}"
+    question: "Is the following code valid? `{% cache '_foo_template' ttl(45) %} Cached {% endcache %}`"
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tags/cache.html'
   -
     uuid: 1eebf878-8b9b-680a-ad15-99d84c92580c
     question: 'Could multiple use be used in a single template?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tags/use.html'
   -
     uuid: 1eebf878-8ba2-60a6-aa90-99d84c92580c

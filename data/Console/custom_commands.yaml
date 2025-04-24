@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b96-6f94-8836-99d84c92580c
     question: 'Could the cursor position be changed in a Symfony command?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/console/helpers/cursor.html'
   -
     uuid: 1eebf878-8b99-6bea-907b-99d84c92580c
@@ -20,8 +20,8 @@ questions:
     uuid: 1eebf878-8b9b-61b6-82fd-99d84c92580c
     question: 'Could you prevent a command from running multiple times on a single server?'
     answers:
-      - { value: 'False', correct: false }
-      - { value: 'True', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/7.0/console/lockable_trait.html'
   -
     uuid: 1eebf878-8b9e-69ce-95d7-99d84c92580c

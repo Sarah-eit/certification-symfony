@@ -42,8 +42,8 @@ questions:
     uuid: 1efe5633-1879-69a0-a53f-b31a8a3bb1d7
     question: 'About the managing value resolvers, for each argument, every resolver tagged with "controller.argument_value_resolver" will be called until one provides a value. The order in which they are called depends on their priority.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/controller/value_resolver.html#managing-value-resolvers'
   -
     uuid: 1efe5640-71c9-69c6-908f-99c7376594b4

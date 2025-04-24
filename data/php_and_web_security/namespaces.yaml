@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8ba0-6832-a790-99d84c92580c
     question: 'It is possible to import all classes from a namespace in PHP.'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://www.php.net/manual/en/language.namespaces.importing.php'
   -
     uuid: 1eebf878-8ba0-68be-af72-99d84c92580c
@@ -45,6 +45,6 @@ questions:
     uuid: 1eee6d5b-3b48-6e70-9026-a773fb6edbda
     question: 'Is it possible to set multiple namespace in the same file ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/language.namespaces.definitionmultiple.php'

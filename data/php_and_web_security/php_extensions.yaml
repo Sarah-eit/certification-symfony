@@ -54,29 +54,29 @@ questions:
     uuid: 1eebf878-8baa-6346-ac4f-99d84c92580c
     question: 'Is it possible to type hint variable in function definition?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration'
   -
     uuid: 1eebf878-8baa-651c-af2c-99d84c92580c
     question: 'All array sorting functions take the array to sort as reference and modify it instead of returning the sorted array'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/array.sorting.php'
   -
     uuid: 1eed57a4-1813-65a4-976d-0565a2850c77
     question: 'Could existing variables be overwritten when using "extract"?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/function.extract.php'
   -
     uuid: 1eed57bd-b35c-6862-8439-f15d4b8654c5
     question: 'Is it allowed to make an interface use traits ?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://php.net/manual/fr/language.oop5.interfaces.php'
   -
     uuid: 1eee76b4-2113-617e-9026-a5599c87345e

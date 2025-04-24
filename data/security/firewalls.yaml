@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b9b-6a62-a6cb-99d84c92580c
     question: 'Is it possible to have more than one firewall in your application?'
     answers:
-      - { value: 'False', correct: false }
-      - { value: 'True', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
       - { value: 'Depends on the project is an Api or an App', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/configuration/security.html'
   -

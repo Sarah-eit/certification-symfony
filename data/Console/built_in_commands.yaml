@@ -73,10 +73,10 @@ questions:
     help: 'https://symfony.com/doc/7.0/console/calling_commands.html'
   -
     uuid: 1eebf878-8b9f-67e8-a161-99d84c92580c
-    question: 'The lint:container command checks that the arguments injected into services match their type declarations'
+    question: 'The `lint:container` command checks that the arguments injected into services match their type declarations'
     answers:
-      - { value: 'true', correct: true }
-      - { value: 'false', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container.html#linting-service-definitions'
   -
     uuid: 1eebf878-8ba7-6466-8627-99d84c92580c
@@ -90,6 +90,6 @@ questions:
     uuid: 1eebf878-8ba8-656e-91d9-99d84c92580c
     question: 'Is this command allow to see all the service you can type-hint ? php bin/console debug:autowiring'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/controller.html#fetching-services'

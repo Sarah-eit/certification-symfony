@@ -3,9 +3,9 @@ questions:
     uuid: 1eeda38b-8a16-6a56-8ca8-af6368c5a4d2
     question: 'Developers should use the Accept-Language value to infer the locale at first, then allow the user to change languages if necessary and further specify their cultural settings if necessary. The results must then be stored in a database or in a cookie for subsequent visits. Is it true ?'
     answers:
-      - { value: 'True', correct: true }
+      - { value: 'Yes', correct: true }
       - { value: 'Never, for security reasons', correct: false }
-      - { value: 'False', correct: false }
+      - { value: 'No', correct: false }
     help: 'https://www.w3.org/International/questions/qa-accept-lang-locales'
   -
     uuid: 1eeda399-81f7-63da-882e-c7a97213cca5

@@ -22,13 +22,13 @@ questions:
     uuid: 1eebf878-8b98-6146-952c-99d84c92580c
     question: 'Is it possible to migrate the session to a new ID while keeping the session data?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Session/Session.php#L152'
   -
     uuid: 1eebf878-8ba2-61dc-af35-99d84c92580c
     question: 'Could attributes be stored in the session without starting it manually?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Session/Session.php#L93'

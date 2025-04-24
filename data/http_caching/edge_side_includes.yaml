@@ -12,8 +12,8 @@ questions:
     uuid: 1eebf878-8b9d-6290-9df2-99d84c92580c
     question: 'Does the `render_esi` Twig function throw an exception if the request is not coming from a gateway cache?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/http_cache/esi.html'
   -
     uuid: 1eebf878-8b9e-6578-8aaa-99d84c92580c
@@ -28,8 +28,8 @@ questions:
     uuid: 1eebf878-8ba3-6ee2-b463-99d84c92580c
     question: "If I use the `render_esi` Twig function with a controller reference like this: {{ render_esi(controller('App\\Controller\\NewsController::latest')) }} Will it throw an exception if no route is declared for this action?"
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/http_cache/esi.html'
   -
     uuid: 1eebf878-8ba4-6400-9833-99d84c92580c

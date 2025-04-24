@@ -11,8 +11,8 @@ questions:
     uuid: 1eebf878-8b9a-6cac-9a99-99d84c92580c
     question: 'Could the authorization to access a resource be checked from within Symfony\Component\Security\Core\Security?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/security.html#securing-other-services'
   -
     uuid: 1eebf878-8ba1-6c00-a261-99d84c92580c

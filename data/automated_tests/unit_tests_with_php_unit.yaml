@@ -6,7 +6,7 @@ questions:
       - { value: 'Yes with the disableConstruct() method.', correct: false }
       - { value: 'Yes with the disableConstructor() method.', correct: false }
       - { value: 'Yes with the disableOriginalConstructor() method.', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'No', correct: false }
       - { value: 'Yes with the disableOriginalConstruct() method.', correct: false }
     help: 'https://docs.phpunit.de/en/10.5/test-doubles.html'
   -

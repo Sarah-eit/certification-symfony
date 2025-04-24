@@ -35,8 +35,8 @@ questions:
     uuid: 1eebf878-8ba2-613c-93bd-99d84c92580c
     question: 'Could a priority be set when adding a new compiler pass?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/dependency_injection/compilation.html#controlling-the-pass-ordering'
   -
     uuid: 1ef4935f-f7df-6ebe-bb60-7bba21e8d9fb

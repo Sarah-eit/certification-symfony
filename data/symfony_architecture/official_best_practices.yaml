@@ -48,8 +48,8 @@ questions:
     uuid: 1eebf878-8b9b-699a-9a63-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, is it useful to spend time and effort writing tests that check if your application pages are successfully loading?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/best_practices.html#tests'
   -
     uuid: 1eebf878-8b9d-63d0-8ac5-99d84c92580c
@@ -91,8 +91,8 @@ questions:
     uuid: 1eebf878-8ba3-6816-8ab7-99d84c92580c
     question: 'To follow the best practices for reusable bundles, the file that contains the basic description of the bundle must be named README.md:'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/bundles/best_practices.html'
   -
     uuid: 1eebf878-8ba3-6fbe-9c7f-99d84c92580c
@@ -118,8 +118,8 @@ questions:
     uuid: 1eee768b-076d-6ab8-9026-f7fba49cfdf8
     question: 'According to the official Symfony Best Practices Guide, is it a good pratice to define parameters for the classes of your services?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/best_practices.html#service-no-class-parameter'
   -
     uuid: 1ef5bb47-4340-610a-accc-f5fc6195c240
@@ -143,15 +143,15 @@ questions:
     uuid: 1ef5bb4d-3ad0-6410-8e3f-1f036f6a18e2
     question: 'Symfony recommends creating a bundle for every major feature in your application.'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/best_practices.html#don-t-create-any-bundle-to-organize-your-application-logic'
   -
     uuid: 1ef5bb50-2f15-6c4e-b579-e734fa63c9a6
     question: "It's recommended to use short and prefixed parameter names to avoid collisions with Symfony and third-party libraries."
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/best_practices.html#use-short-and-prefixed-parameter-names'
   -
     uuid: 1ef5bb54-bb8a-6c84-a335-ab9323a5c145
@@ -175,6 +175,6 @@ questions:
     uuid: 1ef95db4-9a55-6d88-b7e2-f3a5c9cdf2c3
     question: 'Do all Symfony useable interfaces honor the Backward Compatibility promise?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/bc.html#using-our-interfaces'

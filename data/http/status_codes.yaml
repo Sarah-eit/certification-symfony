@@ -3,15 +3,15 @@ questions:
     uuid: 1eebf878-8b96-6878-9445-99d84c92580c
     question: 'Does the 308 status code allow to change the request method?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://tools.ietf.org/html/rfc7538#section-3'
   -
     uuid: 1eebf878-8b97-6b88-88e6-99d84c92580c
     question: 'Should a response using the 511 status code contains a link to a resource that allows the client to authenticate itself?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511'
   -
     uuid: 1eebf878-8b98-638a-bcb4-99d84c92580c
@@ -87,8 +87,8 @@ questions:
     uuid: 1eebf878-8b9c-6c0a-8a9f-99d84c92580c
     question: 'Can a response with 308 status code be cached?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://tools.ietf.org/html/rfc7538#section-3'
   -
     uuid: 1eebf878-8b9d-67d6-ae59-99d84c92580c
@@ -113,8 +113,8 @@ questions:
     uuid: 1eebf878-8ba0-63f0-be89-99d84c92580c
     question: 'Server returns a specific status code when you are not allowed to access a resource'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/for-GET/know-your-http-well/blob/master/status-codes.md'
   -
     uuid: 1eebf878-8ba1-6a48-bb99-99d84c92580c

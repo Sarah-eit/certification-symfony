@@ -20,35 +20,25 @@ questions:
       - { value: '0', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Console/Terminal.php#L97'
   -
-    uuid: 1eebf878-8b98-6e48-8456-99d84c92580c
-    question: 'Given a new process created in front of a Symfony command that return a 1 code, what will be returned by Process::mustRun()?'
-    answers:
-      - { value: '1', correct: false }
-      - { value: 'An instance of Process', correct: false }
-      - { value: 'True', correct: false }
-      - { value: 'false', correct: false }
-      - { value: 'Nothing, a ProcessFailedException will be thrown', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L252'
-  -
     uuid: 1eebf878-8b9a-66a8-98fb-99d84c92580c
     question: 'Could Command be used as a concrete class without defining the execute method?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Console/Command/Command.php#L230'
   -
     uuid: 1eebf878-8b9d-69fc-b492-99d84c92580c
     question: 'In the console, could the Cursor be hidden?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/6.3/components/console/helpers/cursor.html'
   -
     uuid: 1eebf878-8ba7-61c8-80b3-99d84c92580c
     question: "By setting #[AsCommand(name: 'app:legacy', hidden: true)], the command will be listed in the php bin/console list command ?"
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/console/hide_commands.html'
   -
     uuid: 1eebf878-8ba7-6218-abe4-99d84c92580c

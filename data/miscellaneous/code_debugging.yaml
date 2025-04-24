@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b97-6174-b11e-99d84c92580c
     question: 'Could the destination of the dump be customized?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/var_dumper.html#the-dump-server'
   -
     uuid: 1eebf878-8b97-691c-8545-99d84c92580c
@@ -19,15 +19,15 @@ questions:
     uuid: 1eebf878-8b98-6c9a-b348-99d84c92580c
     question: "Is it valid to personnalize the debug toolbar like this ? setTheme('light');"
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L97'
   -
     uuid: 1eebf878-8b99-61ae-89e6-99d84c92580c
     question: 'Could the theme used by HtmlDumper be changed?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/var_dumper.html#advanced-usage'
   -
     uuid: 1eebf878-8b99-64c4-aa39-99d84c92580c
@@ -40,8 +40,8 @@ questions:
     uuid: 1eebf878-8b99-6ba4-a663-99d84c92580c
     question: 'Could the dump server be configured using environment variables?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/var_dumper.html#configuring-the-dump-server-with-environment-variables'
   -
     uuid: 1eebf878-8b9b-6530-9f87-99d84c92580c
@@ -64,6 +64,6 @@ questions:
     uuid: 1eebf878-8ba3-6d7a-9136-99d84c92580c
     question: 'Could the dump() output be displayed outside of the application?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/var_dumper.html#the-dump-server'

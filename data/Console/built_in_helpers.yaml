@@ -106,8 +106,8 @@ questions:
     uuid: 1eebf878-8ba5-6ecc-b989-99d84c92580c
     question: 'What is the default value for ConfirmationQuestion in the QuestionHelper ?'
     answers:
-      - { value: 'False', correct: false }
-      - { value: 'True', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Console/Question/ConfirmationQuestion.php#L28'
   -
     uuid: 1eebf878-8ba5-6f12-bdd6-99d84c92580c

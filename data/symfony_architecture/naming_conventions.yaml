@@ -3,19 +3,19 @@ questions:
     uuid: 1eebf878-8ba8-664a-9334-99d84c92580c
     question: 'Is suffix "Trait" mandatory for traits ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-669a-a5e6-99d84c92580c
     question: 'We use camelCase for ?'
     answers:
-      - { value: function, correct: true }
+      - { value: 'function', correct: true }
       - { value: 'php variables', correct: true }
       - { value: 'Twig template name', correct: false }
       - { value: 'methods name', correct: true }
-      - { value: arguments, correct: true }
-      - { value: constants, correct: false }
+      - { value: 'arguments', correct: true }
+      - { value: 'constants', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-66ea-b870-99d84c92580c
@@ -55,8 +55,8 @@ questions:
     uuid: 1eebf878-8ba8-67d0-8bfb-99d84c92580c
     question: 'Can a service file name be different from the class name inside ?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2ca-d3e4-6b68-a248-eb5bab40e010
@@ -70,18 +70,18 @@ questions:
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2ce-a388-6de4-b6c8-c31c98f6b9ec
-    question: 'Is suffix Interface mandatory for interfaces ?'
+    question: 'Is suffix `Interface` mandatory for interfaces ?'
     answers:
-      - { value: 'False', correct: true }
+      - { value: 'No', correct: true }
       - { value: 'No due to BC Break', correct: false }
-      - { value: 'True', correct: false }
+      - { value: 'Yes', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2d4-2696-6a56-a432-913a625d7cea
-    question: 'Isn"t suffix "Exception" mandatory for exceptions ?'
+    question: "Is suffix `Exception` mandatory for exceptions ?"
     answers:
-      - { value: 'False', correct: true }
-      - { value: 'True', correct: false }
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
       - { value: 'No depends on debug value', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -

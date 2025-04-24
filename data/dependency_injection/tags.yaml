@@ -124,8 +124,8 @@ questions:
     uuid: 1ef56882-03c1-6eb0-b2d3-a3573336c0ad
     question: 'Service tags can be used to modify the behavior of services without requiring a compiler pass.'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/service_container/tags.html'
   -
     uuid: 1ef5688e-e5f8-6e30-b003-89b7cdb1df56

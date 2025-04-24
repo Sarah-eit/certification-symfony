@@ -11,7 +11,7 @@ questions:
     uuid: 1efe55b8-585e-69c4-aa24-bdf49f6954b8
     question: 'The services defined in the service locator argument must include keys, which later become their unique identifiers inside the locator.'
     answers:
-      - { value: 'True', correct: true }
+      - { value: 'Yes', correct: true }
       - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/service_subscribers_locators.html#reusing-a-service-locator-in-multiple-services'
   -

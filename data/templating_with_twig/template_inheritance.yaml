@@ -1,10 +1,10 @@
 questions:
   -
     uuid: 1eebf878-8b99-6d98-856c-99d84c92580c
-    question: "Consider the following Twig code snippet: {% extends 'layout.html.twig' %} {% block title 'Hello World!' %} My name is Amanda. Twig What will be the result of evaluating this Twig template?"
+    question: "Consider the following Twig code `{% block title 'Hello World!' %} My name is Amanda.` What will be the result of evaluating this Twig template?"
     answers:
-      - { value: 'Twig will raise a Twig_Error_Syntax exception preventing the template from being evaluated.', correct: true }
-      - { value: 'The template is successfully evaluated and the string My name is Amanda will be displayed in the web browser.', correct: false }
+      - { value: 'Twig will raise a Twig_Error_Syntax exception', correct: true }
+      - { value: 'The string My name is Amanda will be displayed.', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tags/extends.html'
   -
     uuid: 1eebf878-8b9d-6240-9f21-99d84c92580c

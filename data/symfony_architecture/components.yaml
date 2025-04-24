@@ -13,8 +13,8 @@ questions:
     uuid: 1eebf878-8ba4-68c4-890d-99d84c92580c
     question: 'In Symfony, can the main request be retrieved from the RequestStack?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php#L57'
   -
     uuid: 1eebf878-8ba4-69dc-90ca-99d84c92580c
@@ -50,15 +50,15 @@ questions:
     uuid: 1eebf878-8ba6-6610-a019-99d84c92580c
     question: 'Could an Expression be configured using ContainerConfigurator?'
     answers:
-      - { value: 'False', correct: false }
-      - { value: 'True', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://github.com/symfony/dependency-injection/blob/3.4/Loader/Configurator/ContainerConfigurator.php#L125'
   -
     uuid: 1eebf878-8ba6-6908-890e-99d84c92580c
-    question: 'Is the following code valid? $parsed = Yaml::parse("!custom_tag { foo: bar }", Yaml::PARSE_CUSTOM_TAGS);'
+    question: 'Is the following code valid? `$parsed = Yaml::parse("!custom_tag { foo: bar }", Yaml::PARSE_CUSTOM_TAGS);`'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/yaml.html#parsing-and-dumping-custom-tags'
   -
     uuid: 1eebf878-8ba7-68bc-874c-99d84c92580c
@@ -143,8 +143,8 @@ questions:
     uuid: 1eebf878-8ba9-69fa-9583-99d84c92580c
     question: 'In Symfony, is it possible to define a controller using a \Closure function?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/controller.html'
   -
     uuid: 1eebf878-8ba9-6aea-8517-99d84c92580c
@@ -162,22 +162,22 @@ questions:
     uuid: 1eebf878-8ba9-6b30-8746-99d84c92580c
     question: 'Could a service definition be hidden using setPrivate()?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/3.4/src/Symfony/Component/DependencyInjection/Definition.php#L614'
   -
     uuid: 1eebf878-8ba9-6b80-8916-99d84c92580c
     question: 'Given the context where a single request is stored in the RequestStack, could the current request be removed from the request stack?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php'
   -
     uuid: 1eebf878-8ba9-6bd0-b7bf-99d84c92580c
     question: 'It is possible to change the class of a service using the ContainerBuilder?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/dependency_injection/definitions.html'
   -
     uuid: 1eebf878-8ba9-6c16-ab08-99d84c92580c
@@ -209,8 +209,8 @@ questions:
     uuid: 1eebf878-8baa-65b2-a9be-99d84c92580c
     question: 'Could the parent request be retrieved from the request stack?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php'
   -
     uuid: 1eebf878-8baa-6602-b7f4-99d84c92580c
@@ -253,8 +253,8 @@ questions:
     uuid: 1eee76d6-b14d-69de-9026-09e122b17670
     question: 'Given the context where the ProxyManager bridge is not installed, could lazy services be used?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/service_container/lazy_services.html#configuration'
   -
     uuid: 1ef95dac-0509-64da-b985-cbe419d634ee

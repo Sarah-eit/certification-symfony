@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b96-6fe4-bbf2-99d84c92580c
     question: 'Could a parameter be removed from a Symfony\Component\DependencyInjection\ParameterBag\ContainerBag?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/DependencyInjection/ParameterBag/ContainerBag.php'
   -
     uuid: 1eebf878-8b98-60e2-8300-99d84c92580c
@@ -18,10 +18,10 @@ questions:
     help: 'https://symfony.com/doc/7.0/components/dependency_injection/compilation.html#controlling-the-pass-ordering'
   -
     uuid: 1eebf878-8b98-6344-9f43-99d84c92580c
-    question: "Let's assume, we have a private service my_private_service. Will this work ? $container->get('my_private_service');"
+    question: "Let's assume, we have a private service my_private_service. Will this work ? `$container->get('my_private_service');`"
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/service_container/alias_private.html'
   -
     uuid: 1eebf878-8b98-65d8-89f3-99d84c92580c
@@ -36,8 +36,8 @@ questions:
     uuid: 1eebf878-8b98-661e-af6f-99d84c92580c
     question: 'Could the number of time each environment variables has been resolved be obtained when using ContainerBuilder?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/ContainerBuilder.php#L1485'
   -
     uuid: 1eebf878-8b98-6786-a236-99d84c92580c
@@ -52,8 +52,8 @@ questions:
     uuid: 1eebf878-8b98-68b2-8f41-99d84c92580c
     question: 'Could an EnvPlaceholderParameterBag be merged into another one?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/ParameterBag/EnvPlaceholderParameterBag.php#L103'
   -
     uuid: 1eebf878-8b98-6ce0-93de-99d84c92580c
@@ -61,14 +61,14 @@ questions:
     answers:
       - { value: 'Yes, autowiring will find and register all dependencies', correct: false }
       - { value: 'Yes, if dependencies are explicitly declared as autowired or manually configured.', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/autowiring.html'
   -
     uuid: 1eebf878-8b99-65e6-9c14-99d84c92580c
     question: 'Could parameters be cleared from a ContainerParameterBag?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/ParameterBag/ContainerBag.php'
   -
     uuid: 1eebf878-8b99-6884-ba5f-99d84c92580c
@@ -108,15 +108,15 @@ questions:
     uuid: 1eebf878-8b9a-6266-96a4-99d84c92580c
     question: 'Is it possible to create a service that is not publicly accessible?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/alias_private.html#marking-services-as-public-private'
   -
     uuid: 1eebf878-8b9a-69be-97e2-99d84c92580c
     question: 'Is it possible to use a constant in a parameter?'
     answers:
       - { value: 'Yes in XML format', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'No', correct: false }
       - { value: 'Yes, in PHP', correct: true }
       - { value: 'Yes, in the YAML format (thanks to the expression language component)', correct: true }
     help: 'https://symfony.com/doc/7.0/configuration.html#constants-as-parameters'
@@ -124,8 +124,8 @@ questions:
     uuid: 1eebf878-8b9a-6a0e-9c3a-99d84c92580c
     question: 'Can you inject a dependency to a service without passing it to the constructor?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/injection_types.html'
   -
     uuid: 1eebf878-8b9a-6c0c-89ff-99d84c92580c
@@ -140,8 +140,8 @@ questions:
     uuid: 1eebf878-8b9a-6c5c-ac18-99d84c92580c
     question: 'Could a ParameterBag be frozen?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/DependencyInjection/ParameterBag/FrozenParameterBag.php'
   -
     uuid: 1eebf878-8b9b-6030-b99f-99d84c92580c
@@ -164,36 +164,36 @@ questions:
     uuid: 1eebf878-8b9c-61b0-ab03-99d84c92580c
     question: 'Could new parameters be added into a Symfony\Component\DependencyInjection\ParameterBag\ContainerBag?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/ParameterBag/ContainerBag.php'
   -
     uuid: 1eebf878-8b9c-6516-83f6-99d84c92580c
     question: 'Does service ids considered as case-sensitive?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/2.0/src/Symfony/Component/DependencyInjection/Container.php#L221'
   -
     uuid: 1eebf878-8b9d-6330-b506-99d84c92580c
     question: 'Could service configurators use __invoke() to configure a service?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/configurators.html#using-the-configurator'
   -
     uuid: 1eebf878-8b9d-6826-a51d-99d84c92580c
     question: 'Could a parameter be removed from a FrozenParameterBag?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/DependencyInjection/ParameterBag/FrozenParameterBag.php'
   -
     uuid: 1eebf878-8b9d-68bc-8b85-99d84c92580c
     question: 'Could imports be configured using ContainerConfigurator?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/dependency-injection/blob/8126f0be4ff984e4db0140e60917900a53facb49/Loader/Configurator/ContainerConfigurator.php#L68'
   -
     uuid: 1eebf878-8b9f-62de-9af3-99d84c92580c
@@ -249,15 +249,15 @@ questions:
     uuid: 1eebf878-8b9f-65f4-aca1-99d84c92580c
     question: 'Can configuration parameters in Symfony contain array values, such as in the parameters section of config/services.yaml?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'false', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/configuration.html#configuration-parameters'
   -
     uuid: 1eebf878-8b9f-670c-beb7-99d84c92580c
     question: "With default configuration each time you retrieve the service, you'll get the same instance ?"
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'false', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container.html#creating-configuring-services-in-the-container'
   -
     uuid: 1eebf878-8b9f-6752-a151-99d84c92580c
@@ -270,8 +270,8 @@ questions:
     uuid: 1eebf878-8b9f-67a2-ab9f-99d84c92580c
     question: 'Service parameters can be set at runtime'
     answers:
-      - { value: 'true', correct: false }
-      - { value: 'false', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/service_container.html#service-parameters'
   -
     uuid: 1eebf878-8ba1-6d72-b87d-99d84c92580c
@@ -296,8 +296,8 @@ questions:
     uuid: 1eebf878-8ba2-6056-a6e9-99d84c92580c
     question: 'When creating a service definition using PHP, could the visibility of the service be changed using Symfony\Component\DependencyInjection\Definition::setPublic($boolean) ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/c8418254edd0851181da5384bc2f94434ca0570d/src/Symfony/Component/DependencyInjection/Definition.php#L541'
   -
     uuid: 1ef5c09c-d7c9-6560-8979-85f7277877d1

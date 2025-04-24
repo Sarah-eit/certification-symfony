@@ -9,8 +9,8 @@ questions:
     help: 'https://symfony.com/doc/7.0/validation.html#classes'
   -
     uuid: 1eec04ea-28bc-6422-9e58-31b243cffe44
-    question: 'Does the validate() method returns a ConstraintViolationList object ? That acts like an array of errors. Each error in the collection is a ConstraintViolation object, which holds the error message on its getMessage() method.'
+    question: 'Does the `validate()` method returns a ConstraintViolationList object ? That acts like an array of errors. Each error in the collection is a ConstraintViolation object, which holds the error message on its getMessage() method.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/validation/raw_values.html'

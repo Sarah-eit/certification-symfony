@@ -40,15 +40,15 @@ questions:
     uuid: 1eebf878-8ba4-609a-b99c-99d84c92580c
     question: 'Is it possible to define default values that depend on another option?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/options_resolver.html#default-values-that-depend-on-another-option'
   -
     uuid: 1eec0499-a76d-66d2-aadb-f1225a91311b
-    question: "Is this way of validating an email is valid ?$errors = $validator->validate('johndoe@gmail.com', new Assert\\Email());if ($errors->count())"
+    question: "Is this way of validating an email is valid ? `$errors = $validator->validate('johndoe@gmail.com', new Assert\\Email());if ($errors->count())`"
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/validation/raw_values.html'
   -
     uuid: 1eec049e-b567-6be8-b3c9-3b80b710b68d

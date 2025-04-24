@@ -11,7 +11,7 @@ questions:
     uuid: 1eebf878-8ba9-6586-8840-99d84c92580c
     question: 'Is it possible to type the return type declaration of a function closure ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
       - { value: 'depends on strict_type defined in php.ini', correct: false }
     help: 'https://www.php.net/manual/en/functions.anonymous.php'

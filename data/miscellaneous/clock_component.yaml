@@ -3,8 +3,8 @@ questions:
     uuid: 1efe4a7b-d445-6c88-852f-ad675d6b1d50
     question: 'The Clock component decouples applications from the system clock. This allows you to fix time to improve testability of time-sensitive logic.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/clock.html'
   -
     uuid: 1efe4a99-fb14-6da0-a461-a7a24dfab836

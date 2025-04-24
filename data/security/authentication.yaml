@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b9c-6dea-96a0-99d84c92580c
     question: 'Could a Passport be self-validated?'
     answers:
-      - { value: 'False', correct: false }
-      - { value: 'True', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/7.0/security/custom_authenticator.html#self-validating-passport'
   -
     uuid: 1eebf878-8ba1-62a0-8999-99d84c92580c
@@ -32,8 +32,8 @@ questions:
     uuid: 1eedad50-f369-6fa2-80d1-435a058dcb9c
     question: 'Csrf protection is enable by default in a new login form ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
       - { value: 'Depends on basic auth of api auth', correct: false }
     help: 'https://symfony.com/doc/7.0/security.html#csrf-protection-in-login-forms'
   -
@@ -68,8 +68,8 @@ questions:
     uuid: 1eedadaf-9aa2-6b94-84ae-db47ef71e302
     question: 'Does the magic login link is stored in database ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
       - { value: 'Depends on the parameters.login_link.store parameters', correct: false }
     help: 'https://symfony.com/doc/7.0/security/login_link.html#invalidate-login-links'
   -
@@ -92,8 +92,8 @@ questions:
     uuid: 1eedb044-61db-662a-94e0-d7b850fa955d
     question: 'Does the LogoutEvent exist ? we could listen it in a Listerner ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
       - { value: 'No, but we can build it', correct: false }
     help: 'https://symfony.com/doc/7.0/security.html#customizing-logout'
   -

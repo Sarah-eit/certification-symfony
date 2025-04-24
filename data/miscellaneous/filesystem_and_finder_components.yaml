@@ -12,8 +12,8 @@ questions:
     uuid: 1eebf878-8b98-6d26-9152-99d84c92580c
     question: "Is the following code valid? $mirror('/srv/app', '/srv/bar', null, ['copy_on_windows' => true]);"
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#mirror'
   -
     uuid: 1eebf878-8b99-60d2-94e5-99d84c92580c
@@ -28,8 +28,8 @@ questions:
     uuid: 1eebf878-8b99-628a-b149-99d84c92580c
     question: 'When using mirror(...), could files instead of links be mirrored on Windows?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#mirror'
   -
     uuid: 1eebf878-8b9a-613a-bac4-99d84c92580c
@@ -44,15 +44,15 @@ questions:
     uuid: 1eebf878-8b9a-67de-9c30-99d84c92580c
     question: "Is the following code valid? $fs = (new Filesystem())->mirror('/srv/app', '/srv/bar', null, ['delete' => true]);"
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Filesystem/Filesystem.php#L527'
   -
     uuid: 1eebf878-8b9c-6336-848b-99d84c92580c
     question: 'When using mirror(...), could files that are not present in the source directory be deleted?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
       - { value: 'May be', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#mirror'
   -
@@ -101,17 +101,17 @@ questions:
     help: 'https://symfony.com/doc/7.0/components/config/resources.html#locating-resources'
   -
     uuid: 1eebf878-8ba1-6d2c-819c-99d84c92580c
-    question: 'Is the following code valid?use Symfony\Component\Filesystem\Path;$path = new Path(''/srv/app/var/cache'');'
+    question: "Is the following code valid? `$path = new Path('/srv/app/var/cache');`"
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/filesystem/blob/7.0/Path.php#L813'
   -
     uuid: 1eebf878-8ba2-6a24-adfc-99d84c92580c
-    question: 'Could FileLocator::locate() returns only the first occurrence?'
+    question: 'Could `FileLocator::locate()` returns only the first occurrence?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/config/resources.html'
   -
     uuid: 1eebf878-8ba3-6302-9bf6-99d84c92580c
@@ -146,8 +146,8 @@ questions:
     uuid: 1eebf878-8ba4-6fe0-bbbb-99d84c92580c
     question: "Will the following code trigger an error if the /tmp/photos directory already exists ? $fs = new Filesystem(); $fs->mkdir('/tmp/photos', 0700);"
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#mkdir'
   -
     uuid: 1eebf878-8ba6-6e62-8ca9-99d84c92580c
@@ -305,8 +305,8 @@ questions:
     uuid: 1ef84e34-adfc-6c82-93f8-8b021db55f5f
     question: 'Can the Finder component search in multiple directories?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#file-name'
   -
     uuid: 1ef84e37-4396-6af2-af9b-f1e316a4d018
@@ -344,8 +344,8 @@ questions:
     uuid: 1ef84e43-ce3b-6b2e-8041-25f2eebb6781
     question: 'Can the Finder component search for files by their content?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#file-contents'
   -
     uuid: 1ef84e47-3140-6df2-853a-97c4c8285485
@@ -399,8 +399,8 @@ questions:
     uuid: 1ef84e58-30c4-67a0-b09d-d16093ed9458
     question: 'Can you filter Finder results based on a custom logic using a callback function?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
   -
     uuid: 1ef91eff-7bd1-6608-a1bf-2ba11eeedc3d

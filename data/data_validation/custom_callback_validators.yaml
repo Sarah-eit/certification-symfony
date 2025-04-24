@@ -3,22 +3,22 @@ questions:
     uuid: 1eebf878-8b9d-6600-b63e-99d84c92580c
     question: 'Could values be mapped to fields using callbacks?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/form/data_mappers.html#mapping-form-fields-using-callbacks'
   -
     uuid: 1eebf878-8ba1-67fa-9c70-99d84c92580c
-    question: 'We can also apply constraints on class getters with ``addPropertyConstraint()``'
+    question: 'We can also apply constraints on class getters with `addPropertyConstraint()` ?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/components/validator/metadata.html#getters'
   -
     uuid: 1eebf878-8ba1-6840-b9ce-99d84c92580c
-    question: 'We can also apply constraints on class getters with ``addGetterConstraint()``'
+    question: 'We can also apply constraints on class getters with `addGetterConstraint()` ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/validator/metadata.html'
   -
     uuid: 1eebf878-8ba1-6926-8c9e-99d84c92580c

@@ -3,8 +3,8 @@ questions:
     uuid: 1efda2fe-f690-68bc-b351-4315e6de49e3
     question: "The Finder object doesn't reset its internal state automatically. This means that you need to create a new instance if you do not want to get mixed results. Is it correct ?"
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#usage'
   -
     uuid: 1efda31c-63b8-6a9e-880b-b77462a86928
@@ -107,8 +107,8 @@ questions:
     uuid: 1efda35c-51ee-6d50-849b-e35eab7be00f
     question: "About the Finder component, is it correct : `$finder->files()->size('>= 1K')->size('<= 2K');`"
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#file-size'
   -
     uuid: 1efda37f-63c1-6ae6-bb5c-4f2ef02bd13e
@@ -156,8 +156,8 @@ questions:
     uuid: 1efda39f-7037-6d00-a4a3-171fe181b62d
     question: 'About Finder component, you can also define your own sorting algorithm with the sort() method.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
   -
     uuid: 1efda3b3-9204-6000-aeac-9fb18febd745

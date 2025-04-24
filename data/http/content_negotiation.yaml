@@ -50,7 +50,7 @@ questions:
     uuid: 1eedc762-5f32-6970-9026-218653829838
     question: 'Is Vary the header that server use to indicate which headers is used for content negociation ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
       - { value: 'Depends on cache', correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#principles_of_content_negotiation'

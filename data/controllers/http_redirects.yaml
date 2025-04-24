@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8b98-6e8e-8463-99d84c92580c
     question: 'Given a response using the 308 status code and containing a Location header, must the client use the header URI for automatic redirection?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://tools.ietf.org/html/rfc7538#section-3'
   -
     uuid: 1eebf878-8b9c-6bba-8b13-99d84c92580c

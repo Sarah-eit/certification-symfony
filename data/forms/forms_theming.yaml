@@ -11,8 +11,8 @@ questions:
     uuid: 1efdd884-5eee-6c00-b2f3-4f4364faa8a5
     question: 'About form theming, a form can be customized by applying several themes.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/form/form_themes.html#applying-multiple-themes-to-single-forms'
   -
     uuid: 1efdd88c-fc02-6b1a-a645-71700ac35142
@@ -35,8 +35,8 @@ questions:
     uuid: 1efdd8ce-5489-6040-aa61-a99f81fc781e
     question: 'About form theming, Symfony uses Twig blocks to render each part of a form.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/form/form_themes.html#creating-your-own-form-theme'
   -
     uuid: 1efdd8de-156c-6b2c-8b67-edc4148ce751

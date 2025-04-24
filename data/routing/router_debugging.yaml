@@ -24,15 +24,15 @@ questions:
     uuid: 1eebf878-8ba8-6352-a19d-99d84c92580c
     question: 'Does the debug:router command order the application routes in the same matching orders as symfony will act in our application ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/routing.html#debugging-routes'
   -
     uuid: 1eebf878-8ba8-63a2-b6e6-99d84c92580c
     question: 'Does the option --show-aliases on the debug:router show you available aliases for a given route ?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/routing.html#debugging-routes'
   -
     uuid: 1efcc179-b267-69a4-b94f-c71c749f48f6

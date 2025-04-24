@@ -12,8 +12,8 @@ questions:
     uuid: 1eebf878-8b98-6fba-ac9a-99d84c92580c
     question: 'Is the Form component required to generate a csrf token in templates?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/security/csrf.html#generating-and-checking-csrf-tokens-manually'
   -
     uuid: 1eebf878-8b9f-69be-9e3c-99d84c92580c
@@ -36,15 +36,15 @@ questions:
     uuid: 1eebf878-8b9f-6a54-a024-99d84c92580c
     question: 'Using Form component, option csrf_error_message can be used in configureOptions() to define a custom CSRF error message?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eebf878-8ba2-6ac4-adf1-99d84c92580c
     question: 'When using the form_login authentication provider, you just have to add a _csrf_token named input field to allow csrf validation to work'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/security.html#form-login'
   -
     uuid: 1eebf878-8ba5-680a-a545-99d84c92580c
@@ -59,8 +59,8 @@ questions:
     uuid: 1eebf878-8ba5-6878-8ebd-99d84c92580c
     question: "Is csrf_protection set to false in configureOptions' method, a correct way to disable csrf in a form ?"
     answers:
-      - { value: 'False', correct: false }
-      - { value: 'True', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/7.0/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eedad53-9a0c-6cc2-8bbd-43a19afa5a59

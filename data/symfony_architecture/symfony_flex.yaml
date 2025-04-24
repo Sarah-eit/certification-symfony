@@ -44,8 +44,8 @@ questions:
     uuid: 1eebf878-8b9d-6fba-847c-99d84c92580c
     question: 'Arguments are resolved before calling the Controller ?'
     answers:
-      - { value: 'true', correct: true }
-      - { value: 'false', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/components/http_kernel.html#the-workflow-of-a-request'
   -
     uuid: 1eebf878-8b9e-600a-90cc-99d84c92580c
@@ -61,8 +61,8 @@ questions:
     uuid: 1eebf878-8b9e-6050-bd8d-99d84c92580c
     question: 'Using Flex is mandatory since Symfony 4.0'
     answers:
-      - { value: 'False', correct: true }
-      - { value: 'True', correct: false }
+      - { value: 'No', correct: true }
+      - { value: 'Yes', correct: false }
     help: 'https://symfony.com/doc/7.0/setup/flex.html#upgrading-existing-applications-to-flex'
   -
     uuid: 1eebf878-8b9e-612c-9b8f-99d84c92580c
@@ -86,7 +86,7 @@ questions:
     question: 'If an exception occurs while executing a console command, will you see the details of the exception in your log files?'
     answers:
       - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'No', correct: false }
       - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommand class.', correct: false }
     help: 'https://symfony.com/doc/7.0/console.html#logging-command-errors'
   -
@@ -124,8 +124,8 @@ questions:
     uuid: 1ef55628-cf10-6646-b7e1-c105ca74ed02
     question: 'Composer flex intervenes when installing some packages like api, admin, log, orm, which are not packages, but aliases, and symfony flex which is actually a composer component installs the corresponding package.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/flex'
   -
     uuid: 1ef5562c-f16d-6f6e-9986-ff8af72c1e95
@@ -140,22 +140,15 @@ questions:
     uuid: 1ef55634-2b2a-67fa-9285-fbd574826ff3
     question: 'Is it possible to modify the architecture of public, src, ... folders in symfony flex?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/setup/flex.html#customizing-flex-paths'
   -
     uuid: 1ef562a5-90da-6c8a-8a47-9f1995dbf2d9
     question: 'Some structure folders in symfony can be moved by specifying in the composer.json an "extra" section and adding src-dir for the src for example.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
-    help: 'https://symfony.com/doc/7.0/setup/flex.html#customizing-flex-paths'
-  -
-    uuid: 1ef562a7-a056-6676-8e1f-11075f5e94f6
-    question: 'Some structure folders in symfony can be moved by specifying in the composer.json an "extra" section and adding dir-public for the public folder for example.'
-    answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/setup/flex.html#customizing-flex-paths'
   -
     uuid: 1ef562ae-450d-60ba-99eb-831d11237fbd

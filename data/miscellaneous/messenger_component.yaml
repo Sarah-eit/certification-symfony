@@ -101,8 +101,8 @@ questions:
     uuid: 1ef49b92-3779-6a68-996c-71981116b221
     question: "In Messenger component, is it true, that you can set the class' interface in the framework.messenger.routing instead of setting the real class ?"
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#routing-messages-to-a-transport'
   -
     uuid: 1ef49b97-8daf-68ec-bcf4-6b7bdfa36311
@@ -179,10 +179,10 @@ questions:
     help: 'https://symfony.com/doc/7.0/messenger.html#pinging-a-webservice'
   -
     uuid: 1ef49c01-1b3a-6c20-951d-cd6c0db5ee76
-    question: 'A single handler class can handle multiple messages. For that, add the @AsMessageHandler attribute to all handling methods.'
+    question: 'A single handler class can handle multiple messages. For that, add the #[AsMessageHandler] attribute to all handling methods.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#handling-multiple-messages'
   -
     uuid: 1ef49c12-2100-641e-bd3c-2fdbb8719653

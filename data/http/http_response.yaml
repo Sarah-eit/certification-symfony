@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8ba6-65c0-a662-99d84c92580c
     question: 'Could a check be performed against the status code to verify that the response is a redirected one?'
     answers:
-      - { value: 'False', correct: false }
-      - { value: 'True', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Response.php#L1246'
   -
     uuid: 1eebf878-8ba9-65cc-9f30-99d84c92580c

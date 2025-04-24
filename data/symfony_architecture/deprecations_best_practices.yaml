@@ -3,15 +3,15 @@ questions:
     uuid: 1eebf878-8ba8-6b22-8f84-99d84c92580c
     question: 'Can a new class (or interface, or trait) be introduced as deprecated, or contain deprecated methods ?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/7.0/contributing/code/conventions.html#deprecating-code'
   -
     uuid: 1eebf878-8ba8-6b68-be58-99d84c92580c
     question: 'Can a new method be introduced as deprecated ?'
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
       - { value: 'Depending on the component', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/conventions.html#deprecating-code'
   -

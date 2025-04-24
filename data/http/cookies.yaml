@@ -30,15 +30,15 @@ questions:
     uuid: 1eebf878-8ba2-6d1c-88ef-99d84c92580c
     question: 'A cookie is set from foo.com. The domain attribute is set to foo.com. In most browsers, will this cookie be sent with a request to bar.foo.com ?'
     answers:
-      - { value: 'False', correct: false }
-      - { value: 'True', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://en.wikipedia.org/wiki/HTTP_cookie#Cookie_attributes'
   -
     uuid: 1ef65d9e-55a9-67de-8b7c-5f3ce73d458b
     question: 'Is it possible for PHP sessions to operate without using cookies?'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/session.idpassing.php'
   -
     uuid: 1ef65daa-b527-60b0-bf86-d13f9c9bf750

@@ -18,20 +18,20 @@ questions:
     uuid: 1eebf878-8ba1-6c00-a261-99d84c92580c
     question: 'What is the name of the service that check authorization?'
     answers:
-      - { value: security.authorization_checker, correct: true }
-      - { value: security.authorization_manager, correct: false }
-      - { value: security.checker, correct: false }
-      - { value: security.decision_checker, correct: false }
+      - { value: 'security.authorization_checker', correct: true }
+      - { value: 'security.authorization_manager', correct: false }
+      - { value: 'security.checker', correct: false }
+      - { value: 'security.decision_checker', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Core/Authorization/AuthorizationChecker.php'
   -
     uuid: 1eebf878-8ba2-64de-a54b-99d84c92580c
     question: 'What is the type of the top-level service that checks authorization?'
     answers:
-      - { value: Symfony\Component\Security\Core\Authorization\CheckerInterface, correct: false }
-      - { value: Symfony\Component\Security\Core\Authorization\VoterInterface, correct: false }
-      - { value: Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface, correct: false }
-      - { value: Symfony\Component\Security\Core\Authorization\Voter\VoterInterface, correct: false }
-      - { value: Symfony\Component\Security\Core\Security, correct: true }
+      - { value: 'Symfony\Component\Security\Core\Authorization\CheckerInterface', correct: false }
+      - { value: 'Symfony\Component\Security\Core\Authorization\VoterInterface', correct: false }
+      - { value: 'Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface', correct: false }
+      - { value: 'Symfony\Component\Security\Core\Authorization\Voter\VoterInterface', correct: false }
+      - { value: 'Symfony\Component\Security\Core\Security', correct: true }
     help: 'https://symfony.com/doc/7.0/security.html#securing-other-services'
   -
     uuid: 1eedb101-2d08-6c3c-bfe5-f9db4bc17b6f

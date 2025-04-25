@@ -3,10 +3,10 @@ questions:
     uuid: 1eebf878-8b9e-6208-b697-99d84c92580c
     question: 'Which Symfony class offers method to test commands?'
     answers:
-      - { value: Symfony\Component\Console\Tester\Command, correct: false }
-      - { value: Symfony\Component\Console\Tester\CommandTester, correct: true }
-      - { value: Symfony\Component\Console\Tester\CommandUnitTester, correct: false }
-      - { value: Symfony\Component\Console\Tester\CommandUnit, correct: false }
+      - { value: 'Symfony\Component\Console\Tester\Command', correct: false }
+      - { value: 'Symfony\Component\Console\Tester\CommandTester', correct: true }
+      - { value: 'Symfony\Component\Console\Tester\CommandUnitTester', correct: false }
+      - { value: 'Symfony\Component\Console\Tester\CommandUnit', correct: false }
     help: 'https://symfony.com/doc/7.0/console.html#testing-commands'
   -
     uuid: 1eebf878-8ba4-6c48-a631-99d84c92580c
@@ -20,10 +20,10 @@ questions:
     uuid: 1eebf878-8ba7-663c-8205-99d84c92580c
     question: 'What does The ClockMock class allow to mock ?'
     answers:
-      - { value: sleep(), correct: true }
-      - { value: usleep(), correct: true }
-      - { value: time(), correct: true }
+      - { value: 'sleep()', correct: true }
+      - { value: 'usleep()', correct: true }
+      - { value: 'time()', correct: true }
       - { value: "it doesn't exists", correct: false }
-      - { value: date(), correct: true }
-      - { value: microtime(), correct: true }
+      - { value: 'date()', correct: true }
+      - { value: 'microtime()', correct: true }
     help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#clock-mocking'

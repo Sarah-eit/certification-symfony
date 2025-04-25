@@ -22,27 +22,27 @@ questions:
     uuid: 1eebf878-8b9a-6ea0-acb2-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, which letter case do you need to use for template names as well as their folder?'
     answers:
-      - { value: PascalCase, correct: false }
-      - { value: snake_case, correct: true }
-      - { value: camelCase, correct: false }
+      - { value: 'PascalCase', correct: false }
+      - { value: 'snake_case', correct: true }
+      - { value: 'camelCase', correct: false }
     help: 'https://symfony.com/doc/7.0/best_practices.html#templates'
   -
     uuid: 1eebf878-8b9b-6620-b2c7-99d84c92580c
     question: 'Which standard is defining how to allow developers to create cache-aware libraries?'
     answers:
-      - { value: PSR-4, correct: false }
-      - { value: PSR-7, correct: false }
-      - { value: PSR-16, correct: false }
-      - { value: PSR-6, correct: true }
+      - { value: 'PSR-4', correct: false }
+      - { value: 'PSR-7', correct: false }
+      - { value: 'PSR-16', correct: false }
+      - { value: 'PSR-6', correct: true }
     help: 'https://symfony.com/doc/7.0/components/cache.html'
   -
     uuid: 1eebf878-8b9b-66c0-a3c3-99d84c92580c
     question: 'Where is defined the render() method available for any controller following Symfony best practises?'
     answers:
-      - { value: Controller, correct: false }
-      - { value: ControllerTrait, correct: false }
-      - { value: AbstractController, correct: true }
-      - { value: ServiceContainerAware, correct: false }
+      - { value: 'Controller', correct: false }
+      - { value: 'ControllerTrait', correct: false }
+      - { value: 'AbstractController', correct: true }
+      - { value: 'ServiceContainerAware', correct: false }
     help: 'https://symfony.com/doc/7.0/controller.html#the-base-controller-class-services'
   -
     uuid: 1eebf878-8b9b-699a-9a63-99d84c92580c
@@ -55,10 +55,10 @@ questions:
     uuid: 1eebf878-8b9d-63d0-8ac5-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, which format do you need to use for your translation files?'
     answers:
-      - { value: CSV, correct: false }
-      - { value: XLIFF, correct: true }
-      - { value: YAML, correct: false }
-      - { value: JSON, correct: false }
+      - { value: 'CSV', correct: false }
+      - { value: 'XLIFF', correct: true }
+      - { value: 'YAML', correct: false }
+      - { value: 'JSON', correct: false }
     help: 'https://symfony.com/doc/7.0/best_practices.html#use-the-xliff-format-for-your-translation-files'
   -
     uuid: 1eebf878-8b9d-6420-8aa9-99d84c92580c
@@ -72,10 +72,10 @@ questions:
     uuid: 1eebf878-8ba1-65ca-a174-99d84c92580c
     question: 'Using Console, what is the correct filename for a command?'
     answers:
-      - { value: MyTestCommand.php, correct: true }
-      - { value: CommandMyTest.php, correct: false }
-      - { value: MyTestConsoleCommand.php, correct: true }
-      - { value: MyTestCommandConsole.php, correct: false }
+      - { value: 'MyTestCommand.php', correct: true }
+      - { value: 'CommandMyTest.php', correct: false }
+      - { value: 'MyTestConsoleCommand.php', correct: true }
+      - { value: 'MyTestCommandConsole.php', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba3-66f4-93a6-99d84c92580c
@@ -125,10 +125,10 @@ questions:
     uuid: 1ef5bb47-4340-610a-accc-f5fc6195c240
     question: 'Which format is recommended for defining services in a Symfony application?'
     answers:
-      - { value: XML, correct: false }
-      - { value: JSON, correct: false }
-      - { value: YAML, correct: true }
-      - { value: PHP, correct: false }
+      - { value: 'XML', correct: false }
+      - { value: 'JSON', correct: false }
+      - { value: 'YAML', correct: true }
+      - { value: 'PHP', correct: false }
     help: 'https://symfony.com/doc/7.0/best_practices.html#use-the-yaml-format-to-configure-your-own-services'
   -
     uuid: 1ef5bb4b-5936-6eba-9746-5946503a32b1

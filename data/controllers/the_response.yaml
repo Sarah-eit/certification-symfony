@@ -20,17 +20,17 @@ questions:
     uuid: 1eebf878-8b98-618c-b12d-99d84c92580c
     question: 'Which of the following are valid Symfony response classes extending the base Symfony\Component\HttpFoundation\Response class?'
     answers:
-      - { value: RedirectResponse, correct: true }
-      - { value: FileResponse, correct: false }
-      - { value: BinaryResponse, correct: false }
-      - { value: StreamResponse, correct: false }
-      - { value: ImageFileResponse, correct: false }
-      - { value: JsonResponse, correct: true }
-      - { value: NotFoundResponse, correct: false }
-      - { value: RedirectedResponse, correct: false }
-      - { value: StreamedResponse, correct: true }
-      - { value: ImageResponse, correct: false }
-      - { value: BinaryFileResponse, correct: true }
+      - { value: 'RedirectResponse', correct: true }
+      - { value: 'FileResponse', correct: false }
+      - { value: 'BinaryResponse', correct: false }
+      - { value: 'StreamResponse', correct: false }
+      - { value: 'ImageFileResponse', correct: false }
+      - { value: 'JsonResponse', correct: true }
+      - { value: 'NotFoundResponse', correct: false }
+      - { value: 'RedirectedResponse', correct: false }
+      - { value: 'StreamedResponse', correct: true }
+      - { value: 'ImageResponse', correct: false }
+      - { value: 'BinaryFileResponse', correct: true }
     help: 'https://symfony.com/doc/7.0/components/http_foundation/introduction.html#redirecting-the-user'
   -
     uuid: 1eebf878-8b98-64fc-92a5-99d84c92580c
@@ -53,33 +53,33 @@ questions:
     question: 'Given a response that should be sent with a 304 status code, which methods can be used to set the status code?'
     answers:
       - { value: "$response->setStatusCode(304, 'Not Modified')", correct: true }
-      - { value: $response->setStatusCode(304), correct: true }
-      - { value: $response->setIsNotModified(), correct: false }
-      - { value: $response->setStatus(304), correct: false }
+      - { value: '$response->setStatusCode(304)', correct: true }
+      - { value: '$response->setIsNotModified()', correct: false }
+      - { value: '$response->setStatus(304)', correct: false }
       - { value: "$response->set(['status_code' => 304])", correct: false }
-      - { value: $response->setNotModified(), correct: true }
+      - { value: '$response->setNotModified()', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Response.php'
   -
     uuid: 1eebf878-8b9f-616c-87fe-99d84c92580c
     question: 'Which of these response objects does not exists?'
     answers:
-      - { value: XmlResponse, correct: true }
-      - { value: FileResponse, correct: true }
-      - { value: TwigResponse, correct: true }
-      - { value: JsonResponse, correct: false }
-      - { value: BinaryFileResponse, correct: false }
-      - { value: RedirectResponse, correct: false }
-      - { value: StreamedResponse, correct: false }
+      - { value: 'XmlResponse', correct: true }
+      - { value: 'FileResponse', correct: true }
+      - { value: 'TwigResponse', correct: true }
+      - { value: 'JsonResponse', correct: false }
+      - { value: 'BinaryFileResponse', correct: false }
+      - { value: 'RedirectResponse', correct: false }
+      - { value: 'StreamedResponse', correct: false }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#response'
   -
     uuid: 1eebf878-8ba0-61f2-a932-99d84c92580c
     question: 'Using a Response instance, which of these methods are available to check status code?'
     answers:
-      - { value: $response->isInformational(), correct: true }
-      - { value: $response->isSuccessful(), correct: true }
-      - { value: $response->isRedirection(), correct: true }
-      - { value: $response->isInvalid(), correct: true }
-      - { value: $response->isError(), correct: false }
+      - { value: '$response->isInformational()', correct: true }
+      - { value: '$response->isSuccessful()', correct: true }
+      - { value: '$response->isRedirection()', correct: true }
+      - { value: '$response->isInvalid()', correct: true }
+      - { value: '$response->isError()', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Response.php'
   -
     uuid: 1eebf878-8ba0-6486-992a-99d84c92580c

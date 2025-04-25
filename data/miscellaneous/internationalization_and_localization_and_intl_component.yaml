@@ -12,10 +12,10 @@ questions:
     uuid: 1ef818d5-6e0e-6bc8-b929-295d4b61fad6
     question: "In the Intl Component,&nbsp; what will Languages::getAlpha3Name('fra') return?"
     answers:
-      - { value: fr, correct: false }
-      - { value: French, correct: true }
-      - { value: France, correct: false }
-      - { value: fra, correct: false }
+      - { value: 'fr', correct: false }
+      - { value: 'French', correct: true }
+      - { value: 'France', correct: false }
+      - { value: 'fra', correct: false }
     help: 'https://symfony.com/doc/7.0/components/intl.html#language-and-script-names'
   -
     uuid: 1ef818dc-5ae6-61a2-bb1a-f17863ab1472

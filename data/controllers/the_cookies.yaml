@@ -28,9 +28,9 @@ questions:
     uuid: 1eebf878-8ba3-62bc-bb29-99d84c92580c
     question: 'How to access $_COOKIE data when using a Symfony\Component\HttpFoundation\Request $request object?'
     answers:
-      - { value: $request->cookies, correct: true }
-      - { value: $request->getCookie(), correct: false }
-      - { value: $request->getCookies(), correct: false }
-      - { value: $request->cookie, correct: false }
-      - { value: $request->getCookieData(), correct: false }
+      - { value: '$request->cookies', correct: true }
+      - { value: '$request->getCookie()', correct: false }
+      - { value: '$request->getCookies()', correct: false }
+      - { value: '$request->cookie', correct: false }
+      - { value: '$request->getCookieData()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#accessing-request-data'

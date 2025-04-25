@@ -19,23 +19,23 @@ questions:
     uuid: 1eeccba5-7669-608a-9e2a-070a767f65f9
     question: 'What function are available in the Lock Component ?'
     answers:
-      - { value: lock(), correct: false }
-      - { value: release(), correct: true }
-      - { value: acquire(), correct: true }
-      - { value: isLocked(), correct: false }
-      - { value: refresh(), correct: true }
-      - { value: isAcquired(), correct: true }
-      - { value: isExpired(), correct: true }
-      - { value: getRemainingLifetime(), correct: true }
-      - { value: getTtl(), correct: false }
+      - { value: 'lock()', correct: false }
+      - { value: 'release()', correct: true }
+      - { value: 'acquire()', correct: true }
+      - { value: 'isLocked()', correct: false }
+      - { value: 'refresh()', correct: true }
+      - { value: 'isAcquired()', correct: true }
+      - { value: 'isExpired()', correct: true }
+      - { value: 'getRemainingLifetime()', correct: true }
+      - { value: 'getTtl()', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Lock/LockInterface.php'
   -
     uuid: 1eeccba8-d4e9-6e7c-94fd-51d69966c85d
     question: 'What is returned if a user attempts to acquire a lock, but it is unavailable?'
     answers:
-      - { value: LockException, correct: false }
+      - { value: 'LockException', correct: false }
       - { value: 'false', correct: true }
-      - { value: LockedException, correct: false }
+      - { value: 'LockedException', correct: false }
     help: 'https://symfony.com/doc/7.0/components/lock.html'
   -
     uuid: 1eeccbb3-8aa6-6738-a1fb-09a923eb5036
@@ -48,9 +48,9 @@ questions:
     uuid: 1eeccbc5-3f5d-65da-89c4-b730cc1aa673
     question: "What's the way to acquire a lock for only read uses ?"
     answers:
-      - { value: '$lock->acquire($key, true);', correct: false }
-      - { value: $lock->acquireRead($key);, correct: true }
-      - { value: $lock->readOnly($key);, correct: false }
+      - { value: '$lock->acquire($key, true)', correct: false }
+      - { value: '$lock->acquireRead($key)', correct: true }
+      - { value: '$lock->readOnly($key)', correct: false }
     help: 'https://symfony.com/doc/7.0/components/lock.html#shared-locks'
   -
     uuid: 1eeccbdd-eefd-625c-9ee6-0b7da0b2e285

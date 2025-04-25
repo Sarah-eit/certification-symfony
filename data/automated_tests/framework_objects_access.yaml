@@ -36,9 +36,9 @@ questions:
     uuid: 1eee7838-81c1-6e82-9026-bb1b70c39103
     question: 'Which tag should be used to register a service for execution during the cache warming process?'
     answers:
-      - { value: cache_warmer, correct: false }
-      - { value: kernel.warmer, correct: false }
-      - { value: command.cache_warmer, correct: false }
-      - { value: kernel.cache_warmer, correct: true }
-      - { value: cache.warmer, correct: false }
+      - { value: 'cache_warmer', correct: false }
+      - { value: 'kernel.warmer', correct: false }
+      - { value: 'command.cache_warmer', correct: false }
+      - { value: 'kernel.cache_warmer', correct: true }
+      - { value: 'cache.warmer', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#kernel-cache-warmer'

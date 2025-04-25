@@ -11,10 +11,10 @@ questions:
     help: 'https://docs.phpunit.de/en/10.5/test-doubles.html'
   -
     uuid: 1eebf878-8b98-6a60-9a71-99d84c92580c
-    question: "What will be the result of that assertion? $this->assertContainsOnly('string', ['1', '2', 3]);"
+    question: "What will be the result of that assertion? `$this->assertContainsOnly('string', ['1', '2', 3]);`"
     answers:
-      - { value: Failure, correct: true }
-      - { value: Success, correct: false }
+      - { value: 'Failure', correct: true }
+      - { value: 'Success', correct: false }
     help: 'https://docs.phpunit.de/en/10.5/assertions.html#assertcontainsonly'
   -
     uuid: 1eebf878-8b98-6c04-a1e2-99d84c92580c
@@ -37,17 +37,17 @@ questions:
     uuid: 1eebf878-8b9c-6160-8a96-99d84c92580c
     question: "What will be the result of that assertion in a PHPUnit test? self::assertSame('2204', 2204);"
     answers:
-      - { value: Failure, correct: true }
-      - { value: Success, correct: false }
+      - { value: 'Failure', correct: true }
+      - { value: 'Success', correct: false }
     help: 'https://docs.phpunit.de/en/10.5/assertions.html#appendixes-assertions-identity'
   -
     uuid: 1eebf878-8b9e-617c-8f02-99d84c92580c
     question: 'Using PHPUnit, which method names are used to share test setup code?'
     answers:
-      - { value: setUp(), correct: true }
-      - { value: __construct(), correct: false }
-      - { value: shutdown(), correct: false }
-      - { value: tearDown(), correct: true }
+      - { value: 'setUp()', correct: true }
+      - { value: '__construct()', correct: false }
+      - { value: 'shutdown()', correct: false }
+      - { value: 'tearDown()', correct: true }
     help: 'https://www.w3resource.com/php/PHPUnit/fixtures.php'
   -
     uuid: 1eebf878-8b9e-61c2-bcfc-99d84c92580c
@@ -74,19 +74,19 @@ questions:
       - { value: 'phpunit -c app/', correct: false }
       - { value: 'phpunit app/', correct: false }
       - { value: 'phpunit -c', correct: false }
-      - { value: phpunit, correct: true }
+      - { value: 'phpunit', correct: true }
     help: 'https://symfony.com/doc/7.0/testing.html#unit-tests'
   -
     uuid: 1eebf878-8b9e-6438-933b-99d84c92580c
     question: 'Where live functional tests in Symfony (inside a project structure)?'
     answers:
-      - { value: Tests/, correct: false }
-      - { value: Tests/Controller/, correct: true }
-      - { value: Tests/Functional/, correct: false }
-      - { value: Tests/Functional/Controller, correct: false }
-      - { value: Tests/Functional/Controllers, correct: false }
-      - { value: Tests/Controllers/, correct: false }
-      - { value: Controller/, correct: false }
+      - { value: 'Tests/', correct: false }
+      - { value: 'Tests/Controller/', correct: true }
+      - { value: 'Tests/Functional/', correct: false }
+      - { value: 'Tests/Functional/Controller', correct: false }
+      - { value: 'Tests/Functional/Controllers', correct: false }
+      - { value: 'Tests/Controllers/', correct: false }
+      - { value: 'Controller/', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#integration-tests'
   -
     uuid: 1eebf878-8ba3-6c12-a0f5-99d84c92580c
@@ -97,15 +97,6 @@ questions:
       - { value: 'PHP is a strongly-typed, functionnal language.', correct: false }
       - { value: 'PHP is a loosely-typed functionnal language.', correct: false }
     help: 'https://en.wikipedia.org/wiki/Programming_paradigm'
-  -
-    uuid: 1ef54fc7-3ffd-6b96-9593-233ee6a4489d
-    question: 'Using PHPUnit, which method names are used to share test setup code?'
-    answers:
-      - { value: setUp(), correct: true }
-      - { value: __construct(), correct: false }
-      - { value: shutdown(), correct: false }
-      - { value: tearDown(), correct: true }
-    help: 'https://docs.phpunit.de/en/10.5/writing-tests-for-phpunit.html'
   -
     uuid: 1ef81710-a76e-69ac-971a-b11b5f8fed4a
     question: 'Which method is provided by the PHPUnit Bridge to assert that a specific deprecation is triggered in your tests?'

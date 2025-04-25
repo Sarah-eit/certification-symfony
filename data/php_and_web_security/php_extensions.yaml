@@ -43,12 +43,12 @@ questions:
     uuid: 1eebf878-8ba9-6d9c-bdc3-99d84c92580c
     question: 'As of PHP 5.6, which data structures types are allowed in a user defined PHP constant?'
     answers:
-      - { value: string, correct: true }
-      - { value: object, correct: false }
-      - { value: float, correct: true }
-      - { value: resource, correct: false }
-      - { value: boolean, correct: true }
-      - { value: array, correct: true }
+      - { value: 'string', correct: true }
+      - { value: 'object', correct: false }
+      - { value: 'float', correct: true }
+      - { value: 'resource', correct: false }
+      - { value: 'boolean', correct: true }
+      - { value: 'array', correct: true }
     help: 'https://php.net/manual/en/language.constants.syntax.php'
   -
     uuid: 1eebf878-8baa-6346-ac4f-99d84c92580c
@@ -92,11 +92,11 @@ questions:
     uuid: 1eee76ce-b5a5-6e44-9026-0f27ac991b1e
     question: 'Which of the following functions can you use to secure the input of a script?'
     answers:
-      - { value: htmlspecialchars, correct: true }
-      - { value: htmlentities, correct: true }
-      - { value: quotemeta, correct: false }
-      - { value: html_entity_decode, correct: false }
-      - { value: strip_tags, correct: true }
+      - { value: 'htmlspecialchars', correct: true }
+      - { value: 'htmlentities', correct: true }
+      - { value: 'quotemeta', correct: false }
+      - { value: 'html_entity_decode', correct: false }
+      - { value: 'strip_tags', correct: true }
     help: 'https://php.net/manual/en/function.strip-tags.php'
   -
     uuid: 1ef65dae-a399-6d26-aeef-a5ef638f9c65

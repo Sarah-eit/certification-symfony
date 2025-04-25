@@ -3,9 +3,9 @@ questions:
     uuid: 1eebf878-8ba7-6f2e-b02a-99d84c92580c
     question: 'Which Twig function is used to embed controllers in templates?'
     answers:
-      - { value: render_esi, correct: false }
-      - { value: controller, correct: false }
-      - { value: render, correct: true }
+      - { value: 'render_esi', correct: false }
+      - { value: 'controller', correct: false }
+      - { value: 'render', correct: true }
     help: 'https://symfony.com/doc/7.0/reference/twig_reference.html'
   -
     uuid: 1eebf878-8ba7-6fba-97d9-99d84c92580c

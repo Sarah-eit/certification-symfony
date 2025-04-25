@@ -45,19 +45,19 @@ questions:
     uuid: 1efda348-268e-61f6-b6fa-2f63e5cfac23
     question: 'About the Finder component, which of the following methods is used to exclude files from the search results based on their content?'
     answers:
-      - { value: filter(), correct: false }
-      - { value: name(), correct: false }
-      - { value: contains(), correct: false }
-      - { value: notContains(), correct: true }
+      - { value: 'filter()', correct: false }
+      - { value: 'name()', correct: false }
+      - { value: 'contains()', correct: false }
+      - { value: 'notContains()', correct: true }
     help: 'https://symfony.com/doc/7.0/components/finder.html#file-contents'
   -
     uuid: 1efda34a-d8ea-6726-8f13-7d89762fdae1
     question: 'Which of these file properties can be used for sorting results with the Finder component?'
     answers:
-      - { value: Name, correct: true }
-      - { value: Size, correct: true }
+      - { value: 'Name', correct: true }
+      - { value: 'Size', correct: true }
       - { value: 'Modified Time', correct: true }
-      - { value: Permissions, correct: false }
+      - { value: 'Permissions', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
   -
     uuid: 1efda34d-d74d-6b54-b40e-fb6d5a63a4ce
@@ -81,10 +81,10 @@ questions:
     uuid: 1efda353-8050-6670-9e3c-b3c723de184f
     question: 'Which method is used to match files and directories by their path in the Finder component?'
     answers:
-      - { value: path(), correct: true }
-      - { value: contains(), correct: false }
-      - { value: name(), correct: false }
-      - { value: size(), correct: false }
+      - { value: 'path()', correct: true }
+      - { value: 'contains()', correct: false }
+      - { value: 'name()', correct: false }
+      - { value: 'size()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#path'
   -
     uuid: 1efda355-ef3b-67e0-b071-3b64999f8d6b
@@ -141,16 +141,16 @@ questions:
     uuid: 1efda397-0a45-639c-9d64-59e0a8d7e683
     question: 'About the Finder component, which exists :'
     answers:
-      - { value: reverseSorting(), correct: true }
-      - { value: sortingReverse(), correct: false }
-      - { value: sort()->reverse(), correct: false }
+      - { value: 'reverseSorting()', correct: true }
+      - { value: 'sortingReverse()', correct: false }
+      - { value: 'sort()->reverse()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
   -
     uuid: 1efda39c-2560-61d6-ae1e-d5e8732303f7
     question: 'About the Finder component, the contents of returned files can be read with :'
     answers:
-      - { value: getContents(), correct: true }
-      - { value: content(), correct: false }
+      - { value: 'getContents()', correct: true }
+      - { value: 'content()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#reading-contents-of-returned-files'
   -
     uuid: 1efda39f-7037-6d00-a4a3-171fe181b62d

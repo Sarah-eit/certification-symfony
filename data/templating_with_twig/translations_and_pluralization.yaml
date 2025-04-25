@@ -13,10 +13,10 @@ questions:
     uuid: 1eedb927-6a41-6a8a-a187-cbd99fd31204
     question: 'What is the default directory where the translation files are located ?'
     answers:
-      - { value: translations, correct: true }
-      - { value: src/translations, correct: false }
-      - { value: src/messages, correct: false }
-      - { value: config/translations, correct: false }
+      - { value: 'translations', correct: true }
+      - { value: 'src/translations', correct: false }
+      - { value: 'src/messages', correct: false }
+      - { value: 'config/translations', correct: false }
     help: 'https://symfony.com/doc/7.0/translation.html#configuration'
   -
     uuid: 1eedb933-c34f-6a4e-91a8-09b433b1ae25

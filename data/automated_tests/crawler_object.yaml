@@ -3,28 +3,28 @@ questions:
     uuid: 1eebf878-8b9e-6528-8747-99d84c92580c
     question: 'How can you follow a redirection when using the Symfony Crawler client?'
     answers:
-      - { value: $client->redirect(), correct: false }
-      - { value: $client->followRedirect(), correct: true }
-      - { value: $client->followRedirects(), correct: true }
-      - { value: $client->redirectAll(), correct: false }
+      - { value: '$client->redirect()', correct: false }
+      - { value: '$client->followRedirect()', correct: true }
+      - { value: '$client->followRedirects()', correct: true }
+      - { value: '$client->redirectAll()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#redirecting'
   -
     uuid: 1eebf878-8ba0-66ca-8a74-99d84c92580c
     question: 'What is the correct CssSelector class namespace?'
     answers:
-      - { value: Symfony\Component\CssSelector\CssSelector, correct: true }
-      - { value: Symfony\Component\BrowserKit\CssSelector, correct: false }
-      - { value: Symfony\Component\DomCrawler\CssSelector, correct: false }
-      - { value: Symfony\Bundle\FrameworkBundle\CssSelector, correct: false }
+      - { value: 'Symfony\Component\CssSelector\CssSelector', correct: true }
+      - { value: 'Symfony\Component\BrowserKit\CssSelector', correct: false }
+      - { value: 'Symfony\Component\DomCrawler\CssSelector', correct: false }
+      - { value: 'Symfony\Bundle\FrameworkBundle\CssSelector', correct: false }
     help: 'https://symfony.com/doc/7.0/components/css_selector.html#id1'
   -
     uuid: 1ef80030-6e1b-6534-8970-7d5c3695d3e1
     question: 'Which of the following methods is used to select nodes that match a CSS selector in Symfony DomCrawler?'
     answers:
-      - { value: filterXpath(), correct: false }
-      - { value: filter(), correct: true }
-      - { value: eq(), correct: false }
-      - { value: first(), correct: false }
+      - { value: 'filterXpath()', correct: false }
+      - { value: 'filter()', correct: true }
+      - { value: 'eq()', correct: false }
+      - { value: 'first()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing/dom_crawler.html'
   -
     uuid: 1ef80033-e021-68a6-bdfe-d91142d7210b
@@ -39,10 +39,10 @@ questions:
     uuid: 1ef80036-5b78-6dcc-80fa-f77948a3eeee
     question: 'Which method should be used to get the parent nodes of a selected node in Symfony DomCrawler?'
     answers:
-      - { value: children(), correct: false }
-      - { value: parents(), correct: true }
-      - { value: siblings(), correct: false }
-      - { value: nextAll(), correct: false }
+      - { value: 'children()', correct: false }
+      - { value: 'parents()', correct: true }
+      - { value: 'siblings()', correct: false }
+      - { value: 'nextAll()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing/dom_crawler.html'
   -
     uuid: 1ef80038-a364-6652-9e7e-85533c357fff

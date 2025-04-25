@@ -30,10 +30,10 @@ questions:
     uuid: 1eebf878-8ba1-64a8-a6c8-99d84c92580c
     question: 'Which default role exist ?'
     answers:
-      - { value: IS_AUTHENTICATED_REMEMBERED, correct: true }
-      - { value: IS_AUTHENTICATED_FULLY, correct: true }
-      - { value: IS_AUTHENTICATED_ANONYMOUSLY, correct: true }
-      - { value: IS_NOT_AUTHENTICATED, correct: false }
+      - { value: 'IS_AUTHENTICATED_REMEMBERED', correct: true }
+      - { value: 'IS_AUTHENTICATED_FULLY', correct: true }
+      - { value: 'IS_AUTHENTICATED_ANONYMOUSLY', correct: true }
+      - { value: 'IS_NOT_AUTHENTICATED', correct: false }
     help: 'https://symfony.com/doc/7.0/components/security/authorization.html#authenticatedvoter'
   -
     uuid: 1eeda40a-e748-6f4c-8fa8-4f4fb85fbade
@@ -47,9 +47,9 @@ questions:
     uuid: 1eeda40e-4dde-6c40-abde-df1e3c85d67f
     question: 'Which roles are possibles for users ?'
     answers:
-      - { value: ROLE_USER, correct: true }
-      - { value: ROLES_USER_ADMIN, correct: false }
-      - { value: USER_ADMIN_HR, correct: false }
+      - { value: 'ROLE_USER', correct: true }
+      - { value: 'ROLES_USER_ADMIN', correct: false }
+      - { value: 'USER_ADMIN_HR', correct: false }
       - { value: 'ROLE_*', correct: true }
     help: 'https://symfony.com/doc/7.0/security.html#roles'
   -

@@ -10,23 +10,23 @@ questions:
     uuid: 1eebf878-8ba1-62a0-8999-99d84c92580c
     question: 'Which authentication events exist in the Security component?'
     answers:
-      - { value: security.authentication.success, correct: true }
-      - { value: security.authentication.failure, correct: true }
-      - { value: security.interactive_login, correct: true }
-      - { value: security.login, correct: false }
-      - { value: security.switch_user, correct: true }
-      - { value: security.logout_on_change, correct: true }
-      - { value: security.authentication.start, correct: false }
-      - { value: security.remember_me_login, correct: false }
+      - { value: 'security.authentication.success', correct: true }
+      - { value: 'security.authentication.failure', correct: true }
+      - { value: 'security.interactive_login', correct: true }
+      - { value: 'security.login', correct: false }
+      - { value: 'security.switch_user', correct: true }
+      - { value: 'security.logout_on_change', correct: true }
+      - { value: 'security.authentication.start', correct: false }
+      - { value: 'security.remember_me_login', correct: false }
     help: 'https://symfony.com/doc/7.0/components/security/authentication.html#authentication-events'
   -
     uuid: 1eebf878-8ba2-6f24-a114-99d84c92580c
     question: 'What is the listener that handles security exceptions and when appropriate, helps the user to authenticate?'
     answers:
-      - { value: Symfony\Component\Security\Http\Firewall\ExceptionListener, correct: true }
-      - { value: Symfony\Component\Security\Http\Firewall\AuthenticationListener, correct: false }
-      - { value: Symfony\Component\Security\Http\Firewall\AuthListener, correct: false }
-      - { value: Symfony\Component\Security\Http\Firewall\SecurityListener, correct: false }
+      - { value: 'Symfony\Component\Security\Http\Firewall\ExceptionListener', correct: true }
+      - { value: 'Symfony\Component\Security\Http\Firewall\AuthenticationListener', correct: false }
+      - { value: 'Symfony\Component\Security\Http\Firewall\AuthListener', correct: false }
+      - { value: 'Symfony\Component\Security\Http\Firewall\SecurityListener', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Http/Firewall/ExceptionListener.php'
   -
     uuid: 1eedad50-f369-6fa2-80d1-435a058dcb9c
@@ -58,11 +58,11 @@ questions:
     uuid: 1eedadab-6c48-6ff4-b606-cb518f6a9394
     question: 'What parameters does a magic login link contains ?'
     answers:
-      - { value: expires, correct: true }
-      - { value: time, correct: false }
-      - { value: identifier, correct: false }
-      - { value: user, correct: true }
-      - { value: hash, correct: true }
+      - { value: 'expires', correct: true }
+      - { value: 'time', correct: false }
+      - { value: 'identifier', correct: false }
+      - { value: 'user', correct: true }
+      - { value: 'hash', correct: true }
     help: 'https://symfony.com/doc/7.0/security/login_link.html#invalidate-login-links'
   -
     uuid: 1eedadaf-9aa2-6b94-84ae-db47ef71e302
@@ -100,15 +100,15 @@ questions:
     uuid: 1eedb04a-5212-6436-8352-2bea20822490
     question: 'How can you get the $user in a Service ?'
     answers:
-      - { value: $this->getUser(), correct: false }
-      - { value: $this->getSession()->getToken()->getUser(), correct: false }
-      - { value: $this->security->getUser(), correct: true }
+      - { value: '$this->getUser()', correct: false }
+      - { value: '$this->getSession()->getToken()->getUser()', correct: false }
+      - { value: '$this->security->getUser()', correct: true }
     help: 'https://symfony.com/doc/7.0/security.html#fetching-the-user-from-a-service'
   -
     uuid: 1eedb058-80cb-6d3c-89e3-459ecdc1da5a
     question: 'How could you know if a User can switch to another account ?'
     answers:
-      - { value: $this->getUser()->canSwitchUser(), correct: false }
+      - { value: '$this->getUser()->canSwitchUser()', correct: false }
       - { value: '$this->getUser()->hasRole("ROLE_ALLOWED_TO_SWITCH")', correct: false }
       - { value: '$this->isGranted("ROLE_ALLOWED_TO_SWITCH")', correct: true }
       - { value: "twig: is_granted('IS_IMPERSONATOR')", correct: true }
@@ -119,21 +119,21 @@ questions:
     answers:
       - { value: 'SwitchUserEvent ', correct: true }
       - { value: 'UserSwitchEvent ', correct: false }
-      - { value: SwitchProgressEvent, correct: false }
-      - { value: ImpersonateUserEvent, correct: false }
+      - { value: 'SwitchProgressEvent', correct: false }
+      - { value: 'ImpersonateUserEvent', correct: false }
     help: 'https://symfony.com/doc/7.0/security/impersonating_user.html#events'
   -
     uuid: 1eedb093-ede8-63d0-903c-43f3b3e05c45
     question: 'Which events exist in the authentication process ?'
     answers:
-      - { value: CheckPassportEvent, correct: true }
-      - { value: AuthenticationTokenCreatedEvent, correct: true }
-      - { value: AuthenticationSuccessEvent, correct: true }
-      - { value: LoginSuccessEvent, correct: true }
-      - { value: LoginFailureEvent, correct: true }
-      - { value: LoginErrorEvent, correct: false }
-      - { value: ForgetPasswordEvent, correct: false }
-      - { value: AuthenticationFailureEvent, correct: false }
+      - { value: 'CheckPassportEvent', correct: true }
+      - { value: 'AuthenticationTokenCreatedEvent', correct: true }
+      - { value: 'AuthenticationSuccessEvent', correct: true }
+      - { value: 'LoginSuccessEvent', correct: true }
+      - { value: 'LoginFailureEvent', correct: true }
+      - { value: 'LoginErrorEvent', correct: false }
+      - { value: 'ForgetPasswordEvent', correct: false }
+      - { value: 'AuthenticationFailureEvent', correct: false }
     help: 'https://symfony.com/doc/7.0/security.html#authentication-events'
   -
     uuid: 1eedb106-f4c3-6628-906e-df03d1ec3db8

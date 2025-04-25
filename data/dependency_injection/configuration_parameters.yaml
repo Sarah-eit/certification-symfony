@@ -14,56 +14,56 @@ questions:
     uuid: 1eebf878-8b98-6c4a-af97-99d84c92580c
     question: 'Which methods don''t belong to Symfony\Component\Config\Definition\Builder\ExprBuilder?'
     answers:
-      - { value: else, correct: true }
-      - { value: ifInteger, correct: true }
-      - { value: thenSet, correct: true }
-      - { value: thenValid, correct: true }
-      - { value: ifEmpty, correct: true }
-      - { value: ifArray, correct: false }
-      - { value: then, correct: false }
-      - { value: ifString, correct: false }
+      - { value: 'else', correct: true }
+      - { value: 'ifInteger', correct: true }
+      - { value: 'thenSet', correct: true }
+      - { value: 'thenValid', correct: true }
+      - { value: 'ifEmpty', correct: true }
+      - { value: 'ifArray', correct: false }
+      - { value: 'then', correct: false }
+      - { value: 'ifString', correct: false }
     help: 'https://symfony.com/doc/7.0/components/config/definition.html#validation-rules'
   -
     uuid: 1eebf878-8b9d-6556-bb01-99d84c92580c
     question: 'Which of the following are validation rules provided by Symfony\Component\Config\Definition\Builder\ExprBuilder?'
     answers:
-      - { value: ifInArray(), correct: true }
-      - { value: ifString(), correct: true }
-      - { value: ifNull(), correct: true }
-      - { value: ifArray(), correct: true }
-      - { value: always(), correct: true }
-      - { value: ifTrue(), correct: true }
-      - { value: never(), correct: false }
-      - { value: ifNotNull(), correct: false }
-      - { value: ifNotInArray(), correct: true }
+      - { value: 'ifInArray()', correct: true }
+      - { value: 'ifString()', correct: true }
+      - { value: 'ifNull()', correct: true }
+      - { value: 'ifArray()', correct: true }
+      - { value: 'always()', correct: true }
+      - { value: 'ifTrue()', correct: true }
+      - { value: 'never()', correct: false }
+      - { value: 'ifNotNull()', correct: false }
+      - { value: 'ifNotInArray()', correct: true }
     help: 'https://symfony.com/doc/7.0/components/config/definition.html#validation-rules'
   -
     uuid: 1eebf878-8b9e-6e60-b63b-99d84c92580c
     question: 'Which of these configuration node types are available?'
     answers:
-      - { value: scalar, correct: true }
-      - { value: array, correct: true }
-      - { value: enum, correct: true }
-      - { value: string, correct: false }
+      - { value: 'scalar', correct: true }
+      - { value: 'array', correct: true }
+      - { value: 'enum', correct: true }
+      - { value: 'string', correct: false }
     help: 'https://symfony.com/doc/7.0/components/config/definition.html#node-type'
   -
     uuid: 1eebf878-8b9e-6eb0-9f6e-99d84c92580c
     question: 'Which of these methods are existing?'
     answers:
-      - { value: useAttributeAsKey(), correct: true }
-      - { value: isRequired(), correct: true }
-      - { value: cannotBeEmpty(), correct: true }
-      - { value: setDefaultValue(), correct: false }
-      - { value: setValidation(), correct: false }
+      - { value: 'useAttributeAsKey()', correct: true }
+      - { value: 'isRequired()', correct: true }
+      - { value: 'cannotBeEmpty()', correct: true }
+      - { value: 'setDefaultValue()', correct: false }
+      - { value: 'setValidation()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/config/definition.html'
   -
     uuid: 1eebf878-8b9e-6f00-8f11-99d84c92580c
     question: 'Which class is used to define hierarchy of configuration values?'
     answers:
-      - { value: Symfony\Component\Config\Definition\Builder\TreeBuilder, correct: true }
-      - { value: Symfony\Component\Config\Definition\Builder\HierarchyBuilder, correct: false }
-      - { value: Symfony\Component\Config\Definition\Builder\NodeBuilder, correct: false }
-      - { value: Symfony\Component\Config\Definition\Builder\Builder, correct: false }
+      - { value: 'Symfony\Component\Config\Definition\Builder\TreeBuilder', correct: true }
+      - { value: 'Symfony\Component\Config\Definition\Builder\HierarchyBuilder', correct: false }
+      - { value: 'Symfony\Component\Config\Definition\Builder\NodeBuilder', correct: false }
+      - { value: 'Symfony\Component\Config\Definition\Builder\Builder', correct: false }
     help: 'https://symfony.com/doc/7.0/components/config/definition.html#defining-a-hierarchy-of-configuration-values-using-the-treebuilder'
   -
     uuid: 1eebf878-8ba1-6a98-afae-99d84c92580c
@@ -110,10 +110,10 @@ questions:
     uuid: 1ef80078-f45b-64da-8d99-253d4466d548
     question: 'In which file is the APP_ENV variable defined to choose the active environment for the application in Symfony?'
     answers:
-      - { value: config/packages/framework.yaml, correct: false }
-      - { value: .env, correct: true }
-      - { value: services.yaml, correct: false }
-      - { value: composer.json, correct: false }
+      - { value: 'config/packages/framework.yaml', correct: false }
+      - { value: '.env', correct: true }
+      - { value: 'services.yaml', correct: false }
+      - { value: 'composer.json', correct: false }
     help: 'https://symfony.com/doc/7.0/configuration.html'
   -
     uuid: 1ef8007c-6a77-6666-acda-f97fd898b2ef
@@ -146,10 +146,10 @@ questions:
     uuid: 1ef80083-fdc1-6582-9335-8bef89e3c7cf
     question: 'Where should you store environment variables that are specific to the local machine?'
     answers:
-      - { value: .env, correct: false }
-      - { value: .env.local, correct: true }
-      - { value: .env.test, correct: false }
-      - { value: services.yaml, correct: false }
+      - { value: '.env', correct: false }
+      - { value: '.env.local', correct: true }
+      - { value: '.env.test', correct: false }
+      - { value: 'services.yaml', correct: false }
     help: 'https://symfony.com/doc/7.0/configuration.html'
   -
     uuid: 1ef800ab-a2bc-6128-be2b-511459a79806

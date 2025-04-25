@@ -12,9 +12,9 @@ questions:
     uuid: 1efde48b-5ce1-6166-a535-c1eaf566e49b
     question: 'About Twig Bridge, which extensions exist ?'
     answers:
-      - { value: AssetExtension.php, correct: true }
-      - { value: CsrfExtension.php, correct: true }
-      - { value: DumpExtension.php, correct: true }
-      - { value: EmojiExtension.php, correct: true }
-      - { value: TemplateExtension.php, correct: false }
+      - { value: 'AssetExtension.php', correct: true }
+      - { value: 'CsrfExtension.php', correct: true }
+      - { value: 'DumpExtension.php', correct: true }
+      - { value: 'EmojiExtension.php', correct: true }
+      - { value: 'TemplateExtension.php', correct: false }
     help: 'https://github.com/symfony/twig-bridge/tree/7.0/Extension'

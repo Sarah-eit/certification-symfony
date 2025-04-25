@@ -66,22 +66,22 @@ questions:
     uuid: 1eebf878-8b9a-6f40-b0e4-99d84c92580c
     question: 'What are the HTTP status codes for Server Error?'
     answers:
-      - { value: 3xx, correct: false }
-      - { value: 1xx, correct: false }
-      - { value: 5xx, correct: true }
-      - { value: 4xx, correct: false }
-      - { value: 2xx, correct: false }
+      - { value: '3xx', correct: false }
+      - { value: '1xx', correct: false }
+      - { value: '5xx', correct: true }
+      - { value: '4xx', correct: false }
+      - { value: '2xx', correct: false }
     help: 'https://tools.ietf.org/html/rfc2616#section-6.1.1'
   -
     uuid: 1eebf878-8b9c-60c0-962a-99d84c92580c
     question: 'Which headers can trigger a 406 status code if the server cannot produce an acceptable response?'
     answers:
-      - { value: If-Range, correct: false }
-      - { value: If-None-Match, correct: false }
-      - { value: Accept-Language, correct: true }
-      - { value: Accept, correct: true }
-      - { value: Accept-Encoding, correct: true }
-      - { value: If-Match, correct: false }
+      - { value: 'If-Range', correct: false }
+      - { value: 'If-None-Match', correct: false }
+      - { value: 'Accept-Language', correct: true }
+      - { value: 'Accept', correct: true }
+      - { value: 'Accept-Encoding', correct: true }
+      - { value: 'If-Match', correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406'
   -
     uuid: 1eebf878-8b9c-6c0a-8a9f-99d84c92580c
@@ -123,7 +123,7 @@ questions:
       - { value: 'Client Error', correct: false }
       - { value: "They don't exist.", correct: false }
       - { value: 'Server Error', correct: false }
-      - { value: Informational, correct: true }
+      - { value: 'Informational', correct: true }
     help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html#sec6.1.1'
   -
     uuid: 1eebf878-8ba1-6c50-934c-99d84c92580c
@@ -152,11 +152,11 @@ questions:
     uuid: 1eebf878-8ba3-6582-ae49-99d84c92580c
     question: 'What are the HTTP status codes for client errors?'
     answers:
-      - { value: 4xx, correct: true }
-      - { value: 1xx, correct: false }
-      - { value: 3xx, correct: false }
-      - { value: 2xx, correct: false }
-      - { value: 5xx, correct: false }
+      - { value: '4xx', correct: true }
+      - { value: '1xx', correct: false }
+      - { value: '3xx', correct: false }
+      - { value: '2xx', correct: false }
+      - { value: '5xx', correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-6.1.1'
   -
     uuid: 1eebf878-8ba4-6446-a261-99d84c92580c
@@ -183,9 +183,9 @@ questions:
     uuid: 1efb2300-dd6f-6eee-81dc-45e0f4c02d73
     question: 'What are the HTTP status codes for Success?'
     answers:
-      - { value: 5xx, correct: false }
-      - { value: 4xx, correct: false }
-      - { value: 3xx, correct: false }
-      - { value: 2xx, correct: true }
-      - { value: 1xx, correct: false }
+      - { value: '5xx', correct: false }
+      - { value: '4xx', correct: false }
+      - { value: '3xx', correct: false }
+      - { value: '2xx', correct: true }
+      - { value: '1xx', correct: false }
     help: 'https://tools.ietf.org/html/rfc2616#section-6.1.1'

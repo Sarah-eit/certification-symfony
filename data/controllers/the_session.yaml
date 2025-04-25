@@ -3,20 +3,20 @@ questions:
     uuid: 1eebf878-8b96-6d00-9234-99d84c92580c
     question: 'What is the way to access the session from the $request?'
     answers:
-      - { value: $request->fetchSession(), correct: false }
-      - { value: $request->getSession(), correct: true }
-      - { value: $request->session, correct: false }
-      - { value: $request->getPhpSession(), correct: false }
+      - { value: '$request->fetchSession()', correct: false }
+      - { value: '$request->getSession()', correct: true }
+      - { value: '$request->session', correct: false }
+      - { value: '$request->getPhpSession()', correct: false }
     help: 'https://symfony.com/doc/6.2/components/http_foundation.html#accessing-the-session'
   -
     uuid: 1eebf878-8b97-696c-a11a-99d84c92580c
     question: 'Which method can be used to add a new value into Session?'
     answers:
-      - { value: session->append(), correct: false }
-      - { value: $session->insert(), correct: false }
-      - { value: $session->add(), correct: false }
-      - { value: $session->init(), correct: false }
-      - { value: $session->set(), correct: true }
+      - { value: '$session->append()', correct: false }
+      - { value: '$session->insert()', correct: false }
+      - { value: '$session->add()', correct: false }
+      - { value: '$session->init()', correct: false }
+      - { value: '$session->set()', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Session/Session.php#L72'
   -
     uuid: 1eebf878-8b98-6146-952c-99d84c92580c

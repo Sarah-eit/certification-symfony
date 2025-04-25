@@ -193,7 +193,7 @@ questions:
     question: 'If no methods are specified for a route, what methods will be matched?'
     answers:
       - { value: 'Any methods', correct: true }
-      - { value: GET, correct: false }
+      - { value: 'GET', correct: false }
       - { value: 'Safe methods: GET or HEAD', correct: false }
       - { value: 'GET or POST', correct: false }
     help: 'https://symfony.com/doc/7.0/routing.html#matching-http-methods'

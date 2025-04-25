@@ -57,10 +57,10 @@ questions:
     uuid: 1efd99c5-7328-6e62-90b1-b9c71c2b9d64
     question: 'In test environment, which method allows you to enable the Symfony profiler for the next request?'
     answers:
-      - { value: getProfile(), correct: false }
-      - { value: enableDebug(), correct: false }
-      - { value: enableProfiler(), correct: true }
-      - { value: catchExceptions(), correct: false }
+      - { value: 'getProfile()', correct: false }
+      - { value: 'enableDebug()', correct: false }
+      - { value: 'enableProfiler()', correct: true }
+      - { value: 'catchExceptions()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#accessing-the-profiler-data'
   -
     uuid: 1efd99ce-0dc8-6460-8900-0d656f1947a6
@@ -75,10 +75,10 @@ questions:
     uuid: 1efd9a0a-bbc7-66ec-ac08-19d1b8f16a09
     question: 'Which method is used to click on the first link containing specific text in a Symfony test client?'
     answers:
-      - { value: clickLink(), correct: true }
-      - { value: selectLink(), correct: false }
-      - { value: submitForm(), correct: false }
-      - { value: click(), correct: false }
+      - { value: 'clickLink()', correct: true }
+      - { value: 'selectLink()', correct: false }
+      - { value: 'submitForm()', correct: false }
+      - { value: 'click()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#interacting-with-the-response'
   -
     uuid: 1efd9a0c-f2b7-6c5e-a220-27fc59397bb1
@@ -93,17 +93,17 @@ questions:
     uuid: 1efd9a12-60b8-687a-a9f9-69584000a0db
     question: 'In test environment, which of the following assertions check for the presence of a specific header in the response?'
     answers:
-      - { value: assertResponseHasHeader(), correct: true }
-      - { value: assertResponseHeaderSame(), correct: true }
-      - { value: assertResponseRedirects(), correct: false }
-      - { value: assertResponseNotHasHeader(), correct: true }
+      - { value: 'assertResponseHasHeader()', correct: true }
+      - { value: 'assertResponseHeaderSame()', correct: true }
+      - { value: 'assertResponseRedirects()', correct: false }
+      - { value: 'assertResponseNotHasHeader()', correct: true }
     help: 'https://symfony.com/doc/7.0/testing.html#response-assertions'
   -
     uuid: 1efd9a14-e0cf-6336-bdc6-af951eae7bd6
     question: 'In test environment, how can you check if the HTTP status code of a response is 422 in Symfony?'
     answers:
-      - { value: assertResponseStatusCodeSame(422), correct: true }
-      - { value: assertResponseIsUnprocessable(), correct: true }
+      - { value: 'assertResponseStatusCodeSame(422)', correct: true }
+      - { value: 'assertResponseIsUnprocessable()', correct: true }
       - { value: 'assertResponseRedirects(null, 422)', correct: false }
       - { value: "assertResponseFormatSame('unprocessable')", correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#response-assertions'
@@ -111,10 +111,10 @@ questions:
     uuid: 1efd9a1a-9581-6554-8502-85c3878c23e4
     question: 'In test environment, when working with forms in Symfony, which methods can be used to fill in input values?'
     answers:
-      - { value: tick(), correct: true }
-      - { value: select(), correct: true }
-      - { value: upload(), correct: true }
-      - { value: getValues(), correct: false }
+      - { value: 'tick()', correct: true }
+      - { value: 'select()', correct: true }
+      - { value: 'upload()', correct: true }
+      - { value: 'getValues()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#submitting-forms'
   -
     uuid: 1efd9a24-7aab-6004-b9ee-0b09d1a3ef78
@@ -128,35 +128,35 @@ questions:
     uuid: 1efd9a27-2d21-6df8-83ec-4b8ba867e77b
     question: 'In test environment, which assertion verifies that the response is a redirect to a specific location?'
     answers:
-      - { value: assertResponseRedirects(), correct: true }
-      - { value: assertSelectorExists(), correct: false }
-      - { value: assertRequestAttributeValueSame(), correct: false }
-      - { value: assertResponseHasHeader(), correct: false }
+      - { value: 'assertResponseRedirects()', correct: true }
+      - { value: 'assertSelectorExists()', correct: false }
+      - { value: 'assertRequestAttributeValueSame()', correct: false }
+      - { value: 'assertResponseHasHeader()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#response-assertions'
   -
     uuid: 1efd9a2a-130c-6622-9e09-5bc8b1c97ea9
     question: 'What method allows you to retrieve a form object for a specific button in a Symfony test?'
     answers:
-      - { value: selectButton(), correct: true }
-      - { value: selectLink(), correct: false }
-      - { value: clickLink(), correct: false }
-      - { value: getForm(), correct: false }
+      - { value: 'selectButton()', correct: true }
+      - { value: 'selectLink()', correct: false }
+      - { value: 'clickLink()', correct: false }
+      - { value: 'getForm()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#submitting-forms'
   -
     uuid: 1efd9a2b-f437-654c-ba21-8f9aaa696600
     question: 'How do you assert that a checkbox is checked in a Symfony test?'
     answers:
-      - { value: assertCheckboxChecked(), correct: true }
-      - { value: assertInputValueSame(), correct: false }
-      - { value: assertFormValue(), correct: false }
-      - { value: assertCheckboxNotChecked(), correct: false }
+      - { value: 'assertCheckboxChecked()', correct: true }
+      - { value: 'assertInputValueSame()', correct: false }
+      - { value: 'assertFormValue()', correct: false }
+      - { value: 'assertCheckboxNotChecked()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#crawler-assertions'
   -
     uuid: 1efd9a2e-68bd-6720-aadf-9d8583c4f319
     question: 'In test environment, which methods can be used to validate the values of fields within a form?'
     answers:
-      - { value: assertFormValue(), correct: true }
-      - { value: assertNoFormValue(), correct: true }
-      - { value: assertInputValueSame(), correct: true }
-      - { value: assertSelectorExists(), correct: false }
+      - { value: 'assertFormValue()', correct: true }
+      - { value: 'assertNoFormValue()', correct: true }
+      - { value: 'assertInputValueSame()', correct: true }
+      - { value: 'assertSelectorExists()', correct: false }
     help: 'https://symfony.com/doc/7.0/testing.html#crawler-assertions'

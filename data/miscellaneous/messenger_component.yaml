@@ -3,38 +3,38 @@ questions:
     uuid: 1ef49385-74c4-6e6e-b737-4b08f544bc6d
     question: 'What method is executed when a message handler must perform an action?'
     answers:
-      - { value: __invoke(), correct: true }
-      - { value: __construct(), correct: false }
-      - { value: execute(), correct: false }
-      - { value: index(), correct: false }
-      - { value: executeMessage(), correct: false }
+      - { value: '__invoke()', correct: true }
+      - { value: '__construct()', correct: false }
+      - { value: 'execute()', correct: false }
+      - { value: 'index()', correct: false }
+      - { value: 'executeMessage()', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html'
   -
     uuid: 1ef49b32-ed82-6f72-823e-b36d0cd66b14
     question: 'Which class needs to be implemented to define a message handler in Symfony Messenger?'
     answers:
-      - { value: MessageHandlerInterface, correct: true }
-      - { value: HandlerInterface, correct: false }
-      - { value: MessageBusInterface, correct: false }
-      - { value: CommandHandlerInterface, correct: false }
+      - { value: 'MessageHandlerInterface', correct: true }
+      - { value: 'HandlerInterface', correct: false }
+      - { value: 'MessageBusInterface', correct: false }
+      - { value: 'CommandHandlerInterface', correct: false }
     help: 'https://symfony.com/doc/7.0/components/messenger.html'
   -
     uuid: 1ef49b3d-c27f-6edc-af9a-b775eebcd083
     question: 'Which method must be implemented in a message handler class to process the message in Symfony Messenger?'
     answers:
-      - { value: handle, correct: false }
-      - { value: process, correct: false }
-      - { value: execute, correct: false }
-      - { value: __invoke, correct: true }
+      - { value: 'handle', correct: false }
+      - { value: 'process', correct: false }
+      - { value: 'execute', correct: false }
+      - { value: '__invoke', correct: true }
     help: 'https://symfony.com/doc/7.0/messenger.html#creating-a-message-handler'
   -
     uuid: 1ef49b43-add0-69a4-b8d9-4b7e2b04a9ae
     question: 'Which component of Symfony Messenger is used to send messages to different queues or transports?'
     answers:
-      - { value: MessageBus, correct: false }
-      - { value: TransportInterface, correct: true }
-      - { value: MessengerInterface, correct: false }
-      - { value: RoutingKeyMiddleware, correct: false }
+      - { value: 'MessageBus', correct: false }
+      - { value: 'TransportInterface', correct: true }
+      - { value: 'MessengerInterface', correct: false }
+      - { value: 'RoutingKeyMiddleware', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger/custom-transport.html#register-your-factory'
   -
     uuid: 1ef49b5a-8ebf-6472-82c5-f5810e093800
@@ -49,37 +49,37 @@ questions:
     uuid: 1ef49b6a-03e9-60ae-9839-151e1bbfbae8
     question: 'Which Symfony component must be installed to use the redis transport with Messenger?'
     answers:
-      - { value: symfony/redis-messenger, correct: true }
-      - { value: symfony/redis, correct: false }
-      - { value: predis/predis, correct: false }
-      - { value: symfony/redis-transport, correct: false }
+      - { value: 'symfony/redis-messenger', correct: true }
+      - { value: 'symfony/redis', correct: false }
+      - { value: 'predis/predis', correct: false }
+      - { value: 'symfony/redis-transport', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#redis-transport'
   -
     uuid: 1ef49b71-c667-6ade-97e5-510b604738c4
     question: 'Which component should a class use to configure a custom retry strategy in messenger ?'
     answers:
-      - { value: RetryStrategyInterface, correct: true }
-      - { value: RetryStrategyTrait, correct: false }
-      - { value: RetryStrategyController, correct: false }
-      - { value: RetryMiddleware, correct: false }
+      - { value: 'RetryStrategyInterface', correct: true }
+      - { value: 'RetryStrategyTrait', correct: false }
+      - { value: 'RetryStrategyController', correct: false }
+      - { value: 'RetryMiddleware', correct: false }
     help: 'https://github.com/symfony/messenger/blob/7.0/Retry/RetryStrategyInterface.php'
   -
     uuid: 1ef49b77-ad91-6d24-a5f3-c9434be6fb85
     question: 'Which attribute must be defined to mark a class which would be the handle of a message in Symfony Messenger?'
     answers:
-      - { value: MessageHandler, correct: false }
-      - { value: AsMessageHandler, correct: true }
-      - { value: UseMessageHandler, correct: false }
-      - { value: Message/Handler, correct: false }
+      - { value: 'MessageHandler', correct: false }
+      - { value: 'AsMessageHandler', correct: true }
+      - { value: 'UseMessageHandler', correct: false }
+      - { value: 'Message/Handler', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#creating-a-message-handler'
   -
     uuid: 1ef49b7c-d78b-6fa8-8472-b5061fc52ec4
     question: 'Which kind of attribute can be set in a message class, in messenger component ?'
     answers:
-      - { value: string, correct: true }
-      - { value: int, correct: true }
-      - { value: bool, correct: true }
-      - { value: DateTime, correct: false }
+      - { value: 'string', correct: true }
+      - { value: 'int', correct: true }
+      - { value: 'bool', correct: true }
+      - { value: 'DateTime', correct: false }
       - { value: 'User::class', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#creating-a-message-handler'
   -
@@ -87,7 +87,7 @@ questions:
     question: 'By default, messages from symfony messenger are handled ?'
     answers:
       - { value: 'as soon as they are dispatched', correct: true }
-      - { value: asynchronously, correct: false }
+      - { value: 'asynchronously', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#transports-async-queued-messages'
   -
     uuid: 1ef49b8a-09e4-6fec-a9ab-8793efe503c1
@@ -144,38 +144,38 @@ questions:
     uuid: 1ef49bb7-182e-6dd2-ade6-a5859cdffd9c
     question: 'Which Exception should you throw to be sure that your message will be retried ?'
     answers:
-      - { value: RecoverableMessageHandlingException, correct: true }
-      - { value: RetryMessageHandlingException, correct: false }
-      - { value: FailedMessageHandlingException, correct: false }
-      - { value: RetryableMessageHandlingException, correct: false }
+      - { value: 'RecoverableMessageHandlingException', correct: true }
+      - { value: 'RetryMessageHandlingException', correct: false }
+      - { value: 'FailedMessageHandlingException', correct: false }
+      - { value: 'RetryableMessageHandlingException', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#forcing-retrying'
   -
     uuid: 1ef49beb-2890-6462-8776-1ff5a7a3bd3f
     question: 'Which Message permits to execute a symfony command in messenger ?'
     answers:
-      - { value: RunCommandMessage, correct: true }
-      - { value: ExecuteMessage, correct: false }
-      - { value: CommandMessage, correct: false }
-      - { value: PromptMessage, correct: false }
+      - { value: 'RunCommandMessage', correct: true }
+      - { value: 'ExecuteMessage', correct: false }
+      - { value: 'CommandMessage', correct: false }
+      - { value: 'PromptMessage', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#trigger-a-command'
   -
     uuid: 1ef49bf0-807e-608e-be42-d1b1435371a4
     question: 'Which Message permits to execute an external process, a command like ls -la in symfony messenger ?'
     answers:
-      - { value: RunProcessMessage, correct: true }
-      - { value: PromptMessage, correct: false }
-      - { value: RunCommandMessage, correct: false }
-      - { value: ProcessMessage, correct: false }
+      - { value: 'RunProcessMessage', correct: true }
+      - { value: 'PromptMessage', correct: false }
+      - { value: 'RunCommandMessage', correct: false }
+      - { value: 'ProcessMessage', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#trigger-an-external-process'
   -
     uuid: 1ef49bf5-b58f-658e-a7a8-a521640d697c
     question: 'Which Message permits to request an url, in symfony messenger ?'
     answers:
-      - { value: PingWebhookMessage, correct: true }
-      - { value: HttpRequestMessage, correct: false }
-      - { value: HttpPingMessage, correct: false }
-      - { value: HttpMessage, correct: false }
-      - { value: GuzzleMessage, correct: false }
+      - { value: 'PingWebhookMessage', correct: true }
+      - { value: 'HttpRequestMessage', correct: false }
+      - { value: 'HttpPingMessage', correct: false }
+      - { value: 'HttpMessage', correct: false }
+      - { value: 'GuzzleMessage', correct: false }
     help: 'https://symfony.com/doc/7.0/messenger.html#pinging-a-webservice'
   -
     uuid: 1ef49c01-1b3a-6c20-951d-cd6c0db5ee76

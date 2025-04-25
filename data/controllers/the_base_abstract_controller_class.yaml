@@ -27,10 +27,10 @@ questions:
     uuid: 1eebf878-8b9b-63fa-b82c-99d84c92580c
     question: 'Given a request to the URL https://example.com/blog/index.php/post/hello-world, what value will be returned by the call to $request->getPathInfo()?'
     answers:
-      - { value: /index.php/post/hello-world, correct: false }
-      - { value: /post/hello-world, correct: true }
-      - { value: example.com/blog/index.php/post/hello-world, correct: false }
-      - { value: /blog/index.php/post/hello-world, correct: false }
+      - { value: '/index.php/post/hello-world', correct: false }
+      - { value: '/post/hello-world', correct: true }
+      - { value: 'example.com/blog/index.php/post/hello-world', correct: false }
+      - { value: '/blog/index.php/post/hello-world', correct: false }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#identifying-a-request'
   -
     uuid: 1eebf878-8b9b-68f0-8c19-99d84c92580c
@@ -45,10 +45,10 @@ questions:
     uuid: 1eebf878-8b9f-60e0-becf-99d84c92580c
     question: 'Which class may be extended by your controllers?'
     answers:
-      - { value: Symfony\Bundle\FrameworkBundle\Controller\AbstractController, correct: true }
-      - { value: Symfony\Component\FrameworkBundle\Controller\AbstractController, correct: false }
-      - { value: Symfony\Bundle\HttpBundle\Controller\AbstractController, correct: false }
-      - { value: Symfony\Component\MvcBundle\Controller\AbstractController, correct: false }
+      - { value: 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController', correct: true }
+      - { value: 'Symfony\Component\FrameworkBundle\Controller\AbstractController', correct: false }
+      - { value: 'Symfony\Bundle\HttpBundle\Controller\AbstractController', correct: false }
+      - { value: 'Symfony\Component\MvcBundle\Controller\AbstractController', correct: false }
     help: 'https://symfony.com/doc/7.0/controller.html#the-base-controller-classes-services'
   -
     uuid: 1eebf878-8ba8-65b4-9642-99d84c92580c

@@ -3,10 +3,10 @@ questions:
     uuid: 1eebf878-8b98-61dc-8245-99d84c92580c
     question: "What is the tag to add a custom voter to Symfony's authorization logic?"
     answers:
-      - { value: security.auth_voter, correct: false }
-      - { value: security.voter, correct: true }
-      - { value: security_voter, correct: false }
-      - { value: security.authorization_voter, correct: false }
+      - { value: 'security.auth_voter', correct: false }
+      - { value: 'security.voter', correct: true }
+      - { value: 'security_voter', correct: false }
+      - { value: 'security.authorization_voter', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#security-voter'
   -
     uuid: 1eebf878-8b9b-6710-8ebe-99d84c92580c
@@ -21,14 +21,14 @@ questions:
     uuid: 1eebf878-8b9c-673c-aa4e-99d84c92580c
     question: 'Which of the following are built-in voting strategies that can be configured in the AccessDecisionManager object?'
     answers:
-      - { value: consensus, correct: true }
+      - { value: 'consensus', correct: true }
       - { value: 'null', correct: false }
-      - { value: positive, correct: false }
-      - { value: unanimous, correct: true }
-      - { value: veto, correct: false }
-      - { value: priority, correct: true }
-      - { value: affirmative, correct: true }
-      - { value: neutral, correct: false }
+      - { value: 'positive', correct: false }
+      - { value: 'unanimous', correct: true }
+      - { value: 'veto', correct: false }
+      - { value: 'priority', correct: true }
+      - { value: 'affirmative', correct: true }
+      - { value: 'neutral', correct: false }
     help: 'https://symfony.com/doc/7.0/security/voters.html#changing-the-access-decision-strategy'
   -
     uuid: 1eebf878-8ba1-62f0-89d9-99d84c92580c

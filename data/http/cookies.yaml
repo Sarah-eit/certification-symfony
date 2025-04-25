@@ -13,18 +13,18 @@ questions:
     uuid: 1eebf878-8b9d-6a4c-aa5c-99d84c92580c
     question: 'What is the path to set session cookie_lifetime parameter in a project configuration?'
     answers:
-      - { value: framework.session.cookie_lifetime, correct: true }
-      - { value: framework.session.cookie.lifetime, correct: false }
-      - { value: framework.parameters.cookie_lifetime, correct: false }
-      - { value: framework.cookie_lifetime, correct: false }
+      - { value: 'framework.session.cookie_lifetime', correct: true }
+      - { value: 'framework.session.cookie.lifetime', correct: false }
+      - { value: 'framework.parameters.cookie_lifetime', correct: false }
+      - { value: 'framework.cookie_lifetime', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html'
   -
     uuid: 1eebf878-8ba0-6512-85ad-99d84c92580c
     question: 'Which of the following HTTP headers can be used by the server to the client to exchange informations about cookies ?'
     answers:
-      - { value: Cookie, correct: false }
-      - { value: Set-Cookie, correct: true }
-      - { value: Delete-Cookie, correct: false }
+      - { value: 'Cookie', correct: false }
+      - { value: 'Set-Cookie', correct: true }
+      - { value: 'Delete-Cookie', correct: false }
     help: 'https://developer.mozilla.org/fr/docs/Web/HTTP/Cookies'
   -
     uuid: 1eebf878-8ba2-6d1c-88ef-99d84c92580c

@@ -12,21 +12,21 @@ questions:
     uuid: 1eebf878-8ba0-6166-9951-99d84c92580c
     question: 'Which of these HTTP headers does not exist?'
     answers:
-      - { value: Control-Cache, correct: true }
-      - { value: Cache-Modifier, correct: true }
-      - { value: Expires, correct: false }
-      - { value: Last-Modified, correct: false }
-      - { value: Cache-Control, correct: false }
+      - { value: 'Control-Cache', correct: true }
+      - { value: 'Cache-Modifier', correct: true }
+      - { value: 'Expires', correct: false }
+      - { value: 'Last-Modified', correct: false }
+      - { value: 'Cache-Control', correct: false }
     help: 'https://github.com/for-GET/know-your-http-well/blob/master/headers.md'
   -
     uuid: 1eebf878-8ba0-6562-a6f1-99d84c92580c
     question: 'Which of the following HTTP headers can be used by the server to the client to exchange informations about content negotiation ?'
     answers:
-      - { value: Accept-Charset, correct: true }
-      - { value: Content-Encoding, correct: false }
-      - { value: Content-Language, correct: false }
+      - { value: 'Accept-Charset', correct: true }
+      - { value: 'Content-Encoding', correct: false }
+      - { value: 'Content-Language', correct: false }
       - { value: 'Accept-*', correct: true }
-      - { value: Content-Type, correct: false }
+      - { value: 'Content-Type', correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation'
   -
     uuid: 1eebf878-8ba5-62e2-b66a-99d84c92580c
@@ -46,18 +46,18 @@ questions:
     uuid: 1eed57e5-423c-6ace-89a0-d7541cb78d02
     question: 'How to access $_FILES data when using a Symfony\Component\HttpFoundation\Request $request object?'
     answers:
-      - { value: $request->file, correct: false }
-      - { value: request->getFileData(), correct: false }
-      - { value: $request->getFilesData(), correct: false }
-      - { value: $request->getFiles(), correct: false }
-      - { value: $request->files, correct: true }
+      - { value: '$request->file', correct: false }
+      - { value: '$request->getFileData()', correct: false }
+      - { value: '$request->getFilesData()', correct: false }
+      - { value: '$request->getFiles()', correct: false }
+      - { value: '$request->files', correct: true }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1efcc15d-7ef8-6738-af50-41f4a1227a1b
     question: 'What will be returned by the following code when the query string is "?foo=bar" ? "$request->query->get(''bar'', ''baz'');"'
     answers:
       - { value: 'A Symfony\Component\HttpFoundation\Exception\QueryException will be thrown', correct: false }
-      - { value: baz, correct: true }
+      - { value: 'baz', correct: true }
       - { value: 'false', correct: false }
       - { value: 'null', correct: false }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#accessing-request-data'

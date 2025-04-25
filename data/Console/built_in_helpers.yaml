@@ -34,12 +34,12 @@ questions:
     uuid: 1eebf878-8ba5-6be8-a74b-99d84c92580c
     question: 'What functions could you use to clear some part of the screen in a console ?'
     answers:
-      - { value: $cursor->clearLine();, correct: true }
-      - { value: $cursor->clearAllScreen();, correct: false }
-      - { value: $cursor->cleanScreen();, correct: false }
-      - { value: $cursor->clearLineAfter();, correct: true }
-      - { value: $cursor->clearScreen();, correct: true }
-      - { value: $cursor->clearOutput();, correct: true }
+      - { value: '$cursor->clearLine();', correct: true }
+      - { value: '$cursor->clearAllScreen();', correct: false }
+      - { value: '$cursor->cleanScreen();', correct: false }
+      - { value: '$cursor->clearLineAfter();', correct: true }
+      - { value: '$cursor->clearScreen();', correct: true }
+      - { value: '$cursor->clearOutput();', correct: true }
     help: 'https://symfony.com/doc/7.0/components/console/helpers/cursor.html#clearing-output'
   -
     uuid: 1eebf878-8ba5-6c2e-bfca-99d84c92580c
@@ -96,11 +96,11 @@ questions:
     uuid: 1eebf878-8ba5-6e7c-b3dd-99d84c92580c
     question: 'In a console, what kind of Question could you have as a third argument in this question ? $helper->ask($input, $output, $question);'
     answers:
-      - { value: Symfony\Component\Console\Question\ChoiceQuestion, correct: true }
-      - { value: Symfony\Component\Console\Question\ConfirmationQuestion, correct: true }
-      - { value: Symfony\Component\Console\Question\NumberQuestion, correct: false }
-      - { value: Symfony\Component\Console\Question\PasswordQuestion, correct: false }
-      - { value: Symfony\Component\Console\Question\Question, correct: true }
+      - { value: 'Symfony\Component\Console\Question\ChoiceQuestion', correct: true }
+      - { value: 'Symfony\Component\Console\Question\ConfirmationQuestion', correct: true }
+      - { value: 'Symfony\Component\Console\Question\NumberQuestion', correct: false }
+      - { value: 'Symfony\Component\Console\Question\PasswordQuestion', correct: false }
+      - { value: 'Symfony\Component\Console\Question\Question', correct: true }
     help: 'https://symfony.com/doc/7.0/components/console/helpers/questionhelper.html'
   -
     uuid: 1eebf878-8ba5-6ecc-b989-99d84c92580c

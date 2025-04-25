@@ -13,12 +13,12 @@ questions:
     uuid: 1eebf878-8ba1-657a-a6cf-99d84c92580c
     question: 'For implements Symfony\Component\Security\Core\User\UserProviderInterface which method you have to define ?'
     answers:
-      - { value: loadUserByIdentifier($username), correct: true }
-      - { value: loadUser($username), correct: false }
+      - { value: 'loadUserByIdentifier($username)', correct: true }
+      - { value: 'loadUser($username)', correct: false }
       - { value: 'refreshUser(UserInterface $user)', correct: true }
-      - { value: getUser($username), correct: false }
-      - { value: supports($class), correct: false }
-      - { value: supportsClass($class), correct: true }
+      - { value: 'getUser($username)', correct: false }
+      - { value: 'supports($class)', correct: false }
+      - { value: 'supportsClass($class)', correct: true }
     help: 'https://symfony.com/doc/7.0/security/user_provider.html#creating-a-custom-user-provider'
   -
     uuid: 1eeda3ef-c5f2-64a8-b728-8f983a90a960
@@ -33,10 +33,10 @@ questions:
     uuid: 1eeda405-7029-6b28-ad18-9d606ff24427
     question: 'Which method are written in the UserProviderInterface in order to create a Custom User Provider ?'
     answers:
-      - { value: getUser(), correct: false }
-      - { value: loadUserByIdentifier(), correct: true }
-      - { value: refreshUser(), correct: true }
-      - { value: supportClass(), correct: true }
-      - { value: loadByIdentifier(), correct: false }
-      - { value: providerCredentials, correct: false }
+      - { value: 'getUser()', correct: false }
+      - { value: 'loadUserByIdentifier()', correct: true }
+      - { value: 'refreshUser()', correct: true }
+      - { value: 'supportClass()', correct: true }
+      - { value: 'loadByIdentifier()', correct: false }
+      - { value: 'providerCredentials', correct: false }
     help: 'https://symfony.com/doc/7.0/security/user_providers.html#creating-a-custom-user-provider'

@@ -23,18 +23,18 @@ questions:
     uuid: 1eebf878-8b9f-6db0-82a3-99d84c92580c
     question: 'How do you set default value?'
     answers:
-      - { value: $this->createFormBuilder($defaultEntityOrArray), correct: true }
+      - { value: '$this->createFormBuilder($defaultEntityOrArray)', correct: true }
       - { value: '$this->createFormBuilder(null, $defaultEntityOrArray)', correct: false }
-      - { value: $this->createFormBuilder()->setDefaults($defaultEntityOrArray), correct: false }
-      - { value: $this->createFormBuilder()->addDefaults($defaultEntityOrArray), correct: false }
+      - { value: '$this->createFormBuilder()->setDefaults($defaultEntityOrArray)', correct: false }
+      - { value: '$this->createFormBuilder()->addDefaults($defaultEntityOrArray)', correct: false }
     help: 'https://symfony.com/doc/7.0/components/form.html#setting-default-values'
   -
     uuid: 1eebf878-8b9f-6df6-80c3-99d84c92580c
     question: 'Your Form class must extend which of the following?'
     answers:
-      - { value: Symfony\Component\Form\FormType, correct: false }
-      - { value: Symfony\Component\Form\AbstractType, correct: true }
-      - { value: Symfony\Component\Form\AbstractFormType, correct: false }
+      - { value: 'Symfony\Component\Form\FormType', correct: false }
+      - { value: 'Symfony\Component\Form\AbstractType', correct: true }
+      - { value: 'Symfony\Component\Form\AbstractFormType', correct: false }
     help: 'https://symfony.com/doc/7.0/forms.html#creating-form-classes'
   -
     uuid: 1eebf878-8b9f-6e46-9327-99d84c92580c
@@ -48,27 +48,27 @@ questions:
     uuid: 1eebf878-8ba4-60e0-b407-99d84c92580c
     question: 'What is the tag to use to create a custom form field type?'
     answers:
-      - { value: form.type_extension, correct: false }
-      - { value: form_type, correct: false }
-      - { value: form.type, correct: true }
-      - { value: form, correct: false }
+      - { value: 'form.type_extension', correct: false }
+      - { value: 'form_type', correct: false }
+      - { value: 'form.type', correct: true }
+      - { value: 'form', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#form-type'
   -
     uuid: 1eebf878-8ba9-6a4a-8062-99d84c92580c
     question: 'Consider the following HTML generated from a Symfony form: <form method="POST" action="/"> <input type="hidden" name="_method" value="PUT" /> </form> Which HTTP method will be present in the Symfony Request object assuming HTTP methods overriding setting is turned on?'
     answers:
-      - { value: PATCH, correct: false }
-      - { value: PUT, correct: true }
-      - { value: GET, correct: false }
-      - { value: POST, correct: false }
+      - { value: 'PATCH', correct: false }
+      - { value: 'PUT', correct: true }
+      - { value: 'GET', correct: false }
+      - { value: 'POST', correct: false }
     help: 'https://symfony.com/doc/7.0/forms.html'
   -
     uuid: 1eed57ed-5466-653a-809e-97a3266a921d
     question: 'What is the default translation domain for form label?'
     answers:
-      - { value: labels, correct: false }
-      - { value: form, correct: true }
-      - { value: messages, correct: false }
-      - { value: forms, correct: false }
-      - { value: default, correct: false }
+      - { value: 'labels', correct: false }
+      - { value: 'form', correct: true }
+      - { value: 'messages', correct: false }
+      - { value: 'forms', correct: false }
+      - { value: 'default', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/forms/types/form.html#translation-domain'

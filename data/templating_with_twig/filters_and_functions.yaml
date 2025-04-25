@@ -26,11 +26,11 @@ questions:
     uuid: 1eebf878-8b9c-6fca-9ad6-99d84c92580c
     question: 'Which of the following is not a function?'
     answers:
-      - { value: set, correct: true }
-      - { value: template_from_string, correct: false }
-      - { value: parent, correct: false }
-      - { value: range, correct: false }
-      - { value: source, correct: false }
+      - { value: 'set', correct: true }
+      - { value: 'template_from_string', correct: false }
+      - { value: 'parent', correct: false }
+      - { value: 'range', correct: false }
+      - { value: 'source', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/functions/template_from_string.html'
   -
     uuid: 1eebf878-8ba1-6f70-8240-99d84c92580c

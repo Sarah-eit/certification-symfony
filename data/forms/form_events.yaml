@@ -22,10 +22,10 @@ questions:
     uuid: 1eebf878-8b9d-66a0-b95b-99d84c92580c
     question: 'Which method should you use to register a new event listener on a FormBuilder instance?'
     answers:
-      - { value: addEventListener, correct: true }
-      - { value: registerListener, correct: false }
-      - { value: createListener, correct: false }
-      - { value: addListener, correct: false }
+      - { value: 'addEventListener', correct: true }
+      - { value: 'registerListener', correct: false }
+      - { value: 'createListener', correct: false }
+      - { value: 'addListener', correct: false }
     help: 'https://symfony.com/doc/7.0/components/form/form_events.html'
   -
     uuid: 1eebf878-8b9f-6ae0-9b3b-99d84c92580c

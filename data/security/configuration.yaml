@@ -12,11 +12,11 @@ questions:
     uuid: 1eebf878-8baa-6562-8278-99d84c92580c
     question: 'Where are located the logs in a default configuration of Symfony?'
     answers:
-      - { value: var/log, correct: true }
-      - { value: var/logs, correct: false }
-      - { value: logs, correct: false }
-      - { value: app/logs, correct: false }
-      - { value: app/log, correct: false }
+      - { value: 'var/log', correct: true }
+      - { value: 'var/logs', correct: false }
+      - { value: 'logs', correct: false }
+      - { value: 'app/logs', correct: false }
+      - { value: 'app/log', correct: false }
     help: 'https://symfony.com/doc/7.0/logging.html#where-logs-are-stored'
   -
     uuid: 1efb230f-076b-6c58-88c2-71b8758e062b

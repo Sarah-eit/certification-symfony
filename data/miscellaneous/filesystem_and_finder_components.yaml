@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'The FileSystem object', correct: false }
       - { value: 'A string with the directory path', correct: false }
-      - { value: Nothing, correct: true }
+      - { value: 'Nothing', correct: true }
       - { value: 'true or false', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Filesystem/Filesystem.php#L91'
   -
@@ -59,36 +59,36 @@ questions:
     uuid: 1eebf878-8b9c-6386-8337-99d84c92580c
     question: 'Which exception is thrown when the origin file does not exist when you use the Filesystem::copy method ?'
     answers:
-      - { value: FileException, correct: false }
-      - { value: FileNotExistException, correct: false }
-      - { value: FileErrorException, correct: false }
-      - { value: FileNotFoundException, correct: true }
-      - { value: FilesystemException, correct: false }
+      - { value: 'FileException', correct: false }
+      - { value: 'FileNotExistException', correct: false }
+      - { value: 'FileErrorException', correct: false }
+      - { value: 'FileNotFoundException', correct: true }
+      - { value: 'FilesystemException', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#copy'
   -
     uuid: 1eebf878-8b9c-6426-87bc-99d84c92580c
     question: 'Which of the following are Filesystem methods?'
     answers:
-      - { value: copy, correct: true }
-      - { value: delete, correct: false }
-      - { value: move, correct: false }
-      - { value: chown, correct: true }
-      - { value: makePathRelative, correct: true }
-      - { value: symlink, correct: true }
-      - { value: mirror, correct: true }
+      - { value: 'copy', correct: true }
+      - { value: 'delete', correct: false }
+      - { value: 'move', correct: false }
+      - { value: 'chown', correct: true }
+      - { value: 'makePathRelative', correct: true }
+      - { value: 'symlink', correct: true }
+      - { value: 'mirror', correct: true }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#usage'
   -
     uuid: 1eebf878-8b9d-615a-828d-99d84c92580c
     question: 'Which methods belong to Symfony\Component\Finder\Finder class ?'
     answers:
-      - { value: size, correct: true }
-      - { value: notPath, correct: true }
-      - { value: type, correct: true }
-      - { value: notName, correct: true }
-      - { value: notSize, correct: true }
-      - { value: owner, correct: false }
-      - { value: name, correct: true }
-      - { value: path, correct: true }
+      - { value: 'size', correct: true }
+      - { value: 'notPath', correct: true }
+      - { value: 'type', correct: true }
+      - { value: 'notName', correct: true }
+      - { value: 'notSize', correct: true }
+      - { value: 'owner', correct: false }
+      - { value: 'name', correct: true }
+      - { value: 'path', correct: true }
     help: 'https://symfony.com/doc/7.0/components/finder.html'
   -
     uuid: 1eebf878-8ba1-6c96-bc52-99d84c92580c
@@ -153,19 +153,19 @@ questions:
     uuid: 1eebf878-8ba6-6e62-8ca9-99d84c92580c
     question: 'By default, the Finder ignores popular VCS files, what is the method to use them ?'
     answers:
-      - { value: $finder->enableVCSFiles();, correct: false }
-      - { value: $finder->ignoreVCS(false);, correct: true }
-      - { value: "$finder->useTypes(array('vcs' => true);", correct: false }
-      - { value: "$finder->ignoreFiles(array('vcs' => false));", correct: false }
+      - { value: '$finder->enableVCSFiles()', correct: false }
+      - { value: '$finder->ignoreVCS(false)', correct: true }
+      - { value: "$finder->useTypes(array('vcs' => true)", correct: false }
+      - { value: "$finder->ignoreFiles(array('vcs' => false))", correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#files-or-directories'
   -
     uuid: 1ef84dec-e737-68be-ac37-eb42c4b750a2
     question: "Which method should be used to create a directory recursively in Symfony's Filesystem component?"
     answers:
-      - { value: mkdir(), correct: true }
-      - { value: createDir(), correct: false }
-      - { value: makeDir(), correct: false }
-      - { value: createFolder(), correct: false }
+      - { value: 'mkdir()', correct: true }
+      - { value: 'createDir()', correct: false }
+      - { value: 'makeDir()', correct: false }
+      - { value: 'createFolder()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#filesystem-utilities'
   -
     uuid: 1ef84df0-583b-6e40-96e0-af7efd2ace38
@@ -180,10 +180,10 @@ questions:
     uuid: 1ef84df5-4085-6ddc-ab1e-5144548fe866
     question: "Which method checks for the existence of files or directories in Symfony's Filesystem component?"
     answers:
-      - { value: exists(), correct: true }
-      - { value: fileExists(), correct: false }
-      - { value: checkExists(), correct: false }
-      - { value: isPresent(), correct: false }
+      - { value: 'exists()', correct: true }
+      - { value: 'fileExists()', correct: false }
+      - { value: 'checkExists()', correct: false }
+      - { value: 'isPresent()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#exists'
   -
     uuid: 1ef84dfa-4be7-6c70-8675-1507a1a6cb1e
@@ -216,19 +216,19 @@ questions:
     uuid: 1ef84e06-9321-6f62-9fb4-adaa052a6856
     question: "Which method in Symfony's Filesystem component changes the group of a file?"
     answers:
-      - { value: chmod(), correct: false }
-      - { value: setGroup(), correct: false }
-      - { value: chown(), correct: false }
-      - { value: chgrp(), correct: true }
+      - { value: 'chmod()', correct: false }
+      - { value: 'setGroup()', correct: false }
+      - { value: 'chown()', correct: false }
+      - { value: 'chgrp()', correct: true }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#chgrp'
   -
     uuid: 1ef84e09-d696-68d0-a4e4-9bd453f9a498
     question: "Which method in Symfony's Filesystem component removes files, directories, or symlinks?"
     answers:
-      - { value: delete(), correct: false }
-      - { value: remove(), correct: true }
-      - { value: erase(), correct: false }
-      - { value: unlink(), correct: false }
+      - { value: 'delete()', correct: false }
+      - { value: 'remove()', correct: true }
+      - { value: 'erase()', correct: false }
+      - { value: 'unlink()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#remove'
   -
     uuid: 1ef84e0d-c0d9-6ad4-856a-f3dff73eb252
@@ -243,10 +243,10 @@ questions:
     uuid: 1ef84e12-b245-60b8-af2b-a5d18ce6642c
     question: 'Which method creates a symbolic link in the Symfony Filesystem component?'
     answers:
-      - { value: symlink(), correct: true }
-      - { value: link(), correct: false }
-      - { value: createLink(), correct: false }
-      - { value: createSymlink(), correct: false }
+      - { value: 'symlink()', correct: true }
+      - { value: 'link()', correct: false }
+      - { value: 'createLink()', correct: false }
+      - { value: 'createSymlink()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#symlink'
   -
     uuid: 1ef84e17-945c-611e-9249-afc877a92179
@@ -261,28 +261,28 @@ questions:
     uuid: 1ef84e1a-8834-64ce-9b21-2db45b7f2b96
     question: 'Which method copies the entire contents of a directory to a target location in Symfony Filesystem?'
     answers:
-      - { value: mirror(), correct: true }
-      - { value: clone(), correct: false }
-      - { value: copyDir(), correct: false }
-      - { value: copy(), correct: false }
+      - { value: 'mirror()', correct: true }
+      - { value: 'clone()', correct: false }
+      - { value: 'copyDir()', correct: false }
+      - { value: 'copy()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#mirror'
   -
     uuid: 1ef84e1d-7afe-639c-9a3d-7ff7ce849018
     question: "Which method in Symfony's Path class returns the shortest path equivalent to the given one?"
     answers:
-      - { value: resolve(), correct: false }
-      - { value: canonicalize(), correct: true }
-      - { value: shorten(), correct: false }
-      - { value: minimize(), correct: false }
+      - { value: 'resolve()', correct: false }
+      - { value: 'canonicalize()', correct: true }
+      - { value: 'shorten()', correct: false }
+      - { value: 'minimize()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#canonicalization'
   -
     uuid: 1ef84e21-3c22-6020-8d3a-a11204d5a255
     question: 'Which method in the Symfony Filesystem component saves file contents atomically, ensuring either the complete new or old file is present?'
     answers:
-      - { value: dumpFile(), correct: true }
-      - { value: writeFile(), correct: false }
-      - { value: saveFile(), correct: false }
-      - { value: writeContents(), correct: false }
+      - { value: 'dumpFile()', correct: true }
+      - { value: 'writeFile()', correct: false }
+      - { value: 'saveFile()', correct: false }
+      - { value: 'writeContents()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/filesystem.html#dumpfile'
   -
     uuid: 1ef84e24-fab7-600a-b829-5dbd8c03f866
@@ -297,9 +297,9 @@ questions:
     uuid: 1ef84e32-2f6b-6136-8709-6bb6e459ecbb
     question: 'How do you specify a directory to search in with the Finder component?'
     answers:
-      - { value: $finder->from(DIR);, correct: false }
-      - { value: $finder->in(DIR);, correct: true }
-      - { value: $finder->search(DIR);, correct: false }
+      - { value: '$finder->from(DIR)', correct: false }
+      - { value: '$finder->in(DIR)', correct: true }
+      - { value: '$finder->search(DIR)', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#usage'
   -
     uuid: 1ef84e34-adfc-6c82-93f8-8b021db55f5f
@@ -320,9 +320,9 @@ questions:
     uuid: 1ef84e3b-0327-6814-a4f5-f5ce03db1273
     question: 'How do you ignore unreadable directories in a Finder search?'
     answers:
-      - { value: $finder->ignoreUnreadableDirs();, correct: true }
-      - { value: $finder->skipUnreadableDirs();, correct: false }
-      - { value: $finder->omitUnreadableDirs();, correct: false }
+      - { value: '$finder->ignoreUnreadableDirs()', correct: true }
+      - { value: '$finder->skipUnreadableDirs()', correct: false }
+      - { value: '$finder->omitUnreadableDirs()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#searching-for-files-and-directories'
   -
     uuid: 1ef84e3e-58e0-69f6-beff-6b20a60c31cf
@@ -367,33 +367,33 @@ questions:
     uuid: 1ef84e4d-18f4-68e2-bab2-d7516d13cf2b
     question: 'What method should you use to sort Finder results by file name?'
     answers:
-      - { value: $finder->orderByName();, correct: false }
-      - { value: $finder->sortByName();, correct: true }
-      - { value: $finder->arrangeByName();, correct: false }
+      - { value: '$finder->orderByName()', correct: false }
+      - { value: '$finder->sortByName()', correct: true }
+      - { value: '$finder->arrangeByName()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
   -
     uuid: 1ef84e4f-e5b7-6828-b5d3-230992b1d42a
     question: 'How do you reverse the sorting of Finder results?'
     answers:
-      - { value: $finder->reverseOrder();, correct: false }
-      - { value: $finder->reverseSorting();, correct: true }
-      - { value: $finder->sortReverse();, correct: false }
+      - { value: '$finder->reverseOrder()', correct: false }
+      - { value: '$finder->reverseSorting()', correct: true }
+      - { value: '$finder->sortReverse()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#sorting-results'
   -
     uuid: 1ef84e52-7b8e-6c64-9241-f56b7179f995
     question: 'Which method allows you to follow symbolic links during a search?'
     answers:
-      - { value: $finder->followLinks();, correct: true }
-      - { value: $finder->useLinks();, correct: false }
-      - { value: $finder->traceLinks();, correct: false }
+      - { value: '$finder->followLinks()', correct: true }
+      - { value: '$finder->useLinks()', correct: false }
+      - { value: '$finder->traceLinks()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/finder.html#files-or-directories'
   -
     uuid: 1ef84e56-29a1-6fb0-aea9-698b6c1e1873
     question: 'How do you get the contents of a file found by the Finder component?'
     answers:
-      - { value: $file->read();, correct: false }
-      - { value: $file->getContent();, correct: false }
-      - { value: $file->getContents();, correct: true }
+      - { value: '$file->read()', correct: false }
+      - { value: '$file->getContent()', correct: false }
+      - { value: '$file->getContents()', correct: true }
     help: 'https://symfony.com/doc/7.0/components/finder.html#reading-contents-of-returned-files'
   -
     uuid: 1ef84e58-30c4-67a0-b09d-d16093ed9458

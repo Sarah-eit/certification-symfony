@@ -3,10 +3,10 @@ questions:
     uuid: 1eebf878-8ba1-6cdc-a172-99d84c92580c
     question: 'What is the tag to use to create a class that collects custom data for the profiler?'
     answers:
-      - { value: data_collector, correct: true }
-      - { value: debug.data_collector, correct: false }
-      - { value: kernel.data_collector, correct: false }
-      - { value: profiler.data_collector, correct: false }
+      - { value: 'data_collector', correct: true }
+      - { value: 'debug.data_collector', correct: false }
+      - { value: 'kernel.data_collector', correct: false }
+      - { value: 'profiler.data_collector', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#data-collector'
   -
     uuid: 1eee61bc-65cd-6916-9026-6be3353c49b3
@@ -38,9 +38,9 @@ questions:
     uuid: 1eee69ac-3275-6b5c-9026-4566c29ff6d6
     question: 'What is the key in the framework.profiler configuration to activate the profiler on a query parameter like `profile` ?'
     answers:
-      - { value: collect, correct: false }
-      - { value: collect_parameter, correct: true }
-      - { value: collect_on_query, correct: false }
+      - { value: 'collect', correct: false }
+      - { value: 'collect_parameter', correct: true }
+      - { value: 'collect_on_query', correct: false }
     help: 'https://symfony.com/doc/7.0/profiler.html#enabling-the-profiler-conditionally'
   -
     uuid: 1eee6a31-4e58-62b8-9026-07b65ca188fc

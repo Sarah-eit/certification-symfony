@@ -10,28 +10,28 @@ questions:
     uuid: 1eebf878-8ba9-6108-8a3b-99d84c92580c
     question: "To resolve naming conflicts between Traits used in the same class, what's the operator needed to be used to choose exactly one of the conflicting methods ?"
     answers:
-      - { value: as, correct: false }
-      - { value: for, correct: false }
-      - { value: insteadof, correct: true }
-      - { value: asAlias, correct: false }
+      - { value: 'as', correct: false }
+      - { value: 'for', correct: false }
+      - { value: 'insteadof', correct: true }
+      - { value: 'asAlias', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.conflict'
   -
     uuid: 1eebf878-8ba9-6194-80af-99d84c92580c
     question: 'What syntax could you use to adjust the visibility of a method in a Trait ?'
     answers:
-      - { value: insteadof, correct: false }
+      - { value: 'insteadof', correct: false }
       - { value: 'visible as', correct: false }
-      - { value: overridedby, correct: false }
-      - { value: as, correct: true }
+      - { value: 'overridedby', correct: false }
+      - { value: 'as', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.visibility'
   -
     uuid: 1eebf878-8ba9-61da-91cd-99d84c92580c
     question: 'Which method are supported as abstract function in a Trait before PHP 8.0.0 ?'
     answers:
-      - { value: public, correct: true }
-      - { value: private, correct: false }
-      - { value: protected, correct: true }
-      - { value: deffered, correct: false }
+      - { value: 'public', correct: true }
+      - { value: 'private', correct: false }
+      - { value: 'protected', correct: true }
+      - { value: 'deffered', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.abstract'
   -
     uuid: 1eebf878-8ba9-6220-a6f6-99d84c92580c

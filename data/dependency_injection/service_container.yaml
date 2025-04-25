@@ -94,15 +94,15 @@ questions:
     uuid: 1eebf878-8b99-691a-a06d-99d84c92580c
     question: 'Which of the followings are not part of the built-in loaders?'
     answers:
-      - { value: JsonLoader, correct: true }
-      - { value: CsvLoader, correct: true }
-      - { value: PoFileLoader, correct: false }
-      - { value: MoFileLoader, correct: false }
-      - { value: JsonFileLoader, correct: false }
-      - { value: ArrayLoader, correct: false }
-      - { value: PhpFileLoader, correct: false }
-      - { value: CsvFileLoader, correct: false }
-      - { value: QtFileLoader, correct: false }
+      - { value: 'JsonLoader', correct: true }
+      - { value: 'CsvLoader', correct: true }
+      - { value: 'PoFileLoader', correct: false }
+      - { value: 'MoFileLoader', correct: false }
+      - { value: 'JsonFileLoader', correct: false }
+      - { value: 'ArrayLoader', correct: false }
+      - { value: 'PhpFileLoader', correct: false }
+      - { value: 'CsvFileLoader', correct: false }
+      - { value: 'QtFileLoader', correct: false }
     help: 'https://github.com/symfony/translation/tree/2.8/Loader'
   -
     uuid: 1eebf878-8b9a-6266-96a4-99d84c92580c
@@ -199,13 +199,13 @@ questions:
     uuid: 1eebf878-8b9f-62de-9af3-99d84c92580c
     question: 'Which types of injection are available in the component?'
     answers:
-      - { value: constructor, correct: true }
-      - { value: property, correct: true }
-      - { value: setter, correct: true }
-      - { value: immutable-property, correct: false }
-      - { value: immutable-setter, correct: true }
-      - { value: constant, correct: false }
-      - { value: getter, correct: false }
+      - { value: 'constructor', correct: true }
+      - { value: 'property', correct: true }
+      - { value: 'setter', correct: true }
+      - { value: 'immutable-property', correct: false }
+      - { value: 'immutable-setter', correct: true }
+      - { value: 'constant', correct: false }
+      - { value: 'getter', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/injection_types.html'
   -
     uuid: 1eebf878-8b9f-636a-8ea3-99d84c92580c
@@ -277,10 +277,10 @@ questions:
     uuid: 1eebf878-8ba1-6d72-b87d-99d84c92580c
     question: "Which injection types are supported by the Symfony's DIC?"
     answers:
-      - { value: setter, correct: true }
-      - { value: constructor, correct: true }
-      - { value: property, correct: true }
-      - { value: getter, correct: false }
+      - { value: 'setter', correct: true }
+      - { value: 'constructor', correct: true }
+      - { value: 'property', correct: true }
+      - { value: 'getter', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container.html'
   -
     uuid: 1eebf878-8ba1-6fb6-af5f-99d84c92580c
@@ -410,8 +410,8 @@ questions:
     uuid: 1ef5c0dc-17f6-6b76-9bb6-93e4d8e83be3
     question: 'In YAML configuration, which keyword is used to define explicit arguments for a service?'
     answers:
-      - { value: parameters, correct: false }
-      - { value: options, correct: false }
-      - { value: values, correct: false }
-      - { value: arguments, correct: true }
+      - { value: 'parameters', correct: false }
+      - { value: 'options', correct: false }
+      - { value: 'values', correct: false }
+      - { value: 'arguments', correct: true }
     help: 'https://symfony.com/doc/7.0/service_container.html#manually-wiring-arguments'

@@ -10,11 +10,11 @@ questions:
     uuid: 1eebf878-8b99-6bea-907b-99d84c92580c
     question: 'Which of the following constants from Symfony\Component\Console\Input\InputArgument do not exist?'
     answers:
-      - { value: REQUIRED, correct: false }
-      - { value: NEGATABLE, correct: true }
-      - { value: IS_ARRAY, correct: false }
-      - { value: OPTIONAL, correct: false }
-      - { value: NONE, correct: true }
+      - { value: 'REQUIRED', correct: false }
+      - { value: 'NEGATABLE', correct: true }
+      - { value: 'IS_ARRAY', correct: false }
+      - { value: 'OPTIONAL', correct: false }
+      - { value: 'NONE', correct: true }
     help: 'https://github.com/symfony/console/blob/7.0/Input/InputArgument.php'
   -
     uuid: 1eebf878-8b9b-61b6-82fd-99d84c92580c
@@ -27,20 +27,20 @@ questions:
     uuid: 1eebf878-8b9e-69ce-95d7-99d84c92580c
     question: 'Which tag name you should use when you register command as service?'
     answers:
-      - { value: command.console, correct: false }
-      - { value: console.command, correct: true }
-      - { value: console.console_command, correct: false }
-      - { value: command, correct: false }
-      - { value: console, correct: false }
+      - { value: 'command.console', correct: false }
+      - { value: 'console.command', correct: true }
+      - { value: 'console.console_command', correct: false }
+      - { value: 'command', correct: false }
+      - { value: 'console', correct: false }
     help: 'https://symfony.com/doc/7.0/console/commands_as_services.html'
   -
     uuid: 1eebf878-8b9e-6d70-97f3-99d84c92580c
     question: 'Which function are mandatory to your command class ?'
     answers:
-      - { value: configure(), correct: true }
+      - { value: 'configure()', correct: true }
       - { value: 'execute(InputInterface $input, OutputInterface $output)', correct: true }
-      - { value: interact(), correct: false }
-      - { value: initialize(), correct: false }
+      - { value: 'interact()', correct: false }
+      - { value: 'initialize()', correct: false }
     help: 'https://symfony.com/doc/7.0/console.html#creating-a-command'
   -
     uuid: 1eebf878-8ba3-6b36-baf6-99d84c92580c

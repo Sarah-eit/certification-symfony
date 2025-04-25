@@ -3,30 +3,30 @@ questions:
     uuid: 1eebf878-8b97-6494-ae5f-99d84c92580c
     question: 'Which configuration file format can be used to define PHP constants as parameters?'
     answers:
-      - { value: php, correct: true }
-      - { value: XML, correct: true }
-      - { value: Annotation, correct: false }
-      - { value: INI, correct: false }
-      - { value: YAML, correct: true }
+      - { value: 'php', correct: true }
+      - { value: 'XML', correct: true }
+      - { value: 'Annotation', correct: false }
+      - { value: 'INI', correct: false }
+      - { value: 'YAML', correct: true }
     help: 'https://symfony.com/doc/7.0/configuration.html#constants-as-parameters'
   -
     uuid: 1eebf878-8b98-6740-a71f-99d84c92580c
     question: 'Which of the following is not a predefined PHP variable?'
     answers:
-      - { value: $http_response_header, correct: false }
-      - { value: $php_errormsg, correct: false }
-      - { value: $_POST, correct: false }
-      - { value: $_GLOBALS, correct: true }
-      - { value: $argc, correct: false }
+      - { value: '$http_response_header', correct: false }
+      - { value: '$php_errormsg', correct: false }
+      - { value: '$_POST', correct: false }
+      - { value: '$_GLOBALS', correct: true }
+      - { value: '$argc', correct: false }
     help: 'https://php.net/manual/en/reserved.variables.php'
   -
     uuid: 1eebf878-8b99-6316-bfed-99d84c92580c
     question: 'Which of the following are valid PHP class names ?'
     answers:
       - { value: '-MyClass', correct: false }
-      - { value: 123MyClass, correct: false }
-      - { value: myClass, correct: true }
-      - { value: _MyClass, correct: true }
+      - { value: '123MyClass', correct: false }
+      - { value: 'myClass', correct: true }
+      - { value: '_MyClass', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.basic.php'
   -
     uuid: 1eebf878-8b99-655a-9f19-99d84c92580c
@@ -92,20 +92,20 @@ questions:
     question: 'Which function would best parse the following string by the tab (\t) and newline (\n) characters ? $string = "John\tMark\nTed\tLarry";'
     answers:
       - { value: 'explode($string, "\t\n");', correct: false }
-      - { value: strtok($string);, correct: true }
-      - { value: str_split($string);, correct: false }
-      - { value: strstr($string);, correct: false }
+      - { value: 'strtok($string)', correct: true }
+      - { value: 'str_split($string)', correct: false }
+      - { value: 'strstr($string)', correct: false }
     help: 'https://www.php.net/manual/en/function.strtok.php'
   -
     uuid: 1eebf878-8b9c-6a02-9efa-99d84c92580c
     question: 'By default, which of the following request parameters can be used with built-in providers for a login form?'
     answers:
-      - { value: _remember_me, correct: false }
-      - { value: _token, correct: true }
-      - { value: _user, correct: false }
-      - { value: _password, correct: true }
-      - { value: _passwd, correct: false }
-      - { value: _username, correct: true }
+      - { value: '_remember_me', correct: false }
+      - { value: '_token', correct: true }
+      - { value: '_user', correct: false }
+      - { value: '_password', correct: true }
+      - { value: '_passwd', correct: false }
+      - { value: '_username', correct: true }
     help: 'https://symfony.com/doc/7.0/reference/configuration/security.html#form-login-configuration'
   -
     uuid: 1eebf878-8b9d-606a-916d-99d84c92580c
@@ -127,11 +127,11 @@ questions:
     uuid: 1eebf878-8b9d-6506-af8c-99d84c92580c
     question: 'Which class can be used to extracts security errors from a Request?'
     answers:
-      - { value: AuthenticationUtils, correct: true }
-      - { value: FrameworkUtils, correct: false }
-      - { value: HttpUtils, correct: false }
-      - { value: SecurityUtils, correct: false }
-      - { value: RequestUtils, correct: false }
+      - { value: 'AuthenticationUtils', correct: true }
+      - { value: 'FrameworkUtils', correct: false }
+      - { value: 'HttpUtils', correct: false }
+      - { value: 'SecurityUtils', correct: false }
+      - { value: 'RequestUtils', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Http/Authentication/AuthenticationUtils.php'
   -
     uuid: 1eebf878-8ba0-6756-8594-99d84c92580c
@@ -149,7 +149,7 @@ questions:
       - { value: '!', correct: false }
       - { value: '**', correct: false }
       - { value: '<', correct: true }
-      - { value: and, correct: false }
+      - { value: 'and', correct: false }
     help: 'https://www.php.net/manual/en/language.operators.precedence.php'
   -
     uuid: 1eebf878-8ba0-67ec-9eef-99d84c92580c
@@ -182,11 +182,11 @@ questions:
     uuid: 1eebf878-8ba0-69e0-80a7-99d84c92580c
     question: 'Which keyword is used to indicate that a class or method is incomplete and must be extended or implemented to be used?'
     answers:
-      - { value: abstract, correct: true }
-      - { value: final, correct: false }
-      - { value: protected, correct: false }
-      - { value: incomplete, correct: false }
-      - { value: implements, correct: false }
+      - { value: 'abstract', correct: true }
+      - { value: 'final', correct: false }
+      - { value: 'protected', correct: false }
+      - { value: 'incomplete', correct: false }
+      - { value: 'implements', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
   -
     uuid: 1eebf878-8ba0-6ab2-b754-99d84c92580c
@@ -213,28 +213,28 @@ questions:
     uuid: 1eebf878-8ba0-6cb0-91ef-99d84c92580c
     question: 'Which keyword permit to use the late static binding ?'
     answers:
-      - { value: self, correct: false }
-      - { value: static, correct: true }
-      - { value: parent, correct: false }
+      - { value: 'self', correct: false }
+      - { value: 'static', correct: true }
+      - { value: 'parent', correct: false }
     help: 'https://php.net/manual/en/language.oop5.late-static-bindings.php'
   -
     uuid: 1eebf878-8ba1-6b74-9168-99d84c92580c
     question: 'Which of the following are supported visibilities for class attributes and methods in PHP ?'
     answers:
-      - { value: protected, correct: true }
-      - { value: friend, correct: false }
-      - { value: private, correct: true }
-      - { value: public, correct: true }
-      - { value: global, correct: false }
+      - { value: 'protected', correct: true }
+      - { value: 'friend', correct: false }
+      - { value: 'private', correct: true }
+      - { value: 'public', correct: true }
+      - { value: 'global', correct: false }
     help: 'https://php.net/manual/en/language.oop5.visibility.php'
   -
     uuid: 1eebf878-8ba2-622c-b66a-99d84c92580c
     question: 'What PHP function is used to return an array containing values present in two or more passed arrays?'
     answers:
-      - { value: array_common, correct: false }
-      - { value: array_union, correct: false }
-      - { value: array_intersect, correct: true }
-      - { value: array_walk, correct: false }
+      - { value: 'array_common', correct: false }
+      - { value: 'array_union', correct: false }
+      - { value: 'array_intersect', correct: true }
+      - { value: 'array_walk', correct: false }
     help: 'https://php.net/array'
   -
     uuid: 1eebf878-8ba2-648e-9eb7-99d84c92580c
@@ -292,10 +292,10 @@ questions:
     uuid: 1eebf878-8ba3-6f78-8a74-99d84c92580c
     question: 'Which interface should be implemented when putting together all the required parts (token, provider, listener) for a custom authentication system ?'
     answers:
-      - { value: Symfony\Component\Security\Guard\GuardAuthenticatorInterface, correct: false }
-      - { value: Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface, correct: false }
-      - { value: Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListenerInterface, correct: false }
-      - { value: Symfony\Component\Security\Http\Authenticator\AbstractAuthenticator, correct: true }
+      - { value: 'Symfony\Component\Security\Guard\GuardAuthenticatorInterface', correct: false }
+      - { value: 'Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface', correct: false }
+      - { value: 'Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListenerInterface', correct: false }
+      - { value: 'Symfony\Component\Security\Http\Authenticator\AbstractAuthenticator', correct: true }
     help: 'https://symfony.com/doc/7.0/security/custom_authenticator.html'
   -
     uuid: 1eebf878-8ba4-6dc4-8bee-99d84c92580c
@@ -318,10 +318,10 @@ questions:
     uuid: 1eebf878-8ba4-6f04-8c84-99d84c92580c
     question: 'How do you remove an element with the key 0 from the array $numbers?'
     answers:
-      - { value: '$numbers[0] = null;', correct: false }
-      - { value: 'unset($numbers[0]);', correct: true }
-      - { value: array_pop($numbers);, correct: false }
-      - { value: array_shift($numbers);, correct: false }
+      - { value: '$numbers[0] = null', correct: false }
+      - { value: 'unset($numbers[0])', correct: true }
+      - { value: 'array_pop($numbers)', correct: false }
+      - { value: 'array_shift($numbers)', correct: false }
     help: 'https://php.net/manual/en/function.unset.php'
   -
     uuid: 1eebf878-8ba6-6868-a41d-99d84c92580c

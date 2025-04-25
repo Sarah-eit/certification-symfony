@@ -58,9 +58,9 @@ questions:
     uuid: 1efdd931-f3f4-69c8-b116-e1f39b9b0127
     question: "Which option name should be used to replace ‘XXXX’ in order to customize form collections : $builder->add('tasks', CollectionType::class, ['XXXX' => TaskType::class,]); ?"
     answers:
-      - { value: entry_type, correct: true }
-      - { value: object_type, correct: false }
-      - { value: class_type, correct: false }
+      - { value: 'entry_type', correct: true }
+      - { value: 'object_type', correct: false }
+      - { value: 'class_type', correct: false }
     help: 'https://symfony.com/doc/7.0/form/form_themes.html#fragment-naming-for-collections'
   -
     uuid: 1efdd93b-6649-6704-bc3a-f7054b5c11bf

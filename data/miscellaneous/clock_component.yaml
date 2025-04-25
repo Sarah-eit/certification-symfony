@@ -19,24 +19,24 @@ questions:
     uuid: 1efe4ac2-cad9-6838-85e6-dbee72a34c7a
     question: 'About the Clock component, which implementation is used by default ?'
     answers:
-      - { value: NativeClock, correct: true }
-      - { value: MonotonicClock, correct: false }
-      - { value: VirtualClock, correct: false }
+      - { value: 'NativeClock', correct: true }
+      - { value: 'MonotonicClock', correct: false }
+      - { value: 'VirtualClock', correct: false }
     help: 'https://symfony.com/doc/7.0/components/clock.html#usage'
   -
     uuid: 1efe539b-9a5a-6d60-bb37-bfade68fd050
     question: 'About the Clock component, which functions exist in Clock class ?'
     answers:
-      - { value: withTimeZone, correct: true }
-      - { value: now, correct: true }
-      - { value: sleep, correct: true }
+      - { value: 'withTimeZone', correct: true }
+      - { value: 'now', correct: true }
+      - { value: 'sleep', correct: true }
     help: 'https://symfony.com/doc/7.0/components/clock.html#usage'
   -
     uuid: 1efe53a8-f590-6092-8759-17afa33e7f19
     question: 'About the Clock component, how can you determine the current time in a service ?'
     answers:
-      - { value: $this->clock->now(), correct: true }
-      - { value: $this->clock->today(), correct: false }
+      - { value: '$this->clock->now()', correct: true }
+      - { value: '$this->clock->today()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/clock.html#nativeclock'
   -
     uuid: 1efe53ae-403a-68b8-ab66-7f05e715ab5e
@@ -50,9 +50,9 @@ questions:
     question: 'What are the correct syntax for the MockClock in the test ?'
     answers:
       - { value: "$clock = new MockClock('2022-11-16 15:20:00');", correct: true }
-      - { value: $clock->sleep(600);, correct: true }
+      - { value: '$clock->sleep(600);', correct: true }
       - { value: "$clock->modify('2022-11-16 15:00:00');", correct: true }
-      - { value: $clock->pause(600);, correct: false }
+      - { value: '$clock->pause(600);', correct: false }
     help: 'https://symfony.com/doc/7.0/components/clock.html#mockclock'
   -
     uuid: 1efe53ce-982d-60f0-8f9e-adb409837d4b
@@ -109,15 +109,15 @@ questions:
     uuid: 1efe5436-bdd6-6244-b409-89682123490f
     question: 'If you pass an invalid string to the clock (e.g. when creating a clock or modifying a MockClock), what exception is used ?'
     answers:
-      - { value: DateMalformedStringException, correct: true }
-      - { value: BadStringException, correct: false }
-      - { value: DateSyntaxStringException, correct: false }
+      - { value: 'DateMalformedStringException', correct: true }
+      - { value: 'BadStringException', correct: false }
+      - { value: 'DateSyntaxStringException', correct: false }
     help: 'https://symfony.com/doc/7.0/components/clock.html#exceptions-management'
   -
     uuid: 1efe543c-f49f-6d92-951b-333369eb81b6
     question: 'If you pass an invalid timezone to the Clock, what exception is used ?'
     answers:
-      - { value: DateInvalidTimeZoneException, correct: true }
-      - { value: BadTimeZoneException, correct: false }
-      - { value: DateSyntaxInvalidTimeZoneException, correct: false }
+      - { value: 'DateInvalidTimeZoneException', correct: true }
+      - { value: 'BadTimeZoneException', correct: false }
+      - { value: 'DateSyntaxInvalidTimeZoneException', correct: false }
     help: 'https://symfony.com/doc/7.0/components/clock.html#exceptions-management'

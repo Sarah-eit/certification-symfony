@@ -34,22 +34,22 @@ questions:
     question: 'We use screaming snake case for ?'
     answers:
       - { value: 'php variables', correct: false }
-      - { value: constants, correct: true }
-      - { value: methods, correct: false }
+      - { value: 'constants', correct: true }
+      - { value: 'methods', correct: false }
       - { value: 'php classes', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-6780-b5d7-99d84c92580c
     question: 'For type-hinting in PHPDocs and casting, what do we use ?'
     answers:
-      - { value: bool, correct: true }
-      - { value: boolean, correct: false }
-      - { value: Boolean, correct: false }
-      - { value: int, correct: true }
-      - { value: integer, correct: false }
-      - { value: float, correct: true }
-      - { value: double, correct: false }
-      - { value: real, correct: false }
+      - { value: 'bool', correct: true }
+      - { value: 'boolean', correct: false }
+      - { value: 'Boolean', correct: false }
+      - { value: 'int', correct: true }
+      - { value: 'integer', correct: false }
+      - { value: 'float', correct: true }
+      - { value: 'double', correct: false }
+      - { value: 'real', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-67d0-8bfb-99d84c92580c
@@ -62,10 +62,10 @@ questions:
     uuid: 1eeda2ca-d3e4-6b68-a248-eb5bab40e010
     question: 'We use upper camel case for ?'
     answers:
-      - { value: class, correct: true }
-      - { value: constants, correct: false }
+      - { value: 'class', correct: true }
+      - { value: 'constants', correct: false }
       - { value: 'enumeration cases', correct: true }
-      - { value: functions, correct: false }
+      - { value: 'functions', correct: false }
       - { value: 'naming PHP files', correct: true }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
   -

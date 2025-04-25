@@ -16,7 +16,7 @@ questions:
       - { value: 'An error', correct: false }
       - { value: '200', correct: false }
       - { value: 'The width of the actual terminal', correct: false }
-      - { value: Nothing, correct: false }
+      - { value: 'Nothing', correct: false }
       - { value: '0', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Console/Terminal.php#L97'
   -
@@ -51,8 +51,8 @@ questions:
     uuid: 1eebf878-8ba9-6dec-8d76-99d84c92580c
     question: 'Which of these helper methods are available in the QueryBuilder?'
     answers:
-      - { value: join, correct: true }
-      - { value: innerJoin, correct: true }
-      - { value: leftJoin, correct: true }
-      - { value: rightJoin, correct: false }
+      - { value: 'join', correct: true }
+      - { value: 'innerJoin', correct: true }
+      - { value: 'leftJoin', correct: true }
+      - { value: 'rightJoin', correct: false }
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/query-builder.html#working-with-querybuilder'

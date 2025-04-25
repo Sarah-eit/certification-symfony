@@ -125,8 +125,8 @@ questions:
     uuid: 1ef5b0c4-d00b-65a4-a273-07d6c1120e43
     question: 'When using a service decorator, what keyword is used to reference the original service within the decorator?'
     answers:
-      - { value: original_service, correct: false }
-      - { value: old_service, correct: false }
-      - { value: base_service, correct: false }
-      - { value: inner, correct: true }
+      - { value: 'original_service', correct: false }
+      - { value: 'old_service', correct: false }
+      - { value: 'base_service', correct: false }
+      - { value: 'inner', correct: true }
     help: 'https://symfony.com/doc/7.0/service_container/service_decoration.html'

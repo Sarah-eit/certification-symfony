@@ -15,7 +15,7 @@ questions:
     answers:
       - { value: 'quality factor', correct: true }
       - { value: 'query factor', correct: false }
-      - { value: qualification, correct: false }
+      - { value: 'qualification', correct: false }
     help: 'https://restfulapi.net/content-negotiation/'
   -
     uuid: 1eedc73d-be96-6922-9026-f906a8ae5a51
@@ -39,12 +39,12 @@ questions:
     uuid: 1eedc75e-c312-637c-9026-c3acc863dd84
     question: 'Which header are used for the server content negociation ?'
     answers:
-      - { value: Accept, correct: true }
-      - { value: Accept-Language, correct: true }
-      - { value: Accept-Encoding, correct: true }
-      - { value: Version, correct: false }
-      - { value: Accept-method, correct: false }
-      - { value: User-Agent, correct: false }
+      - { value: 'Accept', correct: true }
+      - { value: 'Accept-Language', correct: true }
+      - { value: 'Accept-Encoding', correct: true }
+      - { value: 'Version', correct: false }
+      - { value: 'Accept-method', correct: false }
+      - { value: 'User-Agent', correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#principles_of_content_negotiation'
   -
     uuid: 1eedc762-5f32-6970-9026-218653829838

@@ -23,18 +23,18 @@ questions:
     answers:
       - { value: 'true or false', correct: false }
       - { value: 'A Process object', correct: false }
-      - { value: Nothing, correct: false }
+      - { value: 'Nothing', correct: false }
       - { value: 'The exitcode of the proces', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L408'
   -
     uuid: 1eebf878-8b9c-64c6-b575-99d84c92580c
     question: 'What are the built-in mapping loaders for the definitions of serialization?'
     answers:
-      - { value: JsonFileLoader, correct: false }
-      - { value: XmlFileLoader, correct: true }
-      - { value: YamlFileLoader, correct: true }
-      - { value: IniFileLoader, correct: false }
-      - { value: AnnotationLoader, correct: true }
+      - { value: 'JsonFileLoader', correct: false }
+      - { value: 'XmlFileLoader', correct: true }
+      - { value: 'YamlFileLoader', correct: true }
+      - { value: 'IniFileLoader', correct: false }
+      - { value: 'AnnotationLoader', correct: true }
     help: 'https://github.com/symfony/serializer/tree/3.1/Mapping/Loader'
   -
     uuid: 1eebf878-8b9c-6606-abc0-99d84c92580c
@@ -43,7 +43,7 @@ questions:
       - { value: 'true or false', correct: false }
       - { value: '1', correct: false }
       - { value: 'The exit status code', correct: true }
-      - { value: Nothing, correct: false }
+      - { value: 'Nothing', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L222'
   -
     uuid: 1eebf878-8b9c-6d9a-80c6-99d84c92580c
@@ -58,12 +58,12 @@ questions:
     uuid: 1eebf878-8b9d-601a-8dff-99d84c92580c
     question: 'What are valid output types defined in Process ?'
     answers:
-      - { value: input, correct: false }
-      - { value: error, correct: false }
-      - { value: in, correct: false }
-      - { value: out, correct: true }
-      - { value: output, correct: false }
-      - { value: err, correct: true }
+      - { value: 'input', correct: false }
+      - { value: 'error', correct: false }
+      - { value: 'in', correct: false }
+      - { value: 'out', correct: true }
+      - { value: 'output', correct: false }
+      - { value: 'err', correct: true }
     help: 'https://symfony.com/doc/7.0/components/process.html#getting-real-time-process-output'
   -
     uuid: 1eebf878-8b9d-60ba-9a06-99d84c92580c
@@ -76,28 +76,28 @@ questions:
     uuid: 1eebf878-8b9d-6736-8851-99d84c92580c
     question: 'What is the tag to register a new encoder in the serializer service?'
     answers:
-      - { value: serializer.encode, correct: false }
-      - { value: serializer_encoder, correct: false }
-      - { value: serializer.object_encoder, correct: false }
-      - { value: serializer.encoder, correct: true }
+      - { value: 'serializer.encode', correct: false }
+      - { value: 'serializer_encoder', correct: false }
+      - { value: 'serializer.object_encoder', correct: false }
+      - { value: 'serializer.encoder', correct: true }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#serializer-encoder'
   -
     uuid: 1eebf878-8b9f-65ae-aeb1-99d84c92580c
     question: 'As dev environment, what is the name of dumped container ?'
     answers:
-      - { value: srcApp_KernelDevDebugContainer.php, correct: false }
-      - { value: App_KernelDevDebugContainer.php, correct: true }
-      - { value: appDevDebugProjectContainer.php, correct: false }
-      - { value: appDevProjectContainer.php, correct: false }
-      - { value: appDevDebugProjectServiceContainer, correct: false }
-      - { value: srcApp_DevDebugContainer.php, correct: false }
+      - { value: 'srcApp_KernelDevDebugContainer.php', correct: false }
+      - { value: 'App_KernelDevDebugContainer.php', correct: true }
+      - { value: 'appDevDebugProjectContainer.php', correct: false }
+      - { value: 'appDevProjectContainer.php', correct: false }
+      - { value: 'appDevDebugProjectServiceContainer', correct: false }
+      - { value: 'srcApp_DevDebugContainer.php', correct: false }
     help: 'https://symfony.com/doc/7.0/configuration/front_controllers_and_kernel.html#environments-and-the-cache-directory'
   -
     uuid: 1eebf878-8ba0-6cf6-8531-99d84c92580c
     question: 'What is the default signal sent by Process component to stop a process ?'
     answers:
-      - { value: SIGINT, correct: false }
-      - { value: SIGKILL, correct: true }
+      - { value: 'SIGINT', correct: false }
+      - { value: 'SIGKILL', correct: true }
       - { value: 'Process::STOP', correct: false }
       - { value: '9', correct: true }
     help: 'https://symfony.com/doc/7.0/components/process.html#stopping-a-process'
@@ -105,10 +105,10 @@ questions:
     uuid: 1eebf878-8ba2-670e-a56a-99d84c92580c
     question: 'What is the tag to register a new normalizer in the serializer service?'
     answers:
-      - { value: serializer.object_normalizer, correct: false }
-      - { value: serializer_normalizer, correct: false }
-      - { value: serializer.normalizer, correct: true }
-      - { value: serializer.normalize, correct: false }
+      - { value: 'serializer.object_normalizer', correct: false }
+      - { value: 'serializer_normalizer', correct: false }
+      - { value: 'serializer.normalizer', correct: true }
+      - { value: 'serializer.normalize', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#serializer-normalizer'
   -
     uuid: 1eebf878-8ba3-61e0-9460-99d84c92580c
@@ -123,13 +123,13 @@ questions:
     uuid: 1eebf878-8ba3-68f2-a0ce-99d84c92580c
     question: 'What are the availables process status constants in the Symfony\Component\Process\Process class ?'
     answers:
-      - { value: STATUS_STOPPED, correct: false }
-      - { value: STATUS_STARTED, correct: true }
-      - { value: STATUS_FAILED, correct: false }
-      - { value: STATUS_INITIALIZED, correct: false }
-      - { value: STATUS_READY, correct: true }
-      - { value: STATUS_SENT, correct: false }
-      - { value: STATUS_TERMINATED, correct: true }
+      - { value: 'STATUS_STOPPED', correct: false }
+      - { value: 'STATUS_STARTED', correct: true }
+      - { value: 'STATUS_FAILED', correct: false }
+      - { value: 'STATUS_INITIALIZED', correct: false }
+      - { value: 'STATUS_READY', correct: true }
+      - { value: 'STATUS_SENT', correct: false }
+      - { value: 'STATUS_TERMINATED', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L37C22-L37C22'
   -
     uuid: 1eebf878-8ba4-6252-98ba-99d84c92580c
@@ -151,13 +151,13 @@ questions:
     uuid: 1eebf878-8ba4-6996-9d15-99d84c92580c
     question: 'Which of the followings are core cache warmers?'
     answers:
-      - { value: LogCacheWarmer, correct: false }
-      - { value: TemplateCacheCacheWarmer, correct: false }
-      - { value: TemplatePathsCacheWarmer, correct: false }
-      - { value: RoutingCacheWarmer, correct: false }
-      - { value: LogsCacheWarmer, correct: false }
-      - { value: TemplateCacheWarmer, correct: true }
-      - { value: RouterCacheWarmer, correct: true }
+      - { value: 'LogCacheWarmer', correct: false }
+      - { value: 'TemplateCacheCacheWarmer', correct: false }
+      - { value: 'TemplatePathsCacheWarmer', correct: false }
+      - { value: 'RoutingCacheWarmer', correct: false }
+      - { value: 'LogsCacheWarmer', correct: false }
+      - { value: 'TemplateCacheWarmer', correct: true }
+      - { value: 'RouterCacheWarmer', correct: true }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#core-cache-warmers'
   -
     uuid: 1eebf878-8ba6-64d0-a4e1-99d84c92580c

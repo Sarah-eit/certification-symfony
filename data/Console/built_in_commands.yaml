@@ -82,9 +82,9 @@ questions:
     uuid: 1eebf878-8ba7-6466-8627-99d84c92580c
     question: 'Which "Tester" class should you use to test a console event?'
     answers:
-      - { value: Symfony\Component\Console\Tester\CommandTester, correct: false }
-      - { value: Symfony\Component\Console\Tester\CommandCompletionTester, correct: false }
-      - { value: Symfony\Component\Console\Tester\ApplicationTester, correct: true }
+      - { value: 'Symfony\Component\Console\Tester\CommandTester', correct: false }
+      - { value: 'Symfony\Component\Console\Tester\CommandCompletionTester', correct: false }
+      - { value: 'Symfony\Component\Console\Tester\ApplicationTester', correct: true }
     help: 'https://symfony.com/doc/6.0/console.html#testing-commands'
   -
     uuid: 1eebf878-8ba8-656e-91d9-99d84c92580c

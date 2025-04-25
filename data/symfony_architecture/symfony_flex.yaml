@@ -3,21 +3,21 @@ questions:
     uuid: 1eebf878-8b9d-6cc2-b85f-99d84c92580c
     question: 'Using FrameworkBundle configuration, what is the correct path to fill proxies IP?'
     answers:
-      - { value: trusted_proxies, correct: true }
-      - { value: proxies_trusted, correct: false }
-      - { value: proxies, correct: false }
-      - { value: proxies_list, correct: false }
+      - { value: 'trusted_proxies', correct: true }
+      - { value: 'proxies_trusted', correct: false }
+      - { value: 'proxies', correct: false }
+      - { value: 'proxies_list', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html#trusted-proxies'
   -
     uuid: 1eebf878-8b9d-6db2-92c7-99d84c92580c
     question: 'What is the prefix of environment variables used by Symfony?'
     answers:
-      - { value: APP__, correct: true }
-      - { value: APP--, correct: false }
-      - { value: SYMFONY__, correct: false }
-      - { value: SF__, correct: false }
-      - { value: SYMFONY-, correct: false }
-      - { value: SF-, correct: false }
+      - { value: 'APP__', correct: true }
+      - { value: 'APP--', correct: false }
+      - { value: 'SYMFONY__', correct: false }
+      - { value: 'SF__', correct: false }
+      - { value: 'SYMFONY-', correct: false }
+      - { value: 'SF-', correct: false }
     help: 'https://symfony.com/doc/7.0/configuration.html#configuration-based-on-environment-variables'
   -
     uuid: 1eebf878-8b9d-6e02-bf48-99d84c92580c
@@ -68,9 +68,9 @@ questions:
     uuid: 1eebf878-8b9e-612c-9b8f-99d84c92580c
     question: 'Which file should be edited in order to customize the default server error page ?'
     answers:
-      - { value: templates/bundles/TwigBundle/Exception/error.html.twig, correct: true }
-      - { value: templates/bundles/TwigBundle/Exception/error500.html.twig, correct: false }
-      - { value: src/Controller/ExceptionController, correct: false }
+      - { value: 'templates/bundles/TwigBundle/Exception/error.html.twig', correct: true }
+      - { value: 'templates/bundles/TwigBundle/Exception/error500.html.twig', correct: false }
+      - { value: 'src/Controller/ExceptionController', correct: false }
     help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-error-templates'
   -
     uuid: 1eebf878-8ba4-64dc-9656-99d84c92580c
@@ -154,7 +154,7 @@ questions:
     uuid: 1ef562ae-450d-60ba-99eb-831d11237fbd
     question: 'Which extension is officialy used for yaml files ?'
     answers:
-      - { value: .yaml, correct: true }
-      - { value: .yml, correct: false }
-      - { value: .yl, correct: false }
+      - { value: '.yaml', correct: true }
+      - { value: '.yml', correct: false }
+      - { value: '.yl', correct: false }
     help: 'https://symfony.com/doc/7.0/setup/flex.html'

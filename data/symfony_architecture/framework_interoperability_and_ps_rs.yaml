@@ -55,8 +55,8 @@ questions:
     uuid: 1eebf878-8b99-6636-88fd-99d84c92580c
     question: 'What is the default value of the router.request_context.scheme parameter?'
     answers:
-      - { value: http, correct: true }
-      - { value: https, correct: false }
+      - { value: 'http', correct: true }
+      - { value: 'https', correct: false }
     help: 'https://symfony.com/doc/7.0/routing.html#forcing-https-on-generated-urls'
   -
     uuid: 1eebf878-8b99-667c-bb41-99d84c92580c

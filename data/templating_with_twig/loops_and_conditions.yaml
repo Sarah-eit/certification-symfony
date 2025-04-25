@@ -13,8 +13,8 @@ questions:
     question: 'In Twig, which of the following operators has the lowest precedence?'
     answers:
       - { value: '?: (ternary operator)', correct: true }
-      - { value: or, correct: false }
+      - { value: 'or', correct: false }
       - { value: '| (filters)', correct: false }
-      - { value: and, correct: false }
+      - { value: 'and', correct: false }
       - { value: '==', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'

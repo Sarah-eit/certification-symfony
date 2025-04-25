@@ -3,10 +3,10 @@ questions:
     uuid: 1eebf878-8b97-6e1c-8db5-99d84c92580c
     question: 'By default, what is the form field containing the CSRF token?'
     answers:
-      - { value: _token, correct: true }
-      - { value: _csrf, correct: false }
-      - { value: ThisTokenIsNotSoSecretChangeIt, correct: false }
-      - { value: _secret, correct: false }
+      - { value: '_token', correct: true }
+      - { value: '_csrf', correct: false }
+      - { value: 'ThisTokenIsNotSoSecretChangeIt', correct: false }
+      - { value: '_secret', correct: false }
     help: 'https://symfony.com/doc/7.0/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eebf878-8b98-6fba-ac9a-99d84c92580c
@@ -66,8 +66,8 @@ questions:
     uuid: 1eedad53-9a0c-6cc2-8bbd-43a19afa5a59
     question: 'What is the CSRF token ID used when adding CSRF protection to a login form in Symfony?'
     answers:
-      - { value: login, correct: false }
-      - { value: authenticate, correct: true }
-      - { value: security, correct: false }
-      - { value: csrf_login, correct: false }
+      - { value: 'login', correct: false }
+      - { value: 'authenticate', correct: true }
+      - { value: 'security', correct: false }
+      - { value: 'csrf_login', correct: false }
     help: 'https://symfony.com/doc/7.0/security.html#csrf-protection-in-login-forms'

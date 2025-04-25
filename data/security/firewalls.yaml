@@ -11,12 +11,12 @@ questions:
     uuid: 1eebf878-8b9c-687c-8e29-99d84c92580c
     question: 'What is the event a firewall must be registered on?'
     answers:
-      - { value: kernel.request, correct: true }
-      - { value: security.interactive_login, correct: false }
-      - { value: kernel.response, correct: false }
-      - { value: security.authentication.success, correct: false }
-      - { value: kernel.controller, correct: false }
-      - { value: kernel.exception, correct: false }
+      - { value: 'kernel.request', correct: true }
+      - { value: 'security.interactive_login', correct: false }
+      - { value: 'kernel.response', correct: false }
+      - { value: 'security.authentication.success', correct: false }
+      - { value: 'kernel.controller', correct: false }
+      - { value: 'kernel.exception', correct: false }
     help: 'https://symfony.com/doc/7.0/security.html#the-firewall'
   -
     uuid: 1eebf878-8ba1-6412-a307-99d84c92580c
@@ -39,11 +39,11 @@ questions:
     uuid: 1eedb08a-bb4c-6d6c-aa7f-4301e859ebc5
     question: 'What are the differents way to restrict a firewall to a request ?'
     answers:
-      - { value: host, correct: true }
-      - { value: path, correct: false }
-      - { value: pattern, correct: true }
-      - { value: ip, correct: false }
-      - { value: domain, correct: false }
-      - { value: methods, correct: true }
-      - { value: request_matcher, correct: false }
+      - { value: 'host', correct: true }
+      - { value: 'path', correct: false }
+      - { value: 'pattern', correct: true }
+      - { value: 'ip', correct: false }
+      - { value: 'domain', correct: false }
+      - { value: 'methods', correct: true }
+      - { value: 'request_matcher', correct: false }
     help: 'https://symfony.com/doc/7.0/security/firewall_restriction.html'

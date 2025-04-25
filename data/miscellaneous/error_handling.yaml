@@ -3,9 +3,9 @@ questions:
     uuid: 1efe7afc-e315-646e-9dd1-27d2a938a574
     question: 'About the error handler, what function is in the debug class ?'
     answers:
-      - { value: enable(), correct: true }
-      - { value: show(), correct: false }
-      - { value: set(), correct: false }
+      - { value: 'enable()', correct: true }
+      - { value: 'show()', correct: false }
+      - { value: 'set()', correct: false }
     help: 'https://github.com/symfony/error-handler/blob/7.0/Debug.php#L21'
   -
     uuid: 1efe7b37-decb-62ba-8584-6db8c9c0cb74

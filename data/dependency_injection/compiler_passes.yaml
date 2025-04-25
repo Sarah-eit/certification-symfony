@@ -50,9 +50,9 @@ questions:
     uuid: 1ef49363-d37f-69d0-9063-c36a242f9461
     question: 'In which file is the build method often implemented to add a "compiler pass"?'
     answers:
-      - { value: config.yml, correct: false }
-      - { value: Kernel.php, correct: true }
-      - { value: services.yaml, correct: false }
+      - { value: 'config.yml', correct: false }
+      - { value: 'Kernel.php', correct: true }
+      - { value: 'services.yaml', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/compiler_passes.html'
   -
     uuid: 1ef49369-5acb-6f42-8894-eb7574faa390
@@ -66,23 +66,23 @@ questions:
     uuid: 1ef4936c-ce1d-65c4-b100-e7c0f56ef5bd
     question: 'Which service should be used to add a "compiler pass" in the build method?'
     answers:
-      - { value: $container, correct: false }
-      - { value: $this->containerBuilder, correct: false }
-      - { value: $this->addCompilerPass(), correct: true }
+      - { value: '$container', correct: false }
+      - { value: '$this->containerBuilder', correct: false }
+      - { value: '$this->addCompilerPass()', correct: true }
     help: 'https://symfony.com/doc/7.0/service_container/compiler_passes.html'
   -
     uuid: 1ef4936f-6ee6-651c-abec-9db2348bdd73
     question: 'What is the main object used in a "compiler pass" to access the services?'
     answers:
-      - { value: ContainerBuilder, correct: true }
-      - { value: ServiceContainer, correct: false }
-      - { value: ServiceLocator, correct: false }
+      - { value: 'ContainerBuilder', correct: true }
+      - { value: 'ServiceContainer', correct: false }
+      - { value: 'ServiceLocator', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/compiler_passes.html'
   -
     uuid: 1ef49374-0ec2-6aa0-aa38-5d3c6b70d164
     question: 'Which interface should a compiler pass implement?'
     answers:
-      - { value: CompilerPassInterface, correct: true }
-      - { value: ServicePassInterface, correct: false }
-      - { value: ContainerPassInterface, correct: false }
+      - { value: 'CompilerPassInterface', correct: true }
+      - { value: 'ServicePassInterface', correct: false }
+      - { value: 'ContainerPassInterface', correct: false }
     help: 'https://symfony.com/doc/7.0/service_container/compiler_passes.html'

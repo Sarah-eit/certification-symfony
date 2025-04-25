@@ -13,7 +13,7 @@ questions:
       - { value: 'It should not forward the request', correct: true }
       - { value: 'It should forward the request no matter the header value', correct: false }
       - { value: "This header doesn't exist", correct: false }
-      - { value: Nothing, correct: false }
+      - { value: 'Nothing', correct: false }
     help: 'https://tools.ietf.org/html/rfc7231#section-5.1.2'
   -
     uuid: 1eebf878-8b9e-6ffa-a320-99d84c92580c
@@ -36,7 +36,7 @@ questions:
     uuid: 1eebf878-8ba8-6974-ac4a-99d84c92580c
     question: 'Whats the Reponse in a redirectToRoute or a redirect method in a controller ?'
     answers:
-      - { value: RedirectedResponse, correct: false }
-      - { value: RedirectResponse, correct: true }
-      - { value: ForwardResponse, correct: false }
+      - { value: 'RedirectedResponse', correct: false }
+      - { value: 'RedirectResponse', correct: true }
+      - { value: 'ForwardResponse', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RedirectResponse.php'

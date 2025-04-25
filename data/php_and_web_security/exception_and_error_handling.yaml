@@ -47,10 +47,10 @@ questions:
     uuid: 1efd7420-05a6-66de-9c5c-f9cdfeb73fb7
     question: 'Which variables can be accessed within the error template provided by TwigErrorRenderer ?'
     answers:
-      - { value: status_code, correct: true }
-      - { value: status_text, correct: true }
-      - { value: exception, correct: true }
-      - { value: user, correct: false }
+      - { value: 'status_code', correct: true }
+      - { value: 'status_text', correct: true }
+      - { value: 'exception', correct: true }
+      - { value: 'user', correct: false }
     help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-error-templates'
   -
     uuid: 1efd7423-122e-67be-93f1-e916b7a7211f
@@ -110,19 +110,19 @@ questions:
     uuid: 1efd742e-ce15-6756-be75-d3011d15be92
     question: 'What parameters are passed to your custom error controller ?'
     answers:
-      - { value: request, correct: false }
-      - { value: exception, correct: true }
-      - { value: logger, correct: true }
-      - { value: user, correct: false }
+      - { value: 'request', correct: false }
+      - { value: 'exception', correct: true }
+      - { value: 'logger', correct: true }
+      - { value: 'user', correct: false }
     help: 'https://symfony.com/doc/7.0/controller/error_pages.html#overriding-the-default-errorcontroller'
   -
     uuid: 1efd7430-d180-6380-9761-e998200fedc6
     question: 'What event does the HttpKernel class dispatch when an exception is thrown ?'
     answers:
-      - { value: kernel.terminate, correct: false }
-      - { value: kernel.exception, correct: true }
-      - { value: kernel.error, correct: false }
-      - { value: kernel.response, correct: false }
+      - { value: 'kernel.terminate', correct: false }
+      - { value: 'kernel.exception', correct: true }
+      - { value: 'kernel.error', correct: false }
+      - { value: 'kernel.response', correct: false }
     help: 'https://symfony.com/doc/7.0/controller/error_pages.html#working-with-the-kernel-exception-event'
   -
     uuid: 1efd7432-7a7f-6db8-af52-8b838538bf3d

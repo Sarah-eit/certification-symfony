@@ -3,20 +3,20 @@ questions:
     uuid: 1eebf878-8b99-6ece-9c42-99d84c92580c
     question: 'What is the tag to use to register a value resolver for controller arguments such as Request?'
     answers:
-      - { value: argument_resolver, correct: false }
-      - { value: controller.argument_value_resolver, correct: true }
-      - { value: controller.argument_resolver, correct: false }
-      - { value: controller.value_resolver, correct: false }
+      - { value: 'argument_resolver', correct: false }
+      - { value: 'controller.argument_value_resolver', correct: true }
+      - { value: 'controller.argument_resolver', correct: false }
+      - { value: 'controller.value_resolver', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#controller-argument-value-resolver'
   -
     uuid: 1eebf878-8b9a-6478-8c1b-99d84c92580c
     question: 'Which exception is thrown if Request::getClientIps() detect that ips are not consistent?'
     answers:
-      - { value: LogicException, correct: false }
-      - { value: RuntimeException, correct: false }
-      - { value: InvalidArgumentException, correct: false }
-      - { value: ConflictingHeadersException, correct: true }
-      - { value: InconsistentIpsException, correct: false }
+      - { value: 'LogicException', correct: false }
+      - { value: 'RuntimeException', correct: false }
+      - { value: 'InvalidArgumentException', correct: false }
+      - { value: 'ConflictingHeadersException', correct: true }
+      - { value: 'InconsistentIpsException', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Request.php#L2061C19-L2061C46'
   -
     uuid: 1eebf878-8b9a-655e-818b-99d84c92580c
@@ -76,40 +76,40 @@ questions:
     uuid: 1eebf878-8ba0-6314-a2da-99d84c92580c
     question: 'How to get the Content Type from Request at Symfony 6.2 ?'
     answers:
-      - { value: "$request->headers->get('CONTENT_TYPE');", correct: true }
-      - { value: "$request->headers->get('content-type');", correct: false }
-      - { value: "$request->headers->get('Content-Type');", correct: false }
-      - { value: $request->getContentTypeFormat();, correct: true }
+      - { value: "$request->headers->get('CONTENT_TYPE')", correct: true }
+      - { value: "$request->headers->get('content-type')", correct: false }
+      - { value: "$request->headers->get('Content-Type')", correct: false }
+      - { value: '$request->getContentTypeFormat()', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba0-6364-83f9-99d84c92580c
     question: 'How to check if a request has been sent using AJAX ?'
     answers:
-      - { value: $request->isXmlHttpRequest();, correct: true }
-      - { value: $request->isAJAX();, correct: false }
+      - { value: '$request->isXmlHttpRequest()', correct: true }
+      - { value: '$request->isAJAX()', correct: false }
       - { value: "$this->headers->get('X-Requested-With') === 'XMLHttpRequest';", correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba0-6440-bdcd-99d84c92580c
     question: 'Which method exist in Symfony\Component\HttpFoundation\Request ?'
     answers:
-      - { value: getPathInfo, correct: true }
-      - { value: getMethod, correct: true }
-      - { value: getLanguages, correct: true }
-      - { value: getHeaders, correct: false }
-      - { value: getHttpHost, correct: true }
-      - { value: getUrl, correct: false }
-      - { value: getUri, correct: true }
+      - { value: 'getPathInfo', correct: true }
+      - { value: 'getMethod', correct: true }
+      - { value: 'getLanguages', correct: true }
+      - { value: 'getHeaders', correct: false }
+      - { value: 'getHttpHost', correct: true }
+      - { value: 'getUrl', correct: false }
+      - { value: 'getUri', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba1-6bba-8c7a-99d84c92580c
     question: 'How to access $_FILES data when using a Symfony\Component\HttpFoundation\Request $request object?'
     answers:
-      - { value: request->getFiles(), correct: false }
-      - { value: $request->getFileData(), correct: false }
-      - { value: $request->getFilesData(), correct: false }
-      - { value: $request->file, correct: false }
-      - { value: $request->files, correct: true }
+      - { value: '$request->getFiles()', correct: false }
+      - { value: '$request->getFileData()', correct: false }
+      - { value: '$request->getFilesData()', correct: false }
+      - { value: '$request->file', correct: false }
+      - { value: '$request->files', correct: true }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba1-6f20-a406-99d84c92580c
@@ -124,10 +124,10 @@ questions:
     uuid: 1eebf878-8ba2-643e-9ec0-99d84c92580c
     question: 'What is the method to get the request body?'
     answers:
-      - { value: getRequestBody(), correct: false }
-      - { value: getBody(), correct: false }
-      - { value: getRequestContent(), correct: false }
-      - { value: getContent(), correct: true }
+      - { value: 'getRequestBody()', correct: false }
+      - { value: 'getBody()', correct: false }
+      - { value: 'getRequestContent()', correct: false }
+      - { value: 'getContent()', correct: true }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba2-6894-8044-99d84c92580c
@@ -166,8 +166,8 @@ questions:
     uuid: 1eebf878-8ba8-6a5a-8490-99d84c92580c
     question: 'What methods are available in the Request $request object ?'
     answers:
-      - { value: $request->isXmlHttpRequest();, correct: true }
-      - { value: $request->getClientIps();, correct: true }
+      - { value: '$request->isXmlHttpRequest()', correct: true }
+      - { value: '$request->getClientIps()', correct: true }
       - { value: "$request->getPreferredLanguage(['en', 'fr']);", correct: true }
       - { value: "$request->server->get('HTTP_HOST');", correct: true }
       - { value: "$request->files->get('foo');", correct: true }

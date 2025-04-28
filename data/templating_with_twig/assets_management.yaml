@@ -21,9 +21,8 @@ questions:
     help: 'https://symfony.com/doc/7.0/reference/configuration/framework.html#version-format'
   -
     uuid: 1eebf878-8ba7-6f74-a846-99d84c92580c
-    question: 'What does the asset Twig function do?'
+    question: 'What does the `asset` Twig function do?'
     answers:
-      - { value: 'Renders a CSRF token.', correct: false }
       - { value: 'Renders a CSRF token.', correct: false }
       - { value: 'Returns the public path of the given asset path.', correct: true }
     help: 'https://symfony.com/doc/7.0/reference/twig_reference.html'

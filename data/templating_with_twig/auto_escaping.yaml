@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba7-69a2-9a19-99d84c92580c
-    question: 'What does the autoescape tag in Twig do?'
+    question: 'What does the `autoescape` tag in Twig do?'
     answers:
       - { value: 'It disables automatic escaping for the entire template.', correct: false }
       - { value: 'It enables automatic escaping for the entire template.', correct: false }
@@ -17,7 +17,7 @@ questions:
     help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -
     uuid: 1eebf878-8ba7-6a74-9215-99d84c92580c
-    question: 'What does the raw filter do in Twig? {% autoescape %} {{ safe_value|raw }} {% endautoescape %}'
+    question: 'What does the `raw` filter do in Twig? {% autoescape %} {{ safe_value|raw }} {% endautoescape %}'
     answers:
       - { value: 'It escapes the content of a variable.', correct: false }
       - { value: 'It marks a value as safe, preventing it from being escaped.', correct: true }
@@ -41,9 +41,41 @@ questions:
     help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -
     uuid: 1eebf878-8ba8-6000-9bc1-99d84c92580c
-    question: 'What does the serialize Twig filter do?'
+    question: 'What does the `serialize` Twig filter do?'
     answers:
       - { value: 'Generates an excerpt of a code file around a given line number.', correct: false }
       - { value: 'Transforms input into YAML syntax.', correct: false }
       - { value: 'Accepts data that can be serialized by the Serializer component and returns a serialized string in the specified format.', correct: true }
     help: 'https://symfony.com/doc/7.0/reference/twig_reference.html'
+  - uuid: 43d8347e-1fc7-45be-8891-23c4c82f6d3e
+    question: 'Is it recommended to use the `raw` filter frequently in Twig templates?'
+    answers:
+      - { value: 'No, it can introduce security vulnerabilities if the content is not trusted.', correct: true }
+      - { value: 'Yes, it is a best practice to always mark content as raw for flexibility.', correct: false }
+      - { value: 'Yes, because Twig automatically escapes everything even after using raw.', correct: false }
+      - { value: 'No, but it is mandatory when rendering dynamic HTML.', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/filters/raw.html'
+  - uuid: 12ae4e7c-45c5-4b0f-9c3a-95fbef8901aa
+    question: 'What is the default behavior of Twig regarding autoescaping?'
+    answers:
+      - { value: 'Twig automatically escapes variables in templates to prevent XSS attacks.', correct: true }
+      - { value: 'Twig disables escaping by default to allow more flexibility.', correct: false }
+      - { value: 'Twig escapes only variables coming from external sources.', correct: false }
+      - { value: 'Twig requires manual escaping of each variable.', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#escaping-variables'
+  - uuid: 0bca0134-7ae3-4d7b-b187-738e9b4b34a8
+    question: 'What is the purpose of the `escape` filter in Twig?'
+    answers:
+      - { value: 'It manually escapes a string according to the current context (HTML, JS, etc.).', correct: true }
+      - { value: 'It removes HTML tags from a string.', correct: false }
+      - { value: 'It disables autoescaping for the string.', correct: false }
+      - { value: 'It replaces special characters with their raw values.', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/filters/escape.html'
+  - uuid: 6c36aeb5-998c-4c6a-807b-6bb46d6fa1d3
+    question: 'Is it a good practice to disable autoescaping globally in a Twig template?'
+    answers:
+      - { value: 'No, it exposes the application to XSS vulnerabilities.', correct: true }
+      - { value: 'Yes, it improves performance.', correct: false }
+      - { value: 'Yes, because Twig filters are enough to guarantee security.', correct: false }
+      - { value: 'No, but it is mandatory if you use a JavaScript frontend.', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#escaping-variables'

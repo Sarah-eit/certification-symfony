@@ -83,10 +83,10 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Response.php'
   -
     uuid: 1eebf878-8ba0-6486-992a-99d84c92580c
-    question: 'How can you set status code of Symfony\Component\HttpFoundation\Response'
+    question: 'How can you set the status code of a Symfony\Component\HttpFoundation\Response?'
     answers:
-      - { value: 'By you pass the value as second parameter of new Response()', correct: true }
-      - { value: 'By using setStatusCode()', correct: true }
-      - { value: 'By using setCodeStatus()', correct: false }
-      - { value: 'By using setHttpCode()', correct: false }
+      - { value: 'By passing the value as the second argument to new Response()', correct: true }
+      - { value: 'By calling $response->setStatusCode()', correct: true }
+      - { value: 'By calling $response->setCodeStatus()', correct: false }
+      - { value: 'By calling $response->setHttpCode()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#response'

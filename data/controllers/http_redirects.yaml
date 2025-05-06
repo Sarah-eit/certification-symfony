@@ -8,7 +8,7 @@ questions:
     help: 'https://tools.ietf.org/html/rfc7538#section-3'
   -
     uuid: 1eebf878-8b9c-6bba-8b13-99d84c92580c
-    question: 'What should do an intermediary if the Max-Forwards header is equal to 0?'
+    question: 'What should an intermediary do when the Max-Forwards header is set to 0?'
     answers:
       - { value: 'It should not forward the request', correct: true }
       - { value: 'It should forward the request no matter the header value', correct: false }
@@ -34,7 +34,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/routing.html'
   -
     uuid: 1eebf878-8ba8-6974-ac4a-99d84c92580c
-    question: 'Whats the Reponse in a redirectToRoute or a redirect method in a controller ?'
+    question: 'What type of Response is returned by `redirectToRoute()` or `redirect()` in a controller?'
     answers:
       - { value: 'RedirectedResponse', correct: false }
       - { value: 'RedirectResponse', correct: true }

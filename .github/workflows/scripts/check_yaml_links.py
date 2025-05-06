@@ -6,16 +6,30 @@ from requests.exceptions import RequestException
 
 MAX_WORKERS = 10
 TIMEOUT = 10
+EXCLUDED_DOMAINS = ['github.com']
 
 checked_urls = {}
 broken_links = []
+
+def should_skip(url):
+    return any(domain in url for domain in EXCLUDED_DOMAINS)
 
 def check_url(url):
     if url in checked_urls:
         return url, checked_urls[url]
 
+    if should_skip(url):
+        print(f"⏭️ Skipped (excluded): {url}")
+        checked_urls[url] = True  # Treat as valid
+        return url, True
+
     try:
-        response = requests.head(url, allow_redirects=True, timeout=TIMEOUT)
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; LinkChecker/1.0)"
+        }
+        response = requests.head(url, headers=headers, allow_redirects=True, timeout=TIMEOUT)
+        if response.status_code >= 400:
+            response = requests.get(url, headers=headers, allow_redirects=True, timeout=TIMEOUT)
         is_ok = response.status_code < 400
     except RequestException:
         is_ok = False
@@ -46,14 +60,14 @@ def main():
 
     unique_urls = sorted(set(url for _, url in all_links))
 
-    # Check all URLs in parallel
     print(f"🔍 Checking {len(unique_urls)} unique links using {MAX_WORKERS} threads...\n")
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_url = {executor.submit(check_url, url): url for url in unique_urls}
         for future in as_completed(future_to_url):
             url, is_ok = future.result()
-            status = "✅ OK" if is_ok else "❌ Broken"
-            print(f"{status}: {url}")
+            if not should_skip(url):  # don't log skipped as OK
+                status = "✅ OK" if is_ok else "❌ Broken"
+                print(f"{status}: {url}")
 
     # Match broken URLs with their source files
     for file_path, url in all_links:

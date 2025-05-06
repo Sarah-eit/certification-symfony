@@ -154,7 +154,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/components/console/helpers/progressbar.html#customizing-the-progress-bar'
   -
     uuid: 1eebf878-8ba6-60de-91d5-99d84c92580c
-    question: 'For performance reasons, symfony redraws the screen once every XXXXms. If this is too fast or too slow for your application, use the methods minSecondsBetweenRedraws() and maxSecondsBetweenRedraws(): How much is XXX ?'
+    question: 'For performance reasons, Symfony redraws the screen while rendering the CLI progress bar once every XXXXms. If this is too fast or too slow for your application, use the methods ProgressBar::minSecondsBetweenRedraws() and ProgressBar::maxSecondsBetweenRedraws(): How much is XXX ?'
     answers:
       - { value: '50 ms', correct: false }
       - { value: '80 ms', correct: false }

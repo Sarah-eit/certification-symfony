@@ -7,3 +7,91 @@ questions:
       - { value: 'snake_case', correct: false }
       - { value: 'camelCase', correct: false }
     help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a0658ba-2cbc-11f0-8806-d2893c741367
+    question: "Which naming convention is used for Twig template variables?"
+    answers:
+      - { value: 'snake_case', correct: true }
+      - { value: 'camelCase', correct: false }
+      - { value: 'UpperCamelCase', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a065bb2-2cbc-11f0-8806-d2893c741367
+    question: "How should PHP constants be named according to Symfony conventions?"
+    answers:
+      - { value: 'SCREAMING_SNAKE_CASE', correct: true }
+      - { value: 'camelCase', correct: false }
+      - { value: 'snake_case', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a065cd4-2cbc-11f0-8806-d2893c741367
+    question: "What suffix should all interfaces have in Symfony?"
+    answers:
+      - { value: 'Interface', correct: true }
+      - { value: 'Iface', correct: false }
+      - { value: 'Contract', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a065dd8-2cbc-11f0-8806-d2893c741367
+    question: "What is the correct prefix for abstract classes (excluding PHPUnit TestCase)?"
+    answers:
+      - { value: 'Abstract', correct: true }
+      - { value: 'Base', correct: false }
+      - { value: 'AbstractClass', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a065edc-2cbc-11f0-8806-d2893c741367
+    question: "Which of the following is the correct suffix for exception classes?"
+    answers:
+      - { value: 'Exception', correct: true }
+      - { value: 'Error', correct: false }
+      - { value: 'Ex', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a065fea-2cbc-11f0-8806-d2893c741367
+    question: "What prefix should service configuration attributes use?"
+    answers:
+      - { value: 'As', correct: true }
+      - { value: 'Service', correct: false }
+      - { value: 'Config', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a0660da-2cbc-11f0-8806-d2893c741367
+    question: "What prefix should be used for PHP attributes related to controller arguments?"
+    answers:
+      - { value: 'Map', correct: true }
+      - { value: 'Arg', correct: false }
+      - { value: 'With', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a0661f2-2cbc-11f0-8806-d2893c741367
+    question: "Which format should be used for type-hinting in PHPDocs (e.g. for booleans)?"
+    answers:
+      - { value: 'bool', correct: true }
+      - { value: 'boolean', correct: false }
+      - { value: 'Boolean', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a06633c-2cbc-11f0-8806-d2893c741367
+    question: "Which naming format should be used for web asset files like stylesheets?"
+    answers:
+      - { value: 'snake_case', correct: true }
+      - { value: 'camelCase', correct: false }
+      - { value: 'UpperCamelCase', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 2a066436-2cbc-11f0-8806-d2893c741367
+    question: "What should the name of a Symfony service be?"
+    answers:
+      - { value: 'The fully qualified class name (FQCN)', correct: true }
+      - { value: 'A short custom alias', correct: false }
+      - { value: 'snake_case with dots', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 7914e840-2cbc-11f0-8806-d2893c741367
+    question: "What happens if you forget to suffix an exception class with 'Exception' in Symfony?"
+    answers:
+      - { value: 'Nothing, but it breaks the naming convention', correct: true }
+      - { value: 'Symfony throws an autowiring error', correct: false }
+      - { value: 'The exception won’t be catchable by try/catch', correct: false }
+    help: 'https://symfony.com/doc/7.0/contributing/code/standards.html#naming-conventions'

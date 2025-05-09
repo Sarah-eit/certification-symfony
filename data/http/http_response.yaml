@@ -24,7 +24,7 @@ questions:
       - { value: '3xx', correct: false }
       - { value: '4xx', correct: false }
       - { value: '4xx or 5xx, depending on the type of information', correct: false }
-    help: 'https://tools.ietf.org/html/rfc7231#section-6.2'
+    help: 'https://datatracker.ietf.org/doc/html/rfc7231#section-6.2'
   -
     uuid: 1eedba99-136b-6058-87fa-dfe6316dc896
     question: 'Which Response does exist in Symfony ?'
@@ -37,10 +37,10 @@ questions:
     help: 'https://github.com/symfony/symfony/tree/7.0/src/Symfony/Component/HttpFoundation'
   -
     uuid: 1efcc189-bf6e-60fc-9a9b-31022924092d
-    question: "When the server can't return an acceptable response according to the Accept headers, it should return:"
+    question: "When the server can't return an acceptable response according to the Accept headers, it should return the code:"
     answers:
-      - { value: 'a 412 response code', correct: false }
-      - { value: 'a 406 response code', correct: true }
-      - { value: 'a 415 response code', correct: false }
-      - { value: 'a 418 response code', correct: false }
+      - { value: '412', correct: false }
+      - { value: '406', correct: true }
+      - { value: '415', correct: false }
+      - { value: '418', correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc7231#section-5.3.2'

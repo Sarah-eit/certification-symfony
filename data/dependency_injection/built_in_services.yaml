@@ -322,9 +322,9 @@ questions:
     uuid: 1efdc955-f448-6fd2-9904-f91545187910
     question: 'Which statement is correct about the built-in service tag `validator.constraint_validator` in Symfony?'
     answers:
-      - { value: 'The syntax is correct.', correct: true }
-      - { value: 'The correct tag is "validation.constraint".', correct: false }
-      - { value: 'The correct tag is "validating.constraint.validator".', correct: false }
+      - { value: 'Syntax is correct', correct: true }
+      - { value: 'Correct tag is `validation.constraint`', correct: false }
+      - { value: 'Correct tag is `validating.constraint.validator`', correct: false }
     help: 'https://symfony.com/doc/7.0/reference/dic_tags.html#validator-constraint-validator'
   -
     uuid: 1efdc95c-a2b3-64f4-a30b-c38aeaa9ede1

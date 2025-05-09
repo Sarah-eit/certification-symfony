@@ -6,7 +6,7 @@ questions:
       - { value: 'type "/" subtype *( OWS ";" OWS parameter )', correct: true }
       - { value: 'type ** subtype *( OWS ";" OWS parameter )', correct: false }
       - { value: 'type + subtype *( OWS ";" OWS parameter )', correct: false }
-    help: 'https://tools.ietf.org/html/rfc7231#section-3.1.1.1'
+    help: 'https://datatracker.ietf.org/doc/html/rfc7231#section-3.1.1.1'
   -
     uuid: 1eebf878-8b98-6812-9467-99d84c92580c
     question: 'Could a response that use the must-understand directive be stored if the cache does not understand the directive?'
@@ -56,17 +56,17 @@ questions:
     uuid: 1eebf878-8b9d-695c-81e1-99d84c92580c
     question: 'If the server cannot return a response that matches the conditions of an If-Match header, which status code should it return?'
     answers:
-      - { value: 'a 418', correct: false }
-      - { value: 'a 412', correct: true }
-      - { value: 'a 406', correct: false }
-      - { value: 'a 422', correct: false }
+      - { value: '418', correct: false }
+      - { value: '412', correct: true }
+      - { value: '406', correct: false }
+      - { value: '422', correct: false }
     help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.24'
   -
     uuid: 8b3d97c7-02bc-4ed8-a3cc-906ab660697a
     question: 'When do you need to run php bin/console assets:install in a Symfony project?'
     answers:
       - { value: "When you've added or modified assets from a bundle (e.g. EasyAdmin, CKEditor) that should be copied to public/bundles/", correct: true }
-      - { value: 'When you update PHP code such as controllers or entitie', correct: false }
+      - { value: 'When you update PHP code such as controllers or entities', correct: false }
       - { value: 'When you edit Twig templates', correct: false }
       - { value: 'When you modify compiled JS/CSS handled by Webpack Encore', correct: false }
       - { value: 'When you work with static files already located in public/', correct: false }

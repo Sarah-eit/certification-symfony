@@ -15,3 +15,35 @@ questions:
       - { value: '3', correct: false }
       - { value: '"1 + 2=3"', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#string-interpolation'
+  -
+    uuid: e8a4d2a4-2d01-11f0-8a2e-3d12f68a1234
+    question: "What will be the result of {{ 1 + 2 ~ ' apples' }}?"
+    answers:
+      - { value: '3 apples', correct: false }
+      - { value: '12 apples', correct: true }
+      - { value: '1 + 2 apples', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'
+  -
+    uuid: e8a4d3d8-2d01-11f0-8a2e-3d12f68a1234
+    question: "What will Twig render for {{ (1 + 2) ~ ' apples' }}?"
+    answers:
+      - { value: '3 apples', correct: true }
+      - { value: '12 apples', correct: false }
+      - { value: '1 + 2 apples', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'
+  -
+    uuid: e8a4d4f2-2d01-11f0-8a2e-3d12f68a1234
+    question: "Which of the following will cause an error in Twig?"
+    answers:
+      - { value: "{{ 1 ~ null }}", correct: false }
+      - { value: "{{ true ~ ' value' }}", correct: false }
+      - { value: "{{ {} ~ 'string' }}", correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'
+  -
+    uuid: e8a4d618-2d01-11f0-8a2e-3d12f68a1234
+    question: "Given {% set foo = 'bar' %}, what will {{ 'foo is ' ~ foo }} render?"
+    answers:
+      - { value: 'foo is bar', correct: true }
+      - { value: 'foo is foo', correct: false }
+      - { value: '{{ foo is bar }}', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'

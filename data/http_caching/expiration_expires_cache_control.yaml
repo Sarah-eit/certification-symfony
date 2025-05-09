@@ -66,7 +66,7 @@ questions:
       - { value: 'Etag', correct: false }
       - { value: 'Pragma', correct: false }
       - { value: 'Last-Modified', correct: false }
-    help: 'https://tools.ietf.org/html/rfc2616#page-79'
+    help: 'https://datatracker.ietf.org/doc/html/rfc2616#page-79'
   -
     uuid: 1eebf878-8ba6-6ac0-b4bc-99d84c92580c
     question: 'Which headers/directives will be ignored by a proxy if Expires, s-maxage and max-age are all present in a response ?'
@@ -74,7 +74,7 @@ questions:
       - { value: 'Expires', correct: true }
       - { value: 'max-age', correct: true }
       - { value: 's-maxage', correct: false }
-    help: 'https://tools.ietf.org/html/rfc7234#section-5.2.2.8'
+    help: 'https://datatracker.ietf.org/doc/html/rfc7234#section-5.2.2.8'
   -
     uuid: 1eebf878-8ba7-6268-bc81-99d84c92580c
     question: 'What happens for an HTTP response if it has both the Expires and Cache-Control headers set?'
@@ -83,7 +83,7 @@ questions:
       - { value: 'Caching systems will use the Expires header field if the response is generated if the current day number is odd, otherwise they will use the Cache-Control header field.', correct: false }
       - { value: 'Caching systems will favor the Cache-Control header field over the Expires field to cache the response.', correct: true }
       - { value: 'Caching systems will favor the Expires header field over the Cache-Control field to cache the response.', correct: false }
-    help: 'https://tools.ietf.org/html/rfc2616#page-79'
+    help: 'https://datatracker.ietf.org/doc/html/rfc2616#page-79'
   -
     uuid: 1eebf878-8ba9-6cb6-b7db-99d84c92580c
     question: "The Expires header's value must contain the number of seconds the response should be cached."

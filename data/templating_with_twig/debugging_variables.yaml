@@ -8,3 +8,35 @@ questions:
       - { value: 'The node_class is a mandatory option to get defined in a Twig_Environment.', correct: false }
       - { value: 'The given test will use a semantic validation in addition to the basic evaluation.', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/advanced.html#tests'
+  -
+    uuid: 2bcbb162-2cbd-11f0-8806-d2893c741367
+    question: "What is the main purpose of the dump() function in Twig?"
+    answers:
+      - { value: 'To inspect the contents of a variable', correct: true }
+      - { value: 'To render HTML', correct: false }
+      - { value: 'To send an error message to the browser', correct: false }
+    help: 'https://symfony.com/doc/current/templates.html#the-dump-twig-utilities'
+  -
+    uuid: 2bcbba04-2cbd-11f0-8806-d2893c741367
+    question: "Which Symfony component must be installed to use the dump() function in Twig?"
+    answers:
+      - { value: 'symfony/debug-bundle', correct: true }
+      - { value: 'symfony/var-dumper', correct: false }
+      - { value: 'symfony/twig-bundle', correct: false }
+    help: 'https://symfony.com/doc/current/templates.html#the-dump-twig-utilities'
+  -
+    uuid: 2bcbdc14-2cbd-11f0-8806-d2893c741367
+    question: "In which environments is the dump() function/tag available?"
+    answers:
+      - { value: 'dev and test', correct: true }
+      - { value: 'Only prod', correct: false }
+      - { value: 'All environments by default', correct: false }
+    help: 'https://symfony.com/doc/current/templates.html#the-dump-twig-utilities'
+  -
+    uuid: 2bcbea56-2cbd-11f0-8806-d2893c741367
+    question: "What happens if you use dump() in a Twig template in the production environment?"
+    answers:
+      - { value: 'A PHP error is triggered', correct: true }
+      - { value: 'The value is dumped in the HTML page', correct: false }
+      - { value: 'Nothing is displayed but no error occurs', correct: false }
+    help: 'https://symfony.com/doc/current/templates.html#the-dump-twig-utilities'

@@ -8,7 +8,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/routing.html#sub-domain-routing'
   -
     uuid: 1eebf878-8ba0-6f80-ba98-99d84c92580c
-    question: 'Using XML or YAML, how to declare a route for a specific domain/host?'
+    question: 'How to declare a route for a specific domain/host?'
     answers:
       - { value: 'Add a "domain" attribute', correct: false }
       - { value: 'Add a "host" attribute', correct: true }

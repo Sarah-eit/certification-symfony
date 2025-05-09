@@ -1,17 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba1-6534-a02b-99d84c92580c
-    question: 'Until Symfony 5.3, to implement UserInterface which method you have to define ?'
-    answers:
-      - { value: 'getRoles()', correct: true }
-      - { value: 'getSalt()', correct: true }
-      - { value: 'getUsername()', correct: true }
-      - { value: 'eraseCredentials()', correct: true }
-      - { value: 'getCredentials()', correct: false }
-      - { value: 'getHash()', correct: false }
-      - { value: 'getId()', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Core/User/UserInterface.php'
-  -
     uuid: 1eed6647-6f02-6908-b85e-f514f4793299
     question: 'Since Symfony 5.4, to implement UserInterface which method you have to define ?'
     answers:
@@ -23,3 +11,76 @@ questions:
       - { value: 'getRoles', correct: true }
       - { value: 'addRole', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Security/Core/User/UserInterface.php'
+  -
+    uuid: d26d666b-d14c-466a-9b25-b5fcb14f605f
+    question: 'What is the main role of a user provider in Symfony?'
+    answers:
+      - { value: 'To encode user passwords', correct: false }
+      - { value: 'To authenticate users using tokens', correct: false }
+      - { value: 'To load user data from a storage system using an identifier', correct: true }
+      - { value: 'To register new users in the system', correct: false }
+    help: 'https://symfony.com/doc/7.0/security/user_providers.html'
+  -
+    uuid: cc4f0d16-5939-4fed-b3ae-fab4b248a2e1
+    question: 'Which user provider should you use to load users from a database with Doctrine?'
+    answers:
+      - { value: 'Memory user provider', correct: false }
+      - { value: 'Entity user provider', correct: true }
+      - { value: 'Chain user provider', correct: false }
+      - { value: 'LDAP user provider', correct: false }
+    help: 'https://symfony.com/doc/7.0/security/user_providers.html'
+  -
+    uuid: f2338bef-bff0-4ea8-8caa-57008cd31ee6
+    question: 'What interface must be implemented to customize the query used to load users with Doctrine?'
+    answers:
+      - { value: 'UserRepositoryInterface', correct: false }
+      - { value: 'UserProviderInterface', correct: false }
+      - { value: 'UserLoaderInterface', correct: true }
+      - { value: 'PasswordAuthenticatedUserInterface', correct: false }
+    help: 'https://symfony.com/doc/7.0/security/user_providers.html'
+  -
+    uuid: 7681d42a-b800-4a98-9825-ebb81dcb16bd
+    question: 'Which method is called when using a custom user loader in a repository?'
+    answers:
+      - { value: 'findUser()', correct: false }
+      - { value: 'loadUserByUsername()', correct: false }
+      - { value: 'loadUserByIdentifier()', correct: true }
+      - { value: 'getUser()', correct: false }
+    help: 'https://symfony.com/doc/7.0/security/user_providers.html'
+  -
+    uuid: a764f714-ed1c-4b8e-867c-e44445d396a0
+    question: 'Why is the memory user provider not recommended in real applications?'
+    answers:
+      - { value: 'It does not support roles', correct: false }
+      - { value: 'It stores user data in plain text', correct: false }
+      - { value: 'It’s hard to manage and lacks persistence', correct: true }
+      - { value: 'It only works in development mode', correct: false }
+    help: 'https://symfony.com/doc/7.0/security/user_providers.html'
+
+  -
+    uuid: 8e5ed049-d7d6-40e0-a1c0-099a07761444
+    question: 'What is the main purpose of the chain user provider?'
+    answers:
+      - { value: 'To allow fallback between multiple providers', correct: true }
+      - { value: 'To group users by role', correct: false }
+      - { value: 'To synchronize users across environments', correct: false }
+      - { value: 'To enable multi-factor authentication', correct: false }
+    help: 'https://symfony.com/doc/7.0/security/user_providers.html'
+  -
+    uuid: 7c1e84e8-a1d4-4e89-9f8a-a267402dd52e
+    question: 'When creating a custom user provider, which interface must your class implement?'
+    answers:
+      - { value: 'UserLoaderInterface', correct: false }
+      - { value: 'PasswordUpgraderInterface only', correct: false }
+      - { value: 'UserProviderInterface', correct: true }
+      - { value: 'UserCheckerInterface', correct: false }
+    help: 'https://symfony.com/doc/7.0/security/user_providers.html'
+  -
+    uuid: d2c8f1ff-f725-40c4-8d80-663b87b55586
+    question: 'What does the method refreshUser() do in a custom user provider?'
+    answers:
+      - { value: 'Hashes the user password again', correct: false }
+      - { value: 'Reloads the user from the database after session restore', correct: true }
+      - { value: 'Updates user roles from memory', correct: false }
+      - { value: 'Refreshes the firewall context', correct: false }
+    help: 'https://symfony.com/doc/7.0/security/user_providers.html'

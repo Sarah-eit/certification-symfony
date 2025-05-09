@@ -10,12 +10,12 @@ questions:
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#directives'
   -
     uuid: 1eebf878-8ba1-6016-beaf-99d84c92580c
-    question: 'Using XML, how to ensure that a route is accessed via HTTPS?'
+    question: 'In a Symfony YAML route, how do you enforce HTTPS?'
     answers:
-      - { value: 'schemes="https"', correct: true }
-      - { value: 'https="true"', correct: false }
-      - { value: 'protocol="https"', correct: false }
-      - { value: 'ensure="https"', correct: false }
+      - { value: 'schemes: https', correct: true }
+      - { value: 'https: true', correct: false }
+      - { value: 'protocol: https', correct: false }
+      - { value: 'secure: true', correct: false }
     help: 'https://symfony.com/doc/7.0/routing.html#forcing-https-on-generated-urls'
   -
     uuid: 1eebf878-8ba1-6214-83d0-99d84c92580c

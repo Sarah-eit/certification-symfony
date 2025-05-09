@@ -17,3 +17,30 @@ questions:
       - { value: 'page', correct: false }
       - { value: 'url', correct: false }
     help: 'https://symfony.com/doc/7.0/routing.html#redirecting-to-urls-and-routes-directly-from-a-route'
+  -
+    uuid: 4f513981-0f6a-4dd3-8bec-3a4b479f941e
+    question: 'What is the resulting status code when both "permanent: true" and "keepRequestMethod: true" are set in a redirection?'
+    answers:
+      - { value: '301', correct: false }
+      - { value: '307', correct: false }
+      - { value: '308', correct: true }
+      - { value: '302', correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html#redirecting-to-urls-and-routes-directly-from-a-route'
+  -
+    uuid: a1cc74bb-cff6-4f4d-a361-9cf52d9b6257
+    question: 'In a route using RedirectController, which option removes all original route parameters when redirecting?'
+    answers:
+      - { value: 'clearAttributes: true', correct: false }
+      - { value: 'ignoreAttributes: true', correct: true }
+      - { value: 'dropRouteAttributes: true', correct: false }
+      - { value: 'removeParams: true', correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html#redirecting-to-urls-and-routes-directly-from-a-route'
+  -
+    uuid: 52c2beba-ae68-49bd-a0dd-a2b0a0af8f29
+    question: 'Using RedirectController, what happens if both "route" and "path" are defined in the defaults of a redirecting route?'
+    answers:
+      - { value: 'The "route" takes precedence over "path"', correct: false }
+      - { value: 'Symfony throws a runtime error', correct: true }
+      - { value: 'Symfony merges both in order', correct: false }
+      - { value: 'Only "path" is used by default', correct: false }
+    help: 'https://symfony.com/doc/7.0/routing.html#redirecting-to-urls-and-routes-directly-from-a-route'

@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://tools.ietf.org/html/rfc7538#section-3'
+    help: 'https://datatracker.ietf.org/doc/html/rfc7538#section-3'
   -
     uuid: 1eebf878-8b97-6b88-88e6-99d84c92580c
     question: 'Should a response using the 511 status code contains a link to a resource that allows the client to authenticate itself?'
@@ -23,7 +23,7 @@ questions:
       - { value: '505', correct: false }
       - { value: '501', correct: false }
       - { value: '502', correct: false }
-    help: 'https://tools.ietf.org/html/rfc2616#section-6.1.1'
+    help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-6.1.1'
   -
     uuid: 1eebf878-8b98-693e-893f-99d84c92580c
     question: 'What does the 308 HTTP status code stand for?'
@@ -42,7 +42,7 @@ questions:
       - { value: '420', correct: false }
       - { value: '503', correct: false }
       - { value: '431', correct: false }
-    help: 'https://tools.ietf.org/html/rfc6585#section-4'
+    help: 'https://datatracker.ietf.org/doc/html/rfc6585#section-4'
   -
     uuid: 1eebf878-8b99-6b5e-8df3-99d84c92580c
     question: 'What are the HTTP status codes involved by the caching models?'
@@ -51,7 +51,7 @@ questions:
       - { value: '204', correct: false }
       - { value: '300', correct: false }
       - { value: '304', correct: true }
-    help: 'https://tools.ietf.org/html/rfc2616#section-10.3.5'
+    help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-10.3.5'
   -
     uuid: 1eebf878-8b9a-6ef0-b697-99d84c92580c
     question: 'What is the status code for Gone?'
@@ -61,7 +61,7 @@ questions:
       - { value: '404', correct: false }
       - { value: '403', correct: false }
       - { value: '411', correct: false }
-    help: 'https://tools.ietf.org/html/rfc2616#section-10.4.11'
+    help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-10.4.11'
   -
     uuid: 1eebf878-8b9a-6f40-b0e4-99d84c92580c
     question: 'What are the HTTP status codes for Server Error?'
@@ -71,7 +71,7 @@ questions:
       - { value: '5xx', correct: true }
       - { value: '4xx', correct: false }
       - { value: '2xx', correct: false }
-    help: 'https://tools.ietf.org/html/rfc2616#section-6.1.1'
+    help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-6.1.1'
   -
     uuid: 1eebf878-8b9c-60c0-962a-99d84c92580c
     question: 'Which headers can trigger a 406 status code if the server cannot produce an acceptable response?'
@@ -89,7 +89,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://tools.ietf.org/html/rfc7538#section-3'
+    help: 'https://datatracker.ietf.org/doc/html/rfc7538#section-3'
   -
     uuid: 1eebf878-8b9d-67d6-ae59-99d84c92580c
     question: 'What is the HTTP status codes for Service Unavailable?'
@@ -136,7 +136,7 @@ questions:
       - { value: '201', correct: true }
       - { value: '303', correct: true }
       - { value: '304', correct: false }
-    help: 'https://tools.ietf.org/html/rfc7538'
+    help: 'https://datatracker.ietf.org/doc/html/rfc7538'
   -
     uuid: 1eebf878-8ba2-67fe-8571-99d84c92580c
     question: 'What is the HTTP status codes for Gateway Timeout?'
@@ -188,4 +188,4 @@ questions:
       - { value: '3xx', correct: false }
       - { value: '2xx', correct: true }
       - { value: '1xx', correct: false }
-    help: 'https://tools.ietf.org/html/rfc2616#section-6.1.1'
+    help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-6.1.1'

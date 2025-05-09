@@ -3,19 +3,19 @@ questions:
     uuid: 1eebf878-8b9a-673e-9593-99d84c92580c
     question: 'Which of the following is not a valid way to create an instance of Symfony\Component\HttpFoundation\Request?'
     answers:
-      - { value: 'Request::createRequestFromFactory(/* ... */);', correct: true }
-      - { value: 'new Request(/* ... */);', correct: false }
-      - { value: 'Request::createFromGlobals(/* ... */);', correct: false }
-      - { value: 'Request::create(/* ... */);', correct: false }
+      - { value: 'Request::createRequestFromFactory()', correct: true }
+      - { value: 'new Request()', correct: false }
+      - { value: 'Request::createFromGlobals()', correct: false }
+      - { value: 'Request::create()', correct: false }
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#request'
   -
     uuid: 1eebf878-8ba5-61fc-a856-99d84c92580c
     question: 'What is the main difference between `FlashBag::add()` and `FlashBag::set()` in Symfony?'
     answers:
-      - { value: '`FlashBag::add()` allows adding a single message, while `FlashBag::set()` allows adding multiple messages using a callback.', correct: false }
-      - { value: 'They behave the same way', correct: false }
-      - { value: '`FlashBag::add()` allows adding multiple messages under the same key, while `FlashBag::set()` replaces any existing messages under that key.', correct: true }
-      - { value: '`FlashBag::add()` replaces messages under a key, while `FlashBag::set()` appends new messages to it.', correct: false }
+      - { value: '`add()` appends, `set()` replaces.', correct: true }
+      - { value: '`add()` replaces, `set()` appends.', correct: false }
+      - { value: 'Both work the same way.', correct: false }
+      - { value: '`add()` takes one message, `set()` uses a callback.', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
   -
     uuid: 1ef91ee4-daf6-6de2-815d-598df0174ec8

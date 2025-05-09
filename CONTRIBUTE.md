@@ -28,6 +28,11 @@ Thank you for your interest in contributing to this project! 🎉
 If your contribution requires a UUID, use the following online tool to generate one:
 👉 [UUID Generator](https://www.uuidgenerator.net/version4)
 
+### Check for Incomplete Question Sets
+
+To find files with fewer than 5 questions, run the following script:  
+`bash .github/workflows/scripts/check-question-count.sh`
+
 ## Submitting a Pull Request
 
 1. **Push Your Changes**:

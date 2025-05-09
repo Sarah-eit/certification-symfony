@@ -58,16 +58,12 @@ def main():
     for file in Path("data").rglob("*.yaml"):
         all_links.extend(extract_urls_from_yaml(file))
 
+    # Extract unique URLs to check
     unique_urls = sorted(set(url for _, url in all_links))
 
     print(f"🔍 Checking {len(unique_urls)} unique links using {MAX_WORKERS} threads...\n")
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        future_to_url = {executor.submit(check_url, url): url for url in unique_urls}
-        for future in as_completed(future_to_url):
-            url, is_ok = future.result()
-            if not should_skip(url):  # don't log skipped as OK
-                status = "✅ OK" if is_ok else "❌ Broken"
-                print(f"{status}: {url}")
+        results = list(executor.map(check_url, unique_urls))
 
     # Match broken URLs with their source files
     for file_path, url in all_links:

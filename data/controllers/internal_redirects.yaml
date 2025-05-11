@@ -31,9 +31,9 @@ questions:
     uuid: 1eebf878-8ba8-688e-a1e9-99d84c92580c
     question: 'How do you call the fancy method in a forward from a controller?'
     answers:
-      - { value: "return $this->forward('App\\Controller\\OtherController::fancy', ['name' => $name ]);", correct: true }
-      - { value: 'return $this->forward(''App\\Controller\\OtherController::fancy'', [''name'' => $name ]);', correct: false }
-      - { value: "return $this->forward('OtherController::class', ['method' => 'fancy'],['options' => ['name' => $name ]]);", correct: false }
+      - { value: "$this->forward('App\\Controller\\OtherController::fancy', ['name' => $name ]);", correct: true }
+      - { value: '$this->forward(''App\\Controller\\OtherController::fancy'', [''name'' => $name ]);', correct: false }
+      - { value: "$this->forward('OtherController::class', ['method' => 'fancy'],['options' => ['name' => $name ]]);", correct: false }
     help: 'https://symfony.com/doc/7.0/controller/forwarding.html'
   -
     uuid: 1eebf878-8ba8-68de-a3ca-99d84c92580c

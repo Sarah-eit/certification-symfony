@@ -14,3 +14,83 @@ questions:
       - { value: "public function getGroupSequence(): array|GroupSequence { return [[['User'], 'Premium'], 'Api']; }", correct: false }
       - { value: "public function getGroupSequence(): array|GroupSequence { return [['User'], ['Premium'], ['Api']]; }", correct: false }
     help: 'https://symfony.com/doc/7.0/validation/sequence_provider.html#group-sequence-providers'
+  -
+    uuid: d15bc8fc-2e10-11f0-8b47-52f6040d993b
+    question: 'What does the GroupSequence attribute define in Symfony validation?'
+    answers:
+      - { value: 'The order in which validation groups are applied', correct: true }
+      - { value: 'The severity level of validation errors', correct: false }
+      - { value: 'The default constraint for a form', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html
+  -
+    uuid: d15bd18a-2e10-11f0-8b47-52f6040d993b
+    question: 'When using `GroupSequence`, what must you avoid using inside the sequence?'
+    answers:
+      - { value: 'The `Default` group', correct: true }
+      - { value: 'The entity class name', correct: false }
+      - { value: 'The `Strict` group', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html
+  -
+    uuid: d15bd464-2e10-11f0-8b47-52f6040d993b
+    question: 'What happens when a constraint in the first group of a GroupSequence fails?'
+    answers:
+      - { value: 'Subsequent groups are not validated', correct: true }
+      - { value: 'All groups are still validated', correct: false }
+      - { value: 'Only the Default group is skipped', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html
+  -
+    uuid: d15bd59a-2e10-11f0-8b47-52f6040d993b
+    question: 'What is required when your entity provides its own group sequence?'
+    answers:
+      - { value: 'Implement GroupSequenceProviderInterface', correct: true }
+      - { value: 'Extend AbstractGroupSequence', correct: false }
+      - { value: 'Add #[GroupValidator]', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html
+  -
+    uuid: d15bd6bc-2e10-11f0-8b47-52f6040d993b
+    question: 'What does the `#[Assert\GroupSequenceProvider]` attribute indicate?'
+    answers:
+      - { value: 'The entity defines a dynamic group sequence', correct: true }
+      - { value: 'The entity uses default constraints', correct: false }
+      - { value: 'The entity can’t be validated', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html
+  -
+    uuid: d15bd77a-2e10-11f0-8b47-52f6040d993b
+    question: 'What is the behavior when getGroupSequence() returns a nested array?'
+    answers:
+      - { value: 'Groups inside the array are validated together', correct: true }
+      - { value: 'Groups are ignored', correct: false }
+      - { value: 'Validation stops immediately', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html
+  -
+    uuid: d15bd82e-2e10-11f0-8b47-52f6040d993b
+    question: 'What is the recommended way to handle dynamic group sequences without polluting entities?'
+    answers:
+      - { value: 'Use a separate class implementing GroupProviderInterface', correct: true }
+      - { value: 'Define groups in the template', correct: false }
+      - { value: 'Use multiple form types', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html
+  -
+    uuid: d15bd8e2-2e10-11f0-8b47-52f6040d993b
+    question: 'Which Symfony attribute lets you assign a group provider to an entity?'
+    answers:
+      - { value: 'provider: UserGroupProvider::class', correct: true }
+      - { value: 'groupResolver: UserProvider', correct: false }
+      - { value: 'sequence: App\GroupResolver', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html
+  -
+    uuid: d15bda22-2e10-11f0-8b47-52f6040d993b
+    question: "What should a form's `validation_groups` option be set to in order to define sequence?"
+    answers:
+      - { value: 'new GroupSequence([...])', correct: true }
+      - { value: 'GroupChain([...])', correct: false }
+      - { value: 'GroupCascade([...])', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html
+  -
+    uuid: d15bdb1c-2e10-11f0-8b47-52f6040d993b
+    question: 'Which constraint allows sequential validation on a single property?'
+    answers:
+      - { value: 'Sequentially', correct: true }
+      - { value: 'StepByStep', correct: false }
+      - { value: 'GroupSequenceOne', correct: false }
+    help: https://symfony.com/doc/current/validation/sequence_provider.html

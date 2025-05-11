@@ -8,3 +8,163 @@ questions:
       - { value: '$file->uploadFile(string $directory, string $name = null)', correct: false }
       - { value: '$file->save(string $directory, string $name = null)', correct: false }
     help: 'https://symfony.com/doc/7.0/controller/upload_file.html#creating-an-uploader-service'
+  -
+    uuid: 1ac6c252-2e0d-11f0-8b47-52f6040d993b
+    question: 'What property must be added to an entity to store a brochure filename?'
+    answers:
+      - { value: 'File', correct: true }
+      - { value: 'string', correct: false }
+      - { value: 'base64Encoded', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6c5b8-2e0d-11f0-8b47-52f6040d993b
+    question: 'Which form field type is used to upload a file in Symfony?'
+    answers:
+      - { value: 'FileType', correct: true }
+      - { value: 'UploadType', correct: false }
+      - { value: 'InputFileType', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6c694-2e0d-11f0-8b47-52f6040d993b
+    question: 'What does setting `mapped` to false on a FileType form field mean?'
+    answers:
+      - { value: 'The field is not associated to any entity property', correct: true }
+      - { value: 'The field is hidden', correct: false }
+      - { value: 'The field is optional', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6c734-2e0d-11f0-8b47-52f6040d993b
+    question: "Why should file upload fields often be marked as 'required' => false?"
+    answers:
+      - { value: "So users don't need to re-upload files when editing", correct: true }
+      - { value: 'To allow multiple uploads', correct: false }
+      - { value: 'To improve security', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6c7f2-2e0d-11f0-8b47-52f6040d993b
+    question: "Why can’t unmapped fields use validation attributes in the entity?"
+    answers:
+      - { value: 'Because they are not tied to the entity', correct: true }
+      - { value: 'Because Symfony doesn’t support validation on files', correct: false }
+      - { value: 'Because they are always valid', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6c892-2e0d-11f0-8b47-52f6040d993b
+    question: What class is used to apply validation constraints on file fields?
+    answers:
+      - { value: 'Symfony\Component\Validator\Constraints\File', correct: true }
+      - { value: 'Symfony\Component\Form\Validator\File', correct: false }
+      - { value: 'Symfony\Component\Validation\FileConstraint', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6c946-2e0d-11f0-8b47-52f6040d993b
+    question: 'Where should the upload directory be defined?'
+    answers:
+      - { value: 'In a parameter like brochures_directory', correct: true }
+      - { value: 'In the Product entity', correct: false }
+      - { value: 'In the HTML template', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6c9f0-2e0d-11f0-8b47-52f6040d993b
+    question: 'What Symfony service is used to make strings URL-safe?'
+    answers:
+      - { value: 'SluggerInterface', correct: true }
+      - { value: 'StringNormalizer', correct: false }
+      - { value: 'SafeStringHelper', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -  
+    uuid: 1ac6ca90-2e0d-11f0-8b47-52f6040d993b
+    question: 'What method generates a slug from a string?'
+    answers:
+      - { value: '$slugger->slug(...)', correct: true }
+      - { value: '$slugger->toSlug(...)', correct: false }
+      - { value: '$slugger->slugify(...)', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6cb30-2e0d-11f0-8b47-52f6040d993b
+    question: 'Why should you generate a new unique filename for uploaded files?'
+    answers:
+      - { value: 'To avoid collisions and ensure security', correct: true }
+      - { value: 'To shorten the file name', correct: false }
+      - { value: 'To improve SEO', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6d2e2-2e0d-11f0-8b47-52f6040d993b
+    question: 'Which method guesses the extension of an uploaded file?'
+    answers:
+      - { value: '$file->guessExtension()', correct: true }
+      - { value: '$file->getExtension()', correct: false }
+      - { value: '$file->clientExtension()', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -  
+    uuid: 1ac6d8c8-2e0d-11f0-8b47-52f6040d993b
+    question: 'What happens if you use getClientOriginalName() without filtering?'
+    answers:
+      - { value: 'You may expose unsafe or duplicate file names', correct: true }
+      - { value: 'Symfony throws an error', correct: false }
+      - { value: 'The name is always valid', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6db70-2e0d-11f0-8b47-52f6040d993b
+    question: How can you display a link to the uploaded brochure in Twig?
+    answers:
+      - { value: '{{ asset(''uploads/brochures/'' ~ product.brochureFilename) }}', correct: true }
+      - { value: '{{ upload_path(product.brochureFilename) }}', correct: false }
+      - { value: '{{ file_url(product.brochure) }}', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6dc92-2e0d-11f0-8b47-52f6040d993b
+    question: 'What is the purpose of creating a File instance when editing a product?'
+    answers:
+      - { value: 'To preload the uploaded file into the form', correct: true }
+      - { value: 'To read its content for validation', correct: false }
+      - { value: 'To delete the file if changed', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6dd46-2e0d-11f0-8b47-52f6040d993b
+    question: 'Which Symfony class represents an uploaded file?'
+    answers:
+      - { value: 'UploadedFile', correct: true }
+      - { value: 'FileUploader', correct: false }
+      - { value: 'HttpFile', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6de36-2e0d-11f0-8b47-52f6040d993b
+    question: 'Which service should you create to avoid file upload logic in controllers?'
+    answers:
+      - { value: 'FileUploader', correct: true }
+      - { value: 'FileStorage', correct: false }
+      - { value: 'FileHelper', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6df44-2e0d-11f0-8b47-52f6040d993b
+    question: 'What method of UploadedFile is used to move the file?'
+    answers:
+      - { value: '$file->move(...)', correct: true }
+      - { value: '$file->store(...)', correct: false }
+      - { value: '$file->save(...)', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -  
+    uuid: 1ac6e00c-2e0d-11f0-8b47-52f6040d993b
+    question: 'Which service config file defines the argument for FileUploader?'
+    answers:
+      - {value: 'services.yaml', correct: true }
+      - { value: 'parameters.yaml', correct: false }
+      - { value: 'routes.yaml', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6e0e8-2e0d-11f0-8b47-52f6040d993b
+    question: 'What is the base directory used in the upload example?'
+    answers:
+      - { value: '%kernel.project_dir%/public/uploads/brochures', correct: true }
+      - { value: '/var/www/brochures', correct: false }
+      - { value: '/tmp/uploads', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html
+  -
+    uuid: 1ac6e250-2e0d-11f0-8b47-52f6040d993b
+    question: 'Why are Doctrine listeners not recommended for handling file uploads?'
+    answers:
+      - { value: 'They may cause unpredictable behavior and performance issues', correct: true }
+      - { value: 'They are deprecated in Symfony 7', correct: false }
+      - { value: 'They cannot access UploadedFile instances', correct: false }
+    help: https://symfony.com/doc/7.0/controller/upload_file.html

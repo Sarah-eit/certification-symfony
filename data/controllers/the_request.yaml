@@ -47,7 +47,7 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L98'
   -
     uuid: 1eebf878-8ba0-6238-b1a8-99d84c92580c
-    question: 'How to access the `foo` GET parameter from Request object $request ?'
+    question: 'What is the correct way to read the `foo` query string parameter from a Symfony Request object?'
     answers:
       - { value: "$request->query->get('foo');", correct: true }
       - { value: "$request->request->get('foo');", correct: false }
@@ -56,7 +56,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba0-6288-acf3-99d84c92580c
-    question: 'How to access the `bar` POST parameter from Request object $request ?'
+    question: 'What is the correct way to read the `bar` POST parameter from a Symfony Request object?'
     answers:
       - { value: "$request->query->get('bar');", correct: false }
       - { value: "$request->request->get('bar');", correct: true }

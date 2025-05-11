@@ -28,7 +28,7 @@ questions:
     help: 'https://symfony.com/doc/7.0/testing.html#multiple-requests-in-one-test'
   -
     uuid: 1efd99b8-bb34-692a-86ba-4dd6dd70d770
-    question: "In test environment, which of the following is true about the 'followRedirects()' method?"
+    question: "In test environment, which of the following is true about the `followRedirects()` method?"
     answers:
       - { value: 'It can force the client to automatically follow redirects', correct: true }
       - { value: 'It clears all cookies and history', correct: false }
